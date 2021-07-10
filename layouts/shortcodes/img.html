@@ -1,0 +1,4 @@
+<div class="row captioned-img">
+    <a href={{ .Get "src" }}><img class="img-responsive img-content" src={{ .Get "src" }} /></a>
+    <p class="caption">{{ .Get "caption" }}{{ with .Get "link"}} (Source: <a href={{.}}>{{end}}{{ with .Get "link-text"}} {{.}}</a>) {{end}}</p>
+</div>

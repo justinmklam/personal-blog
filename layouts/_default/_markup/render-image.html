@@ -1,0 +1,5 @@
+<div class="row captioned-img">
+    <a href={{ .Destination | safeURL }}><img class="img-responsive img-content" src={{ .Destination | safeURL }} /></a>
+    <p class="caption">{{ .Text | safeHTML }}{{ with .Title }} (Source: {{ . | safeHTML }}){{end}}</p>
+</div>
+

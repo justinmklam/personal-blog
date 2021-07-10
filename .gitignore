@@ -1,0 +1,6 @@
+"/public/"
+"/themes/"
+server/
+.vscode/
+.DS_Store
+docs/

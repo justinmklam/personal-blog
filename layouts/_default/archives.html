@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{{ .Title }}</title>
+    {{ partial "header.html" . }}
+    <style>
+        .archive-year {color:#999; font-size: 16px}
+        .archive-date {color:#777; font-size: 16px}
+        @media (min-width:768px) {.archive-date {text-align:right}}
+        td {padding: 0px 35px 0px 0px}
+    </style>
+</head>
+
+<body>
+
+    {{ partial "navbar.html" . }}
+
+    <!-- Page Content -->
+    <div class="container" id="page-container">
+        <br>
+
+		<!--Blog post listing-->
+        <div class="col-sm-7 col-centered">
+            <!--<div class="row">
+                <h1 class="page-header">All Blog Posts </h1>
+            </div>            -->
+
+            {{ range (where .Site.Pages "Type" "blog").GroupByDate "2006"}}
+            <div class="row">
+                <!--Print year-->
+                <h2 class="archive-date-category" id="{{.Key | urlize}}">{{.Key}}</h2>
+                <hr>
+            </div>
+
+            <!--Loop through posts per year-->
+            {{ range sort .Pages "Date" "desc" }}
+            <div class="row">
+                <!-- Post publish date -->
+                <div class="col-sm-2">
+                    <h2 class="archive-header archive-date" style="margin-bottom:10px">
+                        {{ .Date | dateFormat "Jan 2"}}
+                    </h2>
+                </div>
+
+                <!-- Post title and tagline-->
+                <div class="col-sm-9">
+                    <h2 class="archive-header">
+                        <a class="h2 archive-header" href="{{ .Permalink }}">{{ .Title }}</a>
+                    </h2>
+
+                    <p class="archive-blog-metadata">{{.ReadingTime}} min read
+                        &nbsp &middot &nbsp
+                        <span class="disqus-comment-count" data-disqus-url="{{ .Permalink }}#disqus_thread"># comments</span>
+                        &nbsp &middot &nbsp
+                        {{ range .Params.tags }}
+                        <a class="blog-tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}&nbsp</a>
+                        {{ end }}
+                    </p>
+
+                    <h4 class="archive-blog-tagline">{{ .Params.tagline }}</h4>
+
+                    <!--Read more buttn-->
+                    <!--<div class="text-right">
+                        <a href="{{ .Permalink }}">Read More<span style="font-size:0.83em" class="glyphicon glyphicon-menu-right"></span></a>
+                    </div>-->
+                </div>
+
+            </div>
+
+            <br>
+            {{ end }}
+
+            <!--<hr>-->
+
+            {{ end }}
+
+            <!--Show all tag taxonomies, ordered by count-->
+            <!--<ul>
+            {{ range $name, $taxonomy := .Site.Taxonomies.tags.ByCount }}
+                <a href="/tags/{{ $name }}">#{{ $taxonomy.Term }} ({{ $taxonomy.Count }})</a>
+            {{end}}
+            </ul>-->
+
+            <!--Return to recent posts button-->
+            <div class="text-right">
+                <a class="blog-nav-btn"  href="/">
+                    Recent Posts<span style="font-size:0.83em" class="glyphicon glyphicon-menu-right"></span>
+                </a>
+            </div>
+
+        </div>
+        <!-- /.blog posts -->
+
+    </div>
+    <!-- /.page container -->
+
+	{{ partial "footer-js.html" . }}
+
+</body>
+
+{{ partial "footer.html" . }}
+
+</html>

@@ -1,0 +1,42 @@
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-85178257-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-85178257-1');
+</script>
+
+<!-- Fix in page anchors to avoid being hidden behind navbar. 70px is based on css padding. -->
+<script>
+    var shiftWindow = function() { scrollBy(0, -70) };
+    window.addEventListener("hashchange", shiftWindow);
+    function load() { if (window.location.hash) shiftWindow(); }
+</script>
+
+<!-- Header snippet -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content=
+{{ if (isset .Params "tagline")}}
+    "{{.Params.tagline}}"
+{{ else }}
+    "{{ .Title }}"
+{{ end }}
+>
+<meta name="author" content="Justin Lam">
+
+<!-- <link rel="stylesheet" href="/css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="/css/bootstrap-modified.min.css">
+<link rel="stylesheet" href="/css/jmklam-portfolio.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Roboto+Slab|DM+Sans:500&display=swap">
+<!-- <link rel="stylesheet" href="/css/highlight-js.css"> -->
+
+<!-- Code highlighting from https://highlightjs.org/ -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/atom-one-light.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+
+<!-- add after bootstrap.min.css -->
+<link rel="stylesheet" href="/css/bootstrap-toc.css">

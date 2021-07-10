@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{{ .Title }}</title>
+    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.image }}"/>
+    <meta property="og:type" content="blog"/>
+    {{ partial "header.html" . }}
+
+</head>
+
+<body onload="load()" data-spy="scroll" data-target="#toc">
+
+    {{ partial "navbar.html" . }}
+
+    <!-- Page Container -->
+    <div class="container" id="page-container">
+
+        <!--Page content-->
+        <div class="row">
+                <div class="col-sm-2">
+                    </div>
+            <div class="col-sm-8" id="blog">
+                <br>
+                <h2 data-toc-skip class="blog-title">{{ .Title }}</h2>
+                <!--Timestamp-->
+                <p class="datestamp-index">{{ partial "blog-metadata.html" . }}</p>
+
+                <!--Image if available-->
+                <a href={{.Params.image}}>
+                    <img class="img-responsive img-span-row blog-header-img" src="{{ .Params.image }}">
+                </a>
+
+                <div class="blog-content page-content">
+                    {{ .Content }}
+                </div>
+
+                <!--<hr>-->
+                <br>
+                <div class="text-left">
+                    <a class="blog-nav-btn" href="/">
+                        <span style="font-size:0.83em" class="glyphicon glyphicon-menu-left"></span>Recent Posts
+                    </a>
+                </div>
+                <hr>
+                {{ partial "disqus.html" . }}
+
+
+            </div>
+
+            <div class="col-sm-1">
+                    <nav id="toc" data-toggle="toc" data-spy="affix"></nav>
+                </div>
+            <!--/.content-->
+
+
+        </div>
+    </div>
+    <!-- /.container -->
+
+    {{ partial "footer-js.html" . }}
+
+</body>
+
+{{ partial "footer.html" . }}
+
+</html>

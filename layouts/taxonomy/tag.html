@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{{ .Title }}</title>
+    {{ partial "header.html" . }}
+</head>
+
+<body>
+
+    {{ partial "navbar.html" . }}
+
+    <!-- Page Content -->
+    <div class="container" id="page-container">
+
+		<!--Blog post summaries-->
+        <div class="col-lg-8 col-centered">
+            <div class="row">
+                <h1 class="page-header blog-tag-header">#{{ .Title }}</h1>
+            </div>
+
+            {{ range .Data.Pages }}
+
+            {{ partial "blog-snippets.html" . }}
+
+            {{ end }}
+
+            <!--Archives button-->
+            <div class="text-left">
+                <a class="blog-nav-btn" href="/">
+                    <span style="font-size:0.83em" class="glyphicon glyphicon-menu-left"></span>Recent Posts
+                </a>
+            </div>
+
+        </div>
+        <!-- /.blog posts -->
+
+    </div>
+    <!-- /.page container -->
+
+	{{ partial "footer-js.html" . }}
+
+</body>
+
+{{ partial "footer.html" . }}
+
+</html>

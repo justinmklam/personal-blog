@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{{ .Title }}</title>
+    {{ partial "header.html" . }}
+</head>
+
+<body>
+
+    {{ partial "navbar.html" . }}
+
+    <!-- Page Content -->
+    <div class="container" id="page-container">
+
+        <div class="col-sm-8 col-centered">
+            <h1 class="page-header">{{ .Title }}</h1>
+            {{ .Content }}
+
+			<br><br>
+			<!-- Email and phone contact -->
+			<div class="row text-nowrap">
+				<div class="col-xs-1 col-xs-offset-3 text-center">
+					<i class="fa fa-envelope"></i> <br>
+					<!--<br><i class="fa fa-phone"></i> <br>-->
+				</div>
+				<div class="col-xs-3">
+					<a class="contact-links" href=mailto:{{ .Site.Params.email }} >{{ .Site.Params.email }}</a> <br>
+					<!--<br><a class="contact-links" href="tel:+1{{ .Site.Params.phone }}">{{ .Site.Params.phone }}</a> <br>-->
+				</div>
+			</div>
+			<!-- Divider -->
+			<div class="row">
+				<div class="col-xs-4 col-xs-offset-3"><hr width="100%"></div>
+			</div>
+			<!-- All other contact info -->
+			<div class="row text-nowrap">
+				<div class="col-xs-1 col-xs-offset-3 text-center">
+					<i class="fa fa-linkedin"></i> <br><br>
+					<i class="fa fa-github"></i> <br><br>
+					<i class="fa fa-instagram"></i> <br><br>
+					<i class="fa fa-facebook"></i> <br><br>
+				</div>
+				<div class="col-xs-3">
+					<a class="contact-links" href="http://{{ .Site.Params.linkedin }}" >{{ .Site.Params.linkedin }}</a> <br><br>
+					<a class="contact-links" href="http://{{ .Site.Params.github }}" >{{ .Site.Params.github }}</a> <br><br>
+					<a class="contact-links" href="http://{{ .Site.Params.instagram }}" >{{ .Site.Params.instagram }}</a> <br><br>
+					<a class="contact-links" href="http://{{ .Site.Params.facebook }}" >{{ .Site.Params.facebook }}</a> <br><br>
+				</div>
+			</div>
+
+        </div>
+
+
+
+    </div>
+    <!-- /.container -->
+
+	{{ partial "footer-js.html" . }}
+
+</body>
+
+{{ partial "footer.html" . }}
+
+</html>

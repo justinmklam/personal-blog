@@ -1,0 +1,43 @@
+baseurl = "http://justinmklam.com"
+languageCode = "en-us"
+title = "Justin MK Lam | Blog"
+author = "Justin MK Lam"
+
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "docs"
+canonifyurls = false
+disableKinds = ["section", "taxonomyTerm"]
+
+googleAnalytics = "UA-85178257-1"
+disqusShortname = "justinmklam"
+
+FootnoteReturnLinkContents = "↩"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "Blog"
+    name = "Blog"
+    url = "/"
+    weight = 1
+
+[taxonomies]
+	tag = "tags"
+	type = "types"
+
+[params]
+	footer = "Justin MK Lam"
+	email = "contact@justinmklam.com"
+	phone = "604-219-1148"
+	github = "github.com/justinmklam"
+	facebook = "facebook.com/jmklam"
+	linkedin = "linkedin.com/in/justinmklam"
+	instagram = "instagram.com/justinmklam"
+
+[markup]
+    [markup.goldmark.renderer]
+    	unsafe = true
+	[markup.highlight]
+		guessSyntax = true
+		style="vs"
