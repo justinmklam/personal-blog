@@ -1,0 +1,73 @@
+/*! CSS Styling for homepage 
+Last edited: Wed, 5 Oct 2016
+*/
+.home-header {
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+@media (min-width: 992px) {
+    .home-header {
+		margin: 250px auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .home-header {
+		margin: 210px auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .home-header {
+		margin: 150px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-header {
+		margin: 75px auto;
+    }
+}
+
+.home-body {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.home-body h1 {
+    font-size: 3.8em;
+    font-weight: 800;
+    letter-spacing: 8px;
+}
+
+.home-item {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #555;
+    font-size: 1.25em;
+	font-weight: regular;
+}
+
+.home-item:hover,
+.home-item:focus,
+.home-item:active {
+    color: steelblue;
+	text-decoration: none;
+}
+
+.home-list {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
