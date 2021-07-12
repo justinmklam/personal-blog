@@ -1,24 +1,21 @@
 +++
-layout =    "single"
-type =      "blog"
+aliases = []
+date = 2021-07-07T03:41:54Z
+draft = true
+image = "/imgs/2021/chicken-coop/uwotmate.jpg"
+layout = "single"
+tagline = "In this case, the chicken came before the egg."
+tags = ["woodworking"]
+title = "The Journey to Fresh Farm Eggs in the City"
+type = "blog"
 
-date =      2021-07-06T20:41:54-07:00
-draft =     true
-
-title =     "Building a Backyard Chicken Coop"
-tagline =   "In this case, the chicken came before the egg."
-image =     "/imgs/2021/chicken-coop/uwotmate.jpg"
-tags =      ["woodworking"]
-
-aliases =   []
 +++
+Back in 2018, we decided to raise chickens in our urban backyard, all in the name of being able to have fresh eggs every morning.  Our city had bylaws on having chickens in the city, which included:
 
-Back in 2018, we decided to raise chickens in our urban backyard. Our city had bylaws on having chickens in the city, which included:
-
-- A maximum of 4 hens (no roosters), 4 months or older
-- Ducks, turkeys, or other livestock are not allowed
-- Eggs, meat, and manure cannot be used for commercial purposes
-- Backyard slaughtering is not allowed
+* A maximum of 4 hens (no roosters), 4 months or older
+* Ducks, turkeys, or other livestock are not allowed
+* Eggs, meat, and manure cannot be used for commercial purposes
+* Backyard slaughtering is not allowed
 
 Since we were fortunate enough to have a backyard at the time, we decided to build a coop and start the lifestyle of having easy access to fresh eggs.
 
@@ -68,11 +65,11 @@ Within the span of 24 hours, our chicken ownership went something like this:
 
 1. Bid on two nice, small chickens
 2. Find out that they're sold as a pair because one of them is a rooster
-3. *Panic* because we can't bring back a rooster, so put them back up for auction
+3. _Panic_ because we can't bring back a rooster, so put them back up for auction
 4. Sell the chickens at a slight loss, end up buying 4 chickens
 5. Try to confirm with one of the farmers that all of them are hens, is told that they're too young to tell the gender
 6. Take all the chickens home, find out the next morning at 6 am that one of them is a rooster
-7. *Panic again*, find a local farm to trade our rooster (plus another hen since our coop was built for max 3, not 4)
+7. _Panic again_, find a local farm to trade our rooster (plus another hen since our coop was built for max 3, not 4)
 
 ![Hens in their new home (some of them anyway...).](/imgs/2021/chicken-coop/chickens5.jpg)
 
@@ -105,6 +102,8 @@ That winter, we had snowfall that stuck (which is rare for the "wet" coast of Va
 ![Waking up to this pair of eggs was egg-tremely egg-citing (sorry, couldn't resist).](/imgs/2021/chicken-coop/eggs1.jpg)
 ![Production eventually entered steady state.](/imgs/2021/chicken-coop/eggs3.jpg)
 
+![Try doing this with store bought eggs!](/imgs/tamago-gakegohan.JPG)
+
 ## The Replacements
 
 Turns out one of the chickens was actually a rooster, so we did what we had to do...
@@ -119,6 +118,6 @@ Turns out one of the chickens was actually a rooster, so we did what we had to d
 
 In the summer of 2020, it was time to say goodbye to our beloved hens.
 
-![TEXT](/imgs/2021/chicken-coop/goodbye1.jpg)
-![TEXT](/imgs/2021/chicken-coop/goodbye2.jpg)
-![TEXT](/imgs/2021/chicken-coop/crashpad.jpg)
+![Half of the coop packed up into the buyer's SUV...](/imgs/2021/chicken-coop/goodbye1.jpg)
+![... And the other half in another SUV.](/imgs/2021/chicken-coop/goodbye2.jpg)
+![Memories of our original hens, now forever imprinted on our bouldering crashpads.](/imgs/2021/chicken-coop/crashpad.jpg)
