@@ -10,7 +10,9 @@ title = "The Journey to Fresh Farm Eggs in the City"
 type = "blog"
 
 +++
-Back in 2018, we decided to raise chickens in our urban backyard, all in the name of being able to have fresh eggs every morning.  Our city had bylaws on having chickens in the city, which included:
+# Backstory
+
+Back in 2018, we decided to raise chickens in our urban backyard, all in the name of being able to have fresh eggs every morning. Our city had bylaws on having chickens, which included:
 
 * A maximum of 4 hens (no roosters), 4 months or older
 * Ducks, turkeys, or other livestock are not allowed
@@ -19,7 +21,9 @@ Back in 2018, we decided to raise chickens in our urban backyard, all in the nam
 
 Since we were fortunate enough to have a backyard at the time, we decided to build a coop and start the lifestyle of having easy access to fresh eggs.
 
-# The Coop
+# The Development
+
+## The Coop
 
 After doing some rough sketching, we settled on dimensions of our coop. We put the frame together to get a feel for how big this thing would actually end up being!
 
@@ -49,7 +53,7 @@ For the paint, we went to the clearance section at Home Depot and found heavily 
 
 At this point, we were finally ready to go get ourselves some chicken(s)!
 
-# The Auction
+## The Auction
 
 Turns out buying chickens is easier said than done. We eventually found a farm in the next city over that hosts farm animal auctions, which sounded like a great idea at the time. Upon arrival, potential buyers browse the inventory and make notes about what they would like to purchase. What we didn't realize was that sellers were there to sell in bulk... While we wanted to buy a couple hens of different breeds, sellers were putting chickens up for sale in multiples of five!
 
@@ -59,7 +63,7 @@ Having never been to an auction before, it was actually a bit stressful. The auc
 
 ![Bidding for our hens.](/imgs/2021/chicken-coop/auction2.jpg)
 
-# The Chickens
+## The Chickens
 
 Within the span of 24 hours, our chicken ownership went something like this:
 
@@ -114,10 +118,17 @@ Turns out one of the chickens was actually a rooster, so we did what we had to d
 
 {{<loop-vid caption="Our puppy was very inquisitive about our new chickens." src="/imgs/2021/chicken-coop/chicken-dog.mp4">}}
 
+## The Mites
+
+Turns out it's actually hard to keep chickens healthy... 
+
 ## The Farewell
 
-In the summer of 2020, it was time to say goodbye to our beloved hens.
+In the summer of 2020, it was time to say goodbye to our beloved hens. We initially put an ad up on Facebook Marketplace, but that quickly got taken down since apparently they don't allow livestock to be sold on their platform. Back to Craigslist we went, and eventually, we found a buyer. When they arrived, they came prepared to take it all away, albeit with equipment that was a little non-standard...
 
 ![Half of the coop packed up into the buyer's SUV...](/imgs/2021/chicken-coop/goodbye1.jpg)
 ![... And the other half in another SUV.](/imgs/2021/chicken-coop/goodbye2.jpg)
-![Memories of our original hens, now forever imprinted on our bouldering crashpads.](/imgs/2021/chicken-coop/crashpad.jpg)
+
+All that was left was a memory of the chickens on our crashpad.
+
+ ![Memories of our original hens, now forever imprinted on our bouldering crashpads.](/imgs/2021/chicken-coop/crashpad.jpg)
