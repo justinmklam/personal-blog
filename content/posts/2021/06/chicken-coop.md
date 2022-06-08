@@ -19,7 +19,7 @@ Back in 2018, we decided to raise chickens in our urban backyard, all in the nam
 * Eggs, meat, and manure cannot be used for commercial purposes
 * Backyard slaughtering is not allowed
 
-Since we were fortunate enough to have a backyard at the time, we decided to build a coop and start the lifestyle of having easy access to fresh eggs.
+Since we were fortunate enough to have access to a backyard at the time, we decided to build a coop and start the lifestyle of having easy access to fresh eggs. Was it cost effective? Heck no, but it sure was a fun journey!
 
 # The Development
 
@@ -101,6 +101,8 @@ That winter, we had snowfall that stuck (which is rare for the "wet" coast of Va
 
 ## The Eggs
 
+We had to "let the taps run for a bit" before our egg production hit full tilt, so to speak. The shells from the first few eggs were too soft (due to a lack of calcium?), but after a week or so, we finally started to get some proper eggs.
+
 ![Soft shell crab is a delicacy, but soft shell eggs are not.](/imgs/2021/chicken-coop/eggerror1.jpg)
 ![This one almost made it, but the shell was still too thin. More calcium required!](/imgs/2021/chicken-coop/eggerror2.jpg)
 ![Waking up to this pair of eggs was egg-tremely egg-citing (sorry, couldn't resist).](/imgs/2021/chicken-coop/eggs1.jpg)
@@ -108,27 +110,13 @@ That winter, we had snowfall that stuck (which is rare for the "wet" coast of Va
 
 ![Try doing this with store bought eggs!](/imgs/tamago-gakegohan.JPG)
 
-## The Replacements
+# The Farewell
 
-Turns out one of the chickens was actually a rooster, so we did what we had to do...
-
-![Being a little facetious...](/imgs/2021/chicken-coop/bbq.jpg)
-
-![New hens, new eggs!](/imgs/2021/chicken-coop/chickens3.jpg)
-
-{{<loop-vid caption="Our puppy was very inquisitive about our new chickens." src="/imgs/2021/chicken-coop/chicken-dog.mp4">}}
-
-## The Mites
-
-Turns out it's actually hard to keep chickens healthy... 
-
-## The Farewell
-
-In the summer of 2020, it was time to say goodbye to our beloved hens. We initially put an ad up on Facebook Marketplace, but that quickly got taken down since apparently they don't allow livestock to be sold on their platform. Back to Craigslist we went, and eventually, we found a buyer. When they arrived, they came prepared to take it all away, albeit with equipment that was a little non-standard...
+In the summer of 2020, life events resulted in having to say goodbye to our beloved hens. We initially put an ad up on Facebook Marketplace, but that quickly got taken down since apparently they don't allow livestock to be sold on their platform. Back to Craigslist we went, and eventually, we found a buyer. When they arrived, they came prepared to take it all away, albeit with equipment that was a little non-standard...
 
 ![Half of the coop packed up into the buyer's SUV...](/imgs/2021/chicken-coop/goodbye1.jpg)
 ![... And the other half in another SUV.](/imgs/2021/chicken-coop/goodbye2.jpg)
 
-All that was left was a memory of the chickens on our crashpad.
+All that was left was a memory of the chickens on our [crashpad](https://organicclimbing.com/collections/crash-pads), thanks to our good friends who designed and gifted it to us for [our wedding](https://www.justinmklam.com/posts/2019/diy-wedding-ring/).
 
- ![Memories of our original hens, now forever imprinted on our bouldering crashpads.](/imgs/2021/chicken-coop/crashpad.jpg)
+![Memories of our original hens, now forever imprinted on our bouldering crashpads.](/imgs/2021/chicken-coop/crashpad.jpg)
