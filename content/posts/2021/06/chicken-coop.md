@@ -1,17 +1,14 @@
 +++
 aliases = []
 date = 2021-07-07T03:41:54Z
-draft = true
 image = "/imgs/2021/chicken-coop/uwotmate.jpg"
 layout = "single"
 tagline = "Raising pets that poop breakfast."
 tags = ["woodworking"]
-title = "The Journey to Having Fresh Farm Eggs in the City"
+title = "Building a Backyard Chicken Coop in the City"
 type = "blog"
 
 +++
-# Backstory
-
 Back in 2018, we decided to raise chickens in our urban backyard, all in the name of being able to have fresh eggs every morning. Our city had bylaws on having chickens, which included:
 
 * A maximum of 4 hens (no roosters), 4 months or older
