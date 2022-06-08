@@ -4,9 +4,9 @@ date = 2021-07-07T03:41:54Z
 draft = true
 image = "/imgs/2021/chicken-coop/uwotmate.jpg"
 layout = "single"
-tagline = "In this case, the chicken came before the egg."
+tagline = "Raising pets that poop breakfast."
 tags = ["woodworking"]
-title = "The Journey to Fresh Farm Eggs in the City"
+title = "The Journey to Having Fresh Farm Eggs in the City"
 type = "blog"
 
 +++
@@ -112,7 +112,7 @@ We had to "let the taps run for a bit" before our egg production hit full tilt, 
 
 # The Farewell
 
-In the summer of 2020, life events resulted in having to say goodbye to our beloved hens. We initially put an ad up on Facebook Marketplace, but that quickly got taken down since apparently they don't allow livestock to be sold on their platform. Back to Craigslist we went, and eventually, we found a buyer. When they arrived, they came prepared to take it all away, albeit with equipment that was a little non-standard...
+Two fruitful years later, life events resulted in having to say goodbye to our beloved hens. We initially put an ad up on Facebook Marketplace, but that quickly got taken down since apparently they don't allow livestock to be sold on their platform. Back to Craigslist we went, and eventually, we found a buyer. When they arrived, they came prepared to take it all away, albeit with equipment that was a little non-standard...
 
 ![Half of the coop packed up into the buyer's SUV...](/imgs/2021/chicken-coop/goodbye1.jpg)
 ![... And the other half in another SUV.](/imgs/2021/chicken-coop/goodbye2.jpg)
