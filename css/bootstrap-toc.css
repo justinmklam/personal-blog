@@ -9,7 +9,7 @@
 nav[data-toggle='toc'] .nav > li > a {
   display: block;
   padding: 4px 20px;
-  font-size: 13px;
+  font-size: 90%;
   /* font-weight: 500; */
   text-transform: capitalize;
   color: #c5c5c5;
@@ -43,7 +43,7 @@ nav[data-toggle='toc'] .nav .nav > li > a {
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 30px;
-  font-size: 12px;
+  /* font-size: 90%; */
   /* font-weight: normal; */
 }
 nav[data-toggle='toc'] .nav .nav > li > a:hover,
