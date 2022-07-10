@@ -250,14 +250,6 @@ h4 {
 @media(max-width:767px){.img-rounded{max-width:400px;margin:15px auto}}
 @media(max-width:480px){.img-rounded{max-width:200px;margin:15px auto}}
 
-/*Page fade animation*/
-#page-container, #hamburger-menu {-webkit-animation: fadein 0.65s; -moz-animation: fadein 0.65s; -ms-animation: fadein 0.65s; -o-animation: fadein 0.65s; animation: fadein 0.65s}
-@keyframes fadein {from { opacity: 0; }to{ opacity: 1; }}
-@-moz-keyframes fadein {from { opacity: 0; }to{ opacity: 1; }}
-@-webkit-keyframes fadein {from { opacity: 0; }to{ opacity: 1; }}
-@-ms-keyframes fadein {from { opacity: 0; }to{ opacity: 1; }}
-@-o-keyframes fadein {from { opacity: 0; }to{ opacity: 1; }}
-
 /*Hamburger menu animated*/
 #hamburger-menu {-webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);-o-transform: rotate(0deg);transform: rotate(0deg);-webkit-transition: .5s ease-in-out;-moz-transition: .5s ease-in-out;-o-transition: .5s ease-in-out;transition: .5s ease-in-out;cursor: pointer;}
 #hamburger-menu span {-webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);-o-transform: rotate(0deg);transform: rotate(0deg);-webkit-transition: .25s ease-in-out;-moz-transition: .25s ease-in-out;-o-transition: .25s ease-in-out;transition: .25s ease-in-out;}
