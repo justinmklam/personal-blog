@@ -3,7 +3,7 @@
 body {
 	font-family: 'Lato', sans-serif;
 	padding-top: 70px;
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 1.42857143;
 	color: #333;
 	background-color: #ffffff
@@ -135,7 +135,7 @@ h1, h2, h3, h4, h5, h6
 
 .archive-blog-metadata {
 	margin-bottom:0px;
-	font-size:12px;
+	font-size:90%;
 	font-style: italic;
 	color: #777;
 }
@@ -143,7 +143,7 @@ h1, h2, h3, h4, h5, h6
 .archive-blog-tagline {
 	font-family: inherit;
 	font-style: oblique;
-	font-size:16px;
+	font-size:110%;
 	margin-top: 5px;
 }
 
@@ -194,7 +194,7 @@ h1, .h1, h2, .h2, h3, .h3 {
 }
 
 .archive-header {
-	font-size: 18px;
+	font-size: 115%;
 	margin-top: 5px;
 	margin-bottom: 7px
 }
@@ -281,30 +281,30 @@ h4 {
 }
 
 .blog-content h1 {
-	font-size: 21px;
+	font-size: 150%;
 	text-transform: none;
 	letter-spacing: normal;
 	counter-reset: h2counter;
 }
 
 .blog-content h2 {
-	font-size: 19px;
+	font-size: 135%;
 	counter-reset: h3counter;
 }
 
 .blog-content h3 {
-	font-size: 17px;
+	font-size: 120%;
 	counter-reset: h4counter;
 }
 
 .blog-content h4 {
-	font-size: 16px;
+	font-size: 110%;
 	font-style: normal;
 	counter-reset: h5counter;
 }
 
 .blog-content h5 {
-	font-size: 16px;
+	font-size: 110%;
 }
 /* Blog header numbering */
 .blog-content h2:before {
