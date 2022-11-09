@@ -1,0 +1,68 @@
+<!doctype html><html lang=en><head><title>Tips and Tricks with Terraform's null_resource</title><meta property="og:image" content="http://justinmklam.com"><meta property="og:type" content="blog"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-85178257-1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-85178257-1')</script><script>var shiftWindow=function(){scrollBy(0,-70)};window.addEventListener("hashchange",shiftWindow);function load(){window.location.hash&&shiftWindow()}</script><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><meta name=author content="Justin Lam"><link rel=stylesheet href=/css/bootstrap-modified.min.css><link rel=stylesheet href=/css/jmklam-portfolio.css><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Roboto+Slab|DM+Sans:500&display=swap"><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/atom-one-light.min.css><script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js></script><link rel=stylesheet href=/css/bootstrap-toc.css></head><body onload=load() data-spy=scroll data-target=#toc><!doctype html><html lang=en><nav class="navbar navbar-inverse navbar-fixed-top" role=navigation><div class=container><div class=navbar-header><button id=hamburger-menu type=button class=navbar-toggle data-toggle=collapse data-target=#bs-example-navbar-collapse-1>
+<span class=icon-bar></span><span class=icon-bar></span><span class=icon-bar></span></button>
+<a class=navbar-brand href=http://justinmklam.com>Justin Lam</a></div><div class="collapse navbar-collapse" id=bs-example-navbar-collapse-1><ul class="nav navbar-nav"><li><a href=/>Blog</a></li><li><a href=/archives/>Archives</a></li><li><a href=/about/>About</a></li><li><a href=/contact/>Contact</a></li></ul></div></div></nav></html><div class=container id=page-container><div class=row><div class=col-sm-2></div><div class=col-sm-8 id=blog><br><h2 data-toc-skip class=blog-title>Tips and Tricks with Terraform's null_resource</h2><p class=datestamp-index><span class="fa fa-calendar-o"></span>&nbsp Posted on May 17, 2022
+<em>&nbsp &middot &nbsp&nbsp2 min read
+&nbsp &middot &nbsp
+    <span class=disqus-comment-count data-disqus-url=http://justinmklam.com/posts/2022/05/terraform-null-resource/#disqus_thread># comments</span>
+&nbsp &middot &nbsp
+    
+    <a class=blog-tag href=/tags/today-i-learned>#today-i-learned&nbsp</a>
+<a class=blog-tag href=/tags/programming>#programming&nbsp</a></em></p><a href><img class="img-responsive img-span-row blog-header-img" src></a><div class="blog-content page-content"><p>Terraform&rsquo;s <code>null_resource</code> resource can be useful when there aren&rsquo;t any existing modules to satisfy your needs (with some caveats). <a href=https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource>Hashicorp&rsquo;s documentation</a> for it is a bit lacking, but fortunately there&rsquo;s more information about the provisioners in their other docs <a href=https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax>here</a>. After using these resources in a handful of places across our infrastructure deployments, I&rsquo;ve developed a small collection of tips I picked up over the past few months that I thought I&rsquo;d share.</p><p>Use <code>timestamp()</code> as a trigger when you need the resource to run on every deployment:</p><div class=highlight><pre style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-hcl data-lang=hcl><span style=color:#00f>resource</span> <span style=color:#a31515>&#34;null_resource&#34; &#34;always-run&#34;</span> {
+  triggers = {
+    timestamp = <span style=color:#00f>timestamp</span>()
+  }
+
+  <span style=color:#00f>provisioner</span> <span style=color:#a31515>&#34;local-exec&#34;</span> {
+    command = <span style=color:#a31515>&#34;echo foobar&#34;</span>
+  }
+}
+</code></pre></div><p>You can also supply multiple <code>provisioner</code> blocks, where one of them can be configured with <code>when = destroy</code> to specify the action to take when the resource will be destroyed. Dynamic values need to be accessed using <code>self.triggers.*</code> since Terraform isn&rsquo;t able to resolve the values at runtime during resource destruction.</p><div class=highlight><pre style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-hcl data-lang=hcl><span style=color:#00f>resource</span> <span style=color:#a31515>&#34;null_resource&#34; &#34;include-cleanup&#34;</span> {
+  triggers = {
+    name   = <span style=color:#00f>var</span>.<span style=color:#00f>name</span>
+    region = <span style=color:#00f>var</span>.<span style=color:#00f>region</span>
+  }<span style=color:green>
+</span><span style=color:green>
+</span><span style=color:green>  # Executes on resource creation {
+</span><span style=color:green></span>    command = <span style=color:#00f>join</span>(<span style=color:#a31515>&#34; &#34;</span>, [
+      <span style=color:#a31515>&#34;echo&#34;</span>,
+      <span style=color:#a31515>&#34;create:&#34;</span>,
+      <span style=color:#a31515>&#34;${self.triggers.name}&#34;</span>,
+      <span style=color:#a31515>&#34;${self.triggers.region}&#34;</span>,
+    ])
+  }<span style=color:green>
+</span><span style=color:green>
+</span><span style=color:green>  # Executes on resource destruction
+</span><span style=color:green></span>  <span style=color:#00f>provisioner</span> <span style=color:#a31515>&#34;local-exec&#34;</span> {
+    when = <span style=color:#00f>destroy</span>
+    command = <span style=color:#00f>join</span>(<span style=color:#a31515>&#34; &#34;</span>, [
+      <span style=color:#a31515>&#34;echo&#34;</span>,
+      <span style=color:#a31515>&#34;destroy:&#34;</span>,
+      <span style=color:#a31515>&#34;${self.triggers.name}&#34;</span>,
+      <span style=color:#a31515>&#34;${self.triggers.region}&#34;</span>,
+    ])
+  }
+}
+</code></pre></div><p>The <code>local-exec</code> provisioner also allows for an <a href=https://www.terraform.io/docs/language/resources/provisioners/local-exec.html#environment>environment</a> field, which can be used to easily pass values into commands or scripts:</p><div class=highlight><pre style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-hcl data-lang=hcl><span style=color:#00f>resource</span> <span style=color:#a31515>&#34;null_resource&#34; &#34;environment-values&#34;</span> {
+  <span style=color:#00f>provisioner</span> <span style=color:#a31515>&#34;local-exec&#34;</span> {
+    command = <span style=color:#a31515>&#34;./some-script.sh&#34;</span>
+    environment = {
+      ENVIRONMENT = <span style=color:#a31515>${</span><span>var</span>.<span>environment</span><span style=color:#a31515>}</span>
+      JSON_DATA = <span style=color:#00f>jsonencode</span>({
+          &#34;var1&#34; = <span style=color:#a31515>${</span><span>var</span>.<span>name</span><span style=color:#a31515>}</span>,
+          &#34;var2&#34; = <span style=color:#a31515>${</span><span>var</span>.<span>region</span><span style=color:#a31515>}</span>,
+          ...
+      })
+    }
+  }
+}
+</code></pre></div><p>Aside from provisioning resources, <code>null_resource</code> can also be used for debugging values (which I stumbled upon from <a href=https://nexxai.dev/how-to-debug-terraform-variable-content-using-this-custom-module/>nexxai.dev</a>):</p><div class=highlight><pre style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-hcl data-lang=hcl><span style=color:#00f>resource</span> <span style=color:#a31515>&#34;null_resource&#34; &#34;terraform-debug&#34;</span> {
+  <span style=color:#00f>provisioner</span> <span style=color:#a31515>&#34;local-exec&#34;</span> {
+    command = <span style=color:#a31515>&#34;echo $VARIABLE1 &gt;&gt; debug.txt; echo $VARIABLE2 &gt;&gt; debug.txt&#34;</span>
+
+    environment = {
+      VARIABLE1 = <span style=color:#00f>jsonencode</span>(<span style=color:#00f>var</span>.<span style=color:#00f>your_variable_name</span>)
+      VARIABLE2 = <span style=color:#00f>jsonencode</span>(<span style=color:#00f>local</span>.<span style=color:#00f>piece_of_data</span>)
+    }
+  }
+}
+</code></pre></div></div><br><div class=text-left><a class=blog-nav-btn href=/><span style=font-size:.83em class="glyphicon glyphicon-menu-left"></span>Recent Posts</a></div><hr><div id=disqus_thread></div><script type=text/javascript>(function(){var a,b;if(window.location.hostname=="localhost")return;a=document.createElement('script'),a.type='text/javascript',a.async=!0,b='justinmklam',a.src='//'+b+'.disqus.com/embed.js',(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(a)})()</script><noscript>Please enable JavaScript to view the <a href=http://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=http://disqus.com/ class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></div><div class=col-sm-1><nav id=toc data-toggle=toc data-spy=affix></nav></div></div></div><script src=/js/jquery.js></script><script src=/js/bootstrap.min.js></script><script src=/js/bootstrap-toc.min.js></script><script src=/js/highlight.pack.js></script><script>hljs.initHighlightingOnLoad()</script><script type=text/javascript src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script src=https://use.fontawesome.com/ccb78cc113.js></script><script id=dsq-count-scr src=//justinmklam.disqus.com/count.js async></script><script>$(document).ready(function(){$('#hamburger-menu').click(function(){$(this).toggleClass('open')})})</script></body><footer><div class="col-lg-8 col-centered"><hr><p class=text-center>&copy; 2022 Justin MK Lam</p></div><div id=amzn-assoc-ad-8dae4bf9-b4e8-4c3d-8d99-cd2028a68840></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=8dae4bf9-b4e8-4c3d-8d99-cd2028a68840"></script></footer></html>
