@@ -25,7 +25,7 @@ hugo -D serve
 
 To create a new blog post:
 ```
-hugo new /posts/[YEAR]/[MONTH]/[TITLE].md
+hugo new posts/[YEAR]/[MONTH]/[TITLE].md
 ```
 
 __Note:__ Upload images, files, etc. in the `static/` directory.

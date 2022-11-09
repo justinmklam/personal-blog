@@ -6,9 +6,11 @@
 <p class="datestamp-index">{{ partial "blog-metadata.html" . }}</p>
 
 <!-- Image -->
+{{ if not (eq .Params.image "") }}
 <div class="blog-preview-img">
     <a href="{{ .Permalink }}" style="margin-bottom:16px; background-image:url({{ .Params.image }})"></a>
 </div>
+{{ end }}
 
 <!--First 70 words of post-->
 <p>{{ .Summary }}</p>
