@@ -1,0 +1,87 @@
+<!doctype html><html lang=en><head><title>Deploying Google Cloud Functions with Terraform</title><meta property="og:image" content="http://justinmklam.com"><meta property="og:type" content="blog"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-85178257-1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-85178257-1')</script><script>var shiftWindow=function(){scrollBy(0,-70)};window.addEventListener("hashchange",shiftWindow);function load(){window.location.hash&&shiftWindow()}</script><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><meta name=author content="Justin Lam"><link rel=stylesheet href=/css/bootstrap-modified.min.css><link rel=stylesheet href=/css/jmklam-portfolio.css><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Roboto+Slab|DM+Sans:500&display=swap"><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/atom-one-light.min.css><script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js></script><link rel=stylesheet href=/css/bootstrap-toc.css></head><body onload=load() data-spy=scroll data-target=#toc><!doctype html><html lang=en><nav class="navbar navbar-inverse navbar-fixed-top" role=navigation><div class=container><div class=navbar-header><button id=hamburger-menu type=button class=navbar-toggle data-toggle=collapse data-target=#bs-example-navbar-collapse-1>
+<span class=icon-bar></span><span class=icon-bar></span><span class=icon-bar></span></button>
+<a class=navbar-brand href=http://justinmklam.com>Justin Lam</a></div><div class="collapse navbar-collapse" id=bs-example-navbar-collapse-1><ul class="nav navbar-nav"><li><a href=/>Blog</a></li><li><a href=/archives/>Archives</a></li><li><a href=/about/>About</a></li><li><a href=/contact/>Contact</a></li></ul></div></div></nav></html><div class=container id=page-container><div class=row><div class=col-sm-2></div><div class=col-sm-8 id=blog><br><h2 data-toc-skip class=blog-title>Deploying Google Cloud Functions with Terraform</h2><p class=datestamp-index><span class="fa fa-calendar-o"></span>&nbsp Posted on March 8, 2022
+<em>&nbsp &middot &nbsp&nbsp2 min read
+&nbsp &middot &nbsp
+    <span class=disqus-comment-count data-disqus-url=http://justinmklam.com/posts/2022/03/deploy-cloud-functions-terraform/#disqus_thread># comments</span>
+&nbsp &middot &nbsp
+    
+    <a class=blog-tag href=/tags/today-i-learned>#today-i-learned&nbsp</a>
+<a class=blog-tag href=/tags/programming>#programming&nbsp</a></em></p><a href><img class="img-responsive img-span-row blog-header-img" src></a><div class="blog-content page-content"><p>Cloud Functions are an easy, performant, and potentially inexpensive way to build serverless backends. I recently went down the route of setting up continuous deployments for them, and thought I&rsquo;d share my learnings with it.</p><p>The easiest way to deploy a Cloud Function is using the <code>gcloud</code> CLI like so:</p><div class=highlight><pre style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-fallback data-lang=fallback>gcloud functions deploy YOUR_FUNCTION_NAME \
+  --region=YOUR_REGION \
+  --runtime=YOUR_RUNTIME \
+  --source=YOUR_SOURCE_LOCATION \
+  --entry-point=YOUR_CODE_ENTRYPOINT \
+  TRIGGER_FLAGS
+</code></pre></div><p>Things get a bit more complicated if you want to use Terraform for deployments, which has its own set of advantages. The main trick to getting it to work is in line 43 below, where a checksum is appended to the archive&rsquo;s filename every time it&rsquo;s uploaded to the storage bucket.</p><p>The reason this is necessary is because the <code>google_cloudfunctions_function</code> resource won&rsquo;t be triggered for a redeployment on subsequent code changes - by having a checksum generated based on the source code, we ensure that Terraform knows to redeploy the Cloud Function whenever the underlying code changes.</p><div class=highlight><pre style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-hcl data-lang=hcl><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 1</span><span style=color:#00f>locals</span> {
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 2</span>  project_id = <span style=color:#a31515>&#34;my-project&#34;</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 3</span>  region     = <span style=color:#a31515>&#34;us-west1&#34;</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 4</span>  component  = <span style=color:#a31515>&#34;my-component&#34;</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 5</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 6</span>  cloud_function = {
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 7</span>    name        = <span style=color:#a31515>&#34;${local.component}-cf&#34;</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 8</span>    description = <span style=color:#a31515>&#34;Some description for this cloud function&#34;</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f"> 9</span>    runtime     = <span style=color:#a31515>&#34;python39&#34;</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">10</span>    entry_point = <span style=color:#a31515>&#34;my_entry_point&#34;</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">11</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">12</span>    source_dir       = <span style=color:#a31515>&#34;./src&#34;</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">13</span>    archive_filepath = <span style=color:#a31515>&#34;/path/to/file&#34;</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">14</span>  }
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">15</span>}<span style=color:green>
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">16</span><span style=color:green>
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">17</span><span style=color:green># Service account for the Cloud Function
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">18</span><span style=color:green></span><span style=color:#00f>resource</span> <span style=color:#a31515>&#34;google_service_account&#34; &#34;cloud_function_sa&#34;</span> {
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">19</span>  project      = <span style=color:#00f>local</span>.<span style=color:#00f>project_id</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">20</span>  account_id   = <span style=color:#00f>local</span>.<span style=color:#00f>component</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">21</span>  display_name = <span style=color:#00f>local</span>.<span style=color:#00f>component</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">22</span>}<span style=color:green>
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">23</span><span style=color:green>
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">24</span><span style=color:green># Bucket to store the source code archives
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">25</span><span style=color:green></span><span style=color:#00f>resource</span> <span style=color:#a31515>&#34;google_storage_bucket&#34; &#34;function_archive&#34;</span> {
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">26</span>    name     = <span style=color:#a31515>&#34;${local.component}-cloud-function-archive&#34;</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">27</span>    location = <span style=color:#00f>local</span>.<span style=color:#00f>region</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">28</span>    project  = <span style=color:#00f>local</span>.<span style=color:#00f>project_id</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">29</span>    uniform_bucket_level_access = <span style=color:#2b91af>true</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">30</span>}<span style=color:green>
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">31</span><span style=color:green>
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">32</span><span style=color:green># Archive the source code as a zip file
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">33</span><span style=color:green></span><span style=color:#00f>data</span> <span style=color:#a31515>&#34;archive_file&#34; &#34;function_archive&#34;</span> {
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">34</span>  type        = <span style=color:#a31515>&#34;zip&#34;</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">35</span>  source_dir  = <span style=color:#00f>local</span>.<span style=color:#00f>cloud_functions</span>.<span style=color:#00f>source_dir</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">36</span>  output_path = <span style=color:#a31515>&#34;${path.root}/${local.cloud_function.archive_filepath}&#34;</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">37</span>}<span style=color:green>
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">38</span><span style=color:green>
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">39</span><span style=color:green># Upload the source code archive to the bucket. This will happen each time
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">40</span><span style=color:green># the source code changes.
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">41</span><span style=color:green></span><span style=color:#00f>resource</span> <span style=color:#a31515>&#34;google_storage_bucket_object&#34; &#34;archive&#34;</span> {<span style=color:green>
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">42</span><span style=color:green>  # Append checksum so file changes trigger a cloud function deployment
+</span><span style=display:block;width:100%;background-color:#e5e5e5><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">43</span><span style=color:green></span>  name   = <span style=color:#00f>format</span>(
+</span><span style=display:block;width:100%;background-color:#e5e5e5><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">44</span>            <span style=color:#a31515>&#34;%s#%s&#34;</span>,
+</span><span style=display:block;width:100%;background-color:#e5e5e5><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">45</span>            <span style=color:#00f>local</span>.<span style=color:#00f>cloud_function</span>.<span style=color:#00f>archive_filepath</span>,
+</span><span style=display:block;width:100%;background-color:#e5e5e5><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">46</span>            <span style=color:#00f>data</span>.<span style=color:#00f>archive_file</span>.<span style=color:#00f>function_archive</span>.<span style=color:#00f>output_md5</span>
+</span><span style=display:block;width:100%;background-color:#e5e5e5><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">47</span>          )
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">48</span>  bucket = <span style=color:#00f>google_storage_bucket</span>.<span style=color:#00f>function_archive</span>.<span style=color:#00f>name</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">49</span>  source = <span style=color:#00f>data</span>.<span style=color:#00f>archive_file</span>.<span style=color:#00f>function_archive</span>.<span style=color:#00f>output_path</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">50</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">51</span>  content_disposition = <span style=color:#a31515>&#34;attachment&#34;</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">52</span>  content_encoding    = <span style=color:#a31515>&#34;gzip&#34;</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">53</span>  content_type        = <span style=color:#a31515>&#34;application/zip&#34;</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">54</span>}<span style=color:green>
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">55</span><span style=color:green>
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">56</span><span style=color:green># Cloud Function that uses the uploaded source code archive
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">57</span><span style=color:green></span><span style=color:#00f>resource</span> <span style=color:#a31515>&#34;google_cloudfunctions_function&#34; &#34;some_cloud_function&#34;</span> {
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">58</span>  name        = <span style=color:#00f>local</span>.<span style=color:#00f>cloud_function</span>.<span style=color:#00f>name</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">59</span>  description = <span style=color:#a31515>&#34;Some description for my cloud function&#34;</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">60</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">61</span>  project               = <span style=color:#00f>local</span>.<span style=color:#00f>project_id</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">62</span>  region                = <span style=color:#00f>local</span>.<span style=color:#00f>region</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">63</span>  source_archive_bucket = <span style=color:#00f>google_storage_bucket_object</span>.<span style=color:#00f>archive</span>.<span style=color:#00f>bucket</span>
+<span style=display:block;width:100%;background-color:#e5e5e5><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">64</span>  source_archive_object = <span style=color:#00f>google_storage_bucket_object</span>.<span style=color:#00f>archive</span>.<span style=color:#00f>name</span>
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">65</span>  service_account_email = <span style=color:#00f>google_service_account</span>.<span style=color:#00f>cloud_function_sa</span>.<span style=color:#00f>email</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">66</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">67</span>  runtime               = <span style=color:#00f>local</span>.<span style=color:#00f>cloud_function</span>.<span style=color:#00f>runtime</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">68</span>  entry_point           = <span style=color:#00f>local</span>.<span style=color:#00f>cloud_function</span>.<span style=color:#00f>entry_point</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">69</span>  trigger_http          = <span style=color:#2b91af>true</span>
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">70</span>}
+<span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">71</span>
+</code></pre></div></div><br><div class=text-left><a class=blog-nav-btn href=/><span style=font-size:.83em class="glyphicon glyphicon-menu-left"></span>Recent Posts</a></div><hr><div id=disqus_thread></div><script type=text/javascript>(function(){var a,b;if(window.location.hostname=="localhost")return;a=document.createElement('script'),a.type='text/javascript',a.async=!0,b='justinmklam',a.src='//'+b+'.disqus.com/embed.js',(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(a)})()</script><noscript>Please enable JavaScript to view the <a href=http://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=http://disqus.com/ class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></div><div class=col-sm-1><nav id=toc data-toggle=toc data-spy=affix></nav></div></div></div><script src=/js/jquery.js></script><script src=/js/bootstrap.min.js></script><script src=/js/bootstrap-toc.min.js></script><script src=/js/highlight.pack.js></script><script>hljs.initHighlightingOnLoad()</script><script type=text/javascript src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script src=https://use.fontawesome.com/ccb78cc113.js></script><script id=dsq-count-scr src=//justinmklam.disqus.com/count.js async></script><script>$(document).ready(function(){$('#hamburger-menu').click(function(){$(this).toggleClass('open')})})</script></body><footer><div class="col-lg-8 col-centered"><hr><p class=text-center>&copy; 2022 Justin MK Lam</p></div><div id=amzn-assoc-ad-8dae4bf9-b4e8-4c3d-8d99-cd2028a68840></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=8dae4bf9-b4e8-4c3d-8d99-cd2028a68840"></script></footer></html>
