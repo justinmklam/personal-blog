@@ -1,0 +1,137 @@
+<!doctype html><html lang=en><head><title>Using Google Cloud Pubsub for Batch Pipelines in Apache Beam</title><meta property="og:image" content="http://justinmklam.com"><meta property="og:type" content="blog"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-85178257-1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-85178257-1')</script><script>var shiftWindow=function(){scrollBy(0,-70)};window.addEventListener("hashchange",shiftWindow);function load(){window.location.hash&&shiftWindow()}</script><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><meta name=author content="Justin Lam"><link rel=stylesheet href=/css/bootstrap-modified.min.css><link rel=stylesheet href=/css/jmklam-portfolio.css><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Roboto+Slab|DM+Sans:500&display=swap"><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/atom-one-light.min.css><script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js></script><link rel=stylesheet href=/css/bootstrap-toc.css></head><body onload=load() data-spy=scroll data-target=#toc><!doctype html><html lang=en><nav class="navbar navbar-inverse navbar-fixed-top" role=navigation><div class=container><div class=navbar-header><button id=hamburger-menu type=button class=navbar-toggle data-toggle=collapse data-target=#bs-example-navbar-collapse-1>
+<span class=icon-bar></span><span class=icon-bar></span><span class=icon-bar></span></button>
+<a class=navbar-brand href=http://justinmklam.com>Justin Lam</a></div><div class="collapse navbar-collapse" id=bs-example-navbar-collapse-1><ul class="nav navbar-nav"><li><a href=/>Blog</a></li><li><a href=/archives/>Archives</a></li><li><a href=/about/>About</a></li><li><a href=/contact/>Contact</a></li></ul></div></div></nav></html><div class=container id=page-container><div class=row><div class=col-sm-2></div><div class=col-sm-8 id=blog><br><h2 data-toc-skip class=blog-title>Using Google Cloud Pubsub for Batch Pipelines in Apache Beam</h2><p class=datestamp-index><span class="fa fa-calendar-o"></span>&nbsp Posted on November 23, 2022
+<em>&nbsp &middot &nbsp&nbsp3 min read
+&nbsp &middot &nbsp
+    <span class=disqus-comment-count data-disqus-url=http://justinmklam.com/posts/2022/11/apache-beam-pubsub/#disqus_thread># comments</span>
+&nbsp &middot &nbsp
+    
+    <a class=blog-tag href=/tags/today-i-learned>#today-i-learned&nbsp</a>
+<a class=blog-tag href=/tags/programming>#programming&nbsp</a></em></p><a href><img class="img-responsive img-span-row blog-header-img" src></a><div class="blog-content page-content"><p>Google Cloud&rsquo;s <a href=https://cloud.google.com/pubsub/docs/overview>Pub/Sub</a> is a useful service that provides an asynchronous and scalable messaging platform that decouples services producing messages from those that receive and process those messages. When combined with <a href=https://github.com/apache/beam>Apache Beam</a> (and/or <a href=https://cloud.google.com/dataflow/docs/about-dataflow>Dataflow</a>, Google&rsquo;s managed version of it), you can quickly develop powerful batch and streaming pipelines for data-parallel processing.</p><p>However, I recently ran into one slight hiccup - although Apache Beam has a <a href=https://beam.apache.org/releases/pydoc/2.4.0/apache_beam.io.gcp.pubsub.html#module-apache_beam.io.gcp.pubsub>built-in IO connector for pubsub</a>, it only supported streaming pipelines (at the time of development). Fortunately, after a bit of searching, someone else on <a href=https://stackoverflow.com/a/67755184/7543727>Stack Overflow</a> figured out a workable solution:</p><blockquote><p>The trick is that if you call future.result() inside the process() method, you will block until that single message is successfully published, so instead collect a list of futures and then at the end of the bundle make sure they&rsquo;re all either published or definitively timed out. Some quick testing with one of our internal pipelines suggested that this approach can publish 1.6M messages in ~200s.</p></blockquote><div class=highlight><pre style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#00f>import</span> logging
+
+<span style=color:#00f>import</span> apache_beam <span style=color:#00f>as</span> beam
+<span style=color:#00f>from</span> apache_beam.io.gcp.pubsub <span style=color:#00f>import</span> PubsubMessage
+
+<span style=color:#00f>from</span> google.cloud.pubsub_v1 <span style=color:#00f>import</span> PublisherClient
+<span style=color:#00f>from</span> google.cloud.pubsub_v1.types <span style=color:#00f>import</span> (
+    BatchSettings,
+    LimitExceededBehavior,
+    PublishFlowControl,
+    PublisherOptions,
+)
+
+
+<span style=color:#00f>class</span> <span style=color:#2b91af>PublishClient</span>(PublisherClient):
+    <span style=color:#a31515>&#34;&#34;&#34;
+</span><span style=color:#a31515>    You have to override __reduce__ to make PublisherClient pickleable 😡 😤 🤬
+</span><span style=color:#a31515>
+</span><span style=color:#a31515>    Props to &#39;Ankur&#39; and &#39;Benjamin&#39; on SO for figuring this part out; god knows
+</span><span style=color:#a31515>    I would not have...
+</span><span style=color:#a31515>    &#34;&#34;&#34;</span>
+
+    <span style=color:#00f>def</span> __reduce__(self):
+        <span style=color:#00f>return</span> self.__class__, (self.batch_settings, self.publisher_options)
+
+
+<span style=color:#00f>class</span> <span style=color:#2b91af>BatchPubsubWriter</span>(beam.DoFn):
+    <span style=color:#a31515>&#34;&#34;&#34;
+</span><span style=color:#a31515>    beam.io.gcp.pubsub does not yet support batch operations, so
+</span><span style=color:#a31515>    we do this the hard way.  it&#39;s not as performant as the native
+</span><span style=color:#a31515>    pubsubio but it does the job.
+</span><span style=color:#a31515>    &#34;&#34;&#34;</span>
+
+    <span style=color:#00f>def</span> __init__(self, topic: str):
+        self.topic = topic
+        self.window = beam.window.GlobalWindow()
+        self.count = 0
+
+    <span style=color:#00f>def</span> setup(self):
+        batch_settings = BatchSettings(
+            max_bytes=1e6,  <span style=color:green># 1MB</span>
+            <span style=color:green># by default it is 10 ms, should be less than timeout used in future.result() to avoid timeout</span>
+            max_latency=1,
+        )
+
+        publisher_options = PublisherOptions(
+            enable_message_ordering=False,
+            <span style=color:green># better to be slow than to drop messages during a recovery...</span>
+            flow_control=PublishFlowControl(limit_exceeded_behavior=LimitExceededBehavior.BLOCK),
+        )
+
+        self.publisher = PublishClient(batch_settings, publisher_options)
+
+    <span style=color:#00f>def</span> start_bundle(self):
+        self.futures = []
+
+    <span style=color:#00f>def</span> process(self, element: PubsubMessage, window=beam.DoFn.WindowParam):
+        self.window = window
+        self.futures.append(
+            self.publisher.publish(
+                topic=self.topic,
+                data=element.data,
+                **element.attributes,
+            )
+        )
+
+    <span style=color:#00f>def</span> finish_bundle(self):
+        <span style=color:#a31515>&#34;&#34;&#34;Iterate over the list of async publish results and block
+</span><span style=color:#a31515>        until all of them have either succeeded or timed out.  Yield
+</span><span style=color:#a31515>        a WindowedValue of the success/fail counts.&#34;&#34;&#34;</span>
+
+        results = []
+        self.count = self.count + len(self.futures)
+        <span style=color:#00f>for</span> fut <span style=color:#00f>in</span> self.futures:
+            <span style=color:#00f>try</span>:
+                <span style=color:green># future.result() blocks until success or timeout;</span>
+                <span style=color:green># we&#39;ve set a max_latency of 60s upstairs in BatchSettings,</span>
+                <span style=color:green># so we should never spend much time waiting here.</span>
+                results.append(fut.result(timeout=60))
+            <span style=color:#00f>except</span> Exception <span style=color:#00f>as</span> ex:
+                results.append(ex)
+
+        res_count = {<span style=color:#a31515>&#34;success&#34;</span>: 0}
+        <span style=color:#00f>for</span> res <span style=color:#00f>in</span> results:
+            <span style=color:#00f>if</span> isinstance(res, str):
+                res_count[<span style=color:#a31515>&#34;success&#34;</span>] += 1
+            <span style=color:#00f>else</span>:
+                <span style=color:green># if it&#39;s not a string, it&#39;s an exception</span>
+                msg = str(res)
+                <span style=color:#00f>if</span> msg <span style=color:#00f>not</span> <span style=color:#00f>in</span> res_count:
+                    res_count[msg] = 1
+                <span style=color:#00f>else</span>:
+                    res_count[msg] += 1
+
+        logging.info(f<span style=color:#a31515>&#34;Pubsub publish results: {res_count}&#34;</span>)
+
+        <span style=color:#00f>yield</span> beam.utils.windowed_value.WindowedValue(
+            value=res_count,
+            timestamp=0,
+            windows=[self.window],
+        )
+
+    <span style=color:#00f>def</span> teardown(self):
+        logging.info(f<span style=color:#a31515>&#34;Published {self.count} messages&#34;</span>)
+</code></pre></div><p>Unfortunately, I eventually ran into an issue where the pubsub client was being overloaded when processing large amounts of data under specifying conditions. Explicitly batching the data mitigated the issue, instead of letting the (Dataflow) runner auto-magically determining the bundle sizes based on the input data.</p><div class=highlight><pre style=background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#00f>import</span> apache_beam <span style=color:#00f>as</span> beam
+
+<span style=color:green># This can probably be higher if needed, but works fine as it is</span>
+MIN_PUBSUB_BATCH_SIZE = 10000
+<span style=color:green># Have tested up to 400k, but instability seems to start occurring at these bundle sizes</span>
+MAX_PUBSUB_BATCH_SIZE = 200000
+
+...
+
+<span style=color:#00f>with</span> beam.Pipeline(options=pipeline_options) <span style=color:#00f>as</span> pipeline:
+    (
+        pipeline
+
+        ...
+
+        | <span style=color:#a31515>&#34;Batch Messages for Pubsub&#34;</span>
+        &gt;&gt; beam.transforms.util.BatchElements(
+            min_batch_size=MIN_PUBSUB_BATCH_SIZE,
+            max_batch_size=MAX_PUBSUB_BATCH_SIZE,
+        )
+        | <span style=color:#a31515>&#34;Publish Batches to PubSub&#34;</span>
+        &gt;&gt; beam.ParDo(BatchPubsubWriter(<span style=color:#a31515>&#34;projects/myproject/topics/my-topic&#34;</span>))
+    )
+</code></pre></div><p>Hopefully Apache Beam eventually adds official support for pubsub in batch pipelines, but until then, this seems to suffice for processing millions of rows of data per job.</p></div><br><div class=text-left><a class=blog-nav-btn href=/><span style=font-size:.83em class="glyphicon glyphicon-menu-left"></span>Recent Posts</a></div><hr><div id=disqus_thread></div><script type=text/javascript>(function(){var a,b;if(window.location.hostname=="localhost")return;a=document.createElement('script'),a.type='text/javascript',a.async=!0,b='justinmklam',a.src='//'+b+'.disqus.com/embed.js',(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(a)})()</script><noscript>Please enable JavaScript to view the <a href=http://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=http://disqus.com/ class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a></div><div class=col-sm-1><nav id=toc data-toggle=toc data-spy=affix></nav></div></div></div><script src=/js/jquery.js></script><script src=/js/bootstrap.min.js></script><script src=/js/bootstrap-toc.min.js></script><script src=/js/highlight.pack.js></script><script>hljs.initHighlightingOnLoad()</script><script type=text/javascript src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script src=https://use.fontawesome.com/ccb78cc113.js></script><script id=dsq-count-scr src=//justinmklam.disqus.com/count.js async></script><script>$(document).ready(function(){$('#hamburger-menu').click(function(){$(this).toggleClass('open')})})</script></body><footer><div class="col-lg-8 col-centered"><hr><p class=text-center>&copy; 2022 Justin MK Lam</p></div><div id=amzn-assoc-ad-8dae4bf9-b4e8-4c3d-8d99-cd2028a68840></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=8dae4bf9-b4e8-4c3d-8d99-cd2028a68840"></script></footer></html>
