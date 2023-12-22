@@ -84,9 +84,11 @@ In metallurgy (the study of physical and chemical behaviour of metallic elements
 
 Typically with any material, internal defects are evident (notably on a microscopic scale) and create internal stresses which weaken its overall strength. When creating metal parts, the initial metal-forming processes create these defects and as a result, the metal will crack under stress along these stress-forming juncture lines called "grains".
 
-To minimize the effect of these grains, annealing can be done to soften the material, relax the grain structures causing the internal stresses, and allow new, strain-free grains to form as replacements.
+To minimize the effect of these grains, annealing can be done to soften the material, relax the grain structures causing the internal stresses, and allow new, strain-free grains to form as replacements.[^2]
 
-{{<img caption="Diagram showing the effect of heat treatment on the material's microstructure. (Source: Rigid Ink Blog)" src="/imgs/blog-imgs/sous-vide-pla/annealing_prints.jpg" >}}
+[^2]: [How to Anneal Your 3D Prints for Strength](https://www.3dsourced.com/rigid-ink/how-to-anneal-your-3d-prints-for-strength/), 3DSourced.
+
+{{<img caption="Diagram showing the effect of heat treatment on the material's microstructure." link-text="3DSourced" link="https://www.3dsourced.com/rigid-ink/how-to-anneal-your-3d-prints-for-strength/" src="/imgs/blog-imgs/sous-vide-pla/annealing_prints.jpg" >}}
 
 So to recap our newfound knowledge in maximizing material performance in metals:
 
@@ -96,9 +98,7 @@ So to recap our newfound knowledge in maximizing material performance in metals:
 
 ### How does this relate to our 3D printed plastic?
 
-With 3D printed parts, these internal defects occur on a more macroscopic scale[^2]. Plastic is heated, pushed through the extruder nozzle, and quickly cooled to form a layer of a printed part. Since plastic is poor conductor of heat, it cools unevenly and result in a mishmash of internal defects and grains. When an entire part is fabricated with this method, there's really no surprise that parts usually break fairly easily! Each printed layer forms a juncture line of non-ideal bonding, and within each layer yields internal stresses due to rapid and uneven cooling.
-
-[^2]: [How to Anneal Your 3D Prints for Strength](https://rigid.ink/blogs/news/how-to-anneal-your-3d-prints-for-strength), Rigid Ink.
+With 3D printed parts, these internal defects occur on a more macroscopic scale. Plastic is heated, pushed through the extruder nozzle, and quickly cooled to form a layer of a printed part. Since plastic is poor conductor of heat, it cools unevenly and result in a mishmash of internal defects and grains. When an entire part is fabricated with this method, there's really no surprise that parts usually break fairly easily! Each printed layer forms a juncture line of non-ideal bonding, and within each layer yields internal stresses due to rapid and uneven cooling.
 
 ## A Review of Current Research
 
