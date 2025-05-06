@@ -3,14 +3,10 @@
 body {
 	font-family: 'Lato', sans-serif;
 	padding-top: 70px;
-	font-size: 16px;
+	font-size: 15px;
 	line-height: 1.42857143;
 	color: #333;
 	background-color: #ffffff
-}
-
-blockquote {
-	font-size: inherit;
 }
 
 .row h4 {
