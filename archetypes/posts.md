@@ -5,9 +5,9 @@ type =      "blog"
 date =      {{ .Date }}
 draft =     true
 
-title =     ""
+title =     "{{ replace .File.ContentBaseName `-` ` ` | title }}"
 tagline =   ""
-image =     "http://placehold.it/900x300"
+image =     ""
 tags =      [""]
 
 aliases =   []
