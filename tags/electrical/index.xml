@@ -1,16 +1,68 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>electrical on Justin MK Lam | Blog</title><link>http://justinmklam.com/tags/electrical/</link><description>Recent content in electrical on Justin MK Lam | Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 22 Feb 2021 16:36:18 +0000</lastBuildDate><atom:link href="http://justinmklam.com/tags/electrical/index.xml" rel="self" type="application/rss+xml"/><item><title>Precision Sourdough: A Smart Lid for Your Starter</title><link>http://justinmklam.com/posts/2021/02/levain-monitor/</link><pubDate>Mon, 22 Feb 2021 16:36:18 +0000</pubDate><guid>http://justinmklam.com/posts/2021/02/levain-monitor/</guid><description>A few years ago, I had the idea to track my sourdough starter using computer vision. It was neat to monitor it this way, but it was fairly impractical to do for each feeding since it required setting up a camera, downloading the images, and doing some manual image cropping before running it through my analysis script. The analysis was also only done after the fact, and what I really wanted was something that could tell me when the starter was ready to be used (or fed), or, if I missed the window of opportunity, how long ago it peaked.</description></item><item><title>Battery Power Protection and Regulation PCB</title><link>http://justinmklam.com/posts/2017/05/mistywest-mvs-pcb/</link><pubDate>Tue, 09 May 2017 11:30:56 -0700</pubDate><guid>http://justinmklam.com/posts/2017/05/mistywest-mvs-pcb/</guid><description>Objective:
-Design a custom PCB to protect and regulate a 14.8V LiPo battery for use with an autonomous RC car Features:
-12V undervoltage and 10A overcurrent protection 8.4V, 7.4V, and 5V regulated outputs Main Components:
-LT6109 High Side Current Sense Amplifier RT8288AZSP Synchronous Step-Down Converter Skills:
-Reading and understanding datasheets Schematic capture and PCB layout in Altium Designer Board bring-up Hardware debugging Achievement Unlocked:</description></item><item><title>Overhead Robotic Gantry for Tethered VR Headsets</title><link>http://justinmklam.com/posts/2017/04/vr-gantry/</link><pubDate>Tue, 04 Apr 2017 09:26:50 -0800</pubDate><guid>http://justinmklam.com/posts/2017/04/vr-gantry/</guid><description>Project Overview Objective: Create an autonomous gantry to follow the HTC Vive headset around, keeping its cable behind the user at all times.
-Motivation: An extravagant party prop for an evening at CES 2017, hosted by MistyWest.
-Features:
-CoreXY planar gantry design System built with 8020 aluminum extrusions and laser cut acrylic components Stepper motor control through Teensy 3.2 HTC Vive pose tracking through C++ Patent pending Skills:</description></item><item><title>ESP8266 Sous Vide Controller</title><link>http://justinmklam.com/posts/2017/05/sous-vide-controller/</link><pubDate>Sun, 05 Feb 2017 12:28:27 -0800</pubDate><guid>http://justinmklam.com/posts/2017/05/sous-vide-controller/</guid><description>Project Summary Objective: Create a small, modular controller to regulate the temperature of a water bath.
-Motivation: To get in on this cooking fad without dropping fat stacks of cash on an immersion circulator.
-Features:
-Crisp 0.96&amp;quot; OLED display Pushbutton rotary encoder provides simple user interaction Removable temperature plug through standard 3-pos audio connector Temperature controlled outlet to be used with any heating element (ie. rice cooker, slow cooker, etc.</description></item><item><title>Adjustable Portable Power Supply</title><link>http://justinmklam.com/posts/2016/05/power-supply/</link><pubDate>Wed, 25 May 2016 17:29:58 -0700</pubDate><guid>http://justinmklam.com/posts/2016/05/power-supply/</guid><description>Objective: Build a cheap, portable, variable DC power supply.
-Motivation: It was finally time to get my hands on a variable power supply for my electronics projects. Previous projects mainly involved Arduino, which was able to supply 5V and 3.3V with ease. However, the need for a supply with higher voltage, current, and flexibility eventually arose, resulting in the birth of this ghetto (but functional) power supply.
-Limitations:
-Only DC voltages available Max current is a function of input power and desired voltage (I=P/V) Current limiting feature is non-existent, so must be careful to not let the genie out of circuits Internals of the power supply.</description></item><item><title>MECH 423: Mechatronics Product Design</title><link>http://justinmklam.com/posts/2016/04/perfeggct/</link><pubDate>Fri, 22 Apr 2016 22:38:31 -0700</pubDate><guid>http://justinmklam.com/posts/2016/04/perfeggct/</guid><description>Background: When a hard boiled egg is spun on a table, it rotates freely since the inside is completely solid. With a raw egg, the liquid yolk sloshes around and resists rotation. By using math and physics, we can analyze the rotational oscillation of an egg and determine the yolk consistency.
-&amp;ldquo;If it&amp;rsquo;s worth doing, it&amp;rsquo;s worth overdoing.&amp;rdquo; - Jaime Hyneman
-Objective: Design and build a device to determine how cooked a boiled egg is using non-invasive techniques.</description></item><item><title>A Minty-Fresh Power Pack</title><link>http://justinmklam.com/posts/2009/altoids/</link><pubDate>Thu, 16 Apr 2009 22:52:25 -0700</pubDate><guid>http://justinmklam.com/posts/2009/altoids/</guid><description>Before the ubiquity of powerbanks, there was nothing on the market to provide longer battery life for portable electronics. Connecting a female USB connector to four rechargable AA batteries opened up a new world of extended iPod playback.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Electrical on Justin MK Lam | Blog</title><link>http://justinmklam.com/tags/electrical/</link><description>Recent content in Electrical on Justin MK Lam | Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 22 Feb 2021 16:36:18 +0000</lastBuildDate><atom:link href="http://justinmklam.com/tags/electrical/index.xml" rel="self" type="application/rss+xml"/><item><title>Precision Sourdough: A Smart Lid for Your Starter</title><link>http://justinmklam.com/posts/2021/02/levain-monitor/</link><pubDate>Mon, 22 Feb 2021 16:36:18 +0000</pubDate><guid>http://justinmklam.com/posts/2021/02/levain-monitor/</guid><description>&lt;p>A few years ago, I had the idea to &lt;a href="http://justinmklam.com/posts/2018/06/sourdough-starter-monitor/">track my sourdough starter using computer vision&lt;/a>. It was neat to monitor it this way, but it was fairly impractical to do for each feeding since it required setting up a camera, downloading the images, and doing some manual image cropping before running it through my analysis script. The analysis was also only done after the fact, and what I really wanted was something that could tell me when the starter was ready to be used (or fed), or, if I missed the window of opportunity, how long ago it peaked.&lt;/p></description></item><item><title>Battery Power Protection and Regulation PCB</title><link>http://justinmklam.com/posts/2017/05/mistywest-mvs-pcb/</link><pubDate>Tue, 09 May 2017 11:30:56 -0700</pubDate><guid>http://justinmklam.com/posts/2017/05/mistywest-mvs-pcb/</guid><description>&lt;p>&lt;strong>Objective:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Design a custom PCB to protect and regulate a 14.8V LiPo battery for use with an autonomous RC car&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Features:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>12V undervoltage and 10A overcurrent protection&lt;/li>
+&lt;li>8.4V, 7.4V, and 5V regulated outputs&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Main Components:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.digikey.ca/product-detail/en/linear-technology/LT6109AHMS-2-PBF/LT6109AHMS-2-PBF-ND/3844948">LT6109&lt;/a> High Side Current Sense Amplifier&lt;/li>
+&lt;li>&lt;a href="https://www.digikey.ca/product-detail/en/richtek-usa-inc/RT8288AZSP/1028-1148-1-ND/3078151">RT8288AZSP&lt;/a> Synchronous Step-Down Converter&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Skills:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Reading and understanding datasheets&lt;/li>
+&lt;li>Schematic capture and PCB layout in Altium Designer&lt;/li>
+&lt;li>Board bring-up&lt;/li>
+&lt;li>Hardware debugging&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Achievement Unlocked:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>A mechanical engineer doing electrical engineering&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Acknowledgements:&lt;/strong>&lt;/p></description></item><item><title>Overhead Robotic Gantry for Tethered VR Headsets</title><link>http://justinmklam.com/posts/2017/04/vr-gantry/</link><pubDate>Tue, 04 Apr 2017 09:26:50 -0800</pubDate><guid>http://justinmklam.com/posts/2017/04/vr-gantry/</guid><description>&lt;h1 id="project-overview">Project Overview&lt;/h1>
+&lt;p>&lt;strong>Objective:&lt;/strong> Create an autonomous gantry to follow the HTC Vive headset around, keeping its cable behind the user at all times.&lt;/p>
+&lt;p>&lt;strong>Motivation:&lt;/strong> An extravagant party prop for an evening at CES 2017, hosted by MistyWest.&lt;/p>
+&lt;p>&lt;strong>Features:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>CoreXY planar gantry design&lt;/li>
+&lt;li>System built with 8020 aluminum extrusions and laser cut acrylic components&lt;/li>
+&lt;li>Stepper motor control through Teensy 3.2&lt;/li>
+&lt;li>HTC Vive pose tracking through C++&lt;/li>
+&lt;li>Patent pending&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Skills:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Mechanical design with rapid prototyping methods&lt;/li>
+&lt;li>C++ software development&lt;/li>
+&lt;li>Arduino-based firmware development&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Sources:&lt;/strong>&lt;/p></description></item><item><title>ESP8266 Sous Vide Controller</title><link>http://justinmklam.com/posts/2017/05/sous-vide-controller/</link><pubDate>Sun, 05 Feb 2017 12:28:27 -0800</pubDate><guid>http://justinmklam.com/posts/2017/05/sous-vide-controller/</guid><description>&lt;h1 id="project-summary">Project Summary&lt;/h1>
+&lt;p>&lt;strong>Objective:&lt;/strong> Create a small, modular controller to regulate the temperature of a water bath.&lt;/p>
+&lt;p>&lt;strong>Motivation:&lt;/strong> To get in on this cooking fad without dropping fat stacks of cash on an immersion circulator.&lt;/p>
+&lt;p>&lt;strong>Features:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Crisp 0.96&amp;quot; OLED display&lt;/li>
+&lt;li>Pushbutton rotary encoder provides simple user interaction&lt;/li>
+&lt;li>Removable temperature plug through standard 3-pos audio connector&lt;/li>
+&lt;li>Temperature controlled outlet to be used with any heating element (ie. rice cooker, slow cooker, etc.)&lt;/li>
+&lt;li>Always on outlet for water circulator&lt;/li>
+&lt;li>Temperature logging over wifi&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Source:&lt;/strong> &lt;a href="https://github.com/justinmklam/sous-vide">Github&lt;/a>&lt;/p></description></item><item><title>Adjustable Portable Power Supply</title><link>http://justinmklam.com/posts/2016/05/power-supply/</link><pubDate>Wed, 25 May 2016 17:29:58 -0700</pubDate><guid>http://justinmklam.com/posts/2016/05/power-supply/</guid><description>&lt;p>&lt;strong>Objective:&lt;/strong> Build a cheap, portable, variable DC power supply.&lt;/p>
+&lt;p>&lt;strong>Motivation:&lt;/strong> It was finally time to get my hands on a variable power supply for my electronics projects. Previous projects mainly involved Arduino, which was able to supply 5V and 3.3V with ease. However, the need for a supply with higher voltage, current, and flexibility eventually arose, resulting in the birth of this ghetto (but functional) power supply.&lt;/p>
+&lt;p>&lt;strong>Limitations:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Only DC voltages available&lt;/li>
+&lt;li>Max current is a function of input power and desired voltage (I=P/V)&lt;/li>
+&lt;li>Current limiting feature is non-existent, so must be careful to not let the genie out of circuits&lt;/li>
+&lt;/ul>
+&lt;div class="row captioned-img">
+ &lt;a href=http://justinmklam.com/imgs/power_supply/IMG_20160525_143029.jpg>&lt;img class="img-responsive img-content" src=http://justinmklam.com/imgs/power_supply/IMG_20160525_143029.jpg />&lt;/a>
+ &lt;p class="caption">Internals of the power supply.&lt;/p></description></item><item><title>MECH 423: Mechatronics Product Design</title><link>http://justinmklam.com/posts/2016/04/perfeggct/</link><pubDate>Fri, 22 Apr 2016 22:38:31 -0700</pubDate><guid>http://justinmklam.com/posts/2016/04/perfeggct/</guid><description>&lt;p>&lt;strong>Background:&lt;/strong> When a hard boiled egg is spun on a table, it rotates freely since the inside is completely solid. With a raw egg, the liquid yolk sloshes around and resists rotation. By using math and physics, we can analyze the rotational oscillation of an egg and determine the yolk consistency.&lt;/p>
+&lt;blockquote>
+&lt;p>&amp;ldquo;If it&amp;rsquo;s worth doing, it&amp;rsquo;s worth overdoing.&amp;rdquo; - Jaime Hyneman&lt;/p>&lt;/blockquote>
+&lt;p>&lt;strong>Objective:&lt;/strong> Design and build a device to determine how cooked a boiled egg is using non-invasive techniques.&lt;/p></description></item><item><title>A Minty-Fresh Power Pack</title><link>http://justinmklam.com/posts/2009/altoids/</link><pubDate>Thu, 16 Apr 2009 22:52:25 -0700</pubDate><guid>http://justinmklam.com/posts/2009/altoids/</guid><description>Before the ubiquity of powerbanks, there was nothing on the market to provide longer battery life for portable electronics. Connecting a female USB connector to four rechargable AA batteries opened up a new world of extended iPod playback.</description></item></channel></rss>

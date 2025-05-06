@@ -1,6 +1,84 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>3d printing on Justin MK Lam | Blog</title><link>http://justinmklam.com/tags/3d-printing/</link><description>Recent content in 3d printing on Justin MK Lam | Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 22 Feb 2021 16:36:18 +0000</lastBuildDate><atom:link href="http://justinmklam.com/tags/3d-printing/index.xml" rel="self" type="application/rss+xml"/><item><title>Precision Sourdough: A Smart Lid for Your Starter</title><link>http://justinmklam.com/posts/2021/02/levain-monitor/</link><pubDate>Mon, 22 Feb 2021 16:36:18 +0000</pubDate><guid>http://justinmklam.com/posts/2021/02/levain-monitor/</guid><description>A few years ago, I had the idea to track my sourdough starter using computer vision. It was neat to monitor it this way, but it was fairly impractical to do for each feeding since it required setting up a camera, downloading the images, and doing some manual image cropping before running it through my analysis script. The analysis was also only done after the fact, and what I really wanted was something that could tell me when the starter was ready to be used (or fed), or, if I missed the window of opportunity, how long ago it peaked.</description></item><item><title>3D Printed Engagement Ring</title><link>http://justinmklam.com/posts/2019/diy-wedding-ring/</link><pubDate>Sun, 29 Dec 2019 11:50:22 -0700</pubDate><guid>http://justinmklam.com/posts/2019/diy-wedding-ring/</guid><description>Professional photos from Justine Russo Photography. For readers of my blog, you&amp;rsquo;ll notice that I haven&amp;rsquo;t had any new content in the past year. For good reason though, as I got married in June! Aside from planning the proposal and wedding, I also had the lofty goal of designing and making my wife&amp;rsquo;s engagement ring.
-With this post, I&amp;rsquo;d like to share my quest in designing and 3D printing the ring, along with some *minor* mistakes I made.</description></item><item><title>Annealing 3D Printed Plastics: Sous Vide Style</title><link>http://justinmklam.com/posts/2017/06/sous-vide-pla/</link><pubDate>Tue, 13 Jun 2017 15:56:53 -0700</pubDate><guid>http://justinmklam.com/posts/2017/06/sous-vide-pla/</guid><description>Featured on Hackaday and Fictiv Blog! Yep, you heard it right. With all the craze surrounding cooking sous vide these days, it was only a matter of time before someone decided to venture using it outside of the culinary world. Turns out that someone also had a 3D printer, and you won&amp;rsquo;t believe what happened next!
-Click-bait headlines aside, this post is quite lengthy and not everyone may have the patience to get through it all.</description></item><item><title>Hakko-Style Solder Fume Extractor</title><link>http://justinmklam.com/posts/2017/03/solder-fume-extractor/</link><pubDate>Sat, 25 Mar 2017 21:14:29 -0700</pubDate><guid>http://justinmklam.com/posts/2017/03/solder-fume-extractor/</guid><description>I&amp;rsquo;ve been slowly getting into the land of electrical pixies. So now, not only will I be inhaling sawdust, I can also fill them with leaded solder (because we all know that the performance of leaded solder takes higher priority than the safety of lead-free solder)! However, because I still value living, I figured I should get something to help get the solder fumes away from my lungs.
-At my current job with MistyWest, we have a nice, bench top solder fume extractor by Hakko.</description></item><item><title>Resources for 3D Printing with the MP Select Mini</title><link>http://justinmklam.com/posts/2017/03/3d-printing/</link><pubDate>Thu, 23 Mar 2017 19:38:27 -0700</pubDate><guid>http://justinmklam.com/posts/2017/03/3d-printing/</guid><description>What&amp;rsquo;s better than an inexpensive 3D printer? Free sources of information! The items below are a resource list for 3D printing with the Monoprice Select Mini, all thanks to a lively community of users around the interwebz.
-General Info Product Page: Monoprice Select Mini V1 Official User Manual: MP Select Mini User Manual Reddit: /r/MPSelectMiniOwners Facebook Group: MP Mini User Group Unofficial Wiki: MP Select Mini Wiki Community Knowledge Base: Google Doc Materials and Accessories Tested PLA Brands: Hatchbox AMZ3D Alternative Bed Surface: PEI Sheet, see RepRap Wiki for details Initial Set Up CAD Modeling Software (free for hobbyists and enthusiasts): Autodesk Fusion 360 Slicing Software: Ultimaker Cura Onboard WiFi for wireless printing: Connecting to WiFi through G-code Using Raspberry Pi and Octoprint for wireless printing: OctoPi Machine Settings General The machine settings below are based off the ones in the official user manual.</description></item><item><title>New Toy Tuesday: Monoprice Select Mini 3D Printer</title><link>http://justinmklam.com/posts/2017/03/mp-select-mini/</link><pubDate>Tue, 07 Mar 2017 15:56:53 -0700</pubDate><guid>http://justinmklam.com/posts/2017/03/mp-select-mini/</guid><description>I&amp;rsquo;ve been bit by the 3D printing bug.
-Like any tech-enthusiast, I have toyed with the idea of owning a 3D printer for quite some time. For my final year mechatronics design project, my partner and I designed an extravagent contraption to measure the yolk done-ness of a soft-boiled egg, which we called The PerfEGGct. We borrowed my roommate&amp;rsquo;s 3D printer to create the enclosure, and it turned out to be an indispensable tool during our prototyping process.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>3d-Printing on Justin MK Lam | Blog</title><link>http://justinmklam.com/tags/3d-printing/</link><description>Recent content in 3d-Printing on Justin MK Lam | Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 22 Feb 2021 16:36:18 +0000</lastBuildDate><atom:link href="http://justinmklam.com/tags/3d-printing/index.xml" rel="self" type="application/rss+xml"/><item><title>Precision Sourdough: A Smart Lid for Your Starter</title><link>http://justinmklam.com/posts/2021/02/levain-monitor/</link><pubDate>Mon, 22 Feb 2021 16:36:18 +0000</pubDate><guid>http://justinmklam.com/posts/2021/02/levain-monitor/</guid><description>&lt;p>A few years ago, I had the idea to &lt;a href="http://justinmklam.com/posts/2018/06/sourdough-starter-monitor/">track my sourdough starter using computer vision&lt;/a>. It was neat to monitor it this way, but it was fairly impractical to do for each feeding since it required setting up a camera, downloading the images, and doing some manual image cropping before running it through my analysis script. The analysis was also only done after the fact, and what I really wanted was something that could tell me when the starter was ready to be used (or fed), or, if I missed the window of opportunity, how long ago it peaked.&lt;/p></description></item><item><title>3D Printed Engagement Ring</title><link>http://justinmklam.com/posts/2019/diy-wedding-ring/</link><pubDate>Sun, 29 Dec 2019 11:50:22 -0700</pubDate><guid>http://justinmklam.com/posts/2019/diy-wedding-ring/</guid><description>&lt;p class="text-center" style="font-style:oblique">
+Professional photos from &lt;a href="http://justine-russo.com/" target="_blank">Justine Russo Photography.&lt;/a>
+&lt;/p>
+&lt;p>For readers of my blog, you&amp;rsquo;ll notice that I haven&amp;rsquo;t had any new content in the past year. For good reason though, as I got married in June! Aside from planning the proposal and wedding, I also had the lofty goal of designing and making my wife&amp;rsquo;s engagement ring.&lt;/p>
+&lt;p>With this post, I&amp;rsquo;d like to share my quest in designing and 3D printing the ring, along with some *&lt;em>minor&lt;/em>* mistakes I made.&lt;/p></description></item><item><title>Annealing 3D Printed Plastics: Sous Vide Style</title><link>http://justinmklam.com/posts/2017/06/sous-vide-pla/</link><pubDate>Tue, 13 Jun 2017 15:56:53 -0700</pubDate><guid>http://justinmklam.com/posts/2017/06/sous-vide-pla/</guid><description>&lt;p class="text-center" style="font-style:oblique">
+Featured on &lt;a href="http://hackaday.com/2017/06/17/annealing-plastic-for-stronger-prints/" target="_blank">Hackaday&lt;/a> and &lt;a href="https://www.fictiv.com/blog/posts/june-hardware-roundup" target="_blank">Fictiv Blog&lt;/a>!
+&lt;/p>
+&lt;p>Yep, you heard it right. With all the craze surrounding cooking sous vide these days, it was only a matter of time before someone decided to venture using it outside of the culinary world. Turns out that someone also had a 3D printer, and &lt;em>you won&amp;rsquo;t believe what happened next!&lt;/em>&lt;/p>
+&lt;p>Click-bait headlines aside, this post is quite lengthy and not everyone may have the patience to get through it all. Feel free to read the TL;DR below, or if you&amp;rsquo;re feeling inclined, follow along my adventure through the land of 3D printing, materials science, and modern cooking.&lt;/p></description></item><item><title>Hakko-Style Solder Fume Extractor</title><link>http://justinmklam.com/posts/2017/03/solder-fume-extractor/</link><pubDate>Sat, 25 Mar 2017 21:14:29 -0700</pubDate><guid>http://justinmklam.com/posts/2017/03/solder-fume-extractor/</guid><description>&lt;p>I&amp;rsquo;ve been slowly getting into the land of electrical pixies. So now, not only will I be inhaling sawdust, I can also fill them with leaded solder (because we all know that the performance of leaded solder takes higher priority than the safety of lead-free solder)! However, because I still value living, I figured I should get something to help get the solder fumes away from my lungs.&lt;/p>
+&lt;p>At my current job with MistyWest, we have a nice, bench top solder fume extractor by Hakko. But I&amp;rsquo;m cheap, so heck no was I going to &lt;a href="https://www.digikey.ca/product-detail/en/american-hakko-products-inc/FA400-04/1691-1039-ND/6228795">pay over $100&lt;/a> for blowing away fumes when I can blow them away myself! Despite it being a nifty design with multiple configurations (shown in the images below), I would resist the temptation to lighten my wallet on this. Oh wait, I just bought a thing that I can use to make other things&amp;hellip;&lt;/p></description></item><item><title>Resources for 3D Printing with the MP Select Mini</title><link>http://justinmklam.com/posts/2017/03/3d-printing/</link><pubDate>Thu, 23 Mar 2017 19:38:27 -0700</pubDate><guid>http://justinmklam.com/posts/2017/03/3d-printing/</guid><description>&lt;p>What&amp;rsquo;s better than an inexpensive 3D printer? Free sources of information! The items below are a resource list for 3D printing with the Monoprice Select Mini, all thanks to a lively community of users around the interwebz.&lt;/p>
+&lt;h1 id="general-info">General Info&lt;/h1>
+&lt;ul>
+&lt;li>Product Page:
+&lt;ul>
+&lt;li>&lt;a href="https://www.monoprice.com/product?p_id=15365">Monoprice Select Mini V1&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Official User Manual:
+&lt;ul>
+&lt;li>&lt;a href="http://justinmklam.com/imgs/blog-imgs/3d-printing-primer/15365_Manual_170509.pdf">MP Select Mini User Manual&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Reddit:
+&lt;ul>
+&lt;li>&lt;a href="https://www.reddit.com/r/MPSelectMiniOwners/">/r/MPSelectMiniOwners&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Facebook Group:
+&lt;ul>
+&lt;li>&lt;a href="https://www.facebook.com/groups/1717306548519045/">MP Mini User Group&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Unofficial Wiki:
+&lt;ul>
+&lt;li>&lt;a href="http://mpselectmini.com/start">MP Select Mini Wiki&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Community Knowledge Base:
+&lt;ul>
+&lt;li>&lt;a href="https://docs.google.com/document/d/1HJaLIcUD4oiIUYu6In7Bxf7WxAOiT3n48RvOe5pvSHk/edit">Google Doc&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="materials-and-accessories">Materials and Accessories&lt;/h1>
+&lt;ul>
+&lt;li>Tested PLA Brands:
+&lt;ul>
+&lt;li>&lt;a href="https://www.amazon.ca/s/ref=bl_dp_s_web_3006902011?ie=UTF8&amp;amp;node=3006902011&amp;amp;field-brandtextbin=HATCHBOX">Hatchbox&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.amazon.ca/s/ref=bl_dp_s_web_667823011?ie=UTF8&amp;amp;node=667823011&amp;amp;field-brandtextbin=AMZ3D">AMZ3D&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Alternative Bed Surface:
+&lt;ul>
+&lt;li>&lt;a href="https://www.amazon.ca/gp/product/B0013HKZTA/ref=oh_aui_detailpage_o00_s00?ie=UTF8&amp;amp;psc=1">PEI Sheet&lt;/a>, see RepRap Wiki for &lt;a href="http://reprap.org/wiki/PEI_build_surface">details&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="initial-set-up">Initial Set Up&lt;/h1>
+&lt;ul>
+&lt;li>CAD Modeling Software (free for hobbyists and enthusiasts):
+&lt;ul>
+&lt;li>&lt;a href="https://www.autodesk.com/products/fusion-360/overview">Autodesk Fusion 360&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Slicing Software:
+&lt;ul>
+&lt;li>&lt;a href="https://ultimaker.com/en/products/cura-software">Ultimaker Cura&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Onboard WiFi for wireless printing:
+&lt;ul>
+&lt;li>&lt;a href="http://mpselectmini.com/wifi/g-code_file">Connecting to WiFi through G-code&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Using Raspberry Pi and Octoprint for wireless printing:
+&lt;ul>
+&lt;li>&lt;a href="http://octoprint.org/download/">OctoPi&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="machine-settings">Machine Settings&lt;/h1>
+&lt;h2 id="general">General&lt;/h2>
+&lt;p>The machine settings below are based off the ones in the official user manual. However, the start and end gcode was taken from the community-driven Google Doc (see above) and slightly modified to include an initial nozzle wipe/primer and to remove the delay in turning the fans off.&lt;/p></description></item><item><title>New Toy Tuesday: Monoprice Select Mini 3D Printer</title><link>http://justinmklam.com/posts/2017/03/mp-select-mini/</link><pubDate>Tue, 07 Mar 2017 15:56:53 -0700</pubDate><guid>http://justinmklam.com/posts/2017/03/mp-select-mini/</guid><description>&lt;p>I&amp;rsquo;ve been bit by the 3D printing bug.&lt;/p>
+&lt;p>Like any tech-enthusiast, I have toyed with the idea of owning a 3D printer for quite some time. For my final year mechatronics design project, my partner and I designed an extravagent contraption to measure the yolk done-ness of a soft-boiled egg, which we called &lt;a href="http://justinmklam.com/projects/mecha/perfeggct/">The PerfEGGct&lt;/a>. We borrowed my roommate&amp;rsquo;s 3D printer to create the enclosure, and it turned out to be an indispensable tool during our prototyping process. At the time, reliable 3D printers were upwards of $500 which was just out of my threshold for nice-to-have gadgets.&lt;/p></description></item></channel></rss>
