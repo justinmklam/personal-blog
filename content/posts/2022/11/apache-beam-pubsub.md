@@ -15,6 +15,8 @@ aliases =   []
 
 Google Cloud's [Pub/Sub](https://cloud.google.com/pubsub/docs/overview) is a useful service that provides an asynchronous and scalable messaging platform that decouples services producing messages from those that receive and process those messages. When combined with [Apache Beam](https://github.com/apache/beam) (and/or [Dataflow](https://cloud.google.com/dataflow/docs/about-dataflow), Google's managed version of it), you can quickly develop powerful batch and streaming pipelines for data-parallel processing.
 
+<!--more-->
+
 However, I recently ran into one slight hiccup - although Apache Beam has a [built-in IO connector for pubsub](https://beam.apache.org/releases/pydoc/2.4.0/apache_beam.io.gcp.pubsub.html#module-apache_beam.io.gcp.pubsub), it only supported streaming pipelines (at the time of development). Fortunately, after a bit of searching, someone else on [Stack Overflow](https://stackoverflow.com/a/67755184/7543727) figured out a workable solution:
 
 > The trick is that if you call future.result() inside the process() method, you will block until that single message is successfully published, so instead collect a list of futures and then at the end of the bundle make sure they're all either published or definitively timed out. Some quick testing with one of our internal pipelines suggested that this approach can publish 1.6M messages in ~200s.
