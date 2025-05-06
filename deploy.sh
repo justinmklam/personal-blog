@@ -27,4 +27,4 @@ git commit -m "$msg"
 printf "\033[0;32mPushing updates to GitHub...\033[0m\n"
 
 # Push source and build repos.
-git push origin master
+git push origin main
