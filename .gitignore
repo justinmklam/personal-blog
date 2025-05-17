@@ -5,3 +5,4 @@ server/
 .DS_Store
 docs/
 *.lock
+.obsidian
