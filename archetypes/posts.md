@@ -7,7 +7,7 @@ draft =     true
 
 title =     "{{ replace .File.ContentBaseName `-` ` ` | title }}"
 tagline =   ""
-image =     ""
+image =     "/imgs/placeholder.jpeg"
 tags =      [""]
 
 aliases =   []
@@ -17,4 +17,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <!--more-->
 
-![Some caption](/imgs/2022/someimage.jpg)
+![Some caption](/static/imgs/placeholder.jpeg)
