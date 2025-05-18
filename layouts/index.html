@@ -11,12 +11,12 @@
     {{ partial "navbar.html" . }}
 
     <!-- Page Content -->
-    <div class="page-container">
+    <div>
 
         <br>
 
 		<!--Blog post summaries-->
-        <div class="blog-list">
+        <div>
 
             {{ range first 5 (where .Site.Pages "Type" "blog") }}
 

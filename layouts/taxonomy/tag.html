@@ -11,12 +11,13 @@
     {{ partial "navbar.html" . }}
 
     <!-- Page Content -->
-    <div class="container" id="page-container">
+    <div>
 
+        <br>
 		<!--Blog post summaries-->
-        <div class="col-lg-8 col-centered">
+        <div>
             <div class="row">
-                <h1 class="page-header blog-tag-header">#{{ .Title }}</h1>
+                <h1>#{{ lower .Title }}</h1>
             </div>
 
             {{ range .Data.Pages }}
@@ -26,9 +27,9 @@
             {{ end }}
 
             <!--Archives button-->
-            <div class="text-left">
-                <a class="blog-nav-btn" href="/">
-                    <span style="font-size:0.83em" class="glyphicon glyphicon-menu-left"></span>Recent Posts
+            <div class="nav-btn">
+                <a href="/">
+                    < Recent Posts
                 </a>
             </div>
 

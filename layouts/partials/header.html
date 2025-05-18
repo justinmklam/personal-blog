@@ -8,13 +8,6 @@
   gtag('config', 'UA-85178257-1');
 </script>
 
-<!-- Fix in page anchors to avoid being hidden behind navbar. 70px is based on css padding. -->
-<script>
-    var shiftWindow = function() { scrollBy(0, -70) };
-    window.addEventListener("hashchange", shiftWindow);
-    function load() { if (window.location.hash) shiftWindow(); }
-</script>
-
 <!-- Header snippet -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,7 +19,7 @@
     "{{ .Title }}"
 {{ end }}
 >
-<meta name="author" content="Justin Lam">
+<meta name="author" content="{{ .Site.Params.brand }}">
 
 <!-- <link rel="stylesheet" href="/css/bootstrap.min.css"> -->
 <!-- <link rel="stylesheet" href="/css/bootstrap-modified.min.css"> -->
