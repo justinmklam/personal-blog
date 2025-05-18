@@ -8,6 +8,7 @@ layoutdir = "layouts"
 publishdir = "docs"
 canonifyurls = false
 disableKinds = ["section", "taxonomy"]
+enableEmoji = true
 
 googleAnalytics = "UA-85178257-1"
 disqusShortname = "justinmklam"
