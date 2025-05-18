@@ -11,12 +11,10 @@
     {{ partial "navbar.html" . }}
 
     <!-- Page Content -->
-    <div class="container" id="page-container">
-
-        <br>
+    <div>
 
 		<!--Blog post summaries-->
-        <div class="col-sm-8 col-centered">
+        <div>
 
             {{ range first 5 (where .Site.Pages "Type" "blog") }}
 
@@ -25,10 +23,8 @@
             {{ end }}
 
             <!--Archives button-->
-            <div class="text-left">
-                <a class="blog-nav-btn" href="/archives">
-                    <span style="font-size:0.83em" class="glyphicon glyphicon-menu-left"></span>All Posts
-                </a>
+            <div class="nav-btn">
+                <a href="/archives">< All Posts</a>
             </div>
 
         </div>

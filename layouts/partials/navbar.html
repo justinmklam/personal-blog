@@ -1,33 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+<div class="navbar">
+    <span class="navbar-brand">
+        {{ .Site.Params.brand }}
+    </span>
 
-<!-- Navigation -->
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button id="hamburger-menu" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+    {{ range .Site.Menus.main }}
+        / <a href="{{.URL}}">{{ .Name }}</a>
+    {{ end }}
+</div>
 
-            <a class="navbar-brand" href="{{ .Site.BaseURL }}">Justin Lam</a>
-
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-
-				{{ range .Site.Menus.main }}
-					<li><a href="{{.URL}}">{{ .Name }}</a></li>
-				{{ end }}
-
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-</nav>
-
-</html>
+<br>

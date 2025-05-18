@@ -11,46 +11,25 @@
     {{ partial "navbar.html" . }}
 
     <!-- Page Content -->
-    <div class="container" id="page-container">
+    <div>
 
-        <div class="col-sm-8 col-centered">
-            <h1 class="page-header">{{ .Title }}</h1>
-            {{ .Content }}
+		<h1>{{ .Title }}</h1>
+		{{ .Content }}
 
-			<br><br>
-			<!-- Email and phone contact -->
-			<div class="row text-nowrap">
-				<div class="col-xs-1 col-xs-offset-3 text-center">
-					<i class="fa fa-envelope"></i> <br>
-					<!--<br><i class="fa fa-phone"></i> <br>-->
-				</div>
-				<div class="col-xs-3">
-					<a class="contact-links" href=mailto:{{ .Site.Params.email }} >{{ .Site.Params.email }}</a> <br>
-					<!--<br><a class="contact-links" href="tel:+1{{ .Site.Params.phone }}">{{ .Site.Params.phone }}</a> <br>-->
-				</div>
-			</div>
-			<!-- Divider -->
-			<div class="row">
-				<div class="col-xs-4 col-xs-offset-3"><hr width="100%"></div>
-			</div>
-			<!-- All other contact info -->
-			<div class="row text-nowrap">
-				<div class="col-xs-1 col-xs-offset-3 text-center">
-					<i class="fa fa-linkedin"></i> <br><br>
-					<i class="fa fa-github"></i> <br><br>
-				</div>
-				<div class="col-xs-3">
-					<a class="contact-links" href="http://{{ .Site.Params.linkedin }}" >{{ .Site.Params.linkedin }}</a> <br><br>
-					<a class="contact-links" href="http://{{ .Site.Params.github }}" >{{ .Site.Params.github }}</a> <br><br>
-				</div>
-			</div>
+		<div class="contact-links">
+			<a href=mailto:{{ .Site.Params.email }} ><i class="fa fa-envelope"></i></a>
 
-        </div>
+			<a href="http://{{ .Site.Params.linkedin }}" ><i class="fa fa-linkedin"></i></a>
 
-
+			<a href="http://{{ .Site.Params.github }}" ><i class="fa fa-github"></i></a>
+		</div>
+		<br>
 
     </div>
     <!-- /.container -->
+
+	<!--Font awesome icons-->
+	<script src="https://use.fontawesome.com/ccb78cc113.js"></script>
 
 	{{ partial "footer-js.html" . }}
 

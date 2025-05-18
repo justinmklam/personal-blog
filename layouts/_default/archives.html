@@ -17,17 +17,16 @@
     {{ partial "navbar.html" . }}
 
     <!-- Page Content -->
-    <div class="container" id="page-container">
-        <br>
+    <div>
 
 		<!--Blog post listing-->
-        <div class="col-sm-7 col-centered">
+        <!-- <div> -->
             <!--<div class="row">
                 <h1 class="page-header">All Blog Posts </h1>
             </div>            -->
 
             {{ range (where .Site.Pages "Type" "blog").GroupByDate "2006"}}
-            <div class="row">
+            <div>
                 <!--Print year-->
                 <h2 class="archive-date-category" id="{{.Key | urlize}}">{{.Key}}</h2>
                 <hr>
@@ -37,14 +36,14 @@
             {{ range sort .Pages "Date" "desc" }}
             <div class="row">
                 <!-- Post publish date -->
-                <div class="col-sm-2">
-                    <h2 class="archive-header archive-date" style="margin-bottom:10px">
+                <div class="archive-date">
+                    <h2>
                         {{ .Date | dateFormat "Jan 2"}}
                     </h2>
                 </div>
 
                 <!-- Post title and tagline-->
-                <div class="col-sm-9">
+                <div>
                     <h2 class="archive-header">
                         <a class="h2 archive-header" href="{{ .Permalink }}">{{ .Title }}</a>
                     </h2>
@@ -58,7 +57,7 @@
                         {{ end }}
                     </p>
 
-                    <h4 class="archive-blog-tagline">{{ .Params.tagline }}</h4>
+                    <p class="archive-blog-tagline">{{ .Params.tagline }}</p>
 
                     <!--Read more buttn-->
                     <!--<div class="text-right">
@@ -83,13 +82,13 @@
             </ul>-->
 
             <!--Return to recent posts button-->
-            <div class="text-right">
-                <a class="blog-nav-btn"  href="/">
-                    Recent Posts<span style="font-size:0.83em" class="glyphicon glyphicon-menu-right"></span>
+            <div class="nav-btn" style="text-align: right;">
+                <a href="/">
+                    Recent Posts >
                 </a>
             </div>
 
-        </div>
+        <!-- </div> -->
         <!-- /.blog posts -->
 
     </div>

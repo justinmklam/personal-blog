@@ -1,23 +1,25 @@
 <!-- Blog heading -->
 <h2 class="blog-title">
-    <a class="h2" role="button" href="{{ .Permalink }}">{{ .Title }}</a>
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
 </h2>
 <!--Timestamp-->
-<p class="datestamp-index">{{ partial "blog-metadata.html" . }}</p>
+<p class="blog-title-metadata">{{ partial "blog-metadata.html" . }}</p>
 
 <!-- Image -->
 {{ if not (eq .Params.image "") }}
 <div class="blog-preview-img">
-    <a href="{{ .Permalink }}" style="margin-bottom:16px; background-image:url({{ .Params.image }})"></a>
+    <a href="{{ .Permalink }}">
+        <img src="{{ .Params.image }}" class="preview-img" alt="{{ .Title }}">
+    </a>
 </div>
 {{ end }}
 
 <!--First 70 words of post-->
 <p>{{ .Summary }}</p>
 
-<!--Read more buttn-->
-<div class="text-right">
-    <a class="blog-nav-btn" href="{{ .Permalink }}">Read More<span style="font-size:0.83em" class="glyphicon glyphicon-menu-right"></span></a>
+<!--Read more button-->
+<div class="nav-btn readmore-btn">
+    <a href="{{ .Permalink }}">Read More ></a>
 </div>
 
 <hr>

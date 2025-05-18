@@ -8,6 +8,7 @@ layoutdir = "layouts"
 publishdir = "docs"
 canonifyurls = false
 disableKinds = ["section", "taxonomy"]
+enableEmoji = true
 
 googleAnalytics = "UA-85178257-1"
 disqusShortname = "justinmklam"
@@ -27,6 +28,7 @@ FootnoteReturnLinkContents = "↩"
 	type = "types"
 
 [params]
+	brand = "Justin Lam"
 	footer = "Justin MK Lam"
 	email = "contact@justinmklam.com"
 	phone = "604-219-1148"

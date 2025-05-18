@@ -1,29 +1,23 @@
-    <!-- jQuery -->
-    <script src="/js/jquery.js"></script>
+<!--Syntax highlighting with Highlight.js-->
+<script defer src="/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script defer src="/js/bootstrap.min.js"></script>
-    <!-- Table of contents sidebar -->
-    <script defer src="/js/bootstrap-toc.min.js"></script>
+<!--Mathjax support-->
+<script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
-    <!--Syntax highlighting with Highlight.js-->
-    <script defer src="/js/highlight.pack.js"></script>
-    <script >hljs.initHighlightingOnLoad();</script>
+<!-- Disqus comment counter -->
+<script defer id="dsq-count-scr" src="//justinmklam.disqus.com/count.js" async></script>
 
-    <!--Mathjax support-->
-    <script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-    <!--Font awesome icons-->
-    <script defer src="https://use.fontawesome.com/ccb78cc113.js"></script>
-
-    <!-- Disqus comment counter -->
-    <script defer id="dsq-count-scr" src="//justinmklam.disqus.com/count.js" async></script>
-
-    <!--Hamburger menu animation on click-->
-    <script defer>
-        $(document).ready(function(){
-            $('#hamburger-menu').click(function(){
-                $(this).toggleClass('open');
-            });
-        });
-    </script>
+<!--Hamburger menu animation on click-->
+<!--
+<script defer>
+  document.addEventListener('DOMContentLoaded', function() {
+    var menu = document.getElementById('hamburger-menu');
+    if (menu) {
+      menu.addEventListener('click', function() {
+        menu.classList.toggle('open');
+      });
+    }
+  });
+</script>
+-->

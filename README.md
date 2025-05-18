@@ -3,7 +3,7 @@ Increasing my online presence by showcasing projects and posts that I've worked 
 
 # Dependencies
 + Static website built with [Hugo](https://gohugo.io/)
-+ Custom theme built with [Bootstrap 3.3.7](https://getbootstrap.com/docs/3.3/)
++ Custom theme built with [Neat CSS](https://github.com/codazoda/neatcss)
 
 *Note: Install hugo via `snap` instead of `apt` to get the latest version.*
 
@@ -26,7 +26,7 @@ To create a new blog post:
 make new title="my-blog-post"
 ```
 
-__Note:__ Upload images, files, etc. in the `static/` directory.
+__Note:__ Using page bundles, post images can be uploaded in the same directory as the post. All other assets (header images, files, etc.) should be uploaded to the `static/` directory.
 
 ## Publishing
 

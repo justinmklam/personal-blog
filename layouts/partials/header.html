@@ -8,13 +8,6 @@
   gtag('config', 'UA-85178257-1');
 </script>
 
-<!-- Fix in page anchors to avoid being hidden behind navbar. 70px is based on css padding. -->
-<script>
-    var shiftWindow = function() { scrollBy(0, -70) };
-    window.addEventListener("hashchange", shiftWindow);
-    function load() { if (window.location.hash) shiftWindow(); }
-</script>
-
 <!-- Header snippet -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,12 +19,13 @@
     "{{ .Title }}"
 {{ end }}
 >
-<meta name="author" content="Justin Lam">
+<meta name="author" content="{{ .Site.Params.brand }}">
 
 <!-- <link rel="stylesheet" href="/css/bootstrap.min.css"> -->
-<link rel="stylesheet" href="/css/bootstrap-modified.min.css">
-<link rel="stylesheet" href="/css/jmklam-portfolio.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i|Roboto+Slab|DM+Sans:500&display=swap">
+<!-- <link rel="stylesheet" href="/css/bootstrap-modified.min.css"> -->
+<!-- <link rel="stylesheet" href="/css/jmklam-portfolio.css"> -->
+<link rel="stylesheet" href="/css/neat.css">
+<link rel="stylesheet" href="/css/custom.css">
 <!-- <link rel="stylesheet" href="/css/highlight-js.css"> -->
 
 <!-- Code highlighting from https://highlightjs.org/ -->
@@ -39,4 +33,8 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
 
 <!-- add after bootstrap.min.css -->
-<link rel="stylesheet" href="/css/bootstrap-toc.css">
+<!-- <link rel="stylesheet" href="/css/bootstrap-toc.css"> -->
+
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet"> -->
