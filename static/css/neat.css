@@ -8,8 +8,8 @@
     --lesslight: #efefef;
     --dark: #404040;
     --moredark: #000;
-    /* --link: royalblue; */
     --link: rgba(101, 125, 225, .6) ;
+    --onhover: linear-gradient(180deg, transparent 86%, var(--link) 0);
     border-top: 5px solid var(--dark);
     line-height: 1.5em;
     font-family: system-ui, sans-serif;
@@ -57,9 +57,18 @@ body {
     margin-right: auto;
 }
 
+hr {
+    opacity: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 a {
-    outline: none;
-    color: var(--dark);
+    color: var(--gray);
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: var(--link);
+    text-decoration-thickness: 2px;
 }
 
 a:hover {

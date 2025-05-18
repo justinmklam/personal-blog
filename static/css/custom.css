@@ -1,14 +1,6 @@
 :root {
     --gray: #646464;
     --lightgray: #fafafa;
-    --onhover: linear-gradient(180deg, transparent 86%, var(--link) 0);
-}
-
-p a {
-    color: var(--gray);
-    font-weight: bold;
-    background-image: var(--onhover);
-    text-decoration: none;
 }
 
 blockquote {
@@ -40,10 +32,6 @@ pre code {
     -webkit-text-size-adjust: 100%;
 }
 
-hr {
-    opacity: 30%;
-}
-
 .navbar {
     margin-top: 20px;
 }
@@ -53,15 +41,23 @@ hr {
     font-weight: bold;
 }
 
-.navbar-brand a {
+.navbar a {
     text-decoration: none;
+    color: var(--dark);
+    font-weight: normal;
 }
 
-.blog-title a:hover {
-    background-image: var(--onhover);
+.blog-title a:hover,
+.archive-header a:hover,
+.navbar a:hover
+{
+    text-decoration: underline;
+    text-decoration-color: var(--link);
+    text-decoration-thickness: 2px;
 }
 
 .blog-title a {
+    color: inherit;
     text-decoration: none;
 }
 
@@ -140,8 +136,9 @@ hr {
 }
 
 .archive-header {
+    color: var(--dark);
+    text-decoration: none;
 	font-size: 1.1em;
-    /* text-decoration: none; */
 	margin-top: 5px;
 	margin-bottom: 7px
 }
@@ -177,6 +174,7 @@ hr {
 }
 
 .contact-links i {
+    color: var(--dark);
     font-size: 1.5em;
     margin: 10px;
 }
