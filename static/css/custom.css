@@ -73,7 +73,7 @@ pre code {
 }
 
 .blog-preview-img {
-    height: 300px;
+    max-height: 300px;
     width: 100%;
     overflow: hidden;
     display: flex;
