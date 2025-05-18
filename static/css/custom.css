@@ -109,6 +109,10 @@ pre code {
     margin: 0 auto;
 }
 
+.img-content-header {
+    max-height: none;
+}
+
 .readmore-btn {
     text-align: right;
 }
