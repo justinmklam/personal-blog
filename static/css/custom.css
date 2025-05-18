@@ -44,6 +44,19 @@ hr {
     opacity: 30%;
 }
 
+.navbar {
+    margin-top: 20px;
+}
+
+.navbar-brand {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.navbar-brand a {
+    text-decoration: none;
+}
+
 .blog-title a:hover {
     background-image: var(--onhover);
 }

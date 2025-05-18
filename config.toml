@@ -28,6 +28,7 @@ FootnoteReturnLinkContents = "↩"
 	type = "types"
 
 [params]
+	brand = "Justin Lam"
 	footer = "Justin MK Lam"
 	email = "contact@justinmklam.com"
 	phone = "604-219-1148"

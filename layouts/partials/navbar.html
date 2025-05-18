@@ -1,7 +1,7 @@
-<div>
-    <h3>
-        <a class="navbar-brand" href="{{ .Site.BaseURL }}">Justin Lam</a>
-    </h3>
+<div class="navbar">
+    <span class="navbar-brand">
+        {{ .Site.Params.brand }}
+    </span>
 
     {{ range .Site.Menus.main }}
         / <a href="{{.URL}}">{{ .Name }}</a>
