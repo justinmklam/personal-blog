@@ -1,0 +1,169 @@
+:root {
+    --gray: #646464;
+    --lightgray: #fafafa;
+    --onhover: linear-gradient(180deg, transparent 86%, var(--link) 0);
+}
+
+p a {
+    color: var(--gray);
+    font-weight: bold;
+    background-image: var(--onhover);
+    text-decoration: none;
+}
+
+blockquote {
+    font-style: italic;
+    color: var(--gray);
+}
+
+pre {
+    background-color: var(--lightgray) !important;
+    font-size: 90%;
+    line-height: 1.4em;
+}
+
+code {
+    font-size: 90%;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+}
+
+pre code {
+    background-color: var(--lightgray);
+    color: inherit;
+
+    /* Fixes iOS font sizing anomaly */
+    text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+hr {
+    opacity: 30%;
+}
+
+.blog-title a:hover {
+    background-image: var(--onhover);
+}
+
+.blog-title a {
+    text-decoration: none;
+}
+
+.blog-title {
+    margin-bottom: 0.5rem;
+}
+
+.blog-title-metadata {
+    color: var(--gray);
+    font-size: 0.85rem;
+    margin-top: 0px;
+    /* margin-bottom: 1rem; */
+}
+
+.blog-preview-img {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    max-height: none;
+}
+
+.captioned-img {
+    display: block;
+}
+
+.caption {
+    margin-top: 8px;
+    text-align: center;
+    font-style: italic;;
+    font-size: 0.9em;
+    color: var(--gray);
+}
+
+.img-content {
+    max-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.readmore-btn {
+    text-align: right;
+}
+
+.nav-btn a {
+    color: var(--gray);
+    font-weight: bold;
+    background-image: var(--onhover);
+    text-decoration: none;
+}
+
+.footer-container {
+    text-align: center;
+    color: var(--gray);
+}
+
+.about-header {
+    text-align: center;
+}
+
+#img-headshot {
+	border-radius: 50%;
+	width: 300px;
+	box-shadow: 0 4px 10px #333;
+}
+
+.archive-header {
+	font-size: 1.1em;
+    /* text-decoration: none; */
+	margin-top: 5px;
+	margin-bottom: 7px
+}
+
+.archive-date {
+    width: 120px;
+    padding-right: 15px;
+}
+
+.archive-date h2 {
+    font-size: 0.95em;
+    margin-top: 5px;
+}
+
+.archive-blog-metadata {
+    margin-top: 0px;
+	margin-bottom:0px;
+	font-size:90%;
+	color: var(--gray);
+}
+
+.archive-blog-tagline {
+    font-style: oblique;
+	margin-top: 5px;
+}
+
+.contact-icon {
+    padding-right: 10px;
+}
+
+.contact-links {
+    text-align: center;
+}
+
+.contact-links i {
+    font-size: 1.5em;
+    margin: 10px;
+}

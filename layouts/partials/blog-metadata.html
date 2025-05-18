@@ -1,9 +1,9 @@
 <span class="fa fa-calendar-o"></span>&nbsp Posted on {{ .Date.Format "January 2, 2006" }}
-<em>&nbsp &middot &nbsp&nbsp{{.ReadingTime}} min read
-    &nbsp &middot &nbsp
+<em>&nbsp;&middot;&nbsp;{{.ReadingTime}} min read
+    &nbsp;&middot;&nbsp;
     <span class="disqus-comment-count" data-disqus-url="{{ .Permalink }}#disqus_thread"># comments</span>
-    &nbsp &middot &nbsp
+    &nbsp;&middot;&nbsp;
     {{ range .Params.tags }}
-    <a class="blog-tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}&nbsp</a>
+    <a class="blog-tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}&nbsp;</a>
     {{ end }}
 </em>

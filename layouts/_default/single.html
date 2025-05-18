@@ -9,57 +9,36 @@
 
 </head>
 
-<body onload="load()" data-spy="scroll" data-target="#toc">
-
+<body onload="load()">
     {{ partial "navbar.html" . }}
 
     <!-- Page Container -->
-    <div class="container" id="page-container">
-
+    <div class="single-container" id="page-container">
         <!--Page content-->
-        <div class="row">
-                <div class="col-sm-2">
-                    </div>
-            <div class="col-sm-8" id="blog">
-                <br>
-                <h2 data-toc-skip class="blog-title">{{ .Title }}</h2>
-                <!--Timestamp-->
-                <p class="datestamp-index">{{ partial "blog-metadata.html" . }}</p>
-
-                <!--Image if available-->
-                <a href={{.Params.image}}>
-                    <img class="img-responsive img-span-row blog-header-img" src="{{ .Params.image }}">
-                </a>
-
-                <div class="blog-content page-content">
-                    {{ .Content }}
-                </div>
-
-                <!--<hr>-->
-                <br>
-                <div class="text-left">
-                    <a class="blog-nav-btn" href="/">
-                        <span style="font-size:0.83em" class="glyphicon glyphicon-menu-left"></span>Recent Posts
-                    </a>
-                </div>
-                <hr>
-                {{ partial "disqus.html" . }}
-
-
+        <div class="single-content">
+            <br>
+            <h2 data-toc-skip class="blog-title">{{ .Title }}</h2>
+            <!--Timestamp-->
+            <p class="blog-title-metadata">{{ partial "blog-metadata.html" . }}</p>
+            <!--Image if available-->
+            {{ if not (eq .Params.image "") }}
+            <a href={{.Params.image}}>
+                <img class="blog-header-img" src="{{ .Params.image }}">
+            </a>
+            {{ end }}
+            <div class="blog-content page-content">
+                {{ .Content }}
             </div>
 
-            <div class="col-sm-1">
-                    <nav id="toc" data-toggle="toc" data-spy="affix"></nav>
-                </div>
-            <!--/.content-->
-
-
+            <div class="nav-btn">
+                <a href="/">< Recent Posts</a>
+            </div>
+            <hr>
+            {{ partial "disqus.html" . }}
         </div>
     </div>
-    <!-- /.container -->
-
+    <!-- /.single-container -->
     {{ partial "footer-js.html" . }}
-
 </body>
 
 {{ partial "footer.html" . }}

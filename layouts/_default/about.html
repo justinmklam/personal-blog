@@ -11,23 +11,19 @@
     {{ partial "navbar.html" . }}
 
 	<br><br>
-	<div id="page-container" class="col-lg-12 text-center">
+	<div class="about-header">
 		<img id="img-headshot" src={{ .Params.headshot }}>
 		<br><br>
 	</div>
 
     <!-- Page Content -->
-    <div id="page-container" class="container">
-        <div class="col-sm-8 col-centered page-content">
-            <h1 class="page-header">{{ .Title }}
-            </h1>
-
+    <div class="about-container">
+        <div class="about-content">
+            <h1 class="page-header">{{ .Title }}</h1>
             {{ .Content }}
-
         </div>
-
     </div>
-    <!-- /.container -->
+    <!-- /.about-container -->
 
 	{{ partial "footer-js.html" . }}
 
