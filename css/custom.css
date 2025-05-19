@@ -3,13 +3,6 @@
     --codebackground: #fafafa;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-    /* Corresponds to atom light dark */
-        --codebackground: #282c34;
-    }
-}
-
 blockquote {
     font-style: italic;
     color: var(--lessdark);
@@ -19,6 +12,7 @@ pre {
     background-color: var(--codebackground) !important;
     font-size: 90%;
     line-height: 1.4em;
+    border-radius: 5px;
 }
 
 code {
