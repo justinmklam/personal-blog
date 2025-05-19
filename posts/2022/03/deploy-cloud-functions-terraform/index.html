@@ -9,12 +9,12 @@
 <span class=disqus-comment-count data-disqus-url=https://justinmklam.com/posts/2022/03/deploy-cloud-functions-terraform/#disqus_thread># comments</span>
 &nbsp;&#183;&nbsp;
 <a class=blog-tag href=/tags/today-i-learned>#today-i-learned&nbsp;</a>
-<a class=blog-tag href=/tags/programming>#programming&nbsp;</a></em></p><div class="blog-content page-content"><p>Cloud Functions are an easy, performant, and potentially inexpensive way to build serverless backends. I recently went down the route of setting up continuous deployments for them, and thought I&rsquo;d share my learnings with it.</p><p>The easiest way to deploy a Cloud Function is using the <code>gcloud</code> CLI like so:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>gcloud functions deploy YOUR_FUNCTION_NAME \
-</span></span><span class=line><span class=cl>  --region=YOUR_REGION \
-</span></span><span class=line><span class=cl>  --runtime=YOUR_RUNTIME \
-</span></span><span class=line><span class=cl>  --source=YOUR_SOURCE_LOCATION \
-</span></span><span class=line><span class=cl>  --entry-point=YOUR_CODE_ENTRYPOINT \
-</span></span><span class=line><span class=cl>  TRIGGER_FLAGS
+<a class=blog-tag href=/tags/programming>#programming&nbsp;</a></em></p><div class="blog-content page-content"><p>Cloud Functions are an easy, performant, and potentially inexpensive way to build serverless backends. I recently went down the route of setting up continuous deployments for them, and thought I&rsquo;d share my learnings with it.</p><p>The easiest way to deploy a Cloud Function is using the <code>gcloud</code> CLI like so:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-sh data-lang=sh><span class=line><span class=cl>gcloud functions deploy &lt;YOUR_FUNCTION_NAME&gt; <span class=se>\
+</span></span></span><span class=line><span class=cl><span class=se></span>  --region<span class=o>=</span>&lt;YOUR_REGION&gt; <span class=se>\
+</span></span></span><span class=line><span class=cl><span class=se></span>  --runtime<span class=o>=</span>&lt;YOUR_RUNTIME&gt; <span class=se>\
+</span></span></span><span class=line><span class=cl><span class=se></span>  --source<span class=o>=</span>&lt;YOUR_SOURCE_LOCATION&gt; <span class=se>\
+</span></span></span><span class=line><span class=cl><span class=se></span>  --entry-point<span class=o>=</span>&lt;YOUR_CODE_ENTRYPOINT&gt; <span class=se>\
+</span></span></span><span class=line><span class=cl><span class=se></span>  &lt;TRIGGER_FLAGS&gt;
 </span></span></code></pre></div><p>Things get a bit more complicated if you want to use Terraform for deployments, which has its own set of advantages. The main trick to getting it to work is in line 43 below, where a checksum is appended to the archive&rsquo;s filename every time it&rsquo;s uploaded to the storage bucket.</p><p>The reason this is necessary is because the <code>google_cloudfunctions_function</code> resource won&rsquo;t be triggered for a redeployment on subsequent code changes - by having a checksum generated based on the source code, we ensure that Terraform knows to redeploy the Cloud Function whenever the underlying code changes.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-hcl data-lang=hcl><span class=line><span class=ln> 1</span><span class=cl><span class=k>locals</span> {
 </span></span><span class=line><span class=ln> 2</span><span class=cl><span class=n>  project_id</span> <span class=o>=</span> <span class=s2>&#34;my-project&#34;</span>
 </span></span><span class=line><span class=ln> 3</span><span class=cl><span class=n>  region</span>     <span class=o>=</span> <span class=s2>&#34;us-west1&#34;</span>
