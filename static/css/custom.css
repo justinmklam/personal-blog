@@ -129,6 +129,16 @@ pre code {
     color: var(--gray);
 }
 
+.footer-container a {
+    font-weight: normal;
+}
+
+.footnotes {
+    font-size: 0.9em;
+    font-style: italic;
+    color: var(--gray);
+}
+
 .about-header {
     text-align: center;
 }
