@@ -33,19 +33,21 @@ The only thing that was keeping me away was the lack of out-of-the-box debugging
 Open the Debug panel (```CTRL + SHIFT + D```) and select "Add Configuration > GDB" through the top left dropdown arrow. Create a GDB configuration in launch.json and add the following. Note: Change the paths in "target", "gdbpath", and "autorun" to the correct locations.
 
 
-	{
-		"name": "GDB",
-		"type": "gdb",
-		"request": "launch",
-		"cwd": "${workspaceRoot}",
-		"target": "${workspaceRoot}/.pioenvs/nucleo_f303k8/firmware.elf",
-		"gdbpath" : "C:/STM32Toolchain/gcc-arm/5.4 2016q3/bin/arm-none-eabi-gdb.exe",
-		"autorun": [
+ ```json
+{
+	"name": "GDB",
+	"type": "gdb",
+	"request": "launch",
+	"cwd": "${workspaceRoot}",
+	"target": "${workspaceRoot}/.pioenvs/nucleo_f303k8/firmware.elf",
+	"gdbpath" : "C:/STM32Toolchain/gcc-arm/5.4 2016q3/bin/arm-none-eabi-gdb.exe",
+	"autorun": [
 			"target remote localhost:3333",
 			"symbol-file ./.pioenvs/nucleo_f303k8/firmware.elf",
 			"monitor reset"
-			]
-	}
+		]
+}
+```
 
 
 {{<img caption="GDB debugger entry added after successfuly entry in launch.json file." src="/imgs/blog-imgs/vscode-debugger/gdb.png" >}}
@@ -54,7 +56,9 @@ Open the Debug panel (```CTRL + SHIFT + D```) and select "Add Configuration > GD
 
 Before entering debug mode (```F5```), you need to launch the OpenOCD server. Open Terminal in VS Code (```CTRL + ` ```) and type:
 
-	openocd -f board\st_nucleo_f3.cfg
+```
+openocd -f board\st_nucleo_f3.cfg
+```
 
 {{<img caption="Adding breakpoints and stepping through code on an STM32 through VS Code!" src="/imgs/blog-imgs/vscode-debugger/debugger.png" >}}
 
