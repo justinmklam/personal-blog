@@ -12,9 +12,18 @@
     --onhover: linear-gradient(180deg, transparent 86%, var(--link) 0);
     border-top: 5px solid var(--dark);
     line-height: 1.5em;
-    font-family: system-ui, sans-serif;
+    font-family: "Fira Sans", system-ui, sans-serif;
     font-size: 16px;
     color: var(--dark);
+}
+
+code {
+    font-size: 95%;
+    font-family: "Fira Mono", monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto Slab", "Fira Sans", system-ui, sans-serif;
 }
 
 h1 {
