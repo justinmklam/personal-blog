@@ -29,7 +29,6 @@ code {
 }
 
 pre code {
-    background-color: var(--codebackground);
     color: inherit;
 
     /* Fixes iOS font sizing anomaly */
