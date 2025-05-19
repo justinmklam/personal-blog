@@ -200,3 +200,8 @@ pre code {
     font-size: 1.5em;
     margin: 10px;
 }
+
+/* Fix disqus iframe not rendering dark mode properly */
+iframe[src*="https://disqus.com"] {
+  color-scheme: light;
+}
