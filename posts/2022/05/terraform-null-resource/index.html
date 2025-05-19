@@ -1,5 +1,5 @@
 <!doctype html><html lang=en><head><title>Tips and Tricks with Terraform's null_resource</title>
-<meta property="og:image" content="https://justinmklam.com/"><meta property="og:type" content="blog"><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><meta name=author content="Justin Lam"><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Fira+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&display=swap" rel=stylesheet><link rel=stylesheet href=/css/neat.css><link rel=stylesheet href=/css/custom.css><script async src="https://www.googletagmanager.com/gtag/js?id=UA-85178257-1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","UA-85178257-1")</script></head><body><div class=navbar><span class=navbar-brand>Justin Lam
+<meta property="og:image" content="https://justinmklam.com/"><meta property="og:type" content="blog"><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><meta name=author content="Justin Lam"><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Fira+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@100..900&display=swap" rel=stylesheet><link rel=stylesheet href=/css/neat.css><link rel=stylesheet href=/css/custom.css><link rel=stylesheet href=/css/syntax.css media=screen><link rel=stylesheet href=/css/syntax-dark.css media="screen and (prefers-color-scheme: dark)"><script async src="https://www.googletagmanager.com/gtag/js?id=UA-85178257-1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","UA-85178257-1")</script></head><body><div class=navbar><span class=navbar-brand>Justin Lam
 </span>/ <a href=/>Blog</a>
 / <a href=/archives/>Archives</a>
 / <a href=/about/>About</a>
@@ -9,62 +9,62 @@
 <span class=disqus-comment-count data-disqus-url=https://justinmklam.com/posts/2022/05/terraform-null-resource/#disqus_thread># comments</span>
 &nbsp;&#183;&nbsp;
 <a class=blog-tag href=/tags/today-i-learned>#today-i-learned&nbsp;</a>
-<a class=blog-tag href=/tags/programming>#programming&nbsp;</a></em></p><div class="blog-content page-content"><p>Terraform&rsquo;s <code>null_resource</code> resource can be useful when there aren&rsquo;t any existing modules to satisfy your needs (with some caveats). <a href=https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource>Hashicorp&rsquo;s documentation</a> for it is a bit lacking, but fortunately there&rsquo;s more information about the provisioners in their other docs <a href=https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax>here</a>. After using these resources in a handful of places across our infrastructure deployments, I&rsquo;ve developed a small collection of tips I picked up over the past few months that I thought I&rsquo;d share.</p><p>Use <code>timestamp()</code> as a trigger when you need the resource to run on every deployment:</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-hcl data-lang=hcl><span style=display:flex><span><span style=color:#00a8c8>resource</span> <span style=color:#d88200>&#34;null_resource&#34; &#34;always-run&#34;</span> {
-</span></span><span style=display:flex><span><span style=color:#111>  triggers</span> <span style=color:#f92672>=</span> {
-</span></span><span style=display:flex><span><span style=color:#111>    timestamp</span> <span style=color:#f92672>=</span> <span style=color:#00a8c8>timestamp</span><span style=color:#111>()</span>
-</span></span><span style=display:flex><span>  }
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>  <span style=color:#00a8c8>provisioner</span> <span style=color:#d88200>&#34;local-exec&#34;</span> {
-</span></span><span style=display:flex><span><span style=color:#111>    command</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;echo foobar&#34;</span>
-</span></span><span style=display:flex><span>  }
-</span></span><span style=display:flex><span>}
-</span></span></code></pre></div><p>You can also supply multiple <code>provisioner</code> blocks, where one of them can be configured with <code>when = destroy</code> to specify the action to take when the resource will be destroyed. Dynamic values need to be accessed using <code>self.triggers.*</code> since Terraform isn&rsquo;t able to resolve the values at runtime during resource destruction.</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-hcl data-lang=hcl><span style=display:flex><span><span style=color:#00a8c8>resource</span> <span style=color:#d88200>&#34;null_resource&#34; &#34;include-cleanup&#34;</span> {
-</span></span><span style=display:flex><span><span style=color:#111>  triggers</span> <span style=color:#f92672>=</span> {
-</span></span><span style=display:flex><span><span style=color:#111>    name</span>   <span style=color:#f92672>=</span> <span style=color:#00a8c8>var</span><span style=color:#111>.</span><span style=color:#00a8c8>name</span>
-</span></span><span style=display:flex><span><span style=color:#111>    region</span> <span style=color:#f92672>=</span> <span style=color:#00a8c8>var</span><span style=color:#111>.</span><span style=color:#00a8c8>region</span>
-</span></span><span style=display:flex><span>  }<span style=color:#75715e>
-</span></span></span><span style=display:flex><span><span style=color:#75715e>
-</span></span></span><span style=display:flex><span><span style=color:#75715e>  # Executes on resource creation {
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#111>    command</span> <span style=color:#f92672>=</span> <span style=color:#00a8c8>join</span><span style=color:#111>(</span><span style=color:#d88200>&#34; &#34;</span><span style=color:#111>,</span> <span style=color:#111>[</span>
-</span></span><span style=display:flex><span>      <span style=color:#d88200>&#34;echo&#34;</span><span style=color:#111>,</span>
-</span></span><span style=display:flex><span>      <span style=color:#d88200>&#34;create:&#34;</span><span style=color:#111>,</span>
-</span></span><span style=display:flex><span>      <span style=color:#d88200>&#34;${self.triggers.name}&#34;</span><span style=color:#111>,</span>
-</span></span><span style=display:flex><span>      <span style=color:#d88200>&#34;${self.triggers.region}&#34;</span><span style=color:#111>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#111>])</span>
-</span></span><span style=display:flex><span>  }<span style=color:#75715e>
-</span></span></span><span style=display:flex><span><span style=color:#75715e>
-</span></span></span><span style=display:flex><span><span style=color:#75715e>  # Executes on resource destruction
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>  <span style=color:#00a8c8>provisioner</span> <span style=color:#d88200>&#34;local-exec&#34;</span> {
-</span></span><span style=display:flex><span><span style=color:#111>    when</span> <span style=color:#f92672>=</span> <span style=color:#00a8c8>destroy</span>
-</span></span><span style=display:flex><span><span style=color:#111>    command</span> <span style=color:#f92672>=</span> <span style=color:#00a8c8>join</span><span style=color:#111>(</span><span style=color:#d88200>&#34; &#34;</span><span style=color:#111>,</span> <span style=color:#111>[</span>
-</span></span><span style=display:flex><span>      <span style=color:#d88200>&#34;echo&#34;</span><span style=color:#111>,</span>
-</span></span><span style=display:flex><span>      <span style=color:#d88200>&#34;destroy:&#34;</span><span style=color:#111>,</span>
-</span></span><span style=display:flex><span>      <span style=color:#d88200>&#34;${self.triggers.name}&#34;</span><span style=color:#111>,</span>
-</span></span><span style=display:flex><span>      <span style=color:#d88200>&#34;${self.triggers.region}&#34;</span><span style=color:#111>,</span>
-</span></span><span style=display:flex><span>    <span style=color:#111>])</span>
-</span></span><span style=display:flex><span>  }
-</span></span><span style=display:flex><span>}
-</span></span></code></pre></div><p>The <code>local-exec</code> provisioner also allows for an <a href=https://www.terraform.io/docs/language/resources/provisioners/local-exec.html#environment>environment</a> field, which can be used to easily pass values into commands or scripts:</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-hcl data-lang=hcl><span style=display:flex><span><span style=color:#00a8c8>resource</span> <span style=color:#d88200>&#34;null_resource&#34; &#34;environment-values&#34;</span> {
-</span></span><span style=display:flex><span>  <span style=color:#00a8c8>provisioner</span> <span style=color:#d88200>&#34;local-exec&#34;</span> {
-</span></span><span style=display:flex><span><span style=color:#111>    command</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;./some-script.sh&#34;</span>
-</span></span><span style=display:flex><span><span style=color:#111>    environment</span> <span style=color:#f92672>=</span> {
-</span></span><span style=display:flex><span><span style=color:#111>      ENVIRONMENT</span> <span style=color:#f92672>=</span> <span style=color:#d88200>${</span><span style=color:#960050;background-color:#1e0010>var</span><span style=color:#111>.</span><span style=color:#960050;background-color:#1e0010>environment</span><span style=color:#d88200>}</span>
-</span></span><span style=display:flex><span><span style=color:#111>      JSON_DATA</span> <span style=color:#f92672>=</span> <span style=color:#00a8c8>jsonencode</span><span style=color:#111>(</span>{
-</span></span><span style=display:flex><span><span style=color:#111>          &#34;var1&#34;</span> <span style=color:#f92672>=</span> <span style=color:#d88200>${</span><span style=color:#960050;background-color:#1e0010>var</span><span style=color:#111>.</span><span style=color:#960050;background-color:#1e0010>name</span><span style=color:#d88200>}</span><span style=color:#111>,</span>
-</span></span><span style=display:flex><span><span style=color:#111>          &#34;var2&#34;</span> <span style=color:#f92672>=</span> <span style=color:#d88200>${</span><span style=color:#960050;background-color:#1e0010>var</span><span style=color:#111>.</span><span style=color:#960050;background-color:#1e0010>region</span><span style=color:#d88200>}</span><span style=color:#111>,</span>
-</span></span><span style=display:flex><span>          <span style=color:#111>...</span>
-</span></span><span style=display:flex><span>      }<span style=color:#111>)</span>
-</span></span><span style=display:flex><span>    }
-</span></span><span style=display:flex><span>  }
-</span></span><span style=display:flex><span>}
-</span></span></code></pre></div><p>Aside from provisioning resources, <code>null_resource</code> can also be used for debugging values (which I stumbled upon from <a href=https://nexxai.dev/how-to-debug-terraform-variable-content-using-this-custom-module/>nexxai.dev</a>):</p><div class=highlight><pre tabindex=0 style=color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-hcl data-lang=hcl><span style=display:flex><span><span style=color:#00a8c8>resource</span> <span style=color:#d88200>&#34;null_resource&#34; &#34;terraform-debug&#34;</span> {
-</span></span><span style=display:flex><span>  <span style=color:#00a8c8>provisioner</span> <span style=color:#d88200>&#34;local-exec&#34;</span> {
-</span></span><span style=display:flex><span><span style=color:#111>    command</span> <span style=color:#f92672>=</span> <span style=color:#d88200>&#34;echo $VARIABLE1 &gt;&gt; debug.txt; echo $VARIABLE2 &gt;&gt; debug.txt&#34;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#111>    environment</span> <span style=color:#f92672>=</span> {
-</span></span><span style=display:flex><span><span style=color:#111>      VARIABLE1</span> <span style=color:#f92672>=</span> <span style=color:#00a8c8>jsonencode</span><span style=color:#111>(</span><span style=color:#00a8c8>var</span><span style=color:#111>.</span><span style=color:#00a8c8>your_variable_name</span><span style=color:#111>)</span>
-</span></span><span style=display:flex><span><span style=color:#111>      VARIABLE2</span> <span style=color:#f92672>=</span> <span style=color:#00a8c8>jsonencode</span><span style=color:#111>(</span><span style=color:#00a8c8>local</span><span style=color:#111>.</span><span style=color:#00a8c8>piece_of_data</span><span style=color:#111>)</span>
-</span></span><span style=display:flex><span>    }
-</span></span><span style=display:flex><span>  }
-</span></span><span style=display:flex><span>}
+<a class=blog-tag href=/tags/programming>#programming&nbsp;</a></em></p><div class="blog-content page-content"><p>Terraform&rsquo;s <code>null_resource</code> resource can be useful when there aren&rsquo;t any existing modules to satisfy your needs (with some caveats). <a href=https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource>Hashicorp&rsquo;s documentation</a> for it is a bit lacking, but fortunately there&rsquo;s more information about the provisioners in their other docs <a href=https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax>here</a>. After using these resources in a handful of places across our infrastructure deployments, I&rsquo;ve developed a small collection of tips I picked up over the past few months that I thought I&rsquo;d share.</p><p>Use <code>timestamp()</code> as a trigger when you need the resource to run on every deployment:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-hcl data-lang=hcl><span class=line><span class=cl><span class=k>resource</span> <span class=s2>&#34;null_resource&#34; &#34;always-run&#34;</span> {
+</span></span><span class=line><span class=cl><span class=n>  triggers</span> <span class=o>=</span> {
+</span></span><span class=line><span class=cl><span class=n>    timestamp</span> <span class=o>=</span> <span class=k>timestamp</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>  }
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=k>provisioner</span> <span class=s2>&#34;local-exec&#34;</span> {
+</span></span><span class=line><span class=cl><span class=n>    command</span> <span class=o>=</span> <span class=s2>&#34;echo foobar&#34;</span>
+</span></span><span class=line><span class=cl>  }
+</span></span><span class=line><span class=cl>}
+</span></span></code></pre></div><p>You can also supply multiple <code>provisioner</code> blocks, where one of them can be configured with <code>when = destroy</code> to specify the action to take when the resource will be destroyed. Dynamic values need to be accessed using <code>self.triggers.*</code> since Terraform isn&rsquo;t able to resolve the values at runtime during resource destruction.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-hcl data-lang=hcl><span class=line><span class=cl><span class=k>resource</span> <span class=s2>&#34;null_resource&#34; &#34;include-cleanup&#34;</span> {
+</span></span><span class=line><span class=cl><span class=n>  triggers</span> <span class=o>=</span> {
+</span></span><span class=line><span class=cl><span class=n>    name</span>   <span class=o>=</span> <span class=k>var</span><span class=p>.</span><span class=k>name</span>
+</span></span><span class=line><span class=cl><span class=n>    region</span> <span class=o>=</span> <span class=k>var</span><span class=p>.</span><span class=k>region</span>
+</span></span><span class=line><span class=cl>  }<span class=c1>
+</span></span></span><span class=line><span class=cl><span class=c1>
+</span></span></span><span class=line><span class=cl><span class=c1>  # Executes on resource creation {
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=n>    command</span> <span class=o>=</span> <span class=k>join</span><span class=p>(</span><span class=s2>&#34; &#34;</span><span class=p>,</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;echo&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;create:&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;${self.triggers.name}&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;${self.triggers.region}&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=p>])</span>
+</span></span><span class=line><span class=cl>  }<span class=c1>
+</span></span></span><span class=line><span class=cl><span class=c1>
+</span></span></span><span class=line><span class=cl><span class=c1>  # Executes on resource destruction
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=k>provisioner</span> <span class=s2>&#34;local-exec&#34;</span> {
+</span></span><span class=line><span class=cl><span class=n>    when</span> <span class=o>=</span> <span class=k>destroy</span>
+</span></span><span class=line><span class=cl><span class=n>    command</span> <span class=o>=</span> <span class=k>join</span><span class=p>(</span><span class=s2>&#34; &#34;</span><span class=p>,</span> <span class=p>[</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;echo&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;destroy:&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;${self.triggers.name}&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>      <span class=s2>&#34;${self.triggers.region}&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>    <span class=p>])</span>
+</span></span><span class=line><span class=cl>  }
+</span></span><span class=line><span class=cl>}
+</span></span></code></pre></div><p>The <code>local-exec</code> provisioner also allows for an <a href=https://www.terraform.io/docs/language/resources/provisioners/local-exec.html#environment>environment</a> field, which can be used to easily pass values into commands or scripts:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-hcl data-lang=hcl><span class=line><span class=cl><span class=k>resource</span> <span class=s2>&#34;null_resource&#34; &#34;environment-values&#34;</span> {
+</span></span><span class=line><span class=cl>  <span class=k>provisioner</span> <span class=s2>&#34;local-exec&#34;</span> {
+</span></span><span class=line><span class=cl><span class=n>    command</span> <span class=o>=</span> <span class=s2>&#34;./some-script.sh&#34;</span>
+</span></span><span class=line><span class=cl><span class=n>    environment</span> <span class=o>=</span> {
+</span></span><span class=line><span class=cl><span class=n>      ENVIRONMENT</span> <span class=o>=</span> <span class=k>var</span><span class=p>.</span><span class=k>environment</span>
+</span></span><span class=line><span class=cl><span class=n>      JSON_DATA</span> <span class=o>=</span> <span class=k>jsonencode</span><span class=p>(</span>{
+</span></span><span class=line><span class=cl><span class=n>          &#34;var1&#34;</span> <span class=o>=</span> <span class=k>var</span><span class=p>.</span><span class=k>name</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=n>          &#34;var2&#34;</span> <span class=o>=</span> <span class=k>var</span><span class=p>.</span><span class=k>region</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>          <span class=p>...</span>
+</span></span><span class=line><span class=cl>      }<span class=p>)</span>
+</span></span><span class=line><span class=cl>    }
+</span></span><span class=line><span class=cl>  }
+</span></span><span class=line><span class=cl>}
+</span></span></code></pre></div><p>Aside from provisioning resources, <code>null_resource</code> can also be used for debugging values (which I stumbled upon from <a href=https://nexxai.dev/how-to-debug-terraform-variable-content-using-this-custom-module/>nexxai.dev</a>):</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-hcl data-lang=hcl><span class=line><span class=cl><span class=k>resource</span> <span class=s2>&#34;null_resource&#34; &#34;terraform-debug&#34;</span> {
+</span></span><span class=line><span class=cl>  <span class=k>provisioner</span> <span class=s2>&#34;local-exec&#34;</span> {
+</span></span><span class=line><span class=cl><span class=n>    command</span> <span class=o>=</span> <span class=s2>&#34;echo $VARIABLE1 &gt;&gt; debug.txt; echo $VARIABLE2 &gt;&gt; debug.txt&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=n>    environment</span> <span class=o>=</span> {
+</span></span><span class=line><span class=cl><span class=n>      VARIABLE1</span> <span class=o>=</span> <span class=k>jsonencode</span><span class=p>(</span><span class=k>var</span><span class=p>.</span><span class=k>your_variable_name</span><span class=p>)</span>
+</span></span><span class=line><span class=cl><span class=n>      VARIABLE2</span> <span class=o>=</span> <span class=k>jsonencode</span><span class=p>(</span><span class=k>local</span><span class=p>.</span><span class=k>piece_of_data</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>    }
+</span></span><span class=line><span class=cl>  }
+</span></span><span class=line><span class=cl>}
 </span></span></code></pre></div></div><div class=nav-btn><a href=/>&lt; Recent Posts</a></div><hr><div id=disqus_thread></div><script type=text/javascript>(function(){if(window.location.hostname=="localhost")return;var t,e=document.createElement("script");e.type="text/javascript",e.async=!0,t="justinmklam",e.src="//"+t+".disqus.com/embed.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)})()</script><div style=text-align:center><noscript>Please enable JavaScript to view the <a href=http://disqus.com/?ref_noscript>Comments powered by Disqus.</a></noscript><a href=http://disqus.com/ class=dsq-brlink>Comments powered by <span class=logo-disqus>Disqus</span></a></div></div></div><script defer type=text/javascript src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script defer id=dsq-count-scr src=//justinmklam.disqus.com/count.js async></script></body><footer><div class=footer-container><hr><p>&copy; 2025 Justin Lam | <a href=/colophon>Colophon</a></p></div></footer></html>
