@@ -13,12 +13,9 @@
     <!-- Page Content -->
     <div>
 
-        <br>
 		<!--Blog post summaries-->
         <div>
-            <div class="row">
-                <h1>#{{ lower .Title }}</h1>
-            </div>
+            <h1>Tag: <code>#{{ lower .Title }}</code></h1>
 
             {{ range .Data.Pages }}
 
