@@ -1,15 +1,22 @@
 :root {
-    --gray: #646464;
-    --lightgray: #fafafa;
+    /* Corresponds to atom light theme */
+    --codebackground: #fafafa;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+    /* Corresponds to atom light dark */
+        --codebackground: #282c34;
+    }
 }
 
 blockquote {
     font-style: italic;
-    color: var(--gray);
+    color: var(--lessdark);
 }
 
 pre {
-    background-color: var(--lightgray) !important;
+    background-color: var(--codebackground) !important;
     font-size: 90%;
     line-height: 1.4em;
 }
@@ -21,7 +28,7 @@ code {
 }
 
 pre code {
-    background-color: var(--lightgray);
+    background-color: var(--codebackground);
     color: inherit;
 
     /* Fixes iOS font sizing anomaly */
@@ -33,6 +40,7 @@ pre code {
 
 .navbar {
     margin-top: 20px;
+    margin-bottom:30px;
 }
 
 .navbar-brand {
@@ -65,7 +73,7 @@ pre code {
 }
 
 .blog-title-metadata {
-    color: var(--gray);
+    color: var(--lessdark);
     font-size: 0.85rem;
     margin-top: 0px;
     /* margin-bottom: 1rem; */
@@ -97,7 +105,7 @@ pre code {
     text-align: center;
     font-style: italic;;
     font-size: 0.9em;
-    color: var(--gray);
+    color: var(--lessdark);
 }
 
 .img-content {
@@ -118,7 +126,7 @@ pre code {
 }
 
 .nav-btn a {
-    color: var(--gray);
+    color: var(--lessdark);
     font-weight: bold;
     background-image: var(--onhover);
     text-decoration: none;
@@ -126,7 +134,7 @@ pre code {
 
 .footer-container {
     text-align: center;
-    color: var(--gray);
+    color: var(--lessdark);
 }
 
 .footer-container a {
@@ -136,7 +144,7 @@ pre code {
 .footnotes {
     font-size: 0.9em;
     font-style: italic;
-    color: var(--gray);
+    color: var(--lessdark);
 }
 
 .about-header {
@@ -171,7 +179,7 @@ pre code {
     margin-top: 0px;
 	margin-bottom:0px;
 	font-size:90%;
-	color: var(--gray);
+	color: var(--lessdark);
 }
 
 .archive-blog-tagline {

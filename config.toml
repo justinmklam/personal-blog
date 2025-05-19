@@ -10,9 +10,6 @@ canonifyurls = false
 disableKinds = ["section", "taxonomy"]
 enableEmoji = true
 
-googleAnalytics = "UA-85178257-1"
-disqusShortname = "justinmklam"
-
 FootnoteReturnLinkContents = "↩"
 
 [menu]
@@ -36,6 +33,12 @@ FootnoteReturnLinkContents = "↩"
 	facebook = "facebook.com/jmklam"
 	linkedin = "linkedin.com/in/justinmklam"
 	instagram = "instagram.com/justinmklam"
+
+	googleAnalytics = "UA-85178257-1"
+	disqusShortname = "justinmklam"
+
+	[params.highlightJs]
+		version = "11.11.1"
 
 [markup]
     [markup.goldmark.renderer]
