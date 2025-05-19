@@ -38,4 +38,5 @@ FootnoteReturnLinkContents = "↩"
     	unsafe = true
 	[markup.highlight]
 		guessSyntax = true
-		style="vs"
+		# See https://github.com/alecthomas/chroma/tree/master/styles
+		style="monokailight"
