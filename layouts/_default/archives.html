@@ -48,14 +48,14 @@
                         <a class="h2 archive-header" href="{{ .Permalink }}">{{ .Title }}</a>
                     </h2>
 
-                    <p class="archive-blog-metadata">{{.ReadingTime}} min read
-                        &nbsp &middot &nbsp
+                    <em><p class="blog-title-metadata">{{.ReadingTime}} min read
+                        &middot
                         <span class="disqus-comment-count" data-disqus-url="{{ .Permalink }}#disqus_thread"># comments</span>
-                        &nbsp &middot &nbsp
+                        &middot
                         {{ range .Params.tags }}
                         <a class="blog-tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}&nbsp</a>
                         {{ end }}
-                    </p>
+                    </p></em>
 
                     <p class="archive-blog-tagline">{{ .Params.tagline }}</p>
 
