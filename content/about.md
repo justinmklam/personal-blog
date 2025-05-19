@@ -2,8 +2,7 @@
 date = "2016-09-24T12:58:43-07:00"
 draft = false
 title = "About"
-headshot = "/imgs/headshot.jpg"
-layout = "about"
+layout = "basic"
 hidedate = true
 aliases = ["/pages/about"]
 
@@ -13,20 +12,23 @@ aliases = ["/pages/about"]
 	weight = 3
 +++
 
+<div class="about-header">
+    <img id="img-headshot" src="/imgs/headshot.jpg">
+    <br><br>
+</div>
+
 I grew up watching Star Wars, and like any other eight-year old boy, I wanted to become a Jedi Knight. Maneuvering starfighters through the Hoth asteroid field whilst in aerial combat, jousting battle droids wielding nothing but a lightsaber, and having my hand sliced off to make space for my own mechno-arm were the epitomes of my childhood fantasy.
 
 Reality came quite bluntly, yet these dreams continued to flourish. These days, they follow more along the lines of maneuvering through complex codebases, attacking architectural design challenges with a pen and paper, and putting my mechatronics background to good use by working on fun side projects.
 
 My experience encompasses rapid prototyping, manufacturing, medical devices, automation, robotics, and control systems. As a continuously growing engineer, I am constantly looking for opportunities to expand and develop my skill set.
 
-<br>
-<p style="text-align: right">	<i>
+<p style="text-align: right"><i>
 Justin M.K. Lam
 <br>
 Software Engineer
+</i></p>
 <br>
-</i>
-</p>
 
 ### Personal Achievements
 
