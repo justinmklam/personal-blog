@@ -1,4 +1,4 @@
-baseurl = "http://justinmklam.com"
+baseurl = "https://justinmklam.com"
 languageCode = "en-us"
 title = "Justin MK Lam | Blog"
 author = "Justin MK Lam"
@@ -27,11 +27,15 @@ FootnoteReturnLinkContents = "↩"
 [params]
 	brand = "Justin Lam"
 
-	googleAnalytics = "UA-85178257-1"
-	disqusShortname = "justinmklam"
-
 	[params.highlightJs]
 		version = "11.11.1"
+
+[services]
+	[services.googleAnalytics]
+		id = "UA-85178257-1"
+
+	[services.disqus]
+		shortname = "justinmklam"
 
 [markup]
     [markup.goldmark.renderer]
