@@ -55,6 +55,7 @@ code {
 blockquote {
     border-left: 0.25rem solid var(--dark);
     padding-left: 1rem;
+    margin: 20px 20px 20px 20px;
 }
 
 body {
