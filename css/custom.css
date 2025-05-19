@@ -129,6 +129,10 @@ pre code {
     color: var(--gray);
 }
 
+.footer-container a {
+    font-weight: normal;
+}
+
 .about-header {
     text-align: center;
 }
