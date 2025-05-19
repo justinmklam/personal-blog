@@ -14,9 +14,9 @@ aliases = ["/pages/contact"]
 Located in Vancouver, British Columbia. Drop me a line and I'll get back to you within the day.
 
 <div class="contact-links">
-    <a href=mailto:{{ .Site.Params.email }} ><i class="fa fa-envelope"></i></a>
-    <a href="http://{{ .Site.Params.linkedin }}" ><i class="fa fa-linkedin"></i></a>
-    <a href="http://{{ .Site.Params.github }}" ><i class="fa fa-github"></i></a>
+    <a href=mailto:contact@justinmklam.com><i class="fa fa-envelope"></i></a>
+    <a href="https://linkedin.com/in/justinmklam"><i class="fa fa-linkedin"></i></a>
+    <a href="https://github.com/justinmklam"><i class="fa fa-github"></i></a>
 </div>
 <br>
 

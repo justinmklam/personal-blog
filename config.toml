@@ -26,13 +26,6 @@ FootnoteReturnLinkContents = "↩"
 
 [params]
 	brand = "Justin Lam"
-	footer = "Justin MK Lam"
-	email = "contact@justinmklam.com"
-	phone = "604-219-1148"
-	github = "github.com/justinmklam"
-	facebook = "facebook.com/jmklam"
-	linkedin = "linkedin.com/in/justinmklam"
-	instagram = "instagram.com/justinmklam"
 
 	googleAnalytics = "UA-85178257-1"
 	disqusShortname = "justinmklam"
