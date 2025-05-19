@@ -42,5 +42,7 @@ FootnoteReturnLinkContents = "↩"
     	unsafe = true
 	[markup.highlight]
 		guessSyntax = true
-		# See https://github.com/alecthomas/chroma/tree/master/styles
-		style="monokailight"
+		# Use external stylesheets instead so condiitonal light/dark highlighting can be used
+		noClasses = false
+		# See https://gohugo.io/quick-reference/syntax-highlighting-styles/
+		#style="monokai"

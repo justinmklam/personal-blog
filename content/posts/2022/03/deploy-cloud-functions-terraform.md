@@ -19,13 +19,13 @@ Cloud Functions are an easy, performant, and potentially inexpensive way to buil
 
 The easiest way to deploy a Cloud Function is using the `gcloud` CLI like so:
 
-```
-gcloud functions deploy YOUR_FUNCTION_NAME \
-  --region=YOUR_REGION \
-  --runtime=YOUR_RUNTIME \
-  --source=YOUR_SOURCE_LOCATION \
-  --entry-point=YOUR_CODE_ENTRYPOINT \
-  TRIGGER_FLAGS
+```sh
+gcloud functions deploy <YOUR_FUNCTION_NAME> \
+  --region=<YOUR_REGION> \
+  --runtime=<YOUR_RUNTIME> \
+  --source=<YOUR_SOURCE_LOCATION> \
+  --entry-point=<YOUR_CODE_ENTRYPOINT> \
+  <TRIGGER_FLAGS>
 ```
 
 Things get a bit more complicated if you want to use Terraform for deployments, which has its own set of advantages. The main trick to getting it to work is in line 43 below, where a checksum is appended to the archive's filename every time it's uploaded to the storage bucket.

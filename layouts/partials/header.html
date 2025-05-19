@@ -19,6 +19,8 @@
 <!-- Custom stylesheets -->
 <link rel="stylesheet" href="/css/neat.css">
 <link rel="stylesheet" href="/css/custom.css">
+<link rel="stylesheet" href="/css/syntax.css" media="screen">
+<link rel="stylesheet" href="/css/syntax-dark.css" media="screen and (prefers-color-scheme: dark)">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Config.Services.GoogleAnalytics.ID }}"></script>
@@ -29,9 +31,3 @@
 
   gtag('config', '{{ .Site.Config.Services.GoogleAnalytics.ID }}');
 </script>
-
-<!-- Code highlighting from https://highlightjs.org/ -->
-<!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/{{ .Site.Params.highlightJs.version }}/styles/atom-one-light.min.css" media="screen">
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/{{ .Site.Params.highlightJs.version }}/styles/atom-one-dark.min.css" media="screen and (prefers-color-scheme: dark)">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/{{ .Site.Params.highlightJs.version }}/highlight.min.js"></script>
-<script>hljs.highlightAll();</script> -->

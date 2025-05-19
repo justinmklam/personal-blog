@@ -67,10 +67,10 @@ resource "null_resource" "environment-values" {
   provisioner "local-exec" {
     command = "./some-script.sh"
     environment = {
-      ENVIRONMENT = ${var.environment}
+      ENVIRONMENT = var.environment
       JSON_DATA = jsonencode({
-          "var1" = ${var.name},
-          "var2" = ${var.region},
+          "var1" = var.name,
+          "var2" = var.region,
           ...
       })
     }
