@@ -12,7 +12,7 @@
 
 blockquote {
     font-style: italic;
-    color: var(--lessdark);
+    /* color: var(--lessdark); */
 }
 
 pre {
@@ -38,6 +38,19 @@ pre code {
     -webkit-text-size-adjust: 100%;
 }
 
+sup {
+    vertical-align: super;
+    line-height: 0;
+}
+
+sup a {
+    font-weight: normal;
+}
+
+a {
+    font-weight: normal;
+}
+
 .navbar {
     margin-top: 20px;
     margin-bottom:30px;
@@ -52,12 +65,20 @@ pre code {
     text-decoration: none;
     color: var(--dark);
     font-weight: normal;
+    padding-right: 10px;
 }
 
+@media (min-width: 600px) {
+    .navbar-links{
+        text-align: right;
+    }
+}
+
+/* This list contains links that have default decoration disabled */
 .blog-title a:hover,
 .archive-header a:hover,
-.navbar a:hover
-{
+.navbar a:hover,
+#TableOfContents a:hover {
     text-decoration: underline;
     text-decoration-color: var(--link);
     text-decoration-thickness: 2px;
@@ -66,6 +87,7 @@ pre code {
 .blog-title a {
     color: inherit;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .blog-title {
@@ -74,7 +96,7 @@ pre code {
 
 .blog-title-metadata {
     color: var(--lessdark);
-    font-size: 0.85rem;
+    font-size: 0.9em;
     margin-top: 0px;
     /* margin-bottom: 1rem; */
 }
@@ -125,12 +147,12 @@ pre code {
     text-align: right;
 }
 
-.nav-btn a {
-    color: var(--lessdark);
-    font-weight: bold;
-    background-image: var(--onhover);
-    text-decoration: none;
-}
+/* .nav-btn a { */
+    /* color: var(--lessdark); */
+    /* font-weight: bold; */
+    /* background-image: var(--onhover); */
+    /* text-decoration: none; */
+/* } */
 
 .footer-container {
     text-align: center;
@@ -162,7 +184,8 @@ pre code {
     text-decoration: none;
 	font-size: 1.1em;
 	margin-top: 5px;
-	margin-bottom: 7px
+	margin-bottom: 3px;
+    font-weight: normal;
 }
 
 .archive-date {
@@ -173,13 +196,11 @@ pre code {
 .archive-date h2 {
     font-size: 0.95em;
     margin-top: 5px;
+    font-weight: normal;
 }
 
-.archive-blog-metadata {
-    margin-top: 0px;
-	margin-bottom:0px;
-	font-size:90%;
-	color: var(--lessdark);
+.archive-post .blog-title-metadata {
+    margin-bottom: 0;
 }
 
 .archive-blog-tagline {
@@ -201,7 +222,24 @@ pre code {
     margin: 10px;
 }
 
+.toc {
+    color: var(--lessdark)
+}
+
+#TableOfContents a {
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#TableOfContents ul {
+    padding-inline-start: 30px;
+}
+
 /* Fix disqus iframe not rendering dark mode properly */
 iframe[src*="https://disqus.com"] {
   color-scheme: light;
+}
+
+.chroma .hl {
+    background-color: #fff59042;
 }
