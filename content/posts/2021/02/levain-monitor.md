@@ -7,6 +7,7 @@ tagline = "Taking the guess work out of baking with wild yeast."
 tags = ["3d-printing", "design", "electrical", "programming", "embedded"]
 title = "Precision Sourdough: A Smart Lid for Your Starter"
 type = "blog"
+math = true
 
 +++
 A few years ago, I had the idea to [track my sourdough starter using computer vision]({{< ref "/posts/2018/06/sourdough-starter-monitor" >}}). It was neat to monitor it this way, but it was fairly impractical to do for each feeding since it required setting up a camera, downloading the images, and doing some manual image cropping before running it through my analysis script. The analysis was also only done after the fact, and what I really wanted was something that could tell me when the starter was ready to be used (or fed), or, if I missed the window of opportunity, how long ago it peaked.

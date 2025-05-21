@@ -26,6 +26,7 @@ FootnoteReturnLinkContents = "↩"
 
 [params]
 	brand = "Justin Lam"
+	math = false
 
 	[params.highlightJs]
 		version = "11.11.1"
@@ -40,6 +41,7 @@ FootnoteReturnLinkContents = "↩"
 [markup]
     [markup.goldmark.renderer]
     	unsafe = true
+
 	[markup.highlight]
 		guessSyntax = true
 		# Use external stylesheets instead so condiitonal light/dark highlighting can be used
