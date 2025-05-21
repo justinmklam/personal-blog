@@ -43,19 +43,19 @@
                 </div>
 
                 <!-- Post title and tagline-->
-                <div>
+                <div class="archive-post">
                     <h2 class="archive-header">
                         <a class="h2 archive-header" href="{{ .Permalink }}">{{ .Title }}</a>
                     </h2>
 
-                    <em><p class="blog-title-metadata">{{.ReadingTime}} min read
+                    <p class="blog-title-metadata">{{.ReadingTime}} min read
                         &middot
-                        <span class="disqus-comment-count" data-disqus-url="{{ .Permalink }}#disqus_thread"># comments</span>
+                        <span class="disqus-comment-count" data-disqus-url="{{ .Permalink }}#disqus_thread">0 comments</span>
                         &middot
                         {{ range .Params.tags }}
                         <a class="blog-tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}&nbsp</a>
                         {{ end }}
-                    </p></em>
+                    </p>
 
                     <p class="archive-blog-tagline">{{ .Params.tagline }}</p>
 

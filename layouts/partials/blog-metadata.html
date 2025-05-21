@@ -1,9 +1,8 @@
 Posted on {{ .Date.Format "January 2, 2006" }}
-<em>&nbsp;&middot;&nbsp;{{.ReadingTime}} min read
-    &nbsp;&middot;&nbsp;
-    <span class="disqus-comment-count" data-disqus-url="{{ .Permalink }}#disqus_thread"># comments</span>
-    &nbsp;&middot;&nbsp;
-    {{ range .Params.tags }}
-    <a class="blog-tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}&nbsp;</a>
-    {{ end }}
-</em>
+&nbsp;&middot;&nbsp;{{.ReadingTime}} min read
+&nbsp;&middot;&nbsp;
+<span class="disqus-comment-count" data-disqus-url="{{ .Permalink }}#disqus_thread">0 comments</span>
+&nbsp;&middot;&nbsp;
+{{ range .Params.tags }}
+<a class="blog-tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}&nbsp;</a>
+{{ end }}
