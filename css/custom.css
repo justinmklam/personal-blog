@@ -240,6 +240,23 @@ iframe[src*="https://disqus.com"] {
   color-scheme: light;
 }
 
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  max-height: 500px; /* Set your desired max height */
+  overflow: hidden;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 500px; /* Match the container's max height */
+}
+
 .chroma .hl {
     background-color: #fff59042;
 }
