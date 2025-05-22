@@ -2,7 +2,7 @@
 title =     "{{ replace .File.ContentBaseName `-` ` ` | title }}"
 date =      {{ .Date }}
 tagline =   ""
-image =     "/imgs/placeholder.jpeg"
+image =     "placeholder.jpeg"
 tags =      [""]
 draft =     true
 
@@ -15,4 +15,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <!--more-->
 
-![Some caption](/static/imgs/placeholder.jpeg)
+![Some caption](placeholder.jpeg)
