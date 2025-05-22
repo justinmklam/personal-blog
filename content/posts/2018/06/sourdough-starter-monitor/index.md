@@ -349,7 +349,7 @@ The timelapses below show the sourdough starter from different dates. The bounda
 
 The animations are cool to watch, but what can we interpret from it? Plotting all the growths (as shown below), we see that they seem more similar than different. The peaks hover around 60-80%, and the rate of growth coming up to the peak are similar.
 
-{{<img-span caption="All the timelapses plotted to compare normalized growth. Horizontal dotted line indicates 50% mark." src="all-growths_1.png" >}}
+![All the timelapses plotted to compare normalized growth. Horizontal dotted line indicates 50% mark.](all-growths_1.png)
 
 ### Effect of Regular Feeding
 
@@ -357,7 +357,7 @@ Taking only a select number of days, there is a clearer trend to be seen. The gr
 
 On May 29th, we began to feed our sourdough starter after many months of sporadic feeding. With the June 10th growth, the ramp up occured later but eventually rises to ~80%. The ideal growth target is to double or triple in size, but hopefully that time will come with even more regular feeding.
 
-{{<img-span caption="We can see that regularly feeding the sourdough starter greatly increases its rate and growth." src="Levain Growth Over Time (Regular Feeding).png" >}}
+{{<img caption="We can see that regularly feeding the sourdough starter greatly increases its rate and growth." src="Levain Growth Over Time (Regular Feeding).png" >}}
 
 **Note**: The time delay of each subsequent feeding is not a result of regularity, but rather because the starter to food ratio was reduced over time to promote a more active fermentation. We eventually migrated to a 50g starter + 100g water + 100g flour (50 / 50 white and whole wheat). The starter has more potential for growth by beginning with less starter and more food, but as a result it may take a bit longer for the bacteria to vigorously start multiplying.
 
@@ -365,7 +365,7 @@ On May 29th, we began to feed our sourdough starter after many months of sporadi
 
 Previous to June 23, the starter was neglected for a week. After the first (overnight) feeding, it showed little signs of growth. However, feeding it again around noon and tracking its progress shows that the growth springs back up to ~80%, which was around the previous maximum from before.
 
-{{<img-span caption="What doesn't kill you makes you stronger (or at least as strong as before). First feeding is shifted because I forgot to start the timelapse right away." src="refeeding_1.png" >}}
+{{<img caption="What doesn't kill you makes you stronger (or at least as strong as before). First feeding is shifted because I forgot to start the timelapse right away." src="refeeding_1.png" >}}
 
 Thus, a bit of neglect seems to be okay since the starter appears to be fairly resilient to starvation! (But if you're going on vacation, please feed it more than you typically would so it can sustain itself in your absence.)
 
@@ -397,5 +397,3 @@ Check out the links below to level-up your bread game. (I may make profit from t
 + My Bread: The Revolutionary No-Work, No-Knead Method<a target="_blank" href="https://www.amazon.com/gp/product/0393066304/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0393066304&linkCode=as2&tag=justinmklam-20&linkId=292f06c9eaad7c87742dbb35cc1d1233"> (Amazon)</a><img src="//ir-na.amazon-adsystem.com/e/ir?t=justinmklam-20&l=am2&o=1&a=0393066304" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
 > Disclaimer: justinmklam.com is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.com.
-<!-- {{<img-span caption="Tight crumb (left), open crumb (right). This is why good fermentation is important!" src="Crumb comparison.png" >}}
- -->
