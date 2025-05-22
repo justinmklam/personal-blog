@@ -10,6 +10,12 @@
   }
 }
 
+@mixin link-redecorate {
+  text-decoration: underline;
+  text-decoration-color: var(--link);
+  text-decoration-thickness: 2px;
+}
+
 a {
   font-weight: normal;
 }
@@ -79,15 +85,6 @@ sup {
   }
 }
 
-/* This list contains links that have default decoration disabled */
-.blog-title a:hover,
-.archive-header a:hover,
-#TableOfContents a:hover {
-  text-decoration: underline;
-  text-decoration-color: var(--link);
-  text-decoration-thickness: 2px;
-}
-
 .blog-title {
   margin-bottom: 0.5rem;
 
@@ -95,13 +92,16 @@ sup {
     color: inherit;
     text-decoration: none;
     font-weight: bold;
+
+    &:hover {
+      @include link-redecorate;
+    }
   }
 
   &-metadata {
     color: var(--lessdark);
     font-size: 0.9em;
     margin-top: 0px;
-    /* margin-bottom: 1rem; */
   }
 }
 
@@ -184,9 +184,7 @@ sup {
     font-weight: normal;
 
     a:hover {
-      text-decoration: underline;
-      text-decoration-color: var(--link);
-      text-decoration-thickness: 2px;
+      @include link-redecorate;
     }
   }
 
@@ -237,9 +235,7 @@ sup {
     text-decoration: none;
 
     &:hover {
-      text-decoration: underline;
-      text-decoration-color: var(--link);
-      text-decoration-thickness: 2px;
+      @include link-redecorate;
     }
   }
 
