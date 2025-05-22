@@ -11,7 +11,10 @@
 <!-- Input args -->
 {{ $image := .image }}
 
-{{ if $image }}
+{{ $image_ext := path.Ext $.image }}
+{{ if eq $image_ext ".gif" }}
+<!-- do nothing for gifs -->
+{{ else if $image }}
     <!-- Resize portrait -->
     {{ if gt $image.Height $maxSizePx }}
         {{ $resizeStrPortrait := printf "x%d %s" $maxSizePx $imageType }}
