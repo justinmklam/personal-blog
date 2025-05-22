@@ -1,15 +1,21 @@
+{{ $bloglink := .Permalink }}
 <!-- Blog heading -->
 <h2 class="blog-title">
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
+    <a href="{{ $bloglink }}">{{ .Title }}</a>
 </h2>
 <!--Timestamp-->
 <p class="blog-title-metadata">{{ partial "blog-metadata.html" . }}</p>
 
 <!-- Image -->
-{{ if not (eq .Params.image "") }}
+{{ $image := .Resources.GetMatch .Params.image }}
+{{ if $image }}
+    {{ if gt $image.Width 1200 }}
+    {{ $image = $image.Resize "1200x" }}
+    {{ end }}
+    {{ $image = $image.Process "jpg" }}
 <div class="blog-preview-img">
-    <a href="{{ .Permalink }}">
-        <img src="{{ .Params.image }}" class="preview-img" alt="{{ .Title }}">
+    <a href="{{ $bloglink }}">
+        <img src="{{ $image.RelPermalink }}" class="preview-img" alt="{{ .Title }}">
     </a>
 </div>
 {{ end }}
@@ -19,7 +25,7 @@
 
 <!--Read more button-->
 <div class="nav-btn readmore-btn">
-    <a href="{{ .Permalink }}">Read More ></a>
+    <a href="{{ $bloglink }}">Read More ></a>
 </div>
 
 <hr>

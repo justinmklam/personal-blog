@@ -1,7 +1,7 @@
 +++
 aliases = []
 date = 2020-09-09T03:41:54Z
-image = "/imgs/2021/chicken-coop/uwotmate.jpg"
+image = "uwotmate.jpg"
 layout = "single"
 tagline = "Raising pets that poop breakfast."
 tags = ["woodworking"]
@@ -30,23 +30,23 @@ Most coops are made out of an outdoor wood like cedar, but that would have blown
 
 As such, we built out the frame with the thinnest (and cheapest) construction wood at Home Depot (something like 1x2). With just the perimeter built, it was honestly quite wobbly... but once the trusses were added, rigidity was achieved.
 
-![Rough frame of the coop (top) and part of the run (bottom)](/imgs/2021/chicken-coop/build1.jpg)
+![Rough frame of the coop (top) and part of the run (bottom)](build1.jpg)
 
-![Building out the frame, adding the angled roof and the nesting box.](/imgs/2021/chicken-coop/build2.jpg)
+![Building out the frame, adding the angled roof and the nesting box.](build2.jpg)
 
-!["And then I said, that's no chicken, that's my wife!"](/imgs/2021/chicken-coop/build6.jpg)
+!["And then I said, that's no chicken, that's my wife!"](build6.jpg)
 
 The doors were a bit of a pain, since the opening wasn't perfectly square. But after an adequate amount of measuring and shimming, we had the doors installed, operational, and smooth.
 
 For the paint, we went to the clearance section at Home Depot and found heavily reduced outdoor paint which suited our needs. This strategy isn't always fruitful, but luckily for us, we found a decent colour as well as not actually needing that much paint.
 
-{{<loop-vid caption="Sturdy enough for me, sturdy enough for chickens." src="/imgs/2021/chicken-coop/coopdoor.mp4">}}
+![Sturdy enough for me, sturdy enough for chickens.](coopdoor.mp4)
 
-![Dry fitting the coop and building out the run.](/imgs/2021/chicken-coop/build4.jpg)
+![Dry fitting the coop and building out the run.](build4.jpg)
 
-![How the chickens will enter and leave the coop.](/imgs/2021/chicken-coop/build5.jpg)
+![How the chickens will enter and leave the coop.](build5.jpg)
 
-![Fully assembled and ready for our new guests!](/imgs/2021/chicken-coop/coop.jpg)
+![Fully assembled and ready for our new guests!](coop.jpg)
 
 At this point, we were finally ready to go get ourselves some chicken(s)!
 
@@ -54,11 +54,11 @@ At this point, we were finally ready to go get ourselves some chicken(s)!
 
 Turns out buying chickens is easier said than done. We eventually found a farm in the next city over that hosts farm animal auctions, which sounded like a great idea at the time. Upon arrival, potential buyers browse the inventory and make notes about what they would like to purchase. What we didn't realize was that sellers were there to sell in bulk... While we wanted to buy a couple hens of different breeds, sellers were putting chickens up for sale in multiples of five!
 
-![Browsing the inventory before the auction starts.](/imgs/2021/chicken-coop/auction1.jpg)
+![Browsing the inventory before the auction starts.](auction1.jpg)
 
 Having never been to an auction before, it was actually a bit stressful. The auctioneer speaks extremely quickly, and you (as the buyer) need to make quick decisions on how much you want to bid, and if someone else also bids, if you're willing to outbid them (and how many times you want to repeat this cycle). The auctioneer also scolded a few people for waving their paddles by accident, since the slightest of movement is an indicator that the person holding the paddle wants to bid.
 
-![Bidding for our hens.](/imgs/2021/chicken-coop/auction2.jpg)
+![Bidding for our hens.](auction2.jpg)
 
 ## The Chickens
 
@@ -72,48 +72,48 @@ Within the span of 24 hours, our chicken ownership went something like this:
 6. Take all the chickens home, find out the next morning at 6 am that one of them is a rooster
 7. _Panic again_, find a local farm to trade our rooster (plus another hen since our coop was built for max 3, not 4)
 
-![Hens in their new home (some of them anyway...).](/imgs/2021/chicken-coop/chickens5.jpg)
+![Hens in their new home (some of them anyway...).](chickens5.jpg)
 
-![Turns out catching a chicken is easier said than done, but eventually we got him!](/imgs/2021/chicken-coop/rooster.jpg)
+![Turns out catching a chicken is easier said than done, but eventually we got him!](rooster.jpg)
 
 With the chicken fiasco over, we had ourselves a stable flock.
 
-![Three happy hens roosting in their new home.](/imgs/2021/chicken-coop/chickens1.jpg)
-![From left to right: Tamago (Bantam hen), Peidan (Black Copper Maran), and Pecorino (Ameraucana).](/imgs/2021/chicken-coop/chickens2.jpg)
-![This was mildly painful at first since they'd nip our flesh when going for the seeds.](/imgs/2021/chicken-coop/feeding.jpg)
+![Three happy hens roosting in their new home.](chickens1.jpg)
+![From left to right: Tamago (Bantam hen), Peidan (Black Copper Maran), and Pecorino (Ameraucana).](chickens2.jpg)
+![This was mildly painful at first since they'd nip our flesh when going for the seeds.](feeding.jpg)
 
 On the first few nights, a bit of training was required to tell the chickens to go inside the coop at dusk. To do this, we shined a flashlight from the inside (such that it's visible from the outside), which eventually attracted their attention and they flew up into the opening.
 
 After a while, they no longer needed any coaxing and like clockwork, they'd return to the coop right right when the sun set for the day.
 
-{{<loop-vid caption="Hens entering the coop at sunset..." src="/imgs/2021/chicken-coop/chicken-night.mp4">}}
+![Hens entering the coop at sunset...](chicken-night.mp4)
 
-{{<loop-vid caption="... And exiting at sunrise." src="/imgs/2021/chicken-coop/chicken-morning.mp4">}}
+![... And exiting at sunrise](chicken-morning.mp4)
 
 That winter, we had snowfall that stuck (which is rare for the "wet" coast of Vancouver), but the chickens were fortunately ok. We had a heat lamp ready but they didn't seem to be cold, and we kept the water warm to keep it from freezing overnight.
 
-![When winter rolled around, we had to keep an eye on their water to make sure it didn't freeze.](/imgs/2021/chicken-coop/winter1.jpg)
+![When winter rolled around, we had to keep an eye on their water to make sure it didn't freeze.](winter1.jpg)
 
-![At least they were still somewhat free run!](/imgs/2021/chicken-coop/winter2.jpg)
+![At least they were still somewhat free run!](winter2.jpg)
 
 ## The Eggs
 
 We had to "let the taps run for a bit" before our egg production hit full tilt, so to speak. The shells from the first few eggs were too soft (due to a lack of calcium?), but after a week or so, we finally started to get some proper eggs.
 
-![Soft shell crab is a delicacy, but soft shell eggs are not.](/imgs/2021/chicken-coop/eggerror1.jpg)
-![This one almost made it, but the shell was still too thin. More calcium required!](/imgs/2021/chicken-coop/eggerror2.jpg)
-![Waking up to this pair of eggs was egg-tremely egg-citing (sorry, couldn't resist).](/imgs/2021/chicken-coop/eggs1.jpg)
-![Production eventually entered steady state.](/imgs/2021/chicken-coop/eggs3.jpg)
+![Soft shell crab is a delicacy, but soft shell eggs are not.](eggerror1.jpg)
+![This one almost made it, but the shell was still too thin. More calcium required!](eggerror2.jpg)
+![Waking up to this pair of eggs was egg-tremely egg-citing (sorry, couldn't resist).](eggs1.jpg)
+![Production eventually entered steady state.](eggs3.jpg)
 
-![Try doing this with store bought eggs!](/imgs/tamago-gakegohan.JPG)
+![Try doing this with store bought eggs!](tamago-gakegohan.JPG)
 
 # The Farewell
 
 Two fruitful years later, life events resulted in having to say goodbye to our beloved hens. We initially put an ad up on Facebook Marketplace, but that quickly got taken down since apparently they don't allow livestock to be sold on their platform. Back to Craigslist we went, and eventually, we found a buyer. When they arrived, they came prepared to take it all away, albeit with equipment that was a little non-standard...
 
-![Half of the coop packed up into the buyer's SUV...](/imgs/2021/chicken-coop/goodbye1.jpg)
-![... And the other half in another SUV.](/imgs/2021/chicken-coop/goodbye2.jpg)
+![Half of the coop packed up into the buyer's SUV...](goodbye1.jpg)
+![... And the other half in another SUV.](goodbye2.jpg)
 
 All that was left was a memory of the chickens on our [crashpad](https://organicclimbing.com/collections/crash-pads), thanks to our good friends who designed and gifted it to us for [our wedding](https://www.justinmklam.com/posts/2019/diy-wedding-ring/).
 
-![Memories of our original hens, now forever imprinted on our bouldering crashpads.](/imgs/2021/chicken-coop/crashpad.jpg)
+![Memories of our original hens, now forever imprinted on our bouldering crashpads.](crashpad.jpg)
