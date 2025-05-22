@@ -1,9 +1,12 @@
-<div class="navbar">
-    <span class="navbar-brand">
-        {{ .Site.Params.brand }}
-    </span>
-
-    {{ range .Site.Menus.main }}
-        / <a href="{{.URL}}">{{ .Name }}</a>
-    {{ end }}
+<div class="navbar row">
+    <div>
+        <span class="navbar-brand">
+            {{ .Site.Params.brand }}
+        </span>
+    </div>
+    <div class="navbar-links">
+        {{ range .Site.Menus.main }}
+            <a href="{{.URL}}">{{ .Name }}</a>
+        {{ end }}
+    </div>
 </div>

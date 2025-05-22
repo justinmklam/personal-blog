@@ -1,15 +1,13 @@
 +++
-layout =    "single"
-type =      "blog"
-
-date =      {{ .Date }}
-draft =     true
-
 title =     "{{ replace .File.ContentBaseName `-` ` ` | title }}"
+date =      {{ .Date }}
 tagline =   ""
 image =     "/imgs/placeholder.jpeg"
 tags =      [""]
+draft =     true
 
+layout =    "single"
+type =      "blog"
 aliases =   []
 +++
 
