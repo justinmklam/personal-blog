@@ -1,7 +1,3 @@
-<!-- Need to define these here since couldn't figure out how to pss -->
-{{ $maxSizePx := 1200 }}
-{{ $imageType := "jpg" }}
-
 <!-- This renders markdown image notation into pics or vids with captions -->
 {{ $dest := .Destination | safeURL }}
 <!-- /static/ prefix is used in markdown docs so images preview correctly, but we don't want them in the rendered/deployed url -->
@@ -17,17 +13,7 @@
     <!-- Image -->
         {{ $image := .PageInner.Resources.Get $dest }}
         {{ if $image }}
-            <!-- Transform portrait -->
-            {{ if gt $image.Height $maxSizePx }}
-            {{ $resizeStrPortrait := printf "x%d %s" $maxSizePx $imageType }}
-            {{ $image = $image.Resize $resizeStrPortrait}}
-            {{ else if gt $image.Width $maxSizePx }}
-            <!-- Transform landscape -->
-            {{ $resizeStrLandscape := printf "%dx %s" $maxSizePx $imageType }}
-            {{ $image = $image.Resize $resizeStrLandscape }}
-            {{ else }}
-            {{ $image = $image.Process $imageType}}
-            {{ end }}
+            {{ $image = partial "resize-image.html" (dict "image" $image) }}
     <a href={{ $image.RelPermalink }}><img loading="lazy" class="img-responsive img-content" src={{ $image.RelPermalink }}/></a>
         {{ end }}
     {{ end }}

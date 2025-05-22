@@ -26,9 +26,6 @@ FootnoteReturnLinkContents = "↩"
 
 [params]
 	brand = "Justin Lam"
-	[params.images]
-		maxSizePx = 1200
-		filetype = "jpg"
 
 	[params.highlightJs]
 		version = "11.11.1"

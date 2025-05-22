@@ -9,13 +9,7 @@
 <!-- Image -->
 {{ $image := .Resources.GetMatch .Params.image }}
 {{ if $image }}
-    {{ $maxSizePx := .Site.Params.images.maxSizePx }}
-    {{ $imageType := .Site.Params.images.filetype }}
-    {{ if gt $image.Width $maxSizePx }}
-    {{ $resizeStr := printf "%dx" $maxSizePx }}
-    {{ $image = $image.Resize $resizeStr }}
-    {{ end }}
-    {{ $image = $image.Process $imageType }}
+    {{ $image = partial "resize-image.html" (dict "image" $image) }}
 <div class="blog-preview-img">
     <a href="{{ $bloglink }}">
         <img src="{{ $image.RelPermalink }}" class="preview-img" alt="{{ .Title }}">
