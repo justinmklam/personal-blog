@@ -4,12 +4,18 @@
 {{ $cleanDest := replace $dest "/static/" "/" }}
 
 <div class="row captioned-img">
+    <!-- Video -->
     {{ if or (hasSuffix $cleanDest ".mp4") (hasSuffix $cleanDest ".webm") }}
     <video class="img-responsive img-span-row img-content" autoplay loop muted controls>
         <source src="{{ $cleanDest }}" type="video/mp4" />
     </video>
     {{ else }}
-    <a href={{ $cleanDest }}><img class="img-responsive img-content" src={{ $cleanDest }} /></a>
+    <!-- Image -->
+        {{ $image := .PageInner.Resources.Get $dest }}
+        {{ if $image }}
+            {{ $image = partial "resize-image.html" (dict "image" $image) }}
+    <a href={{ $image.RelPermalink }}><img loading="lazy" class="img-responsive img-content" src={{ $image.RelPermalink }}/></a>
+        {{ end }}
     {{ end }}
     <p class="caption">{{ .Text | safeHTML }}{{ with .Title }} (Source: {{ . | safeHTML }}){{ end }}</p>
 </div>

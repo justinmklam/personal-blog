@@ -1,9 +1,21 @@
+<!-- Default to non-page bundle image -->
+{{ $imageUrl := .Params.image }}
+{{ if $imageUrl }}
+    {{ $image := .Resources.GetMatch .Params.image }}
+    {{ if $image }}
+        {{ $image = partial "resize-image.html" (dict "image" $image) }}
+        {{ $imageUrl = $image.RelPermalink }}
+    {{ end }}
+{{ end }}
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <title>{{ .Title }}</title>
-    <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.image }}"/>
+    {{ if $imageUrl }}
+    <meta property="og:image" content="{{ .Site.BaseURL }}{{ $imageUrl }}"/>
+    {{ end }}
     <meta property="og:type" content="blog"/>
     {{ partial "header.html" . }}
 
@@ -20,9 +32,9 @@
             <!--Timestamp-->
             <p class="blog-title-metadata">{{ partial "blog-metadata.html" . }}</p>
             <!--Image if available-->
-            {{ if not (eq .Params.image "") }}
-            <a href={{.Params.image}}>
-                <img class="img-content img-content-header" src="{{ .Params.image }}">
+            {{ if $imageUrl }}
+            <a href={{ $imageUrl }}>
+                <img class="img-content img-content-header" src="{{ $imageUrl }}">
             </a>
             {{ end }}
             {{ if in .TableOfContents "li"}}

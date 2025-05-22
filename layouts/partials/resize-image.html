@@ -1,0 +1,30 @@
+{{/*
+    Usage:
+    {{ partial "resize-image.html" (dict "image" $image) }}
+    Returns: resized and processed image resource.
+*/}}
+
+<!-- Constants -->
+{{ $maxSizePx := 1000 }}
+{{ $imageType := "jpg" }}
+
+<!-- Input args -->
+{{ $image := .image }}
+
+{{ if $image }}
+    <!-- Resize portrait -->
+    {{ if gt $image.Height $maxSizePx }}
+        {{ $resizeStrPortrait := printf "x%d %s" $maxSizePx $imageType }}
+        {{ $image = $image.Resize $resizeStrPortrait}}
+    <!-- Resize landscape -->
+    {{ else if gt $image.Width $maxSizePx }}
+        {{ $resizeStrLandscape := printf "%dx %s" $maxSizePx $imageType }}
+        {{ $image = $image.Resize $resizeStrLandscape }}
+    <!-- No resize necessary, just convert -->
+    {{ else }}
+        {{ $image = $image.Process $imageType}}
+    {{ end }}
+
+{{ end }}
+
+{{ return $image }}
