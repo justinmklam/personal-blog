@@ -11,9 +11,10 @@
 <!-- Input args -->
 {{ $image := .image }}
 
-{{ $image_ext := path.Ext $.image }}
+{{ $image_ext := (lower (path.Ext $.image) ) }}
+<!-- do nothing for these filetypes -->
 {{ if eq $image_ext ".gif" }}
-<!-- do nothing for gifs -->
+{{ else if eq $image_ext ".png" }}
 {{ else if $image }}
     <!-- Resize landscape -->
     {{ if gt $image.Width $maxSizePx }}
