@@ -6,3 +6,6 @@ server/
 docs/
 *.lock
 .obsidian
+
+# Hugo page bundle generated files
+_gen
