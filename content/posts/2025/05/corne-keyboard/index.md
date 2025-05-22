@@ -2,7 +2,7 @@
 title =     "Corne Keyboard"
 date =      2025-05-19T15:57:51-07:00
 tagline =   ""
-image =     "/imgs/2025/corne-keyboard/corne.JPEG"
+image =     "corne.JPEG"
 tags =      [""]
 draft =     true
 
