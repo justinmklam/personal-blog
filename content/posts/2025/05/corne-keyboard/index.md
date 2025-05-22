@@ -15,6 +15,11 @@ Been using a split ergonomic mechanical keyboard for 6 months. This is how it's 
 
 <!--more-->
 
+- July 2016: Cmstorm tkl blue
+- Aug 2016: Lenovo 
+- Sep 2017: Poker 61 cherry black
+- Nov 2017: Havit 87 blue kaihl switches
+- March 2019: Tada68 with gateron silent red
 Started off with a paltry 50 wpm, steadily increased back up to my normal typing speed.
 
 ![Steadily increasing WPM](pic-monkeytype.png)
