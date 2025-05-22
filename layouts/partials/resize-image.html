@@ -5,24 +5,25 @@
 */}}
 
 <!-- Constants -->
-{{ $maxSizePx := 1000 }}
+{{ $maxSizePx := 1200 }}
 {{ $imageType := "jpg" }}
 
 <!-- Input args -->
 {{ $image := .image }}
 
-{{ $image_ext := path.Ext $.image }}
+{{ $image_ext := (lower (path.Ext $.image) ) }}
+<!-- do nothing for these filetypes -->
 {{ if eq $image_ext ".gif" }}
-<!-- do nothing for gifs -->
+{{ else if eq $image_ext ".png" }}
 {{ else if $image }}
-    <!-- Resize portrait -->
-    {{ if gt $image.Height $maxSizePx }}
-        {{ $resizeStrPortrait := printf "x%d %s" $maxSizePx $imageType }}
-        {{ $image = $image.Resize $resizeStrPortrait}}
     <!-- Resize landscape -->
-    {{ else if gt $image.Width $maxSizePx }}
+    {{ if gt $image.Width $maxSizePx }}
         {{ $resizeStrLandscape := printf "%dx %s" $maxSizePx $imageType }}
         {{ $image = $image.Resize $resizeStrLandscape }}
+    <!-- Resize portrait -->
+    {{ else if gt $image.Height $maxSizePx }}
+        {{ $resizeStrPortrait := printf "x%d %s" $maxSizePx $imageType }}
+        {{ $image = $image.Resize $resizeStrPortrait}}
     <!-- No resize necessary, just convert -->
     {{ else }}
         {{ $image = $image.Process $imageType}}
