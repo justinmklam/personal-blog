@@ -3,7 +3,7 @@
 <!-- /static/ prefix is used in markdown docs so images preview correctly, but we don't want them in the rendered/deployed url -->
 {{ $cleanDest := replace $dest "/static/" "/" }}
 
-<div class="row captioned-img">
+<div class="row img-captioned">
     <!-- Video -->
     {{ if or (hasSuffix $cleanDest ".mp4") (hasSuffix $cleanDest ".webm") }}
     <video class="img-responsive img-span-row img-content" autoplay loop muted controls>

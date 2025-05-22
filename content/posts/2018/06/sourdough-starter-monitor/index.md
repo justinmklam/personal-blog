@@ -17,7 +17,7 @@ Despite it being relatively easy to turn dough into something that looks and fee
 
 In this blog post, we dive into the world of wild yeast (commonly known as sourdough starter) by tracking its growth through timelapses, automated image analysis, and cool graph animations. Read on to find out more!
 
-<div class="row captioned-img">
+<div class="row img-captioned">
     <video class="img-responsive img-content" autoplay="autoplay" loop="loop" controls>
       <source src=timelapse.mp4 type="video/mp4" />
     </video>

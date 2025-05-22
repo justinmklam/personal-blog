@@ -12,8 +12,8 @@ aliases = ["/pages/about"]
 	weight = 3
 +++
 
-<div class="about-header">
-    <img id="img-headshot" src="/imgs/headshot.jpg">
+<div class="center">
+    <img class="img-headshot" src="/imgs/headshot.jpg">
     <br><br>
 </div>
 

@@ -10,9 +10,12 @@
   }
 }
 
+a {
+  font-weight: normal;
+}
+
 blockquote {
   font-style: italic;
-  /* color: var(--lessdark); */
 }
 
 pre {
@@ -45,10 +48,6 @@ sup {
   a {
     font-weight: normal;
   }
-}
-
-a {
-  font-weight: normal;
 }
 
 .navbar {
@@ -106,25 +105,46 @@ a {
   }
 }
 
-.blog-preview-img {
-  max-height: 300px;
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+.img {
+  &-content {
+    max-height: 350px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 
-.preview-img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-  max-height: none;
-}
+    &-header {
+      max-height: none;
+    }
+  }
 
-.captioned-img {
-  display: block;
+  &-blog-preview {
+    max-height: 300px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-preview {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    max-height: none;
+  }
+
+  &-captioned {
+    display: block;
+  }
+
+  &-headshot {
+    border-radius: 50%;
+    width: 300px;
+    box-shadow: 0 4px 10px #333;
+  }
 }
 
 .caption {
@@ -135,29 +155,9 @@ a {
   color: var(--lessdark);
 }
 
-.img-content {
-  max-height: 350px;
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-
-  &-header {
-    max-height: none;
-  }
-}
-
 .readmore-btn {
   text-align: right;
 }
-
-/* .nav-btn a { */
-  /* color: var(--lessdark); */
-  /* font-weight: bold; */
-  /* background-image: var(--onhover); */
-  /* text-decoration: none; */
-/* } */
 
 .footer-container {
   text-align: center;
@@ -172,16 +172,6 @@ a {
   font-size: 0.9em;
   font-style: italic;
   color: var(--lessdark);
-}
-
-.about-header {
-  text-align: center;
-}
-
-#img-headshot {
-  border-radius: 50%;
-  width: 300px;
-  box-shadow: 0 4px 10px #333;
 }
 
 .archive {

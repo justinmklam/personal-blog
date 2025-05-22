@@ -101,7 +101,7 @@ a {
     /* margin-bottom: 1rem; */
 }
 
-.blog-preview-img {
+.img-blog-preview {
     max-height: 300px;
     width: 100%;
     overflow: hidden;
@@ -110,7 +110,7 @@ a {
     justify-content: center;
 }
 
-.preview-img {
+.img-preview {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -118,7 +118,7 @@ a {
     max-height: none;
 }
 
-.captioned-img {
+.img-captioned {
     display: block;
 }
 
@@ -167,10 +167,6 @@ a {
     font-size: 0.9em;
     font-style: italic;
     color: var(--lessdark);
-}
-
-.about-header {
-    text-align: center;
 }
 
 #img-headshot {
