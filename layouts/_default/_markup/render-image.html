@@ -14,7 +14,7 @@
         {{ $image := .PageInner.Resources.Get $dest }}
         {{ if $image }}
             {{ $image = partial "resize-image.html" (dict "image" $image) }}
-    <a href={{ $image.RelPermalink }}><img loading="lazy" class="img-responsive img-content" src={{ $image.RelPermalink }}/></a>
+    <a href={{ $image.RelPermalink }}><img loading="lazy" class="img-responsive img-content" src={{ $image.RelPermalink }}></a>
         {{ end }}
     {{ end }}
     <p class="caption">{{ .Text | safeHTML }}{{ with .Title }} (Source: {{ . | safeHTML }}){{ end }}</p>
