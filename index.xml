@@ -75,7 +75,7 @@ Featured on &lt;a href="http://hackaday.com/2017/06/17/annealing-plastic-for-str
 &lt;/li>
 &lt;li>Official User Manual:
 &lt;ul>
-&lt;li>&lt;a href="https://justinmklam.com/imgs/blog-imgs/3d-printing-primer/15365_Manual_170509.pdf">MP Select Mini User Manual&lt;/a>&lt;/li>
+&lt;li>&lt;a href="15365_Manual_170509.pdf">MP Select Mini User Manual&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>Reddit:
@@ -196,8 +196,21 @@ Featured on &lt;a href="http://hackaday.com/2017/06/17/annealing-plastic-for-str
 &lt;li>Max current is a function of input power and desired voltage (I=P/V)&lt;/li>
 &lt;li>Current limiting feature is non-existent, so must be careful to not let the genie out of circuits&lt;/li>
 &lt;/ul>
+&lt;p>
+
+
+
+
 &lt;div class="row captioned-img">
- &lt;a href=https://justinmklam.com/imgs/power_supply/IMG_20160525_143029.jpg>&lt;img class="img-responsive img-content" src=https://justinmklam.com/imgs/power_supply/IMG_20160525_143029.jpg />&lt;/a>
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2016/05/power-supply/IMG_20160525_143029_hu_1caa493500ebbbc3.jpg>&lt;img loading="lazy" class="img-responsive img-content" src=https://justinmklam.com/posts/2016/05/power-supply/IMG_20160525_143029_hu_1caa493500ebbbc3.jpg>&lt;/a>
+ 
+ 
  &lt;p class="caption">Internals of the power supply.&lt;/p></description></item><item><title>MECH 423: Mechatronics Product Design</title><link>https://justinmklam.com/posts/2016/04/perfeggct/</link><pubDate>Fri, 22 Apr 2016 22:38:31 -0700</pubDate><guid>https://justinmklam.com/posts/2016/04/perfeggct/</guid><description>&lt;p>&lt;strong>Background:&lt;/strong> When a hard boiled egg is spun on a table, it rotates freely since the inside is completely solid. With a raw egg, the liquid yolk sloshes around and resists rotation. By using math and physics, we can analyze the rotational oscillation of an egg and determine the yolk consistency.&lt;/p>
 &lt;blockquote>
 &lt;p>&amp;ldquo;If it&amp;rsquo;s worth doing, it&amp;rsquo;s worth overdoing.&amp;rdquo; - Jaime Hyneman&lt;/p>&lt;/blockquote>
@@ -237,11 +250,24 @@ Haikus are simple
 &lt;p>&lt;strong>How:&lt;/strong> As a team of seven mechanical engineering undergrads, we explored a range of areas for improvement and developed a new design to incorporate these features.&lt;/p></description></item><item><title>Co-op: Drill Cover User Study</title><link>https://justinmklam.com/posts/2014/coop-drill-cover/</link><pubDate>Sat, 27 Sep 2014 12:39:34 -0700</pubDate><guid>https://justinmklam.com/posts/2014/coop-drill-cover/</guid><description>Drill availability is a major limitation in developing counties, where surgeons turn to using manual hand-crank drills to perform surgeries. A common hardware drill equipped with a waterproof, sterilizable fabric cover provides a cost-effective solution in the operating room.</description></item><item><title>Bowling With car2go</title><link>https://justinmklam.com/posts/2014/08/car2go/</link><pubDate>Fri, 29 Aug 2014 12:37:42 -0700</pubDate><guid>https://justinmklam.com/posts/2014/08/car2go/</guid><description>&lt;p>&lt;strong>Objective&lt;/strong>: Design a roof-mounted bowling rig for a car2go marketing event.&lt;/p>
 &lt;p>&lt;strong>Constraints&lt;/strong>: Use a non-permanent method to securely attach the apparatus to the roof.&lt;/p>
 &lt;p>&lt;strong>Venue&lt;/strong>: 2014 Vancouver Fringe Festival&lt;/p>
+&lt;p>
+
+
+
+
 &lt;div class="row captioned-img">
- &lt;a href=https://justinmklam.com/imgs/car2go/20140907_165320.jpg>&lt;img class="img-responsive img-content" src=https://justinmklam.com/imgs/car2go/20140907_165320.jpg />&lt;/a>
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2014/08/car2go/20140907_165320_hu_dabc73c1ddcfd7a7.jpg>&lt;img loading="lazy" class="img-responsive img-content" src=https://justinmklam.com/posts/2014/08/car2go/20140907_165320_hu_dabc73c1ddcfd7a7.jpg>&lt;/a>
+ 
+ 
  &lt;p class="caption">Bowling rig set up and ready to roll.&lt;/p>
 &lt;/div>
-
+&lt;/p>
 &lt;div style='position:relative;padding-bottom:505px'>&lt;iframe src='https://gfycat.com/ifr/VastFoolishJaeger' frameborder='0' scrolling='no' width='100%' height='500px' style='position:absolute;top:0;left:0;' allowfullscreen>&lt;/iframe>&lt;/div>
 &lt;p class="caption">Car2go bowling in action.&lt;/p></description></item><item><title>Award Winning Bamboo Bike</title><link>https://justinmklam.com/posts/2014/08/bamboo-bike/</link><pubDate>Mon, 18 Aug 2014 22:12:57 -0700</pubDate><guid>https://justinmklam.com/posts/2014/08/bamboo-bike/</guid><description>&lt;p>&lt;strong>Objective&lt;/strong>: Exceed the Vancourite-hipster threshold by building a fixed-gear bicycle using bamboo and carbon fibre.&lt;/p>
 &lt;p>&lt;strong>Challenges&lt;/strong>:&lt;/p>
@@ -257,19 +283,59 @@ Haikus are simple
 	&lt;li>First Prize - &lt;a href="http://www.instructables.com/contest/teachit/" target="_blank">Teach It! Instructables Contest, Sponsored by Dremel&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;br>
-&lt;p>&lt;div class="row captioned-img">
- &lt;a href=https://justinmklam.com/imgs/bamboo_bike/Bike-frame-geometry-1024x567.png>&lt;img class="img-responsive img-content" src=https://justinmklam.com/imgs/bamboo_bike/Bike-frame-geometry-1024x567.png />&lt;/a>
+&lt;p>
+
+
+
+
+&lt;div class="row captioned-img">
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2014/08/bamboo-bike/Bike-frame-geometry-1024x567_hu_321145945bb70b18.jpg>&lt;img loading="lazy" class="img-responsive img-content" src=https://justinmklam.com/posts/2014/08/bamboo-bike/Bike-frame-geometry-1024x567_hu_321145945bb70b18.jpg>&lt;/a>
+ 
+ 
  &lt;p class="caption">Track bicycle custom geometry.&lt;/p></description></item><item><title>MATLAB Photo Editing Script</title><link>https://justinmklam.com/posts/2014/01/photo-editing/</link><pubDate>Sun, 12 Jan 2014 11:45:14 -0700</pubDate><guid>https://justinmklam.com/posts/2014/01/photo-editing/</guid><description>&lt;p>&lt;strong>Objective:&lt;/strong> Develop a script to find and remove any differences in a series of photos.&lt;/p>
 &lt;p>&lt;strong>Motivation:&lt;/strong> &lt;a href="http://toomanyadapters.com/how-to-remove-people-travel-photos-photoshop/">How to Remove People From Your Travel Using Photoshop&lt;/a>&lt;/p>
 &lt;p>&lt;strong>Framework:&lt;/strong> MATLAB&lt;/p>
-&lt;div class="row captioned-img">
- &lt;a href=https://justinmklam.com/imgs/photo_editing/Image-test_all.png>&lt;img class="img-responsive img-content" src=https://justinmklam.com/imgs/photo_editing/Image-test_all.png />&lt;/a>
- &lt;p class="caption">Script takes any number of images (preferably taken on a tripod) and combines them into one cleaned-up image.&lt;/p>
-&lt;/div>
+&lt;p>
+
+
+
 
 &lt;div class="row captioned-img">
- &lt;a href=https://justinmklam.com/imgs/photo_editing/Photo-editing-script-algorithm.png>&lt;img class="img-responsive img-content" src=https://justinmklam.com/imgs/photo_editing/Photo-editing-script-algorithm.png />&lt;/a>
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2014/01/photo-editing/Image-test_all_hu_97e7832b3185093c.jpg>&lt;img loading="lazy" class="img-responsive img-content" src=https://justinmklam.com/posts/2014/01/photo-editing/Image-test_all_hu_97e7832b3185093c.jpg>&lt;/a>
+ 
+ 
+ &lt;p class="caption">Script takes any number of images (preferably taken on a tripod) and combines them into one cleaned-up image.&lt;/p>
+&lt;/div>
+&lt;/p>
+&lt;p>
+
+
+
+
+&lt;div class="row captioned-img">
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2014/01/photo-editing/Photo-editing-script-algorithm_hu_7da25129caf1e4d1.jpg>&lt;img loading="lazy" class="img-responsive img-content" src=https://justinmklam.com/posts/2014/01/photo-editing/Photo-editing-script-algorithm_hu_7da25129caf1e4d1.jpg>&lt;/a>
+ 
+ 
  &lt;p class="caption">Flowchart of the implemented algorithm.&lt;/p>
-&lt;/div></description></item><item><title>Co-op: The Age Effect on Bicycle Helmets</title><link>https://justinmklam.com/posts/2013/coop-mea/</link><pubDate>Sat, 28 Dec 2013 12:37:10 -0700</pubDate><guid>https://justinmklam.com/posts/2013/coop-mea/</guid><description>Foam liners in bicycle helmets absorb energy during impacts. Manufacturers recommend replacing a helmet every 2 to 10 years to maintain optimal head protection. To investigate this recommendation, we quantified the material and impact attenuation properties of helmets to determine if they changed with age.</description></item><item><title>MECH 223: Hovercraft Competition</title><link>https://justinmklam.com/posts/2013/mech-223-hovercraft/</link><pubDate>Sat, 20 Apr 2013 12:22:15 -0700</pubDate><guid>https://justinmklam.com/posts/2013/mech-223-hovercraft/</guid><description>Teams were given 3 weeks to research, conceptualize, test, and refine their hovercrafts to compete in a class-wide battle of speed, cargo capacity, and maneuverability.</description></item><item><title>Men in Massage: Research Paper</title><link>https://justinmklam.com/posts/2011/12/men-in-massage-therapy/</link><pubDate>Thu, 01 Dec 2011 17:51:38 -0700</pubDate><guid>https://justinmklam.com/posts/2011/12/men-in-massage-therapy/</guid><description>&lt;p>&lt;em>Originally written as a research paper for ENG 112 at UBC. Republished here for archival purposes.&lt;/em>&lt;/p>
+&lt;/div>
+&lt;/p></description></item><item><title>Co-op: The Age Effect on Bicycle Helmets</title><link>https://justinmklam.com/posts/2013/coop-mea/</link><pubDate>Sat, 28 Dec 2013 12:37:10 -0700</pubDate><guid>https://justinmklam.com/posts/2013/coop-mea/</guid><description>Foam liners in bicycle helmets absorb energy during impacts. Manufacturers recommend replacing a helmet every 2 to 10 years to maintain optimal head protection. To investigate this recommendation, we quantified the material and impact attenuation properties of helmets to determine if they changed with age.</description></item><item><title>MECH 223: Hovercraft Competition</title><link>https://justinmklam.com/posts/2013/mech-223-hovercraft/</link><pubDate>Sat, 20 Apr 2013 12:22:15 -0700</pubDate><guid>https://justinmklam.com/posts/2013/mech-223-hovercraft/</guid><description>Teams were given 3 weeks to research, conceptualize, test, and refine their hovercrafts to compete in a class-wide battle of speed, cargo capacity, and maneuverability.</description></item><item><title>Men in Massage: Research Paper</title><link>https://justinmklam.com/posts/2011/12/men-in-massage-therapy/</link><pubDate>Thu, 01 Dec 2011 17:51:38 -0700</pubDate><guid>https://justinmklam.com/posts/2011/12/men-in-massage-therapy/</guid><description>&lt;p>&lt;em>Originally written as a research paper for ENG 112 at UBC. Republished here for archival purposes.&lt;/em>&lt;/p>
 &lt;h1 id="research-proposal">Research Proposal&lt;/h1>
 &lt;p>According to Tom Delph-Janiurek, a “mis-performance of voice” may be necessary in order to gain authority in specific interactional spaces by creating a display of control and assertiveness (277). He proposes that the vocal performances in teaching spaces adapt to their social roles of authority by opposing the hegemonic heterosexuality in voices and perform vocal features of “drag” without giving up their gendered identities, contributing to and disrupting the “heterosexing of [teaching] space” (277). In spite of his conclusion regarding voice as “drag”, he fails to thoroughly assess the aspects outside of vocal performances that also relate to the projections of gendered bodies such as embodiment. A performed gender role relies on the physical aspects of body language and gesture in addition to voice in order to create a complete portrayal of a sexualized identity.&lt;/p></description></item><item><title>LEGO Headphones</title><link>https://justinmklam.com/posts/2010/07/lego-headphones/</link><pubDate>Sat, 10 Jul 2010 12:37:00 -0700</pubDate><guid>https://justinmklam.com/posts/2010/07/lego-headphones/</guid><description>&lt;p>&lt;strong>Background:&lt;/strong> I decided to combine the two things that I love most: music and LEGO. This whole project took me about a month and a half, very on and off. I&amp;rsquo;m quite pleased with how the headphones turned out in the end, as they are sturdy enough to be tossed around in a bag. My favourite part is that I can take it apart any time to make repairs that may be needed on the go. No tools necessary!&lt;/p></description></item><item><title>A Minty-Fresh Power Pack</title><link>https://justinmklam.com/posts/2009/altoids/</link><pubDate>Thu, 16 Apr 2009 22:52:25 -0700</pubDate><guid>https://justinmklam.com/posts/2009/altoids/</guid><description>Before the ubiquity of powerbanks, there was nothing on the market to provide longer battery life for portable electronics. Connecting a female USB connector to four rechargable AA batteries opened up a new world of extended iPod playback.</description></item></channel></rss>

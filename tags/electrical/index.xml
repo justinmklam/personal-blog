@@ -60,8 +60,21 @@
 &lt;li>Max current is a function of input power and desired voltage (I=P/V)&lt;/li>
 &lt;li>Current limiting feature is non-existent, so must be careful to not let the genie out of circuits&lt;/li>
 &lt;/ul>
+&lt;p>
+
+
+
+
 &lt;div class="row captioned-img">
- &lt;a href=https://justinmklam.com/imgs/power_supply/IMG_20160525_143029.jpg>&lt;img class="img-responsive img-content" src=https://justinmklam.com/imgs/power_supply/IMG_20160525_143029.jpg />&lt;/a>
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2016/05/power-supply/IMG_20160525_143029_hu_1caa493500ebbbc3.jpg>&lt;img loading="lazy" class="img-responsive img-content" src=https://justinmklam.com/posts/2016/05/power-supply/IMG_20160525_143029_hu_1caa493500ebbbc3.jpg>&lt;/a>
+ 
+ 
  &lt;p class="caption">Internals of the power supply.&lt;/p></description></item><item><title>MECH 423: Mechatronics Product Design</title><link>https://justinmklam.com/posts/2016/04/perfeggct/</link><pubDate>Fri, 22 Apr 2016 22:38:31 -0700</pubDate><guid>https://justinmklam.com/posts/2016/04/perfeggct/</guid><description>&lt;p>&lt;strong>Background:&lt;/strong> When a hard boiled egg is spun on a table, it rotates freely since the inside is completely solid. With a raw egg, the liquid yolk sloshes around and resists rotation. By using math and physics, we can analyze the rotational oscillation of an egg and determine the yolk consistency.&lt;/p>
 &lt;blockquote>
 &lt;p>&amp;ldquo;If it&amp;rsquo;s worth doing, it&amp;rsquo;s worth overdoing.&amp;rdquo; - Jaime Hyneman&lt;/p>&lt;/blockquote>
