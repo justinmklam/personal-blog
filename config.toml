@@ -26,6 +26,7 @@ FootnoteReturnLinkContents = "↩"
 
 [params]
 	brand = "Justin Lam"
+	math = false
 
 	[params.highlightJs]
 		version = "11.11.1"
@@ -40,9 +41,14 @@ FootnoteReturnLinkContents = "↩"
 [markup]
     [markup.goldmark.renderer]
     	unsafe = true
+
 	[markup.highlight]
 		guessSyntax = true
 		# Use external stylesheets instead so condiitonal light/dark highlighting can be used
-		noClasses = false
+		 noClasses = false
 		# See https://gohugo.io/quick-reference/syntax-highlighting-styles/
-		#style="monokai"
+		# style="monokai"
+	[markup.tableOfContents]
+		endLevel = 3
+		ordered = false 
+		startLevel = 1

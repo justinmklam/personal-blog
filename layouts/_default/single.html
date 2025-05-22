@@ -25,6 +25,14 @@
                 <img class="img-content img-content-header" src="{{ .Params.image }}">
             </a>
             {{ end }}
+            {{ if in .TableOfContents "li"}}
+            <br>
+            <details class="toc">
+                <summary>&nbsp;Table of Contents</summary>
+                    {{ .TableOfContents}}
+                </summary>
+            </details>
+            {{ end }}
             <div class="blog-content page-content">
                 {{ .Content }}
             </div>
