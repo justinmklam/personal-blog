@@ -16,6 +16,10 @@
   text-decoration-thickness: 2px;
 }
 
+@mixin link-undecorate {
+  text-decoration: none;
+}
+
 a {
   font-weight: normal;
 }
@@ -66,7 +70,7 @@ sup {
   }
 
   a {
-    text-decoration: none;
+    @include link-undecorate;
     color: var(--dark);
     font-weight: normal;
     padding-right: 10px;
@@ -89,8 +93,8 @@ sup {
   margin-bottom: 0.5rem;
 
   a {
+    @include link-undecorate;
     color: inherit;
-    text-decoration: none;
     font-weight: bold;
 
     &:hover {
@@ -177,8 +181,8 @@ sup {
 
 .archive {
   &-header {
+    @include link-undecorate;
     color: var(--dark);
-    text-decoration: none;
     font-size: 1.1em;
     margin-top: 5px;
     margin-bottom: 3px;
@@ -226,14 +230,28 @@ sup {
   }
 }
 
+.anchor {
+  a {
+    font-weight: inherit;
+    @include link-undecorate;
+  }
+
+  a:hover {
+    @include link-redecorate;
+  }
+}
+
 .toc {
   color: var(--lessdark);
+  background-color: var(--codebackground);
+  padding: 10px;
+  border-radius: 5px;
 }
 
 #TableOfContents {
   a {
     font-weight: normal;
-    text-decoration: none;
+    @include link-undecorate;
 
     &:hover {
       @include link-redecorate;
