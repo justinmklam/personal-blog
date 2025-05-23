@@ -26,7 +26,7 @@ Started off with a paltry 50 wpm, steadily increased back up to my normal typing
 
 Tried going full ergo, but didn't really work with my set up. Was too high for my elbows.
 
-![Ergonomics](pic-ergo.png)
+![Ergonomics](pic-ergo.jpg)
 Tried different switches.
 ![](switches.jpg)
 
