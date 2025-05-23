@@ -1,22 +1,22 @@
-+++
-title =     "Corne Keyboard"
-date =      2025-05-19T15:57:51-07:00
-tagline =   ""
-image =     "corne.JPEG"
-tags =      [""]
-draft =     true
+---
+title:     Corne Keyboard
+date:      2025-05-23T15:57:51-07:00
+tagline:
+image:     corne.JPEG
+tags:      [""]
+draft:     true
 
-layout =    "single"
-type =      "blog"
-aliases =   []
-+++
+layout:    single
+type:      blog
+aliases:   []
+---
 
 Been using a split ergonomic mechanical keyboard for 6 months. This is how it's going.
 
 <!--more-->
 
 - July 2016: Cmstorm tkl blue
-- Aug 2016: Lenovo 
+- Aug 2016: Lenovo
 - Sep 2017: Poker 61 cherry black
 - Nov 2017: Havit 87 blue kaihl switches
 - March 2019: Tada68 with gateron silent red
