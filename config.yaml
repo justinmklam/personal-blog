@@ -1,0 +1,50 @@
+baseurl: https://justinmklam.com
+languageCode: en-us
+title: Justin MK Lam | Blog
+
+contentdir: content
+layoutdir: layouts
+publishdir: docs
+canonifyurls: false
+disableKinds:
+  - section
+  - taxonomy
+enableEmoji: true
+
+FootnoteReturnLinkContents: ↩
+
+menu:
+  main:
+    - identifier: Blog
+      name: Blog
+      url: /
+      weight: 1
+
+taxonomies:
+  tag: tags
+  type: types
+
+params:
+  brand: Justin Lam
+  math: false
+  highlightJs:
+    version: 11.11.1
+
+services:
+  googleAnalytics:
+    id: UA-85178257-1
+  disqus:
+    shortname: justinmklam
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    guessSyntax: true
+    noClasses: false # Use external stylesheets instead so conditional light/dark highlighting can be used
+    # style: monokai # See https://gohugo.io/quick-reference/syntax-highlighting-styles/
+  tableOfContents:
+    endLevel: 3
+    ordered: false
+    startLevel: 1
