@@ -28,7 +28,7 @@ Tried going full ergo, but didn't really work with my set up. Was too high for m
 
 ![Ergonomics](pic-ergo.png)
 Tried different switches.
-![](Pasted%20image%2020250519162513.png)
+![](switches.jpg)
 
 Mimicking the use of layers on a normal qwerty using [keyd](https://github.com/rvaiya/keyd).
 
