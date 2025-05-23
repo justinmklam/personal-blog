@@ -1,0 +1,6 @@
+<!-- Adapted from https://discourse.gohugo.io/t/adding-anchor-next-to-headers/1726/24 -->
+<h{{ .Level }} id="{{ .Anchor | safeURL }}" class="anchor">
+    <a href="#{{ .Anchor | safeURL }}">
+        {{ .Text | safeHTML }}
+    </a>
+</h{{ .Level }}>
