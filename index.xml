@@ -163,8 +163,8 @@ Featured on &lt;a href="http://hackaday.com/2017/06/17/annealing-plastic-for-str
 &lt;/div>
 &lt;br>
 &lt;!--Font awesome icons-->
-&lt;script src="https://use.fontawesome.com/ccb78cc113.js">&lt;/script></description></item><item><title>About</title><link>https://justinmklam.com/about/</link><pubDate>Sat, 24 Sep 2016 12:58:43 -0700</pubDate><guid>https://justinmklam.com/about/</guid><description>&lt;div class="about-header">
- &lt;img id="img-headshot" src="https://justinmklam.com/imgs/headshot.jpg">
+&lt;script src="https://use.fontawesome.com/ccb78cc113.js">&lt;/script></description></item><item><title>About</title><link>https://justinmklam.com/about/</link><pubDate>Sat, 24 Sep 2016 12:58:43 -0700</pubDate><guid>https://justinmklam.com/about/</guid><description>&lt;div class="center">
+ &lt;img class="img-headshot" src="https://justinmklam.com/imgs/headshot.jpg">
  &lt;br>&lt;br>
 &lt;/div>
 &lt;p>I grew up watching Star Wars, and like any other eight-year old boy, I wanted to become a Jedi Knight. Maneuvering starfighters through the Hoth asteroid field whilst in aerial combat, jousting battle droids wielding nothing but a lightsaber, and having my hand sliced off to make space for my own mechno-arm were the epitomes of my childhood fantasy.&lt;/p>
@@ -201,7 +201,7 @@ Featured on &lt;a href="http://hackaday.com/2017/06/17/annealing-plastic-for-str
 
 
 
-&lt;div class="row captioned-img">
+&lt;div class="row img-captioned">
  
  
  
@@ -255,7 +255,7 @@ Haikus are simple
 
 
 
-&lt;div class="row captioned-img">
+&lt;div class="row img-captioned">
  
  
  
@@ -288,7 +288,7 @@ Haikus are simple
 
 
 
-&lt;div class="row captioned-img">
+&lt;div class="row img-captioned">
  
  
  
@@ -306,7 +306,7 @@ Haikus are simple
 
 
 
-&lt;div class="row captioned-img">
+&lt;div class="row img-captioned">
  
  
  
@@ -324,7 +324,7 @@ Haikus are simple
 
 
 
-&lt;div class="row captioned-img">
+&lt;div class="row img-captioned">
  
  
  
