@@ -10,9 +10,9 @@
 {{ $image := .Resources.GetMatch .Params.image }}
 {{ if $image }}
     {{ $image = partial "resize-image.html" (dict "image" $image) }}
-<div class="blog-preview-img">
+<div class="img-blog-preview">
     <a href="{{ $bloglink }}">
-        <img src="{{ $image.RelPermalink }}" class="preview-img" alt="{{ .Title }}">
+        <img src="{{ $image.RelPermalink }}" class="img-preview" alt="{{ .Title }}">
     </a>
 </div>
 {{ end }}
