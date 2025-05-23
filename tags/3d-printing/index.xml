@@ -8,7 +8,12 @@ Featured on &lt;a href="http://hackaday.com/2017/06/17/annealing-plastic-for-str
 &lt;p>Yep, you heard it right. With all the craze surrounding cooking sous vide these days, it was only a matter of time before someone decided to venture using it outside of the culinary world. Turns out that someone also had a 3D printer, and &lt;em>you won&amp;rsquo;t believe what happened next!&lt;/em>&lt;/p>
 &lt;p>Click-bait headlines aside, this post is quite lengthy and not everyone may have the patience to get through it all. Feel free to read the TL;DR below, or if you&amp;rsquo;re feeling inclined, follow along my adventure through the land of 3D printing, materials science, and modern cooking.&lt;/p></description></item><item><title>Hakko-Style Solder Fume Extractor</title><link>https://justinmklam.com/posts/2017/03/solder-fume-extractor/</link><pubDate>Sat, 25 Mar 2017 21:14:29 -0700</pubDate><guid>https://justinmklam.com/posts/2017/03/solder-fume-extractor/</guid><description>&lt;p>I&amp;rsquo;ve been slowly getting into the land of electrical pixies. So now, not only will I be inhaling sawdust, I can also fill them with leaded solder (because we all know that the performance of leaded solder takes higher priority than the safety of lead-free solder)! However, because I still value living, I figured I should get something to help get the solder fumes away from my lungs.&lt;/p>
 &lt;p>At my current job with MistyWest, we have a nice, bench top solder fume extractor by Hakko. But I&amp;rsquo;m cheap, so heck no was I going to &lt;a href="https://www.digikey.ca/product-detail/en/american-hakko-products-inc/FA400-04/1691-1039-ND/6228795">pay over $100&lt;/a> for blowing away fumes when I can blow them away myself! Despite it being a nifty design with multiple configurations (shown in the images below), I would resist the temptation to lighten my wallet on this. Oh wait, I just bought a thing that I can use to make other things&amp;hellip;&lt;/p></description></item><item><title>Resources for 3D Printing with the MP Select Mini</title><link>https://justinmklam.com/posts/2017/03/3d-printing/</link><pubDate>Thu, 23 Mar 2017 19:38:27 -0700</pubDate><guid>https://justinmklam.com/posts/2017/03/3d-printing/</guid><description>&lt;p>What&amp;rsquo;s better than an inexpensive 3D printer? Free sources of information! The items below are a resource list for 3D printing with the Monoprice Select Mini, all thanks to a lively community of users around the interwebz.&lt;/p>
-&lt;h1 id="general-info">General Info&lt;/h1>
+
+&lt;h1 id="general-info" class="anchor">
+ &lt;a href="#general-info">
+ General Info
+ &lt;/a>
+&lt;/h1>
 &lt;ul>
 &lt;li>Product Page:
 &lt;ul>
@@ -41,7 +46,12 @@ Featured on &lt;a href="http://hackaday.com/2017/06/17/annealing-plastic-for-str
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;h1 id="materials-and-accessories">Materials and Accessories&lt;/h1>
+
+&lt;h1 id="materials-and-accessories" class="anchor">
+ &lt;a href="#materials-and-accessories">
+ Materials and Accessories
+ &lt;/a>
+&lt;/h1>
 &lt;ul>
 &lt;li>Tested PLA Brands:
 &lt;ul>
@@ -55,7 +65,12 @@ Featured on &lt;a href="http://hackaday.com/2017/06/17/annealing-plastic-for-str
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;h1 id="initial-set-up">Initial Set Up&lt;/h1>
+
+&lt;h1 id="initial-set-up" class="anchor">
+ &lt;a href="#initial-set-up">
+ Initial Set Up
+ &lt;/a>
+&lt;/h1>
 &lt;ul>
 &lt;li>CAD Modeling Software (free for hobbyists and enthusiasts):
 &lt;ul>
@@ -78,7 +93,17 @@ Featured on &lt;a href="http://hackaday.com/2017/06/17/annealing-plastic-for-str
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;h1 id="machine-settings">Machine Settings&lt;/h1>
-&lt;h2 id="general">General&lt;/h2>
+
+&lt;h1 id="machine-settings" class="anchor">
+ &lt;a href="#machine-settings">
+ Machine Settings
+ &lt;/a>
+&lt;/h1>
+
+&lt;h2 id="general" class="anchor">
+ &lt;a href="#general">
+ General
+ &lt;/a>
+&lt;/h2>
 &lt;p>The machine settings below are based off the ones in the official user manual. However, the start and end gcode was taken from the community-driven Google Doc (see above) and slightly modified to include an initial nozzle wipe/primer and to remove the delay in turning the fans off.&lt;/p></description></item><item><title>New Toy Tuesday: Monoprice Select Mini 3D Printer</title><link>https://justinmklam.com/posts/2017/03/mp-select-mini/</link><pubDate>Tue, 07 Mar 2017 15:56:53 -0700</pubDate><guid>https://justinmklam.com/posts/2017/03/mp-select-mini/</guid><description>&lt;p>I&amp;rsquo;ve been bit by the 3D printing bug.&lt;/p>
 &lt;p>Like any tech-enthusiast, I have toyed with the idea of owning a 3D printer for quite some time. For my final year mechatronics design project, my partner and I designed an extravagent contraption to measure the yolk done-ness of a soft-boiled egg, which we called &lt;a href="http://justinmklam.com/projects/mecha/perfeggct/">The PerfEGGct&lt;/a>. We borrowed my roommate&amp;rsquo;s 3D printer to create the enclosure, and it turned out to be an indispensable tool during our prototyping process. At the time, reliable 3D printers were upwards of $500 which was just out of my threshold for nice-to-have gadgets.&lt;/p></description></item></channel></rss>

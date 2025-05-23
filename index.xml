@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Justin MK Lam | Blog</title><link>https://justinmklam.com/</link><description>Recent content on Justin MK Lam | Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 19 May 2025 08:47:00 -0700</lastBuildDate><atom:link href="https://justinmklam.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Adaptive Syntax Highlighting for Light &amp; Dark Modes in Hugo</title><link>https://justinmklam.com/posts/2025/05/hugo-syntax-highlighting/</link><pubDate>Mon, 19 May 2025 08:47:00 -0700</pubDate><guid>https://justinmklam.com/posts/2025/05/hugo-syntax-highlighting/</guid><description>&lt;p>Hugo has built in support for &lt;a href="https://gohugo.io/content-management/syntax-highlighting/">syntax highlighting using Chroma&lt;/a>, but the default configuration doesn&amp;rsquo;t allow for dynamically setting light/dark syntax highlighting. Fortunately there&amp;rsquo;s an easy workaround with a few configs!&lt;/p></description></item><item><title>Colophon</title><link>https://justinmklam.com/colophon/</link><pubDate>Sun, 18 May 2025 13:48:02 -0700</pubDate><guid>https://justinmklam.com/colophon/</guid><description>&lt;p>This site has gone through multiple iterations over the years. In 2015, the inception of my personal blog was created on &lt;a href="https://wordpress.com/">Wordpress&lt;/a> and hosted on &lt;a href="https://www.bluehost.ca/">Bluehost&lt;/a>, and was intended to be a portfolio of my personal projects to showcase when applying to jobs. I spent a lot of time hunting for a suitable theme, and stuck with one for about a year.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Justin MK Lam | Blog</title><link>https://justinmklam.com/</link><description>Recent content on Justin MK Lam | Blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 23 May 2025 08:47:00 -0700</lastBuildDate><atom:link href="https://justinmklam.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo: Some Random Tips and Tricks</title><link>https://justinmklam.com/posts/2025/05/hugo-tips-and-tricks/</link><pubDate>Fri, 23 May 2025 08:47:00 -0700</pubDate><guid>https://justinmklam.com/posts/2025/05/hugo-tips-and-tricks/</guid><description>&lt;p>My intro to Hugo was back in 2016, a mere 3 years after its &lt;a href="https://en.wikipedia.org/wiki/Hugo_(software)">inception&lt;/a>, when I was in my early days of learning web development. Quite a bit has changed since then, both in what Hugo is capable of and my understanding of how to actually code. I&amp;rsquo;m far from being a frontend dev, but I&amp;rsquo;ve gathered a collection of snippets that I&amp;rsquo;ve stumbled along the way in bringing this website up to more modern standards.&lt;/p></description></item><item><title>Colophon</title><link>https://justinmklam.com/colophon/</link><pubDate>Sun, 18 May 2025 13:48:02 -0700</pubDate><guid>https://justinmklam.com/colophon/</guid><description>&lt;p>This site has gone through multiple iterations over the years. In 2015, the inception of my personal blog was created on &lt;a href="https://wordpress.com/">Wordpress&lt;/a> and hosted on &lt;a href="https://www.bluehost.ca/">Bluehost&lt;/a>, and was intended to be a portfolio of my personal projects to showcase when applying to jobs. I spent a lot of time hunting for a suitable theme, and stuck with one for about a year.&lt;/p>
 &lt;p>In 2016, I wanted to start writing blog posts instead of just having a portfolio, and since I wanted more flexibility in how I was displaying content, I ventured into static site generators and settled on &lt;a href="https://gohugo.io/">Hugo&lt;/a> and used &lt;a href="https://getbootstrap.com/">Bootstrap&lt;/a> to create a custom theme. Later on, as I matured in my career, I realized that having a portfolio was no longer as relevant, so I combined the two types of content into a single blog-like website.&lt;/p></description></item><item><title>Using Google Cloud Pubsub for Batch Pipelines in Apache Beam</title><link>https://justinmklam.com/posts/2022/11/apache-beam-pubsub/</link><pubDate>Wed, 23 Nov 2022 12:31:53 -0800</pubDate><guid>https://justinmklam.com/posts/2022/11/apache-beam-pubsub/</guid><description>&lt;p>Google Cloud&amp;rsquo;s &lt;a href="https://cloud.google.com/pubsub/docs/overview">Pub/Sub&lt;/a> is a useful service that provides an asynchronous and scalable messaging platform that decouples services producing messages from those that receive and process those messages. When combined with &lt;a href="https://github.com/apache/beam">Apache Beam&lt;/a> (and/or &lt;a href="https://cloud.google.com/dataflow/docs/about-dataflow">Dataflow&lt;/a>, Google&amp;rsquo;s managed version of it), you can quickly develop powerful batch and streaming pipelines for data-parallel processing.&lt;/p></description></item><item><title>Tips and Tricks with Terraform's null_resource</title><link>https://justinmklam.com/posts/2022/05/terraform-null-resource/</link><pubDate>Tue, 17 May 2022 20:21:37 -0800</pubDate><guid>https://justinmklam.com/posts/2022/05/terraform-null-resource/</guid><description>&lt;p>Terraform&amp;rsquo;s &lt;code>null_resource&lt;/code> resource can be useful when there aren&amp;rsquo;t any existing modules to satisfy your needs (with some caveats). &lt;a href="https://registry.terraform.io/providers/hashicorp/null/latest/docs/resources/resource">Hashicorp&amp;rsquo;s documentation&lt;/a> for it is a bit lacking, but fortunately there&amp;rsquo;s more information about the provisioners in their other docs &lt;a href="https://developer.hashicorp.com/terraform/language/resources/provisioners/syntax">here&lt;/a>. After using these resources in a handful of places across our infrastructure deployments, I&amp;rsquo;ve developed a small collection of tips I picked up over the past few months that I thought I&amp;rsquo;d share.&lt;/p></description></item><item><title>Deploying Google Cloud Functions with Terraform</title><link>https://justinmklam.com/posts/2022/03/deploy-cloud-functions-terraform/</link><pubDate>Tue, 08 Mar 2022 11:47:29 -0800</pubDate><guid>https://justinmklam.com/posts/2022/03/deploy-cloud-functions-terraform/</guid><description>&lt;p>Cloud Functions are an easy, performant, and potentially inexpensive way to build serverless backends. I recently went down the route of setting up continuous deployments for them, and thought I&amp;rsquo;d share my learnings with it.&lt;/p></description></item><item><title>Precision Sourdough: A Smart Lid for Your Starter</title><link>https://justinmklam.com/posts/2021/02/levain-monitor/</link><pubDate>Mon, 22 Feb 2021 16:36:18 +0000</pubDate><guid>https://justinmklam.com/posts/2021/02/levain-monitor/</guid><description>&lt;p>A few years ago, I had the idea to &lt;a href="https://justinmklam.com/posts/2018/06/sourdough-starter-monitor/">track my sourdough starter using computer vision&lt;/a>. It was neat to monitor it this way, but it was fairly impractical to do for each feeding since it required setting up a camera, downloading the images, and doing some manual image cropping before running it through my analysis script. The analysis was also only done after the fact, and what I really wanted was something that could tell me when the starter was ready to be used (or fed), or, if I missed the window of opportunity, how long ago it peaked.&lt;/p></description></item><item><title>Building a Backyard Chicken Coop in the City</title><link>https://justinmklam.com/posts/2021/06/chicken-coop/</link><pubDate>Wed, 09 Sep 2020 03:41:54 +0000</pubDate><guid>https://justinmklam.com/posts/2021/06/chicken-coop/</guid><description>&lt;p>Back in 2018, we decided to raise chickens in our urban backyard, all in the name of being able to have fresh eggs every morning. Our city had bylaws on having chickens, which included:&lt;/p>
 &lt;ul>
 &lt;li>A maximum of 4 hens (no roosters), 4 months or older&lt;/li>
@@ -12,10 +12,20 @@ Professional photos from &lt;a href="http://justine-russo.com/" target="_blank">
 &lt;p>For readers of my blog, you&amp;rsquo;ll notice that I haven&amp;rsquo;t had any new content in the past year. For good reason though, as I got married in June! Aside from planning the proposal and wedding, I also had the lofty goal of designing and making my wife&amp;rsquo;s engagement ring.&lt;/p>
 &lt;p>With this post, I&amp;rsquo;d like to share my quest in designing and 3D printing the ring, along with some *&lt;em>minor&lt;/em>* mistakes I made.&lt;/p></description></item><item><title>Archives</title><link>https://justinmklam.com/archives/</link><pubDate>Sun, 15 Sep 2019 16:56:13 -0700</pubDate><guid>https://justinmklam.com/archives/</guid><description/></item><item><title>Nordic nRF52 Development with Visual Studio Code</title><link>https://justinmklam.com/posts/2019/04/vscode-nrf52/</link><pubDate>Thu, 25 Apr 2019 14:14:25 -0700</pubDate><guid>https://justinmklam.com/posts/2019/04/vscode-nrf52/</guid><description>&lt;p>A few years ago, I created a &lt;a href="https://www.justinmklam.com/posts/2017/10/vscode-debugger-setup/">tutorial&lt;/a> on setting up Visual Studio Code for development with the STM32. Since I&amp;rsquo;ve also been developing on the Nordic nRF52, I thought I&amp;rsquo;d share another tutorial to show how a project can be set up, flashed, and debugged using Visual Studio Code.&lt;/p>
 &lt;p>The template project discussed in this post can be found on &lt;a href="https://github.com/justinmklam/nrf52-blinky-demo">Github&lt;/a>.&lt;/p>
-&lt;h1 id="instructions">Instructions&lt;/h1>
+
+&lt;h1 id="instructions" class="anchor">
+ &lt;a href="#instructions">
+ Instructions
+ &lt;/a>
+&lt;/h1>
 &lt;p>The Nordic toolchain is cross-platform, but the instructions below are specifically for Linux. However, they can easily be replicated in Windows as long as installation paths and environment variables are set correctly.&lt;/p></description></item><item><title>Monitoring the Fermentation of Sourdough Starter with Computer Vision</title><link>https://justinmklam.com/posts/2018/06/sourdough-starter-monitor/</link><pubDate>Sun, 24 Jun 2018 17:50:22 -0700</pubDate><guid>https://justinmklam.com/posts/2018/06/sourdough-starter-monitor/</guid><description>&lt;p>Bread, the quintessence of life. People have survived for centuries off this staple consisting only of flour, water, salt, and yeast. Try consuming all these ingredients separately, and you&amp;rsquo;ll be in for a digestive surprise. However, mix them together and let time do its thing, and the result is the release of profound flavour, texture, and nutrients that were previously locked away.&lt;/p>
 &lt;p>Despite it being relatively easy to turn dough into something that looks and feels like bread, the challenge is in squeezing every possible ounce of flavour and texture (using only those four ingredients) to achieve the embodiment of a true loaf of bread. The secret to artisinal bread is &lt;strong>all in the fermentation.&lt;/strong> A baker&amp;rsquo;s skill is in their ability to manage and control the fermentation process, which is usually achieved through countless months and/or years of trial and error.&lt;/p></description></item><item><title>From Prototype to Cloud: A Python Recipe Converter</title><link>https://justinmklam.com/posts/2018/04/python-flask-heroku-tutorial/</link><pubDate>Fri, 06 Apr 2018 20:33:46 -0700</pubDate><guid>https://justinmklam.com/posts/2018/04/python-flask-heroku-tutorial/</guid><description>&lt;p>In case the title wasn&amp;rsquo;t clear, this blog post is about developing a web application using the Python programming language using Jupyter Lab, Flask, and the Heroku platform. If you were looking for an article on python recipes, you can start off with this one on making a &lt;a href="https://mobile-cuisine.com/recipes/recipe-poached-burmese-python-curry/">poached Burmese python curry&lt;/a>.&lt;/p>
-&lt;h1 id="the-backstory">The Backstory&lt;/h1>
+
+&lt;h1 id="the-backstory" class="anchor">
+ &lt;a href="#the-backstory">
+ The Backstory
+ &lt;/a>
+&lt;/h1>
 &lt;p>The problem with online baking recipes is that the majority of them use volumetric units. As any civilized baker would know, Patricia&amp;rsquo;s 1 cup of flour may very well be different than Patrick&amp;rsquo;s 1 cup of flour. Maybe Patricia sifted her flour. Maybe Patrick&amp;rsquo;s organic flour is a finer texture. Maybe both Pats &lt;strong>should measure by mass instead of volume&lt;/strong> to avoid all this confusion in the first place.&lt;/p></description></item><item><title>Synchronous vs Asynchronous Ping Sweep in C# Windows Form</title><link>https://justinmklam.com/posts/2018/02/ping-sweeper/</link><pubDate>Fri, 09 Feb 2018 17:02:25 -0800</pubDate><guid>https://justinmklam.com/posts/2018/02/ping-sweeper/</guid><description>&lt;p>As a mechatronics engineer (in training), sometimes I like to pretend that I also know how to program.&lt;/p>
 &lt;p>In my most recent adventures to software land at &lt;a href="https://mistywest.com/">MistyWest&lt;/a>, I needed to write an application in C# that involved doing a ping sweep to find devices that were physically connected through ethernet. Since Google and Stack Overflow are my two best friends, I was able to find (what seemed to be) an off-the-net solution quite quickly.&lt;/p></description></item><item><title>Measuring the Spectral Characteristics of a Light Therapy Lamp</title><link>https://justinmklam.com/posts/2018/01/sad-lamp/</link><pubDate>Fri, 12 Jan 2018 09:42:57 -0800</pubDate><guid>https://justinmklam.com/posts/2018/01/sad-lamp/</guid><description>&lt;p>&lt;strong>Disclaimer:&lt;/strong> &lt;em>Light therapy is one method of easing seasonal affective disorder (SAD); some people swear by it whereas others remain unaffected. This blog post does not intend to refute the effectiveness of light therapy, but rather to dig deeper into the technology behind these light therapy lamps to better educate fellow consumers.&lt;/em>&lt;/p>
 &lt;p>Ah, the winter blues of Vancouver, BC. While some days bring bluebird skies and &lt;a href="https://media1.tenor.com/images/25e5bfdf6e824bfa330964b5e0e48855/tenor.gif?itemid=5287297">fresh pow&lt;/a> for skiing, other days are downright gloomy. Spending this past Christmas in Singapore meant warm, sunny, and +25°C weather, which is quite atypical of how most Canadians spend their winters.&lt;/p></description></item><item><title>Debugger Setup with GDB + OpenOCD in Visual Studio Code</title><link>https://justinmklam.com/posts/2017/10/vscode-debugger-setup/</link><pubDate>Sun, 29 Oct 2017 14:24:52 -0700</pubDate><guid>https://justinmklam.com/posts/2017/10/vscode-debugger-setup/</guid><description>&lt;p>&lt;a href="https://code.visualstudio.com/">Visual Studio Code&amp;rsquo;s&lt;/a> combination of functionality, customizability, and aesthetics makes it one of my favourite code editors. As such, I was set on making it work with embedded development since I was getting started with the STM32 line of microcontrollers. I was following the steps outlined in &lt;a href="https://leanpub.com/mastering-stm32">Mastering STM32&lt;/a> by Carmine Noviello (which is an excellent resource) until it said to use Eclipse, because life&amp;rsquo;s too short to use software with unnecessary bloat. Enter VS Code and someone wanting to use the latest and greatest in code editors.&lt;/p></description></item><item><title>Annealing 3D Printed Plastics: Sous Vide Style</title><link>https://justinmklam.com/posts/2017/06/sous-vide-pla/</link><pubDate>Tue, 13 Jun 2017 15:56:53 -0700</pubDate><guid>https://justinmklam.com/posts/2017/06/sous-vide-pla/</guid><description>&lt;p class="text-center" style="font-style:oblique">
@@ -47,7 +57,11 @@ Featured on &lt;a href="http://hackaday.com/2017/06/17/annealing-plastic-for-str
 &lt;ul>
 &lt;li>A mechanical engineer doing electrical engineering&lt;/li>
 &lt;/ul>
-&lt;p>&lt;strong>Acknowledgements:&lt;/strong>&lt;/p></description></item><item><title>Overhead Robotic Gantry for Tethered VR Headsets</title><link>https://justinmklam.com/posts/2017/04/vr-gantry/</link><pubDate>Tue, 04 Apr 2017 09:26:50 -0800</pubDate><guid>https://justinmklam.com/posts/2017/04/vr-gantry/</guid><description>&lt;h1 id="project-overview">Project Overview&lt;/h1>
+&lt;p>&lt;strong>Acknowledgements:&lt;/strong>&lt;/p></description></item><item><title>Overhead Robotic Gantry for Tethered VR Headsets</title><link>https://justinmklam.com/posts/2017/04/vr-gantry/</link><pubDate>Tue, 04 Apr 2017 09:26:50 -0800</pubDate><guid>https://justinmklam.com/posts/2017/04/vr-gantry/</guid><description>&lt;h1 id="project-overview" class="anchor">
+ &lt;a href="#project-overview">
+ Project Overview
+ &lt;/a>
+&lt;/h1>
 &lt;p>&lt;strong>Objective:&lt;/strong> Create an autonomous gantry to follow the HTC Vive headset around, keeping its cable behind the user at all times.&lt;/p>
 &lt;p>&lt;strong>Motivation:&lt;/strong> An extravagant party prop for an evening at CES 2017, hosted by MistyWest.&lt;/p>
 &lt;p>&lt;strong>Features:&lt;/strong>&lt;/p>
@@ -58,15 +72,14 @@ Featured on &lt;a href="http://hackaday.com/2017/06/17/annealing-plastic-for-str
 &lt;li>HTC Vive pose tracking through C++&lt;/li>
 &lt;li>Patent pending&lt;/li>
 &lt;/ul>
-&lt;p>&lt;strong>Skills:&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>Mechanical design with rapid prototyping methods&lt;/li>
-&lt;li>C++ software development&lt;/li>
-&lt;li>Arduino-based firmware development&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Sources:&lt;/strong>&lt;/p></description></item><item><title>Hakko-Style Solder Fume Extractor</title><link>https://justinmklam.com/posts/2017/03/solder-fume-extractor/</link><pubDate>Sat, 25 Mar 2017 21:14:29 -0700</pubDate><guid>https://justinmklam.com/posts/2017/03/solder-fume-extractor/</guid><description>&lt;p>I&amp;rsquo;ve been slowly getting into the land of electrical pixies. So now, not only will I be inhaling sawdust, I can also fill them with leaded solder (because we all know that the performance of leaded solder takes higher priority than the safety of lead-free solder)! However, because I still value living, I figured I should get something to help get the solder fumes away from my lungs.&lt;/p>
+&lt;p>&lt;strong>Skills:&lt;/strong>&lt;/p></description></item><item><title>Hakko-Style Solder Fume Extractor</title><link>https://justinmklam.com/posts/2017/03/solder-fume-extractor/</link><pubDate>Sat, 25 Mar 2017 21:14:29 -0700</pubDate><guid>https://justinmklam.com/posts/2017/03/solder-fume-extractor/</guid><description>&lt;p>I&amp;rsquo;ve been slowly getting into the land of electrical pixies. So now, not only will I be inhaling sawdust, I can also fill them with leaded solder (because we all know that the performance of leaded solder takes higher priority than the safety of lead-free solder)! However, because I still value living, I figured I should get something to help get the solder fumes away from my lungs.&lt;/p>
 &lt;p>At my current job with MistyWest, we have a nice, bench top solder fume extractor by Hakko. But I&amp;rsquo;m cheap, so heck no was I going to &lt;a href="https://www.digikey.ca/product-detail/en/american-hakko-products-inc/FA400-04/1691-1039-ND/6228795">pay over $100&lt;/a> for blowing away fumes when I can blow them away myself! Despite it being a nifty design with multiple configurations (shown in the images below), I would resist the temptation to lighten my wallet on this. Oh wait, I just bought a thing that I can use to make other things&amp;hellip;&lt;/p></description></item><item><title>Resources for 3D Printing with the MP Select Mini</title><link>https://justinmklam.com/posts/2017/03/3d-printing/</link><pubDate>Thu, 23 Mar 2017 19:38:27 -0700</pubDate><guid>https://justinmklam.com/posts/2017/03/3d-printing/</guid><description>&lt;p>What&amp;rsquo;s better than an inexpensive 3D printer? Free sources of information! The items below are a resource list for 3D printing with the Monoprice Select Mini, all thanks to a lively community of users around the interwebz.&lt;/p>
-&lt;h1 id="general-info">General Info&lt;/h1>
+
+&lt;h1 id="general-info" class="anchor">
+ &lt;a href="#general-info">
+ General Info
+ &lt;/a>
+&lt;/h1>
 &lt;ul>
 &lt;li>Product Page:
 &lt;ul>
@@ -99,7 +112,12 @@ Featured on &lt;a href="http://hackaday.com/2017/06/17/annealing-plastic-for-str
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;h1 id="materials-and-accessories">Materials and Accessories&lt;/h1>
+
+&lt;h1 id="materials-and-accessories" class="anchor">
+ &lt;a href="#materials-and-accessories">
+ Materials and Accessories
+ &lt;/a>
+&lt;/h1>
 &lt;ul>
 &lt;li>Tested PLA Brands:
 &lt;ul>
@@ -113,7 +131,12 @@ Featured on &lt;a href="http://hackaday.com/2017/06/17/annealing-plastic-for-str
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;h1 id="initial-set-up">Initial Set Up&lt;/h1>
+
+&lt;h1 id="initial-set-up" class="anchor">
+ &lt;a href="#initial-set-up">
+ Initial Set Up
+ &lt;/a>
+&lt;/h1>
 &lt;ul>
 &lt;li>CAD Modeling Software (free for hobbyists and enthusiasts):
 &lt;ul>
@@ -136,10 +159,24 @@ Featured on &lt;a href="http://hackaday.com/2017/06/17/annealing-plastic-for-str
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;h1 id="machine-settings">Machine Settings&lt;/h1>
-&lt;h2 id="general">General&lt;/h2>
+
+&lt;h1 id="machine-settings" class="anchor">
+ &lt;a href="#machine-settings">
+ Machine Settings
+ &lt;/a>
+&lt;/h1>
+
+&lt;h2 id="general" class="anchor">
+ &lt;a href="#general">
+ General
+ &lt;/a>
+&lt;/h2>
 &lt;p>The machine settings below are based off the ones in the official user manual. However, the start and end gcode was taken from the community-driven Google Doc (see above) and slightly modified to include an initial nozzle wipe/primer and to remove the delay in turning the fans off.&lt;/p></description></item><item><title>New Toy Tuesday: Monoprice Select Mini 3D Printer</title><link>https://justinmklam.com/posts/2017/03/mp-select-mini/</link><pubDate>Tue, 07 Mar 2017 15:56:53 -0700</pubDate><guid>https://justinmklam.com/posts/2017/03/mp-select-mini/</guid><description>&lt;p>I&amp;rsquo;ve been bit by the 3D printing bug.&lt;/p>
-&lt;p>Like any tech-enthusiast, I have toyed with the idea of owning a 3D printer for quite some time. For my final year mechatronics design project, my partner and I designed an extravagent contraption to measure the yolk done-ness of a soft-boiled egg, which we called &lt;a href="http://justinmklam.com/projects/mecha/perfeggct/">The PerfEGGct&lt;/a>. We borrowed my roommate&amp;rsquo;s 3D printer to create the enclosure, and it turned out to be an indispensable tool during our prototyping process. At the time, reliable 3D printers were upwards of $500 which was just out of my threshold for nice-to-have gadgets.&lt;/p></description></item><item><title>ESP8266 Sous Vide Controller</title><link>https://justinmklam.com/posts/2017/05/sous-vide-controller/</link><pubDate>Sun, 05 Feb 2017 12:28:27 -0800</pubDate><guid>https://justinmklam.com/posts/2017/05/sous-vide-controller/</guid><description>&lt;h1 id="project-summary">Project Summary&lt;/h1>
+&lt;p>Like any tech-enthusiast, I have toyed with the idea of owning a 3D printer for quite some time. For my final year mechatronics design project, my partner and I designed an extravagent contraption to measure the yolk done-ness of a soft-boiled egg, which we called &lt;a href="http://justinmklam.com/projects/mecha/perfeggct/">The PerfEGGct&lt;/a>. We borrowed my roommate&amp;rsquo;s 3D printer to create the enclosure, and it turned out to be an indispensable tool during our prototyping process. At the time, reliable 3D printers were upwards of $500 which was just out of my threshold for nice-to-have gadgets.&lt;/p></description></item><item><title>ESP8266 Sous Vide Controller</title><link>https://justinmklam.com/posts/2017/05/sous-vide-controller/</link><pubDate>Sun, 05 Feb 2017 12:28:27 -0800</pubDate><guid>https://justinmklam.com/posts/2017/05/sous-vide-controller/</guid><description>&lt;h1 id="project-summary" class="anchor">
+ &lt;a href="#project-summary">
+ Project Summary
+ &lt;/a>
+&lt;/h1>
 &lt;p>&lt;strong>Objective:&lt;/strong> Create a small, modular controller to regulate the temperature of a water bath.&lt;/p>
 &lt;p>&lt;strong>Motivation:&lt;/strong> To get in on this cooking fad without dropping fat stacks of cash on an immersion circulator.&lt;/p>
 &lt;p>&lt;strong>Features:&lt;/strong>&lt;/p>
@@ -168,26 +205,55 @@ Featured on &lt;a href="http://hackaday.com/2017/06/17/annealing-plastic-for-str
  &lt;br>&lt;br>
 &lt;/div>
 &lt;p>I grew up watching Star Wars, and like any other eight-year old boy, I wanted to become a Jedi Knight. Maneuvering starfighters through the Hoth asteroid field whilst in aerial combat, jousting battle droids wielding nothing but a lightsaber, and having my hand sliced off to make space for my own mechno-arm were the epitomes of my childhood fantasy.&lt;/p>
-&lt;p>Reality came quite bluntly, yet these dreams continued to flourish. These days, they follow more along the lines of maneuvering through complex codebases, attacking architectural design challenges with a pen and paper, and putting my mechatronics background to good use by working on fun side projects.&lt;/p></description></item><item><title>MECH 458: Capstone 3D Optical Well Imager</title><link>https://justinmklam.com/posts/2016/06/mech-458-capstone/</link><pubDate>Thu, 02 Jun 2016 12:57:32 -0700</pubDate><guid>https://justinmklam.com/posts/2016/06/mech-458-capstone/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>Reality came quite bluntly, yet these dreams continued to flourish. These days, they follow more along the lines of maneuvering through complex codebases, attacking architectural design challenges with a pen and paper, and putting my mechatronics background to good use by working on fun side projects.&lt;/p></description></item><item><title>MECH 458: Capstone 3D Optical Well Imager</title><link>https://justinmklam.com/posts/2016/06/mech-458-capstone/</link><pubDate>Thu, 02 Jun 2016 12:57:32 -0700</pubDate><guid>https://justinmklam.com/posts/2016/06/mech-458-capstone/</guid><description>&lt;h1 id="introduction" class="anchor">
+ &lt;a href="#introduction">
+ Introduction
+ &lt;/a>
+&lt;/h1>
 &lt;p>&lt;strong>Objective&lt;/strong>: Develop an optical scanning system to be used for generating 3D models of well liners and casings with sub-millimeter accuracy.&lt;/p>&lt;/p>
 &lt;p>&lt;strong>How&lt;/strong>: As a team of five mechatronic and mechanical engineering students, we designed and constructed an alpha prototype of the optical 3D well imager.&lt;/span>&lt;/p>&lt;/p>
-&lt;h1 id="project-details">Project Details&lt;/h1>
-&lt;h2 id="requirements-and-specifications">Requirements and Specifications&lt;/h2>
-&lt;h3 id="optical">Optical&lt;/h3>
+
+&lt;h1 id="project-details" class="anchor">
+ &lt;a href="#project-details">
+ Project Details
+ &lt;/a>
+&lt;/h1>
+
+&lt;h2 id="requirements-and-specifications" class="anchor">
+ &lt;a href="#requirements-and-specifications">
+ Requirements and Specifications
+ &lt;/a>
+&lt;/h2>
+
+&lt;h3 id="optical" class="anchor">
+ &lt;a href="#optical">
+ Optical
+ &lt;/a>
+&lt;/h3>
 &lt;ol>
  	&lt;li>Device must have a tolerance on distance measurement of 1 mm&lt;/li>
  	&lt;li>Device must have a camera circumferential resolution of 1.42°&lt;/li>
  	&lt;li>Device must have a 3D scan circumferential resolution of 1.42°&lt;/li>
  	&lt;li>Device must have an axial resolution of 1 mm&lt;/li>
 &lt;/ol>
-&lt;h3 id="mechanical">Mechanical&lt;/h3>
+
+&lt;h3 id="mechanical" class="anchor">
+ &lt;a href="#mechanical">
+ Mechanical
+ &lt;/a>
+&lt;/h3>
 &lt;ol>
  	&lt;li>Device must be submersible&lt;/li>
  	&lt;li>Device must fit in a 3.5” ID pipe&lt;/li>
  	&lt;li>Device must have a minimum operating velocity of 10 mm/s&lt;/li>
  	&lt;li>Device must be operable using the existing test apparatus&lt;/li>
 &lt;/ol>
-&lt;h2 id="design-overview">Design Overview&lt;/h2>
+
+&lt;h2 id="design-overview" class="anchor">
+ &lt;a href="#design-overview">
+ Design Overview
+ &lt;/a>
+&lt;/h2>
 &lt;p style="text-align: justify;">The final design of the prototype includes a camera module, laser module, and two conical mirrors. The basic functionality of the device is shown in the figure below. A red laser ring is generated by the laser module which is reflected by 90° on to the surface of the well casing. The camera’s vision is then reflected by 150° to capture the projected laser ring.&lt;/p></description></item><item><title>New Workshop + Plywood Bench Stool</title><link>https://justinmklam.com/posts/2016/new-workshop/</link><pubDate>Wed, 01 Jun 2016 15:39:56 -0700</pubDate><guid>https://justinmklam.com/posts/2016/new-workshop/</guid><description>&lt;p>My family moved into a new house, meaning that we finally have an actual garage instead of a measly carport. But what this really means is that I get a chance to claim space to set up an actual workshop! First project was naturally a workbench, which I put together using 2x4&amp;rsquo;s and a 3/4&amp;quot; MDF board for the work surface (see above). Second project was a bench stool, as shown in the following images below. The builders left some 1/8&amp;quot; plywood in the yard, and I wanted to see how sturdy of a chair I can make with it given the inherent flimsiness of the thin sheet stock. By adding a reinforcing cross-brace at the base of the legs, I was able to significantly increase its sturdiness.&lt;/p></description></item><item><title>Adjustable Portable Power Supply</title><link>https://justinmklam.com/posts/2016/05/power-supply/</link><pubDate>Wed, 25 May 2016 17:29:58 -0700</pubDate><guid>https://justinmklam.com/posts/2016/05/power-supply/</guid><description>&lt;p>&lt;strong>Objective:&lt;/strong> Build a cheap, portable, variable DC power supply.&lt;/p>
 &lt;p>&lt;strong>Motivation:&lt;/strong> It was finally time to get my hands on a variable power supply for my electronics projects. Previous projects mainly involved Arduino, which was able to supply 5V and 3.3V with ease. However, the need for a supply with higher voltage, current, and flexibility eventually arose, resulting in the birth of this ghetto (but functional) power supply.&lt;/p>
 &lt;p>&lt;strong>Limitations:&lt;/strong>&lt;/p>
@@ -337,5 +403,10 @@ Haikus are simple
  &lt;p class="caption">Flowchart of the implemented algorithm.&lt;/p>
 &lt;/div>
 &lt;/p></description></item><item><title>Co-op: The Age Effect on Bicycle Helmets</title><link>https://justinmklam.com/posts/2013/coop-mea/</link><pubDate>Sat, 28 Dec 2013 12:37:10 -0700</pubDate><guid>https://justinmklam.com/posts/2013/coop-mea/</guid><description>Foam liners in bicycle helmets absorb energy during impacts. Manufacturers recommend replacing a helmet every 2 to 10 years to maintain optimal head protection. To investigate this recommendation, we quantified the material and impact attenuation properties of helmets to determine if they changed with age.</description></item><item><title>MECH 223: Hovercraft Competition</title><link>https://justinmklam.com/posts/2013/mech-223-hovercraft/</link><pubDate>Sat, 20 Apr 2013 12:22:15 -0700</pubDate><guid>https://justinmklam.com/posts/2013/mech-223-hovercraft/</guid><description>Teams were given 3 weeks to research, conceptualize, test, and refine their hovercrafts to compete in a class-wide battle of speed, cargo capacity, and maneuverability.</description></item><item><title>Men in Massage: Research Paper</title><link>https://justinmklam.com/posts/2011/12/men-in-massage-therapy/</link><pubDate>Thu, 01 Dec 2011 17:51:38 -0700</pubDate><guid>https://justinmklam.com/posts/2011/12/men-in-massage-therapy/</guid><description>&lt;p>&lt;em>Originally written as a research paper for ENG 112 at UBC. Republished here for archival purposes.&lt;/em>&lt;/p>
-&lt;h1 id="research-proposal">Research Proposal&lt;/h1>
+
+&lt;h1 id="research-proposal" class="anchor">
+ &lt;a href="#research-proposal">
+ Research Proposal
+ &lt;/a>
+&lt;/h1>
 &lt;p>According to Tom Delph-Janiurek, a “mis-performance of voice” may be necessary in order to gain authority in specific interactional spaces by creating a display of control and assertiveness (277). He proposes that the vocal performances in teaching spaces adapt to their social roles of authority by opposing the hegemonic heterosexuality in voices and perform vocal features of “drag” without giving up their gendered identities, contributing to and disrupting the “heterosexing of [teaching] space” (277). In spite of his conclusion regarding voice as “drag”, he fails to thoroughly assess the aspects outside of vocal performances that also relate to the projections of gendered bodies such as embodiment. A performed gender role relies on the physical aspects of body language and gesture in addition to voice in order to create a complete portrayal of a sexualized identity.&lt;/p></description></item><item><title>LEGO Headphones</title><link>https://justinmklam.com/posts/2010/07/lego-headphones/</link><pubDate>Sat, 10 Jul 2010 12:37:00 -0700</pubDate><guid>https://justinmklam.com/posts/2010/07/lego-headphones/</guid><description>&lt;p>&lt;strong>Background:&lt;/strong> I decided to combine the two things that I love most: music and LEGO. This whole project took me about a month and a half, very on and off. I&amp;rsquo;m quite pleased with how the headphones turned out in the end, as they are sturdy enough to be tossed around in a bag. My favourite part is that I can take it apart any time to make repairs that may be needed on the go. No tools necessary!&lt;/p></description></item><item><title>A Minty-Fresh Power Pack</title><link>https://justinmklam.com/posts/2009/altoids/</link><pubDate>Thu, 16 Apr 2009 22:52:25 -0700</pubDate><guid>https://justinmklam.com/posts/2009/altoids/</guid><description>Before the ubiquity of powerbanks, there was nothing on the market to provide longer battery life for portable electronics. Connecting a female USB connector to four rechargable AA batteries opened up a new world of extended iPod playback.</description></item></channel></rss>

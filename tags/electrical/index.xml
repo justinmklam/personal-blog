@@ -23,7 +23,11 @@
 &lt;ul>
 &lt;li>A mechanical engineer doing electrical engineering&lt;/li>
 &lt;/ul>
-&lt;p>&lt;strong>Acknowledgements:&lt;/strong>&lt;/p></description></item><item><title>Overhead Robotic Gantry for Tethered VR Headsets</title><link>https://justinmklam.com/posts/2017/04/vr-gantry/</link><pubDate>Tue, 04 Apr 2017 09:26:50 -0800</pubDate><guid>https://justinmklam.com/posts/2017/04/vr-gantry/</guid><description>&lt;h1 id="project-overview">Project Overview&lt;/h1>
+&lt;p>&lt;strong>Acknowledgements:&lt;/strong>&lt;/p></description></item><item><title>Overhead Robotic Gantry for Tethered VR Headsets</title><link>https://justinmklam.com/posts/2017/04/vr-gantry/</link><pubDate>Tue, 04 Apr 2017 09:26:50 -0800</pubDate><guid>https://justinmklam.com/posts/2017/04/vr-gantry/</guid><description>&lt;h1 id="project-overview" class="anchor">
+ &lt;a href="#project-overview">
+ Project Overview
+ &lt;/a>
+&lt;/h1>
 &lt;p>&lt;strong>Objective:&lt;/strong> Create an autonomous gantry to follow the HTC Vive headset around, keeping its cable behind the user at all times.&lt;/p>
 &lt;p>&lt;strong>Motivation:&lt;/strong> An extravagant party prop for an evening at CES 2017, hosted by MistyWest.&lt;/p>
 &lt;p>&lt;strong>Features:&lt;/strong>&lt;/p>
@@ -34,13 +38,11 @@
 &lt;li>HTC Vive pose tracking through C++&lt;/li>
 &lt;li>Patent pending&lt;/li>
 &lt;/ul>
-&lt;p>&lt;strong>Skills:&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>Mechanical design with rapid prototyping methods&lt;/li>
-&lt;li>C++ software development&lt;/li>
-&lt;li>Arduino-based firmware development&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Sources:&lt;/strong>&lt;/p></description></item><item><title>ESP8266 Sous Vide Controller</title><link>https://justinmklam.com/posts/2017/05/sous-vide-controller/</link><pubDate>Sun, 05 Feb 2017 12:28:27 -0800</pubDate><guid>https://justinmklam.com/posts/2017/05/sous-vide-controller/</guid><description>&lt;h1 id="project-summary">Project Summary&lt;/h1>
+&lt;p>&lt;strong>Skills:&lt;/strong>&lt;/p></description></item><item><title>ESP8266 Sous Vide Controller</title><link>https://justinmklam.com/posts/2017/05/sous-vide-controller/</link><pubDate>Sun, 05 Feb 2017 12:28:27 -0800</pubDate><guid>https://justinmklam.com/posts/2017/05/sous-vide-controller/</guid><description>&lt;h1 id="project-summary" class="anchor">
+ &lt;a href="#project-summary">
+ Project Summary
+ &lt;/a>
+&lt;/h1>
 &lt;p>&lt;strong>Objective:&lt;/strong> Create a small, modular controller to regulate the temperature of a water bath.&lt;/p>
 &lt;p>&lt;strong>Motivation:&lt;/strong> To get in on this cooking fad without dropping fat stacks of cash on an immersion circulator.&lt;/p>
 &lt;p>&lt;strong>Features:&lt;/strong>&lt;/p>

@@ -2,7 +2,11 @@
 Professional photos from &lt;a href="http://justine-russo.com/" target="_blank">Justine Russo Photography.&lt;/a>
 &lt;/p>
 &lt;p>For readers of my blog, you&amp;rsquo;ll notice that I haven&amp;rsquo;t had any new content in the past year. For good reason though, as I got married in June! Aside from planning the proposal and wedding, I also had the lofty goal of designing and making my wife&amp;rsquo;s engagement ring.&lt;/p>
-&lt;p>With this post, I&amp;rsquo;d like to share my quest in designing and 3D printing the ring, along with some *&lt;em>minor&lt;/em>* mistakes I made.&lt;/p></description></item><item><title>Overhead Robotic Gantry for Tethered VR Headsets</title><link>https://justinmklam.com/posts/2017/04/vr-gantry/</link><pubDate>Tue, 04 Apr 2017 09:26:50 -0800</pubDate><guid>https://justinmklam.com/posts/2017/04/vr-gantry/</guid><description>&lt;h1 id="project-overview">Project Overview&lt;/h1>
+&lt;p>With this post, I&amp;rsquo;d like to share my quest in designing and 3D printing the ring, along with some *&lt;em>minor&lt;/em>* mistakes I made.&lt;/p></description></item><item><title>Overhead Robotic Gantry for Tethered VR Headsets</title><link>https://justinmklam.com/posts/2017/04/vr-gantry/</link><pubDate>Tue, 04 Apr 2017 09:26:50 -0800</pubDate><guid>https://justinmklam.com/posts/2017/04/vr-gantry/</guid><description>&lt;h1 id="project-overview" class="anchor">
+ &lt;a href="#project-overview">
+ Project Overview
+ &lt;/a>
+&lt;/h1>
 &lt;p>&lt;strong>Objective:&lt;/strong> Create an autonomous gantry to follow the HTC Vive headset around, keeping its cable behind the user at all times.&lt;/p>
 &lt;p>&lt;strong>Motivation:&lt;/strong> An extravagant party prop for an evening at CES 2017, hosted by MistyWest.&lt;/p>
 &lt;p>&lt;strong>Features:&lt;/strong>&lt;/p>
@@ -13,32 +17,55 @@ Professional photos from &lt;a href="http://justine-russo.com/" target="_blank">
 &lt;li>HTC Vive pose tracking through C++&lt;/li>
 &lt;li>Patent pending&lt;/li>
 &lt;/ul>
-&lt;p>&lt;strong>Skills:&lt;/strong>&lt;/p>
-&lt;ul>
-&lt;li>Mechanical design with rapid prototyping methods&lt;/li>
-&lt;li>C++ software development&lt;/li>
-&lt;li>Arduino-based firmware development&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Sources:&lt;/strong>&lt;/p></description></item><item><title>MECH 458: Capstone 3D Optical Well Imager</title><link>https://justinmklam.com/posts/2016/06/mech-458-capstone/</link><pubDate>Thu, 02 Jun 2016 12:57:32 -0700</pubDate><guid>https://justinmklam.com/posts/2016/06/mech-458-capstone/</guid><description>&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>&lt;strong>Skills:&lt;/strong>&lt;/p></description></item><item><title>MECH 458: Capstone 3D Optical Well Imager</title><link>https://justinmklam.com/posts/2016/06/mech-458-capstone/</link><pubDate>Thu, 02 Jun 2016 12:57:32 -0700</pubDate><guid>https://justinmklam.com/posts/2016/06/mech-458-capstone/</guid><description>&lt;h1 id="introduction" class="anchor">
+ &lt;a href="#introduction">
+ Introduction
+ &lt;/a>
+&lt;/h1>
 &lt;p>&lt;strong>Objective&lt;/strong>: Develop an optical scanning system to be used for generating 3D models of well liners and casings with sub-millimeter accuracy.&lt;/p>&lt;/p>
 &lt;p>&lt;strong>How&lt;/strong>: As a team of five mechatronic and mechanical engineering students, we designed and constructed an alpha prototype of the optical 3D well imager.&lt;/span>&lt;/p>&lt;/p>
-&lt;h1 id="project-details">Project Details&lt;/h1>
-&lt;h2 id="requirements-and-specifications">Requirements and Specifications&lt;/h2>
-&lt;h3 id="optical">Optical&lt;/h3>
+
+&lt;h1 id="project-details" class="anchor">
+ &lt;a href="#project-details">
+ Project Details
+ &lt;/a>
+&lt;/h1>
+
+&lt;h2 id="requirements-and-specifications" class="anchor">
+ &lt;a href="#requirements-and-specifications">
+ Requirements and Specifications
+ &lt;/a>
+&lt;/h2>
+
+&lt;h3 id="optical" class="anchor">
+ &lt;a href="#optical">
+ Optical
+ &lt;/a>
+&lt;/h3>
 &lt;ol>
  	&lt;li>Device must have a tolerance on distance measurement of 1 mm&lt;/li>
  	&lt;li>Device must have a camera circumferential resolution of 1.42°&lt;/li>
  	&lt;li>Device must have a 3D scan circumferential resolution of 1.42°&lt;/li>
  	&lt;li>Device must have an axial resolution of 1 mm&lt;/li>
 &lt;/ol>
-&lt;h3 id="mechanical">Mechanical&lt;/h3>
+
+&lt;h3 id="mechanical" class="anchor">
+ &lt;a href="#mechanical">
+ Mechanical
+ &lt;/a>
+&lt;/h3>
 &lt;ol>
  	&lt;li>Device must be submersible&lt;/li>
  	&lt;li>Device must fit in a 3.5” ID pipe&lt;/li>
  	&lt;li>Device must have a minimum operating velocity of 10 mm/s&lt;/li>
  	&lt;li>Device must be operable using the existing test apparatus&lt;/li>
 &lt;/ol>
-&lt;h2 id="design-overview">Design Overview&lt;/h2>
+
+&lt;h2 id="design-overview" class="anchor">
+ &lt;a href="#design-overview">
+ Design Overview
+ &lt;/a>
+&lt;/h2>
 &lt;p style="text-align: justify;">The final design of the prototype includes a camera module, laser module, and two conical mirrors. The basic functionality of the device is shown in the figure below. A red laser ring is generated by the laser module which is reflected by 90° on to the surface of the well casing. The camera’s vision is then reflected by 150° to capture the projected laser ring.&lt;/p></description></item><item><title>MECH 423: Mechatronics Product Design</title><link>https://justinmklam.com/posts/2016/04/perfeggct/</link><pubDate>Fri, 22 Apr 2016 22:38:31 -0700</pubDate><guid>https://justinmklam.com/posts/2016/04/perfeggct/</guid><description>&lt;p>&lt;strong>Background:&lt;/strong> When a hard boiled egg is spun on a table, it rotates freely since the inside is completely solid. With a raw egg, the liquid yolk sloshes around and resists rotation. By using math and physics, we can analyze the rotational oscillation of an egg and determine the yolk consistency.&lt;/p>
 &lt;blockquote>
 &lt;p>&amp;ldquo;If it&amp;rsquo;s worth doing, it&amp;rsquo;s worth overdoing.&amp;rdquo; - Jaime Hyneman&lt;/p>&lt;/blockquote>
