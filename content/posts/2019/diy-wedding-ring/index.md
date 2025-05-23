@@ -167,15 +167,15 @@ Hindsight 20 / 20, but all things considered, it wasn't the worst thing that cou
 
 With the engagement completed, we spent the next months planning for our farm-to-table themed wedding at the [Poplar Grove at UBC Farm](https://ubcfarm.ubc.ca/bookings/ubc-farm-venues/). We opted for professionally-made rings for our wedding bands (smartly so), and the end result of everything was just lovely.
 
-{{<img caption="DIY engagement ring sandwiched between our not-DIY wedding rings." src="J_H-10.jpg" link="http://justine-russo.com/http://justine-russo.com/" link-text="Justine Russo Photography">}}
+{{<img caption="DIY engagement ring sandwiched between our not-DIY wedding rings." src="J_H-10.jpg" link="http://justine-russo.com/" link-text="Justine Russo Photography">}}
 
-{{<img caption="Ceremony at the UBC Farm." src="J_H-144.jpg" link="http://justine-russo.com/http://justine-russo.com/" link-text="Justine Russo Photography">}}
+{{<img caption="Ceremony at the UBC Farm." src="J_H-144.jpg" link="http://justine-russo.com/" link-text="Justine Russo Photography">}}
 
-{{<img caption="Cozy reception within the Poplar Grove." src="J&H-1124_websize.jpg" link="http://justine-russo.com/http://justine-russo.com/" link-text="Justine Russo Photography">}}
+{{<img caption="Cozy reception within the Poplar Grove." src="J&H-1124_websize.jpg" link="http://justine-russo.com/" link-text="Justine Russo Photography">}}
 
-{{<img caption="Trying to cut the cake without toppling it over..." src="J&H-1184_websize.jpg" link="http://justine-russo.com/http://justine-russo.com/" link-text="Justine Russo Photography">}}
+{{<img caption="Trying to cut the cake without toppling it over..." src="J&H-1184_websize.jpg" link="http://justine-russo.com/" link-text="Justine Russo Photography">}}
 
-{{<img caption="Ending the night with the first dance." src="J&H-37_websize.jpg" link="http://justine-russo.com/http://justine-russo.com/" link-text="Justine Russo Photography">}}
+{{<img caption="Ending the night with the first dance." src="J&H-37_websize.jpg" link="http://justine-russo.com/" link-text="Justine Russo Photography">}}
 
 # Final Thoughts
 
