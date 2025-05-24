@@ -12,7 +12,7 @@ aliases:
   - /posts/2025/05/hugo-syntax-highlighting/
 ---
 
-My intro to Hugo was back in 2016, a mere 3 years after its [inception](https://en.wikipedia.org/wiki/Hugo_(software)), when I was in my early days of learning web development. Quite a bit has changed since then, both in what Hugo is capable of and my understanding of how to actually code. I'm far from being a frontend dev, but I've gathered a collection of snippets that I've stumbled along the way in bringing this website up to more modern standards.
+My intro to Hugo was back in 2016, a mere 3 years after its [inception](https://en.wikipedia.org/wiki/Hugo_(software)), when I was in my early days of learning web development. Quite a bit has changed since then, both in what Hugo is capable of and my understanding of how to actually code. I'm far from being a frontend dev, but I've gathered a collection of snippets that I've stumbled upon along the way in bringing this website up to more modern standards.
 
 <!--more-->
 
@@ -24,7 +24,7 @@ To create a new post, typically you would do something like this:
 hugo new posts/2025/05/my-new-post/index.md
 ```
 
-But manually typing date paths is cumbersome, so instead you can use a target like this in your Makefile to:
+But manually typing date paths is cumbersome, so instead you can use a target like this in your Makefile:
 
 ```sh
 new:
@@ -40,10 +40,10 @@ make new title=my-new-post
 
 Render hooks can be used to override markdown to HTML conversions to give full flexibility in how components are presented while staying being able to write markdown. As useful as [shortcodes](https://gohugo.io/content-management/shortcodes/) are, they typically aren't compatible with normal markdown editors/viewers, which adds a bit of friction when you need to have two windows open (one for editing, and the other for previewing).
 
-Full docs are [here](https://gohugo.io/render-hooks/introduction/), but the ones below are the ones I found most useful.
+Full docs are [here](https://gohugo.io/render-hooks/introduction/), but the components  below are the ones I found that I actually wanted to change.
 
 ## Headings
-Many websites these days have heading anchors that readers can click on, making it easy to reference or share direct sections of a page. Fortunately, a simple template can be used to achieve this.
+Many websites these days have heading anchors that readers can click on, making it easy to reference or share direct sections of a page. Although Hugo doesn’t have this behaviour by default, a simple template can be used to achieve this.
 
 Create the following file:
 ```
@@ -101,7 +101,7 @@ Note: There's a `resize-image.html` partial that's referenced, more on that next
 ## Compiling and Minifying CSS
 If you're using SASS/SCSS in your stylesheets, Hugo can compile them for you with `toCSS` without having it part of a separate build step. You can also use `resources.Concat` to concatenate multiple files into a single one, and then optionally use `resources.Minify` to minify them, which will work on any CSS, JS, JSON, HTML, SVG, or XML file.
 
-An example combining all of these operations:
+An example that combines all of these operations:
 
 ```html
 {{ $custom := resources.Get "css/custom.scss" | toCSS }}
@@ -111,7 +111,7 @@ An example combining all of these operations:
 ```
 ## Processing Images
 
-Before [page bundles](https://gohugo.io/content-management/page-bundles/), images were typically stored under your `/static` directory. But since its introduction in [v0.32](https://github.com/gohugoio/hugo/releases/tag/v0.32), it opens up the ability to process images during the build. For example, if you want to resize and convert all your images that are displayed on your website, you can use the partial below.
+Before [page bundles](https://gohugo.io/content-management/page-bundles/), images were typically stored under your `/static` directory. But since its introduction in [v0.32](https://github.com/gohugoio/hugo/releases/tag/v0.32), it opens up the ability to process images during the build. For example, if you want to resize and convert all your images that are displayed on your website to `jpg` or `webp`, you can use the partial below.
 
 > Fun fact: Partials can also be used as functions, not just for rendering snippets of HTML.
 
@@ -153,7 +153,7 @@ Before [page bundles](https://gohugo.io/content-management/page-bundles/), image
 
 ```
 
-Then usage can be something like:
+ Usage of this partial would look something like:
 ```html
 {{ $image := .Resources.Get "posts/myimage.jpg" }}
 {{ $image = partial "resize-image.html" (dict "image" $image) }}
@@ -222,40 +222,8 @@ To this:
 ...
 ```
 
-Optionally, you can add the following to change the background dynamically in your main stylesheet, along with any other additional styles:
-
-```css
-:root {
-  /* Light background */
-  --codebackground: #fafafa;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* Dark background */
-    --codebackground: #282828;
-  }
-}
-
-pre {
-  /* This sets the codeblock background, e.g. if you don't like the default colour */
-  background-color: var(--codebackground) !important;
-}
-
-code {
-  /* This sets the inline code background */
-  background-color: var(--codebackground);
-}
-
-pre code {
-  /* You may need this so the default text inherits
-  the correct light/dark text color from your own stylesheet*/
-  color: inherit;
-}
-```
-
 # Building and Deploying
-Since my website is hosted on GitHub Pages, I used to manually build and deploy the assets with a script that looks something like this:
+Since my website is hosted on GitHub Pages, I used to manually build and deploy the assets with a script that looked something like this:
 
 ```sh
 #!/bin/sh
@@ -280,7 +248,7 @@ git add .
 # Commit changes.
 msg="Rebuild site ($(date))"
 if [ -n "$*" ]; then
-	msg="${msg}: $*"
+  msg="${msg}: $*"
 fi
 git commit -m "$msg"
 
@@ -290,7 +258,7 @@ printf "\033[0;32mPushing updates to GitHub...\033[0m\n"
 git push origin main
 ```
 
-However, after learning about CI/CD and that it's quite easy to set up these days, that manual deployment has now been replaced with a Github Action that runs on commits to main, which then Github picks up on the `gh-pages` branch.
+However, after learning about CI/CD and that it can be quite easy to set up these days, that manual deployment has now been replaced with a Github Action. It runs on commits to main, which then Github picks up on the `gh-pages` branch.
 
 ```yaml
 name: Github Pages
@@ -328,7 +296,7 @@ jobs:
 ```
 # Bonus: Using Obsidian as a Local CMS
 
-Since Hugo posts are just markdown files, I started using [Obsidian](https://obsidian.md/)  to edit the files. Previously, I was writing content in my IDE, but something about it felt a bit off -- the virtual atmosphere that promotes writing code just doesn't hit the same for writing creatively.
+Since Hugo posts are just markdown files, I started using [Obsidian](https://obsidian.md/)  to edit the files. Previously, I was writing content in my IDE, but something about it felt a bit off -- the virtual atmosphere that promoted writing code just didn’t hit the same for writing creatively.
 
 I wanted a simple [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) editor to write my posts in, and with Obsidian being more popular than ever these days, I incorporated it into my workflow and have been finding it quite a joy to use! Now, I can write content in a clean interface using markdown, and have the niceties of having the elements rendered similar to how it'd look on my website without needing to have a separate window open to show the preview.
 
@@ -338,7 +306,7 @@ Be sure to disable **"Use Wikilinks"** so that markdown format is used for image
 
 ![Obsidian settings -> Files and links](settings.png)
 
-Note that the filename of the pasted image may not render correctly by Hugo, since it typically doesn't play well with spaces in image filenames. To fix this, just rename the image in Obsidian, which will automatically update the link in your Markdown post.
+Note that the filename of the pasted image may not render correctly by Hugo, since it typically doesn't play well with spaces in image filenames. To fix this, just rename the image in Obsidian, which will automatically update the link in your markdown document.
 ## Plugins
 
 Some days I want to stay within Obsidian and not have to open a separate terminal to commit my changes to Github, and the [Obsidian Git Plugin](https://github.com/Vinzent03/obsidian-git) makes that possible. After setting it up, you can do normal git operations straight from Obsidian for a truly seamless workflow.
