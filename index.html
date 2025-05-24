@@ -1,6 +1,6 @@
 <!doctype html><html lang=en><head><meta name=generator content="Hugo 0.147.1"><title>Justin MK Lam | Blog</title>
 <meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Justin MK Lam | Blog"><meta name=author content="Justin Lam"><link rel=stylesheet href=https://justinmklam.com/css/syntax.min.css media=screen><link rel=stylesheet href=https://justinmklam.com/css/syntax-dark.min.css media="screen and (prefers-color-scheme: dark)"><link rel=stylesheet href=https://justinmklam.com/css/styles.min.css><script async src="https://www.googletagmanager.com/gtag/js?id=UA-85178257-1"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","UA-85178257-1")</script></head><body><div class="navbar row"><div><span class=navbar-brand>Justin Lam</span></div><div class=navbar-links><a href=/>Blog</a>
-<a href=/archives/>Archives</a>
+<a href=/projects/>Projects</a>
 <a href=/about/>About</a>
 <a href=/contact/>Contact</a></div></div><div><div><h2 class=blog-title><a href=https://justinmklam.com/posts/2025/05/hugo-tips-and-tricks/>Hugo: Some Random Tips and Tricks</a></h2><p class=blog-title-metadata>Posted on May 23, 2025
 &nbsp;&#183;&nbsp;9 min read
@@ -25,13 +25,21 @@
 <span class=disqus-comment-count data-disqus-url=https://justinmklam.com/posts/2022/03/deploy-cloud-functions-terraform/#disqus_thread>0 comments</span>
 &nbsp;&#183;&nbsp;
 <a class=blog-tag href=/tags/today-i-learned>#today-i-learned&nbsp;</a>
-<a class=blog-tag href=/tags/programming>#programming&nbsp;</a></p><p><p>Cloud Functions are an easy, performant, and potentially inexpensive way to build serverless backends. I recently went down the route of setting up continuous deployments for them, and thought I&rsquo;d share my learnings with it.</p></p><div class="nav-btn readmore-btn"><a href=https://justinmklam.com/posts/2022/03/deploy-cloud-functions-terraform/>Read More ></a></div><hr><h2 class=blog-title><a href=https://justinmklam.com/posts/2021/02/levain-monitor/>Precision Sourdough: A Smart Lid for Your Starter</a></h2><p class=blog-title-metadata>Posted on February 22, 2021
-&nbsp;&#183;&nbsp;12 min read
+<a class=blog-tag href=/tags/programming>#programming&nbsp;</a></p><p><p>Cloud Functions are an easy, performant, and potentially inexpensive way to build serverless backends. I recently went down the route of setting up continuous deployments for them, and thought I&rsquo;d share my learnings with it.</p></p><div class="nav-btn readmore-btn"><a href=https://justinmklam.com/posts/2022/03/deploy-cloud-functions-terraform/>Read More ></a></div><hr><h2 class=blog-title><a href=https://justinmklam.com/posts/2019/04/vscode-nrf52/>Nordic nRF52 Development with Visual Studio Code</a></h2><p class=blog-title-metadata>Posted on April 25, 2019
+&nbsp;&#183;&nbsp;5 min read
 &nbsp;&#183;&nbsp;
-<span class=disqus-comment-count data-disqus-url=https://justinmklam.com/posts/2021/02/levain-monitor/#disqus_thread>0 comments</span>
+<span class=disqus-comment-count data-disqus-url=https://justinmklam.com/posts/2019/04/vscode-nrf52/#disqus_thread>0 comments</span>
 &nbsp;&#183;&nbsp;
-<a class=blog-tag href=/tags/3d-printing>#3d-printing&nbsp;</a>
-<a class=blog-tag href=/tags/design>#design&nbsp;</a>
-<a class=blog-tag href=/tags/electrical>#electrical&nbsp;</a>
 <a class=blog-tag href=/tags/programming>#programming&nbsp;</a>
-<a class=blog-tag href=/tags/embedded>#embedded&nbsp;</a></p><div class=img-blog-preview><a href=https://justinmklam.com/posts/2021/02/levain-monitor/><img src=/posts/2021/02/levain-monitor/levain-monitor-combined.png class=img-preview alt="Precision Sourdough: A Smart Lid for Your Starter"></a></div><p><p>A few years ago, I had the idea to <a href=https://justinmklam.com/posts/2018/06/sourdough-starter-monitor/>track my sourdough starter using computer vision</a>. It was neat to monitor it this way, but it was fairly impractical to do for each feeding since it required setting up a camera, downloading the images, and doing some manual image cropping before running it through my analysis script. The analysis was also only done after the fact, and what I really wanted was something that could tell me when the starter was ready to be used (or fed), or, if I missed the window of opportunity, how long ago it peaked.</p></p><div class="nav-btn readmore-btn"><a href=https://justinmklam.com/posts/2021/02/levain-monitor/>Read More ></a></div><hr><div class=nav-btn><a href=/archives>&lt; All Posts</a></div></div></div><script defer id=dsq-count-scr src=//justinmklam.disqus.com/count.js async></script></body><footer><div class=footer-container><hr><p>&copy; 2025 Justin Lam | <a href=/colophon>Colophon</a></p></div></footer></html>
+<a class=blog-tag href=/tags/embedded>#embedded&nbsp;</a></p><div class=img-blog-preview><a href=https://justinmklam.com/posts/2019/04/vscode-nrf52/><img src=/posts/2019/04/vscode-nrf52/vs-code-debug.png class=img-preview alt="Nordic nRF52 Development with Visual Studio Code"></a></div><p><p>A few years ago, I created a <a href=https://www.justinmklam.com/posts/2017/10/vscode-debugger-setup/>tutorial</a> on setting up Visual Studio Code for development with the STM32. Since I&rsquo;ve also been developing on the Nordic nRF52, I thought I&rsquo;d share another tutorial to show how a project can be set up, flashed, and debugged using Visual Studio Code.</p><p>The template project discussed in this post can be found on <a href=https://github.com/justinmklam/nrf52-blinky-demo>Github</a>.</p><h1 id=instructions class=anchor><a href=#instructions>Instructions</a></h1><p>The Nordic toolchain is cross-platform, but the instructions below are specifically for Linux. However, they can easily be replicated in Windows as long as installation paths and environment variables are set correctly.</p></p><div class="nav-btn readmore-btn"><a href=https://justinmklam.com/posts/2019/04/vscode-nrf52/>Read More ></a></div><hr><p>Tags:
+<span class=blog-title-metadata><a class=blog-tag href=/tags/programming>#programming <span>(18)</span></a>&nbsp;
+<a class=blog-tag href=/tags/design>#design <span>(9)</span></a>&nbsp;
+<a class=blog-tag href=/tags/electrical>#electrical <span>(7)</span></a>&nbsp;
+<a class=blog-tag href=/tags/3d-printing>#3d-printing <span>(6)</span></a>&nbsp;
+<a class=blog-tag href=/tags/woodworking>#woodworking <span>(6)</span></a>&nbsp;
+<a class=blog-tag href=/tags/school>#school <span>(5)</span></a>&nbsp;
+<a class=blog-tag href=/tags/work>#work <span>(5)</span></a>&nbsp;
+<a class=blog-tag href=/tags/embedded>#embedded <span>(4)</span></a>&nbsp;
+<a class=blog-tag href=/tags/today-i-learned>#today-i-learned <span>(3)</span></a>&nbsp;
+<a class=blog-tag href=/tags/writing>#writing <span>(3)</span></a>&nbsp;
+<a class=blog-tag href=/tags/physics>#physics <span>(1)</span></a>&nbsp;</span></p><div class=nav-btn><a href=/archives>&lt; All Posts</a></div></div></div><script defer id=dsq-count-scr src=//justinmklam.disqus.com/count.js async></script></body><footer><div class=footer-container><hr><p>&copy; 2025 Justin Lam | <a href=/colophon>Colophon</a></p></div></footer></html>
