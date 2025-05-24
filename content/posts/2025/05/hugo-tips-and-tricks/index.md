@@ -16,6 +16,26 @@ My intro to Hugo was back in 2016, a mere 3 years after its [inception](https://
 
 <!--more-->
 
+# Creating New Posts
+
+To create a new post, typically you would do something like this:
+
+```sh
+hugo new posts/2025/05/my-new-post/index.md
+```
+
+But manually typing date paths is cumbersome, so instead you can use a target like this in your Makefile to:
+
+```sh
+new:
+	@if [ -z "$(title)" ]; then echo "Please provide 'title'"; exit 1; fi
+	hugo new posts/$$(date +%Y/%m)/$(title)/index.md
+```
+
+Which can then be used like this:
+```sh
+make new title=my-new-post
+```
 # Markdown Render Hooks
 
 Render hooks can be used to override markdown to HTML conversions to give full flexibility in how components are presented while staying being able to write markdown. As useful as [shortcodes](https://gohugo.io/content-management/shortcodes/) are, they typically aren't compatible with normal markdown editors/viewers, which adds a bit of friction when you need to have two windows open (one for editing, and the other for previewing).
@@ -143,7 +163,7 @@ Then usage can be something like:
 # Adaptive Syntax Highlighting
 Hugo has built in support for [syntax highlighting using Chroma](https://gohugo.io/content-management/syntax-highlighting/), but the default configuration doesn't allow for dynamically setting light/dark syntax highlighting. Fortunately there's an easy workaround with a few configs!
 
-By default, your `config.toml` may look something like this, which tells the renderer to use the `monokai` style everywhere:
+By default, your `config.yaml` may look something like this, which tells the renderer to use the `monokai` style everywhere:
 
 ```yaml
 markup:
@@ -151,7 +171,7 @@ markup:
     style: monokai
 ```
 
-Instead, we can set `noClasses=false` to use an external stylesheet, which will allow us to dynamically set the theme depending if the current colour scheme is light or dark. Change the `config.toml` to this instead:
+Instead, we can set `noClasses=false` to use an external stylesheet, which will allow us to dynamically set the theme depending if the current colour scheme is light or dark. Change the `config.yaml` to this instead:
 
 ```yaml
 markup:
@@ -235,7 +255,7 @@ pre code {
 ```
 
 # Building and Deploying
-Since my website is hosted on GitHub Pages, I used to manually build and deploy to the `gh-pages` branch with a script that looks something like this:
+Since my website is hosted on GitHub Pages, I used to manually build and deploy the assets with a script that looks something like this:
 
 ```sh
 #!/bin/sh
@@ -270,7 +290,7 @@ printf "\033[0;32mPushing updates to GitHub...\033[0m\n"
 git push origin main
 ```
 
-However, after learning about CI/CD and that it's quite easy to set up these days, that manual deployment has now been replaced with a Github Action that runs on commits to main.
+However, after learning about CI/CD and that it's quite easy to set up these days, that manual deployment has now been replaced with a Github Action that runs on commits to main, which then Github picks up on the `gh-pages` branch.
 
 ```yaml
 name: Github Pages
@@ -349,3 +369,10 @@ It'll be rendered in Obsidian like so, which is pretty nifty!
 
 ![A nicely rendered markdown document, a welcome upgrade to writing in an IDE.](post.png)
 
+## On the Go
+
+Obsidian also has iOS and Android apps, but the git plugin isn't the most stable, at least not on iOS. As an alternative, you can follow the steps described in this [Obsidian forum thread](https://forum.obsidian.md/t/setting-up-obsidian-git-on-ios-without-ish-or-working-copy/97800) on setting up either [iSH](https://ish.app/) (free) or [Working Copy](https://workingcopy.app/) (paid). 
+
+With iSH, git can be slow at times (e.g. during `git status` or `git checkout`) since to make it work, it emulates an x86 architecture on ARM-based iOS devices, so the added overhead takes a toll on performance.
+
+But hey, at least works! Paired with automated deployments, it provides a relatively painless (and free!) way for me to update my website from my phone.
