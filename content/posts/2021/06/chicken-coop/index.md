@@ -6,7 +6,7 @@ layout = "single"
 tagline = "Raising pets that poop breakfast."
 tags = ["woodworking"]
 title = "Building a Backyard Chicken Coop in the City"
-type = "blog"
+type = "project"
 
 +++
 Back in 2018, we decided to raise chickens in our urban backyard, all in the name of being able to have fresh eggs every morning. Our city had bylaws on having chickens, which included:

@@ -6,7 +6,7 @@ layout = "single"
 tagline = "Shining the light of truth on a $70 bulb."
 tags = ["physics"]
 title = "Measuring the Spectral Characteristics of a Light Therapy Lamp"
-type = "blog"
+type = "project"
 
 +++
 

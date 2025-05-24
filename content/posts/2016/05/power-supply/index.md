@@ -1,6 +1,6 @@
 +++
 layout =    "single"
-type =      "blog"
+type =      "project"
 
 date = "2016-05-25T17:29:58-07:00"
 draft =     false

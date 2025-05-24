@@ -6,7 +6,7 @@ layout = "single"
 tags = ["3d printing"]
 title = "Hakko-Style Solder Fume Extractor"
 tagline = "Inhaling 3D printer melted plastic instead of toxic solder fumes."
-type = "blog"
+type = "project"
 
 +++
 

@@ -4,7 +4,7 @@ draft = false
 image = "banner.jpg"
 title = "Annealing 3D Printed Plastics: Sous Vide Style"
 tagline = "When hobbies combine and engineering takes over."
-type = "blog"
+type = "project"
 layout = "single"
 tags = ["3d printing"]
 +++

@@ -6,7 +6,7 @@ layout = "single"
 tagline = "Taking the guess work out of baking with wild yeast."
 tags = ["3d-printing", "design", "electrical", "programming", "embedded"]
 title = "Precision Sourdough: A Smart Lid for Your Starter"
-type = "blog"
+type = "project"
 math = true
 
 +++

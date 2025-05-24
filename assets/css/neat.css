@@ -11,7 +11,6 @@
     --moredark: #000;
     --link: rgba(101, 125, 225, .8) ;
     --onhover: linear-gradient(180deg, transparent 86%, var(--link) 0);
-    border-top: 5px solid var(--dark);
     line-height: 1.5em;
     font-family: system-ui, sans-serif;
     font-size: 16px;

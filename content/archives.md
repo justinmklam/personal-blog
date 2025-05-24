@@ -5,8 +5,7 @@ title = "Archives"
 layout = "archives"
 aliases = ["/blog-archive/"]
 
-[menu.main]
-	name = "Archives"
-	weight = 2
+[params]
+	pageType = "blog"
 +++
 

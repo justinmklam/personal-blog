@@ -1,6 +1,6 @@
 +++
 image =     "J_H-323.jpg"
-type =      "blog"
+type =      "project"
 draft =     false
 layout =    "single-blog"
 tags =      ["3d-printing", "design"]

@@ -1,7 +1,7 @@
 +++
 image = "IMG_8522.jpg"
 date = "2017-02-05T12:28:27-08:00"
-type =      "blog"
+type =      "project"
 draft =     false
 layout =    "single"
 tags =      ["electrical", "programming", "embedded"]

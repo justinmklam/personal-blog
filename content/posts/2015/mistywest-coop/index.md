@@ -6,7 +6,7 @@ layout = "single"
 tagline = "Building a clean-room enclosure for testing air quality monitors."
 tags = ["work"]
 title = "Co-op: Air Quality Calibration Chamber"
-type = "blog"
+type = "project"
 +++
 
 __Background:__ Welcome to TZOA (pronounced 'zoa') - the world's most advanced environment tracker. TZOA uses internal sensors to measure your air quality, temperature, humidity, atmospheric pressure, ambient light, and UV (sun) exposure, all in one wearable device.

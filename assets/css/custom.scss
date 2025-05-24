@@ -64,6 +64,9 @@ sup {
   margin-top: 20px;
   margin-bottom: 30px;
 
+  padding-bottom: 7px;
+  border-bottom: 3px solid var(--link);
+
   &-brand {
     font-size: 1.3em;
     font-weight: bold;

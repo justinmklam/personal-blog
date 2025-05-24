@@ -6,7 +6,7 @@ layout = "single"
 tagline = "Bread is love, bread is life; would it be wrong to call it my wife?"
 tags = ["programming"]
 title = "Monitoring the Fermentation of Sourdough Starter with Computer Vision"
-type = "blog"
+type = "project"
 
 +++
 Bread, the quintessence of life. People have survived for centuries off this staple consisting only of flour, water, salt, and yeast. Try consuming all these ingredients separately, and you'll be in for a digestive surprise. However, mix them together and let time do its thing, and the result is the release of profound flavour, texture, and nutrients that were previously locked away.

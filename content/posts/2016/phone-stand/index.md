@@ -6,7 +6,7 @@ layout = "single"
 tagline = "Turning a hunk of wood into a hunky tech holder."
 tags = ["woodworking"]
 title = "Wooden Phone Stand"
-type = "blog"
+type = "project"
 
 +++
 
