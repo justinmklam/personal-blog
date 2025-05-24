@@ -40,9 +40,9 @@ Mimicking the use of layers on a normal qwerty using [keyd](https://github.com/r
 capslock = overload(control, esc)
 j+k = esc
 =+backspace = C-backspace
-meta = layer(meta)
+nav = layer(meta)
 
-[meta]
+[nav]
 h = left
 j = down
 k = up
