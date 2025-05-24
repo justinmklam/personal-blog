@@ -16,7 +16,7 @@
 		<!--Blog post summaries-->
         <div>
 
-            {{ range first 5 (where .Site.Pages "Type" "blog") }}
+            {{ range first ( .Site.Params.pagerSize ) (where .Site.Pages "Type" "blog") }}
 
             {{ partial "blog-snippets.html" . }}
 

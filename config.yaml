@@ -27,6 +27,7 @@ taxonomies:
 params:
   brand: Justin Lam
   math: false
+  pagerSize: 5
   highlightJs:
     version: 11.11.1
 
