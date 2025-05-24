@@ -15,7 +15,8 @@
 
 		<!--Blog post summaries-->
         <div>
-            <h1>Tag: <code>#{{ lower .Title }}</code></h1>
+            {{ $count := len .Data.Pages }}
+            <h3>Tag: <code>#{{ lower .Title }}</code> <span style="font-weight: normal; padding-left: 3px; font-size: smaller">({{ $count }} post{{ if gt $count 1 }}s{{ end }}) </span></h3>
             <hr>
 
             {{ range .Data.Pages }}

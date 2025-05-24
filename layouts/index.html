@@ -22,6 +22,16 @@
 
             {{ end }}
 
+            <!-- Show all tags and counts -->
+            <p>
+                Tags:
+                <span class="blog-title-metadata">
+                    {{ range .Site.Taxonomies.tags.ByCount }}
+                        <a class="blog-tag" href="{{ "/tags/" | relLangURL }}{{ .Name | urlize }}">#{{ .Name }} <span>({{ .Count }})</span></a>&nbsp;
+                    {{ end }}
+                </span>
+            </p>
+
             <!--Archives button-->
             <div class="nav-btn">
                 <a href="/archives">< All Posts</a>
