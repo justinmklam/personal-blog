@@ -40,7 +40,7 @@ __Partner:__ [Justin Liang](http://justin-liang.com)
 
 ![CAD model of electronics inside the enclosure (transparency shown for clarity)](CAD_4.png)
 
-![PCB diagram.](Fritzing%20diagram.jpg)
+![PCB diagram.](Fritzing-diagram.jpg)
 
 ![PCB assembled.](DSC03408.JPG)
 

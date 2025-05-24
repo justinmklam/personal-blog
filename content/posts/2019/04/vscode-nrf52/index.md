@@ -15,6 +15,8 @@ aliases =   []
 
 A few years ago, I created a [tutorial](https://www.justinmklam.com/posts/2017/10/vscode-debugger-setup/) on setting up Visual Studio Code for development with the STM32. Since I've also been developing on the Nordic nRF52, I thought I'd share another tutorial to show how a project can be set up, flashed, and debugged using Visual Studio Code.
 
+<!--more-->
+
 The template project discussed in this post can be found on [Github](https://github.com/justinmklam/nrf52-blinky-demo).
 
 # Instructions

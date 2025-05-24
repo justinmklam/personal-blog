@@ -28,7 +28,7 @@ Thanks to Amazon Prime's same/one day shipping, a solution to this problem was l
 
 But wait just one moment; upon unboxing the lamp, I noticed something familiar. The light source behind the box looked strangely similar to a standard CFL bulb... Had I just been duped into spending $70 for a plain old light bulb in a fancy plastic enclosure?
 
-![Left: $14.99 Verilux Full Spectrum Bulb. Right: $1.50 Standard CFL bulb.](bulb comparison.png)
+![Left: $14.99 Verilux Full Spectrum Bulb. Right: $1.50 Standard CFL bulb.](bulb-comparison.png)
 
 Fortunately for me, I work at [MistyWest](https://mistywest.com/) and we have a fancy spectrometer that will allow me to confirm/deny my suspicions. It's used to measure the spectral power density at each wavelength of light (or in layman terms, it measures the intensity of each specific colour of light). The two main questions I was curious to answer:
 
@@ -128,7 +128,7 @@ So now that we have our first question answered, let's get on with the second. T
 
 Let's look closely at the spectral characteristics. Zooming in to the 350 - 400 nm region and changing the y-axis to a log scale (to better visualize the data), we see that the peak around 365 nm is indeed attenuated by a factor of ~10. However, looking back at the original figure (above), we see that the entire spectral response is attenuated.
 
-![Detailed look at the UV exposure on a logarithmic scale.](Verilux Comparison - UV.png)
+![Detailed look at the UV exposure on a logarithmic scale.](Verilux-Comparison-UV.png)
 
 To put a number to this, we can numerically integrate the spectral power density at each wavelength and sum up the values to calculate irradiance (in units mW/cm<sup>2</sup>). Over the entire measured spectrum of 350 - 800 nm, we see that the diffuser reduces the total brightness by ~48%. So instead of removing just the UV wavelengths, they diffused the entire spectrum until the UV exposure is low enough to meet the "no UV exposure" threshold.
 
