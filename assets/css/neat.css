@@ -11,18 +11,27 @@
     --moredark: #000;
     --link: rgba(101, 125, 225, .8) ;
     --onhover: linear-gradient(180deg, transparent 86%, var(--link) 0);
+    --headingfont: "Manrope", system-ui, sans-serif;
     line-height: 1.5em;
-    font-family: system-ui, sans-serif;
-    font-size: 16px;
+    font-family: "Atkinson Hyperlegible", system-ui, sans-serif;
+    font-size: 1.1em;
     color: var(--dark);
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--headingfont);
+    line-height: 1.2em;
+}
+
 code {
-    font-size: 95%;
+    font-family: "Jetbrains Mono", "Fira Code", monospace;
+    font-size: 0.8rem;
+    line-height: 1.4em;
 }
 
 h1 {
     line-height: 1em;
+    font-size: 1.7em;
 }
 
 button, input, textarea {

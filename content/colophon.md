@@ -1,10 +1,12 @@
-+++
-date = "2025-05-18T13:48:02-07:00"
-draft = false
-title = "Colophon"
-hidedate = true
-layout = "basic"
-+++
+---
+date: 2025-05-18T13:48:02-07:00
+draft: false
+title: Colophon
+hidedate: true
+layout: basic
+---
+
+> In publishing, a colophon is an inscription at the end of a book or manuscript usually with facts about its production.
 
 This site has gone through multiple iterations over the years. In 2015, the inception of my personal blog was created on [Wordpress](https://wordpress.com/) and hosted on [Bluehost](https://www.bluehost.ca/), and was intended to be a portfolio of my personal projects to showcase when applying to jobs. I spent a lot of time hunting for a suitable theme, and stuck with one for about a year.
 
@@ -14,7 +16,7 @@ In 2019, I updated the styling to use more modern themeing. Then in 2021, I trie
 
 [^1]: Pro tip: Don't run `git filter-repo --strip-blobs-bigger-than 1M` thinking that it won't also nuke all your currently used media files above that size.
 
-Returning from a break of creating content in 2025, I had a wave of motivation to update my website yet again. This current version is the third (and hopefully final) iteration, which does away with Bootstrap in favour of a more lightweight option. The site’s design uses plain HTML, CSS, and very minimal Javascript, and is based on a custom theme styled with [Neat CSS](https://github.com/codazoda/neatcss). The typeface leverages `system-ui` instead of custom typography from [Google Fonts](https://fonts.google.com/) to ensure fast page rendering and avoid the dreaded [FOUT](https://en.wikipedia.org/wiki/Flash_of_unstyled_content).
+Returning from a break of creating content in 2025, I had a wave of motivation to update my website yet again. This current version is the third (and hopefully final) iteration, which does away with Bootstrap in favour of a more lightweight option. The site’s design uses plain HTML, CSS, and very minimal Javascript, and is based on a custom theme styled with [Neat CSS](https://github.com/codazoda/neatcss). Typefaces are retrieved from [Bunny Font](https://fonts.bunny.net/), an open-source, privacy-first web font platform,
 
 Content is written in [Goldmark-powered Markdown](https://github.com/yuin/goldmark). Code syntax highlighting is enabled by [Chroma](https://github.com/alecthomas/chroma). Mathematical formulas are rendered by [Mathjax](https://www.mathjax.org/). Icons are provided by [Font Awesome](https://fontawesome.com/).
 
