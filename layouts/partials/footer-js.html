@@ -3,5 +3,13 @@
     <script async type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 {{ end }}
 
+{{ if .Param "icons" }}
+<!-- https://github.com/feathericons/feather -->
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+<script>
+  feather.replace();
+</script>
+{{ end }}
+
 <!-- Disqus comment counter -->
 <script defer id="dsq-count-scr" src="//justinmklam.disqus.com/count.js" async></script>

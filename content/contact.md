@@ -4,6 +4,7 @@ draft = false
 title = "Contact"
 hidedate = true
 layout = "basic"
+icons = true
 aliases = ["/pages/contact"]
 
 [menu.main]
@@ -14,11 +15,8 @@ aliases = ["/pages/contact"]
 Located in Vancouver, British Columbia. Drop me a line and I'll get back to you within the day.
 
 <div class="contact-links">
-    <a href=mailto:contact@justinmklam.com><i class="fa fa-envelope"></i></a>
-    <a href="https://linkedin.com/in/justinmklam"><i class="fa fa-linkedin"></i></a>
-    <a href="https://github.com/justinmklam"><i class="fa fa-github"></i></a>
+    <a href=mailto:contact@justinmklam.com><i class="contact-icon" data-feather="send"></i></a>
+    <a href="https://linkedin.com/in/justinmklam"><i class="contact-icon" data-feather="linkedin"></i></a>
+    <a href="https://github.com/justinmklam"><i class="contact-icon" data-feather="github"></i></a>
 </div>
 <br>
-
-<!--Font awesome icons-->
-<script src="https://use.fontawesome.com/ccb78cc113.js"></script>

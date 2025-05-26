@@ -18,7 +18,7 @@ In 2019, I updated the styling to use more modern themeing. Then in 2021, I trie
 
 Returning from a break of creating content in 2025, I had a wave of motivation to update my website yet again. This current version is the third (and hopefully final) iteration, which does away with Bootstrap in favour of a more lightweight option. The site’s design uses plain HTML, CSS, and very minimal Javascript, and is based on a custom theme styled with [Neat CSS](https://github.com/codazoda/neatcss). Typefaces are retrieved from [Bunny Font](https://fonts.bunny.net/), an open-source, privacy-first web font platform,
 
-Content is written in [Goldmark-powered Markdown](https://github.com/yuin/goldmark). Code syntax highlighting is enabled by [Chroma](https://github.com/alecthomas/chroma). Mathematical formulas are rendered by [Mathjax](https://www.mathjax.org/). Icons are provided by [Font Awesome](https://fontawesome.com/).
+Content is written in [Goldmark-powered Markdown](https://github.com/yuin/goldmark). Code syntax highlighting is enabled by [Chroma](https://github.com/alecthomas/chroma). Mathematical formulas are rendered by [Mathjax](https://www.mathjax.org/). Icons are provided by [Feather](https://github.com/feathericons/feather).
 
 Domain management and DNS are handled through [Namecheap](https://www.namecheap.com/). Hosting is managed by [Github Pages](https://pages.github.com/), where the site's content is stored in [this repository](https://github.com/justinmklam/personal-blog) and deployed automatically via [Github Actions](https://github.com/features/actions).
 

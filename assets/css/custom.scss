@@ -229,12 +229,12 @@ hr {
 }
 
 .contact {
-  &-icon {
-    padding-right: 10px;
-  }
-
   &-links {
     text-align: center;
+
+    a {
+      padding-right: 10px;
+    }
 
     i {
       color: var(--dark);
