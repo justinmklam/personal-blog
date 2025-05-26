@@ -30,12 +30,12 @@ blockquote {
 
 pre {
   background-color: var(--codebackground) !important;
-  font-size: 90%;
+  // font-size: 100%;
   line-height: 1.4em;
   border-radius: 5px;
 
   code {
-    color: inherit;
+    color: var(--dark);
 
     /* Fixes iOS font sizing anomaly */
     text-size-adjust: 100%;
@@ -60,6 +60,10 @@ sup {
   }
 }
 
+hr {
+  border-color: var(--lessdark);
+}
+
 .navbar {
   margin-top: 20px;
   margin-bottom: 30px;
@@ -75,7 +79,7 @@ sup {
 
   a {
     @include link-undecorate;
-    color: var(--dark);
+    color: inherit;
     font-weight: normal;
     padding-right: 10px;
 
@@ -98,8 +102,8 @@ sup {
 
   a {
     @include link-undecorate;
-    color: inherit;
-    font-weight: bold;
+    // color: inherit;
+    // font-weight: bold;
 
     &:hover {
       @include link-redecorate;
@@ -152,7 +156,7 @@ sup {
   &-headshot {
     border-radius: 50%;
     width: 300px;
-    box-shadow: 0 4px 10px #333;
+    // box-shadow: 0 4px 10px #333;
   }
 }
 
@@ -190,7 +194,7 @@ sup {
     font-size: 1.1em;
     margin-top: 5px;
     margin-bottom: 3px;
-    font-weight: normal;
+    // font-weight: bold;
 
     a:hover {
       @include link-redecorate;
@@ -205,6 +209,12 @@ sup {
       font-size: 0.95em;
       margin-top: 5px;
       font-weight: normal;
+    }
+  }
+
+  @media (min-width:768px) {
+    &-date {
+      text-align:right
     }
   }
 
@@ -290,6 +300,13 @@ iframe[src*="https://disqus.com"] {
   }
 }
 
-.chroma .hl {
-  background-color: #fff59042;
+.chroma {
+  .hl {
+    background-color: #fff59042;
+  }
+
+  .err {
+    background-color: inherit;
+    color: #c7254ee3;
+  }
 }

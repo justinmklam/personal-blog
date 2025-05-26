@@ -1,0 +1,18 @@
+:root {
+    --link: #434EDF;
+    --light: #faf4ff;
+    --dark: #434EDF;
+    --lessdark: #626bec;
+    --codebackground: #757fff08;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --light: #0f1437;
+        --lesslight: #333;
+        --lessdark: #b4b9ff;
+        --dark: #d3d6ff;
+        --moredark: #fefefe;
+        --codebackground: #191d56;
+    }
+}

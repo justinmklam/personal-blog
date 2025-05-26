@@ -44,7 +44,7 @@ markup:
   highlight:
     guessSyntax: true
     noClasses: false # Use external stylesheets instead so conditional light/dark highlighting can be used
-    # style: monokai # See https://gohugo.io/quick-reference/syntax-highlighting-styles/
+    # style: github-dark # See https://gohugo.io/quick-reference/syntax-highlighting-styles/
   tableOfContents:
     endLevel: 3
     ordered: false

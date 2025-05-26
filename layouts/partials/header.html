@@ -12,7 +12,7 @@
 <meta name="author" content="{{ .Site.Params.brand }}">
 
 <link rel="preconnect" href="https://fonts.bunny.net">
-<link href="https://fonts.bunny.net/css?family=atkinson-hyperlegible:400|jetbrains-mono:400|manrope:500" rel="stylesheet" />
+<link href="https://fonts.bunny.net/css?family=atkinson-hyperlegible:400|jetbrains-mono:400|archivo-black:400" rel="stylesheet" />
 
 <!-- Custom stylesheets -->
 {{ $light := resources.Get "css/syntax.css" | resources.Minify }}
@@ -21,8 +21,16 @@
 <link rel="stylesheet" href={{ $dark.Permalink }} media="screen and (prefers-color-scheme: dark)">
 {{ $custom := resources.Get "css/custom.scss" | toCSS }}
 {{ $neat := resources.Get "css/neat.css" }}
-{{ $styles := slice $neat $custom | resources.Concat "/css/styles.css" | resources.Minify }}
+{{ $theme := resources.Get "css/theme.css" }}
+{{ if hugo.IsDevelopment }}
+<link rel="stylesheet" href="{{ $neat.Permalink }}">
+<link rel="stylesheet" href="{{ $custom.Permalink }}">
+<link rel="stylesheet" href="{{ $theme.Permalink }}">
+{{ else }}
+{{ $styles := slice $neat $custom $theme | resources.Concat "/css/styles.css" | resources.Minify }}
 <link rel="stylesheet" href="{{ $styles.Permalink }}">
+{{ end }}
+
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Config.Services.GoogleAnalytics.ID }}"></script>
