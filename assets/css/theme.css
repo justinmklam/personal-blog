@@ -1,9 +1,9 @@
 :root {
     --link: #434EDF;
-    --light: #faf4ff;
+    --light: #faf4ff4a;
     --dark: #434EDF;
     --lessdark: #626bec;
-    --codebackground: #757fff08;
+    --codebackground: #757fff0d;
 }
 
 @media (prefers-color-scheme: dark) {
