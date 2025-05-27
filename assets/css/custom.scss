@@ -45,6 +45,10 @@ pre {
   }
 }
 
+td {
+  padding-right: 15px;
+}
+
 code {
   color: #c7254e;
   background-color: var(--codebackground);
@@ -301,6 +305,11 @@ iframe[src*="https://disqus.com"] {
 }
 
 .chroma {
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  -ms-tab-size: 4;
+  tab-size: 4;
+
   .hl {
     background-color: #fff59042;
   }
