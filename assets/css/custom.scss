@@ -18,6 +18,7 @@
 
 @mixin link-undecorate {
   text-decoration: none;
+  font-weight: 700;
 }
 
 a {
@@ -84,7 +85,7 @@ hr {
   a {
     @include link-undecorate;
     color: inherit;
-    font-weight: normal;
+    font-weight: inherit;
     padding-right: 10px;
 
     &:hover {
@@ -195,7 +196,7 @@ hr {
   &-header {
     @include link-undecorate;
     color: var(--dark);
-    font-size: 1.1em;
+    font-size: 1.15em;
     margin-top: 5px;
     margin-bottom: 3px;
     // font-weight: bold;
@@ -250,8 +251,8 @@ hr {
 
 .anchor {
   a {
-    font-weight: inherit;
     @include link-undecorate;
+    font-weight: inherit;
   }
 
   a:hover {
@@ -268,8 +269,8 @@ hr {
 
 #TableOfContents {
   a {
-    font-weight: normal;
     @include link-undecorate;
+    font-weight: normal;
 
     &:hover {
       @include link-redecorate;

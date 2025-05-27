@@ -11,7 +11,7 @@
     --moredark: #000;
     --link: rgba(101, 125, 225, .8) ;
     --onhover: linear-gradient(180deg, transparent 86%, var(--link) 0);
-    --headingfont: "Archivo Black", system-ui, sans-serif;
+    /* --headingfont: "Lilita One", system-ui, sans-serif; */
     line-height: 1.5em;
     font-family: "Atkinson Hyperlegible", system-ui, sans-serif;
     font-size: 1.1em;
@@ -19,8 +19,8 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--headingfont);
-    font-weight: normal !important;
+    /* font-family: var(--headingfont); */
+    font-weight: 700 !important;
     line-height: 1.2em;
 }
 
