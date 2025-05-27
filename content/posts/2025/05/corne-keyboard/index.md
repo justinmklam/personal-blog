@@ -36,7 +36,7 @@ I stuck with the TKL format for a while, but was always intrigued by smaller lay
 
 I was previously using Linux computers for personal and work, but when I started my new job in 2021, I was given a MacBook and was quickly frustrated with the difference in layouts. I then purchased a Magic Keyboard so the layout would be the same whether I was at my desk or on the go, and eventually came to like the shallow keys since it actually allowed me to type quite quickly.
 
-However, a part of me kept wondering if something was missing from my life. Obviously it was another keyboard that was needed, but this time I looked to the land of ergonomic, mechanical keyboards. 
+However, a part of me kept wondering if something was missing from my life. Obviously it was another keyboard that was needed, but this time I looked towards ergonomic, mechanical keyboards. 
 
 Previously, I had tried the [Microsoft Sculpt](https://www.pcmag.com/reviews/microsoft-sculpt-ergonomic-desktop) and the [Kinesis Freestyle](https://kinesis-ergo.com/shop/freestyle2-for-pc-us), but they never really clicked for me. I wanted something that spoke to me on a spiritual level. Perusing [r/ErgoMechKeyboards](https://www.reddit.com/r/ErgoMechKeyboards/) was just what I needed, and the simplistic-yet-still-practical layout of the Corne caught my eye. I bit the bullet with (a relatively inexpensive) one on Aliexpress for ~$80 CAD, and a few weeks later it arrived at my doorstep, ready to fill my emotional void.
 
@@ -44,46 +44,68 @@ Previously, I had tried the [Microsoft Sculpt](https://www.pcmag.com/reviews/mic
 
 ## Learning Curve
 
-Made me realize that I was typing `n` and `b` with the wrong hands, that was hardest to get used to. 
+It felt like I was in elementary school again, playing home row in the computer lab, trying to make sense of this piece of hardware that turns thoughts into words on a screen. 
 
-Started off with a paltry 30 wpm, steadily increased back up to my normal typing speed.
+I can usually type around 100-120 wpm, but the first few hours with this layout was definitely an adjustment. Made me realize that I was typing `n` and `b` with the wrong hands, that was hardest to get used to. 
+
+Started off with a paltry 30 wpm, steadily increased back up to my normal typing speed. After about 1-2 weeks, I was typing steadily enough to use it for work, albeit still nowhere close to my usual flow. At the 3-4 week mark, I became comfortable with the layout and started to get a better understanding of what worked and didn’t work in my layout. 
 
 ![Steadily increasing WPM](pic-monkeytype.png)
 
-## Tenting
-Tried going full ergo, but didn't really work with my set up. Was too high for my elbows.
+## Ergonomics
+
+Many of the keyboards I saw online were tented, so it seemed like the norm and tried it out. Since mine didn’t come with a tenting kit or mechanism, I used some books to achieve the same angling to see how it felt. 
 
 ![Basic tenting in action.](basic-tenting.webp "Keebart|https://www.keebart.com/products/corne")
 
-![Went a little too hard on the ergo-front.](pic-ergo.jpg)
+It was ok. I didn’t find it to be a drastic improvement over being flat. But diving deeper into ergonomic configurations, I thought that maybe I wasn’t trying hard enough…
 
-# Keymap
+So I went deeper. Tried going full ergo, but didn't really work with my set up. Was too high for my elbows and although it was comfortable for my wrists, it felt like my arms couldn’t really relax. I think a set up like this would do better on a standing desk, or if you have a better, more flexible way of mounting them. I found the clamped position to not be optimal, and it also pushed me farther from my desk and monitor.
+
+![Went a little too hard on the ergo-front.](pic-ergo.jpg)
+Ultimately, I went back to just a flat configuration. I found that having the sides separated was more important than the angle, at least for me.
+## Mousing
+
+Trackpad in between the halves is so aesthetically pleasing to me, but unfortunately I can’t use the trackpad for extended periods without my wrist flaring up. I use my mouse on my left hand even though I’m right hand dominant. 
+
+Haven’t tried trackballs yet, but having one integrated would be nice. As much as I like the trackpoint on a Thinkpad, it just doesn’t have the precision of a mouse.
+
+My ideal mousing would be eye based, where I can just look and the pointer will be there. But we’re not quite there yet.
+
+I tried some keyboard driven workflows like shortcat and mouse keys. Although I’m a heavy vim user, there’s some things that are just easier/faster/unavoidable with a mouse.
+# Keymap 
+
+Through my months of usage, I’ve fiddled around with the layout in what feels like making incremental progress towards a piece of hardware that is an extension of the mind. 
+
+This keyboard uses VIAL, which is QMK based but includes a web interface to update the layout on the fly instead of having to flash new firmware every time. Makes it easy to try new things.
 
 ## General Thoughts
 
 Things that worked well:
-- Thumb clusters are great
+- Having clusters are great, because it avoids the finger contortions for chorded hotkeys. Comfort would be improved if the keys were more to the middle, side reaching the thumb under the index finger isn’t the best for strain.
 - Ortholinear is also nice, didn't take that long to get used to
-- Key combos are a nice way to bring more keys to the main layer without having to switch layers
 - Macros for common chorded hotkeys was necessary, e.g. screencap selection = `GUI + SHIFT + 4`, which I put on the opposite hand of my mouse
 	- Still wanted to be able to use ctrl but not always, so also needed it close by
 
-Things that didn't:
-- Since I mouse on my left hand, doing things like horizontal scrolling (shift + mouse) and panning (gui + mouse) was initially hard before duplicating it on the right side
 
 Things I tried but didn't like:
 - Having mod tap on regular keys, sometimes typing rolls messed the timing up. Also would sometimes cause a weird delay in keys, which was annoying. Because of that, didn't like home row mods
 
-Novel things:
-- Layer key for right half is on leftmost key instead of center, since found my right hand more on the left side instead of in typical home row position. Didn't like having my thumb curled under my index
+Design considerations:
 - Making sure certain things were still usable with one hand
+- Making sure certain mouse + keyboard workflows still worked
 
 ## Main Layer
 
 Liked the combo of space and layer, thought that was quite nice. Don't really end up using the backspace in thumb cluster, haven't gotten used to that. Could consider switching it to enter key? 
 
-Things that 
+Things that worked well:
+- Key combos are a nice way to bring more keys to the main layer without having to switch layers
+- Layer key for right half is on leftmost key instead of center, since found my right hand more on the left side instead of in typical home row position. Didn't like having my thumb curled under my index
+- Having the L1 and LGUI keys right next to each other meant that it was possible to use the thumb on both simultaneously for certain key combos
 
+Things that didn't:
+- Since I mouse on my left hand, doing things like horizontal scrolling (shift + mouse) and panning (gui + mouse) was initially hard before duplicating it on the right side
 
 
 ![Layer: Letters](keymap-letters.svg)
@@ -98,6 +120,7 @@ The random `LCTL+Q` is to lock my laptop with the hotkey `GUI+CTRL+Q` on macOS. 
 Things that worked well:
 - Numpad was easier to remember than having them all in the top row
 - Hyphen and underscore are typed often, didn't like them as combos since didn't feel as precise/fast
+- Like having # and * above/below each other for vim
 
 Things that didn't:
 - Less frequently used symbols are still hard to remember, e.g. $%^&
@@ -127,7 +150,9 @@ Also barely use function keys outside of F2, so they're just there in case
 - First switch back was hard, but then it got better and now I can use either seamlessly
 - Chorded hotkeys are annoying, so I set up keybindings to mimic some behaviour
 
-Mimicking the use of layers on a normal qwerty using [keyd](https://github.com/rvaiya/keyd).
+On a standard keyboard, some degree of customization can be enabled by using tools like Karabiner (for macOS) or [keyd](https://github.com/rvaiya/keyd) (for Linux).
+
+Here’s the keyd config I use for my Linux laptop:
 
 ```ini
 [ids]
@@ -137,9 +162,9 @@ Mimicking the use of layers on a normal qwerty using [keyd](https://github.com/r
 capslock = overload(control, esc)
 j+k = esc
 =+backspace = C-backspace
-meta = layer(meta)
+meta = layer(nav)
 
-[meta]
+[nav]
 h = left
 j = down
 k = up
@@ -153,9 +178,11 @@ From aliexpress, 3d printed case. No spacebar stabilizer issue since it's a sing
 
 Tried different switches. Tempted by chocs, but different spacing.
 
-| Name    | Type | Comment |
-| ------- | ---- | ------- |
-| Leopold |      |         |
+| Name                 | Actuation Force | Comment                                                            |
+| -------------------- | --------------- | ------------------------------------------------------------------ |
+| Leopold Grayborg     | 40gf            | Feels ok, but very loud.                                           |
+| Akko Silent Fairy    | 50gf            | Mushy and scratchy                                                 |
+| TTC Frozen v2 Silent | 39gf            | Would be better lubed, but completely silent without feeling mushy |
 
 ![](switches.jpg)
 
