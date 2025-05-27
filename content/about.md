@@ -29,6 +29,10 @@ Justin M.K. Lam
 Software Engineer
 </i></p>
 <br>
+## Now
+*Last updated: May 2025*
+
+I’ve been focusing on work life balance, and prioritizing my physical and mental health since health is wealth. I hired a climbing coach earlier this year to help push my physical limits, but at the same time being cautious of tint my identity to grades. Lately I’ve also been trying to be more creative.
 
 ### Personal Achievements
 
@@ -39,7 +43,7 @@ Software Engineer
 + Got married, became a puppy parent.
 
 **2018**
-+ Interviewed by the MagPi magazine about my post on monitoring sourdough in [Issue 72](https://www.raspberrypi.org/magpi-issues/MagPi72.pdf) (page 12).
++ Interviewed by the MagPi magazine about my post on monitoring sourdough in [Issue 72](https://magazine.raspberrypi.com/issues/72/pdf/download) (page 12).
 + Kevin Scott, CTO of Microsoft, shared my sourdough post on his [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:6417114943220523008).
 + Prototyping presentation given at Singularity University, alongside Derek Disanjh.
 
