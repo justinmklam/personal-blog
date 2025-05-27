@@ -1,34 +1,131 @@
 ---
-title:     Corne Keyboard
-date:      2025-05-23T15:57:51-07:00
-tagline:
-image:     corne.JPEG
-tags:      [""]
-draft:     true
-
-layout:    single
-type:      blog
-aliases:   []
+title: Five Months with a Corne Keyboard
+date: 2025-05-23T15:57:51-07:00
+tagline: How it's been going with a funky looking split keyboard.
+image: corne.jpg
+tags:
+  - random
+draft: true
+layout: single
+type: blog
+aliases:
 ---
-
-Been using a split ergonomic mechanical keyboard for 6 months. This is how it's going.
+It all started when I first saw a tenkeyless keyboard. Compared to a standard 104-key keyboard, having only 87 keys (an entire 17 keys fewer!) seemed like the next best thing to sliced bread. Since I wasn't a big user of the numpad, it seemed like a no brainer to reduce desk space, bring my mousing hand a few inches closer to center, and just feel like I was one with [r/PCMasterRace](https://www.reddit.com/r/pcmasterrace/). Oh how naive I was.
 
 <!--more-->
 
-- July 2016: Cmstorm tkl blue
-- Aug 2016: Lenovo
-- Sep 2017: Poker 61 cherry black
-- Nov 2017: Havit 87 blue kaihl switches
-- March 2019: Tada68 with gateron silent red
-Started off with a paltry 50 wpm, steadily increased back up to my normal typing speed.
+Little did I know that it was simply the beginning of a long, arduous journey in search of elusive perfection. Perhaps what I was looking for is actually from within? Or, perhaps I just needed to buy another keyboard. I went with the latter, and ended up with a minimalistic-ly cute 46-key keyboard called the [Corne](https://github.com/foostan/crkbd). 
+
+# Backstory
+
+The table below shows most of the keyboards I've tried over the years. I never got too deep into the world of mechanical keyboards since my pockets were (fortunately?) not as deep as my heart wanted them to be.
+
+| Date      | Keyboard                   | Switches             |
+| --------- | -------------------------- | -------------------- |
+| July 2016 | CM Storm TKL               | MX Cherry Blue       |
+| Aug 2016  | Lenovo TrackPoint Keyboard | Membrane             |
+| Sep 2017  | Poker 61                   | MX Cherry Black      |
+| Nov 2017  | Havit Low Profile TKL      | Kaihl Blue           |
+| Mar 2019  | Tada68                     | Gateron Silent Red   |
+| Apr 2021  | Apple Magic Keyboard       | 🦋                   |
+| Jan 2025  | Corne                      | TTC Frozen V2 Silent |
+
+I stuck with the TKL format for a while, but was always intrigued by smaller layouts. I tried the Poker, but I found it cumbersome not having arrow keys easily accessible, since it made things like selecting text by word require some nasty finger gymnastics (e.g. `CTRL+SHIFT+[LAYER+LEFT]`). A few boards later and after some ridicule from a coworker for having tried more keyboards than he's used in his lifetime, the Tada68 became my daily driver.
+
+![Tada, what a nice compact layout! Is this the end game?](TADA68.jpg "Drop|https://drop.com/buy/tada68-mechanical-keyboard")
+
+I was previously using Linux computers for personal and work, but when I started my new job in 2021, I was given a MacBook and was quickly frustrated with the difference in layouts. I then purchased a Magic Keyboard so the layout would be the same whether I was at my desk or on the go, and eventually came to like the shallow keys since it actually allowed me to type quite quickly.
+
+However, a part of me kept wondering if something was missing from my life. Obviously it was another keyboard that was needed, but this time I looked to the land of ergonomic, mechanical keyboards. 
+
+Previously, I had tried the [Microsoft Sculpt](https://www.pcmag.com/reviews/microsoft-sculpt-ergonomic-desktop) and the [Kinesis Freestyle](https://kinesis-ergo.com/shop/freestyle2-for-pc-us), but they never really clicked for me. I wanted something that spoke to me on a spiritual level. Perusing [r/ErgoMechKeyboards](https://www.reddit.com/r/ErgoMechKeyboards/) was just what I needed, and the simplistic-yet-still-practical layout of the Corne caught my eye. I bit the bullet with (a relatively inexpensive) one on Aliexpress for ~$80 CAD, and a few weeks later it arrived at my doorstep, ready to fill my emotional void.
+
+# Getting Used to the Corne
+
+## Learning Curve
+
+Made me realize that I was typing `n` and `b` with the wrong hands, that was hardest to get used to. 
+
+Started off with a paltry 30 wpm, steadily increased back up to my normal typing speed.
 
 ![Steadily increasing WPM](pic-monkeytype.png)
 
+## Tenting
 Tried going full ergo, but didn't really work with my set up. Was too high for my elbows.
 
-![Ergonomics](pic-ergo.jpg)
-Tried different switches.
-![](switches.jpg)
+![Basic tenting in action.](basic-tenting.webp "Keebart|https://www.keebart.com/products/corne")
+
+![Went a little too hard on the ergo-front.](pic-ergo.jpg)
+
+# Keymap
+
+## General Thoughts
+
+Things that worked well:
+- Thumb clusters are great
+- Ortholinear is also nice, didn't take that long to get used to
+- Key combos are a nice way to bring more keys to the main layer without having to switch layers
+- Macros for common chorded hotkeys was necessary, e.g. screencap selection = `GUI + SHIFT + 4`, which I put on the opposite hand of my mouse
+	- Still wanted to be able to use ctrl but not always, so also needed it close by
+
+Things that didn't:
+- Since I mouse on my left hand, doing things like horizontal scrolling (shift + mouse) and panning (gui + mouse) was initially hard before duplicating it on the right side
+
+Things I tried but didn't like:
+- Having mod tap on regular keys, sometimes typing rolls messed the timing up. Also would sometimes cause a weird delay in keys, which was annoying. Because of that, didn't like home row mods
+
+Novel things:
+- Layer key for right half is on leftmost key instead of center, since found my right hand more on the left side instead of in typical home row position. Didn't like having my thumb curled under my index
+- Making sure certain things were still usable with one hand
+
+## Main Layer
+
+Liked the combo of space and layer, thought that was quite nice. Don't really end up using the backspace in thumb cluster, haven't gotten used to that. Could consider switching it to enter key? 
+
+Things that 
+
+
+
+![Layer: Letters](keymap-letters.svg)
+## Symbols Layer
+
+First set it up with numbers going across the top row, but found it hard to remember where the later numbers were (6-0), so switched to numpad and it's much better. Also it's faster to use with one hand.
+
+There's duplication of the hyphen, but that's ok. Left cluster is for use in typing variables, right is for numpad use.
+
+The random `LCTL+Q` is to lock my laptop with the hotkey `GUI+CTRL+Q` on macOS. I initially had it be one macro but found it was too easy to accidentally hit, so made it explicit but still be able to do with one hand.
+
+Things that worked well:
+- Numpad was easier to remember than having them all in the top row
+- Hyphen and underscore are typed often, didn't like them as combos since didn't feel as precise/fast
+
+Things that didn't:
+- Less frequently used symbols are still hard to remember, e.g. $%^&
+![Layer: Symbols](keymap-symbols.svg)
+
+## Navigation Layer
+For right handed users, probably want to move the browser nav buttons to the left cluster so mouse can still be used.
+
+Things that worked well:
+- Arrow key navigation/selection is really handy and fast since can use both hands (e.g. shift alt arrow key)
+- Arrow keys in hjkl is also really nice, but needed layer toggle on the same side (whereas for numpad, it's opposite)
+- Navigation for browser fwd/back and tab next/prev is handy
+
+Things that didn't:
+- Don't really use the mouse wheel keys on the left cluster, 
+- Sometimes mouse control but it's kind of hard to be precise. Also doesn't work with click/drag so hard for that. But useful for things like refocusing a window/input that the mouse is nearby
+
+![Layer: Navigation](keymap-nav.svg)
+## Miscellaneous Layer
+
+Also barely use function keys outside of F2, so they're just there in case
+![Layer: Misc](keymap-misc.svg)
+
+
+# Using Laptop Keyboards
+
+- First switch back was hard, but then it got better and now I can use either seamlessly
+- Chorded hotkeys are annoying, so I set up keybindings to mimic some behaviour
 
 Mimicking the use of layers on a normal qwerty using [keyd](https://github.com/rvaiya/keyd).
 
@@ -49,4 +146,16 @@ k = up
 l = right
 ```
 
-Test edit from mobile
+# Mini Reviews
+## Keyboard
+From aliexpress, 3d printed case. No spacebar stabilizer issue since it's a single key. Build quality and switches are decent. Tolerances are good. Can't complain for the price.
+## Switches
+
+Tried different switches. Tempted by chocs, but different spacing.
+
+| Name    | Type | Comment |
+| ------- | ---- | ------- |
+| Leopold |      |         |
+
+![](switches.jpg)
+
