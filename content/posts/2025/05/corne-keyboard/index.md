@@ -46,7 +46,7 @@ Previously, I had tried the [Microsoft Sculpt](https://www.pcmag.com/reviews/mic
 
 It felt like I was in elementary school again, playing home row in the computer lab, trying to make sense of this piece of hardware that turns thoughts into words on a screen. 
 
-I can usually type around 100-120 wpm, but the first few hours with this layout was definitely an adjustment. Made me realize that I was typing `n` and `b` with the wrong hands, that was hardest to get used to. 
+I can usually type around 100-120 wpm, but the first few hours with this layout was definitely an adjustment. After some practice, I was starting to get the hang of the columnar stagger. 
 
 Started off with a paltry 30 wpm, steadily increased back up to my normal typing speed. After about 1-2 weeks, I was typing steadily enough to use it for work, albeit still nowhere close to my usual flow. At the 3-4 week mark, I became comfortable with the layout and started to get a better understanding of what worked and didn’t work in my layout. 
 
@@ -54,58 +54,57 @@ Started off with a paltry 30 wpm, steadily increased back up to my normal typing
 
 ## Ergonomics
 
-Many of the keyboards I saw online were tented, so it seemed like the norm and tried it out. Since mine didn’t come with a tenting kit or mechanism, I used some books to achieve the same angling to see how it felt. 
+Many of the keyboards I saw online were tented, so it seemed like the norm and tried it out. Since mine didn’t come with a tenting kit or mechanism, I used a book to achieve the same angling to see how it felt. 
 
-![Basic tenting in action.](basic-tenting.webp "Keebart|https://www.keebart.com/products/corne")
+![Book-based tenting in action.](tenting.jpeg)
 
-It was ok. I didn’t find it to be a drastic improvement over being flat. But diving deeper into ergonomic configurations, I thought that maybe I wasn’t trying hard enough…
+It was ok. I didn’t find it to be a drastic improvement over being flat. I also didn't like how it left my wrists floating above the surface. Perhaps I needed to take the ergonomics more seriously and try a little harder...
 
-So I went deeper. Tried going full ergo, but didn't really work with my set up. Was too high for my elbows and although it was comfortable for my wrists, it felt like my arms couldn’t really relax. I think a set up like this would do better on a standing desk, or if you have a better, more flexible way of mounting them. I found the clamped position to not be optimal, and it also pushed me farther from my desk and monitor.
+So I went deeper. Bought some ball mount clamps and went full ergo, or at least tried to. Unfortunately it didn't really work with my set up. It was too high for my elbows and, although it was comfortable for my wrists, it felt like my arms and shoulders couldn’t really relax. It also made using the mouse even more inconvenient, but that was a secondary problem. 
+
+I think a set up like this would do better on a standing desk, or if you have a better, more flexible way of mounting them. I found the clamped position to not be optimal, and it also pushed me farther from my desk and monitor.
 
 ![Went a little too hard on the ergo-front.](pic-ergo.jpg)
 Ultimately, I went back to just a flat configuration. I found that having the sides separated was more important than the angle, at least for me.
-## Mousing
 
-Trackpad in between the halves is so aesthetically pleasing to me, but unfortunately I can’t use the trackpad for extended periods without my wrist flaring up. I use my mouse on my left hand even though I’m right hand dominant. 
+![My humble floor desk.](desk.jpeg)
 
-Haven’t tried trackballs yet, but having one integrated would be nice. As much as I like the trackpoint on a Thinkpad, it just doesn’t have the precision of a mouse.
-
-My ideal mousing would be eye based, where I can just look and the pointer will be there. But we’re not quite there yet.
-
-I tried some keyboard driven workflows like shortcat and mouse keys. Although I’m a heavy vim user, there’s some things that are just easier/faster/unavoidable with a mouse.
 # Keymap 
-
-Through my months of usage, I’ve fiddled around with the layout in what feels like making incremental progress towards a piece of hardware that is an extension of the mind. 
-
-This keyboard uses VIAL, which is QMK based but includes a web interface to update the layout on the fly instead of having to flash new firmware every time. Makes it easy to try new things.
 
 ## General Thoughts
 
-Things that worked well:
-- Having clusters are great, because it avoids the finger contortions for chorded hotkeys. Comfort would be improved if the keys were more to the middle, side reaching the thumb under the index finger isn’t the best for strain.
-- Ortholinear is also nice, didn't take that long to get used to
-- Macros for common chorded hotkeys was necessary, e.g. screencap selection = `GUI + SHIFT + 4`, which I put on the opposite hand of my mouse
-	- Still wanted to be able to use ctrl but not always, so also needed it close by
+I tried to keep some things in mind when designing the layout of my keyboard:
+- Certain keys/combos should still be usable with one hand, e.g:
+	- Using arrow keys
+	- Copy/cut/paste
+	- Cycling through windows/tabs
+	- Taking screencaps via selected area
+- Certain mouse + keyboard workflows still need to work, e.g:
+	- Holding `ALT` and clicking to open a link in my IDE
+	- Horizontal scrolling by holding `SHIFT` with the opposite hand
+	- Panning certain diagraming tools by holding `GUI`
+- Frequently used keys/combos should be easy and comfortable to use, e.g: 
+	- Selecting text by words/home/end
+- Optimized for writing and software development
+- Layout should be somewhat mnemonic to ease the learning curve
 
+Through using this keyboard as my daily driver for almost half a year and occasional layout tweaks, I've come up with the mapping described below. It's far from perfect, but I think it achieves 80% of what I need it to be.
 
-Things I tried but didn't like:
-- Having mod tap on regular keys, sometimes typing rolls messed the timing up. Also would sometimes cause a weird delay in keys, which was annoying. Because of that, didn't like home row mods
-
-Design considerations:
-- Making sure certain things were still usable with one hand
-- Making sure certain mouse + keyboard workflows still worked
+> Note: This keyboard uses VIAL, which is QMK based but includes a web interface to update the layout on the fly instead of having to flash new firmware every time. Makes it easy to fiddle around and try new configurations without much friction.
 
 ## Main Layer
 
-Liked the combo of space and layer, thought that was quite nice. Don't really end up using the backspace in thumb cluster, haven't gotten used to that. Could consider switching it to enter key? 
+The main alpha layer is fairly straightforward, since it follows a standard QWERTY layout. 
 
 Things that worked well:
-- Key combos are a nice way to bring more keys to the main layer without having to switch layers
-- Layer key for right half is on leftmost key instead of center, since found my right hand more on the left side instead of in typical home row position. Didn't like having my thumb curled under my index
-- Having the L1 and LGUI keys right next to each other meant that it was possible to use the thumb on both simultaneously for certain key combos
+- Key combos are a nice way to bring more keys to the main layer without having to switch layers.
+- Thumb combo keys (`SPACE|L2` and `BSPC|LTCL`) were nice because they provide double duty, since thumb keys are easy to access.
+- L2 layer key is on leftmost key instead of center, since I found my right index finger to always hover over `H` instead of the typical home row position of `J`. This is likely because on the right side, the second last column contains symbols instead of more frequently used letters. I didn't like having my thumb curled under my index too much, especially since it made using arrow keys a bit tiring.
+- Having the layer and modifier keys right next to each other (`L1` and `LGUI`, `L2` and `LCTL`) meant that it was possible to use the thumb on both simultaneously to make certain key combos much easier, e.g. `LTCL+[L2+H]` to be the equivalent of `LCTL+LEFT`, which switches virtual desktops on macOS.
 
 Things that didn't:
 - Since I mouse on my left hand, doing things like horizontal scrolling (shift + mouse) and panning (gui + mouse) was initially hard before duplicating it on the right side
+- Tried [home row mods](https://precondition.github.io/home-row-mods) for a bit, but didn't like how the timing was quite finicky and it would sometimes cause delays in keypresses, which was quite frustrating. With the presence of modifier keys on thumb clusters, it didn't seem like a necessary feature to implement.
 
 
 ![Layer: Letters](keymap-letters.svg)
@@ -123,7 +122,7 @@ Things that worked well:
 - Like having # and * above/below each other for vim
 
 Things that didn't:
-- Less frequently used symbols are still hard to remember, e.g. $%^&
+- Less frequently used symbols are still hard to remember, e.g. `$%^&`
 ![Layer: Symbols](keymap-symbols.svg)
 
 ## Navigation Layer
