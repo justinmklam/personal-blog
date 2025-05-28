@@ -29,10 +29,6 @@ Justin M.K. Lam
 Software Engineer
 </i></p>
 <br>
-## Now
-*Last updated: May 2025*
-
-I’ve been focusing on work life balance, and prioritizing my physical and mental health since health is wealth. I hired a climbing coach earlier this year to help push my physical limits, but at the same time being cautious of tint my identity to grades. Lately I’ve also been trying to be more creative.
 
 ### Personal Achievements
 
