@@ -38,7 +38,19 @@ I was previously using Linux computers for personal and work, but when I started
 
 However, a part of me kept wondering if something was missing from my life. Obviously it was another keyboard that was needed, but this time I looked towards ergonomic, mechanical keyboards. 
 
-Previously, I had tried the [Microsoft Sculpt](https://www.pcmag.com/reviews/microsoft-sculpt-ergonomic-desktop) and the [Kinesis Freestyle](https://kinesis-ergo.com/shop/freestyle2-for-pc-us), but they never really clicked for me. I wanted something that spoke to me on a spiritual level. Perusing [r/ErgoMechKeyboards](https://www.reddit.com/r/ErgoMechKeyboards/) was just what I needed, and the simplistic-yet-still-practical layout of the Corne caught my eye. I bit the bullet with (a relatively inexpensive) one on Aliexpress for ~$80 CAD, and a few weeks later it arrived at my doorstep, ready to fill my emotional void.
+Previously, I had tried the [Microsoft Sculpt](https://www.pcmag.com/reviews/microsoft-sculpt-ergonomic-desktop) and the [Kinesis Freestyle](https://kinesis-ergo.com/shop/freestyle2-for-pc-us), but they never really clicked for me. I wanted something that spoke to me on a spiritual level. Perusing [r/ErgoMechKeyboards](https://www.reddit.com/r/ErgoMechKeyboards/) was just what I needed, and the simplistic-yet-still-practical layout of the Corne caught my eye. I bit the bullet with (a relatively inexpensive) prebuilt one on Aliexpress for ~$80 CAD, and a few weeks later it arrived at my doorstep, ready to fill my emotional void.
+
+For reference, here are some of the other keyboards I considered, but ultimately settled on the Corne due to a combination of features, aesthetics, cost, and ease of purchase.
+
+- [Lily58](https://github.com/kata0510/Lily58)
+- [Sofle](https://github.com/josefadamcik/SofleKeyboard)
+- [Totem](https://github.com/GEIGEIGEIST/TOTEM)
+- [Ferris Sweep](https://github.com/davidphilipbarr/Sweep)
+- [Let's Split](https://github.com/nicinabox/lets-split-guide)
+- [Iris](https://keeb.io/products/iris-keyboard-split-ergonomic-keyboard)
+- [Ergodox Voyager](https://www.zsa.io/voyager)
+- [Ergodox Moonlander](https://www.zsa.io/moonlander)
+- [Naya Create](https://naya.tech/) <- Way out of budget but it sure looks nice!
 
 # Getting Used to the Corne
 
@@ -145,7 +157,7 @@ Things that didn't:
 ## Navigation Layer
 
 
-![Layer: Navigation](keymap-nav.svg)
+![Arrow keys, browser, and mouse navigation.](keymap-nav.svg)
 
 Things that worked well:
 - Arrow keys in `hjkl` are also very convenient, but needed layer toggle on the same side (whereas for numpad, it's opposite).
@@ -153,7 +165,7 @@ Things that worked well:
 - Navigation for browser fwd/back and tab next/prev is a pleasure to use.
 
 Things that didn't:
-- Don't really use the mouse wheel keys on the left cluster, 
+- Don't really use the mouse wheel keys on the left cluster.
 - Sometimes use mouse control, but it's kind of hard to be precise. Also doesn't easily work with click/drag. But it's useful for things like refocusing a window/input that the mouse is nearby.
 
 For right handed users, you probably would want to move all the browser nav hotkeys (top row on the right side) to the left, so your mouse can still be used while your hand is on those keys.
