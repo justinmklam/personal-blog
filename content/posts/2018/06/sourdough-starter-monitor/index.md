@@ -4,7 +4,7 @@ draft = false
 image = "Crumb-comparison.jpeg"
 layout = "single"
 tagline = "Bread is love, bread is life; would it be wrong to call it my wife?"
-tags = ["programming"]
+tags = ["programming", "bread"]
 title = "Monitoring the Fermentation of Sourdough Starter with Computer Vision"
 type = "project"
 
