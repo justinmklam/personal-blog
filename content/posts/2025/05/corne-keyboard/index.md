@@ -88,7 +88,7 @@ I tried to keep some things in mind when designing the layout of my keyboard:
 - Optimized for writing and software development
 - Layout should be somewhat mnemonic to ease the learning curve
 
-Through using this keyboard as my daily driver for almost half a year and occasional layout tweaks, I've come up with the mapping described below. It's far from perfect, but I think it achieves 80% of what I need it to be.
+Through using this keyboard as my daily driver for almost half a year and occasional layout tweaks, I've come up with the mapping described below. It's far from perfect, but I think it achieves at least 80% of what I want it to be.
 
 > Note: This keyboard uses VIAL, which is QMK based but includes a web interface to update the layout on the fly instead of having to flash new firmware every time. Makes it easy to fiddle around and try new configurations without much friction.
 
