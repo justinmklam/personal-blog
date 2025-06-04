@@ -1,5 +1,5 @@
 ---
-title: "Killing the Joy in my Passion Project: A Sourdough Story"
+title: "Killing the Passion in my Project: A Sourdough Story"
 date: 2025-06-02T23:24:29-07:00
 tagline: It was supposed to be in my wheelhouse, so why did I get burnt out?
 image: rev2-pcb.jpg
@@ -38,7 +38,8 @@ Like any responsible adult, I ignored the red flags and decided to jump in.
 
 ![Layout](layout.png)
 
-Todo: add 3d render of board
+![Render](render.png)
+
 
 ![Paper test](paper-test.jpg)
 
