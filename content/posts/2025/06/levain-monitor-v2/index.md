@@ -62,7 +62,7 @@ The epaper display was a bigger beast - it sure required a lot more wires and pi
 
 # Design
 
-Design was a lot more complicated than what I’ve done previously. 
+Design was a lot more complicated than what I’ve done previously. Luckily had some help from my friend Walker over at rootkit labs.
 
 ![Schematic](schematic.png)
 
@@ -90,7 +90,7 @@ Just look at how small U6 is 🫣
 
 ![Hot plate time](IMG_8314.jpg)
 
-First one didn’t work. I ordered lead free, low temp solder paste thinking it would be better for me, but it didn’t flow. 
+First one didn’t work. I ordered lead free, but high temp solder paste thinking it would be better for me, but it didn’t flow. 
 
 Second attempt, I ordered the right paste and it was much better.
 
@@ -100,23 +100,54 @@ Except it wasn’t. There were still shorts, so start a lot of debugging and man
 
 Kind of. Turns out I got a few things wrong. I was able to connect to the ESP32 but the display wasn’t working. After more debugging, I identified the issue and finally got it to work.
 
+Hard part about hardware is trying to figure out if it’s a design issue, a code issue.
+
+It was such a relief when the display turned on!
+
 ![Rev 1](rev1-pcb.jpg)
 
 ## Version 2
 
+### Design Changes
+
+One thing I didn’t consider well enough was how I’d assemble the parts on the other side, as well as assembly speed. I intended to use a hot air gun, but it was challenging to use. In the second version, I moved all the passives to the bottom side so that it’d be faster to place all the similar parts at once.
+
+The ESP32 was also troublesome to solder, so I made sure to leave enough room on the back so that at least a portion of it could be placed on the hot plate.
+
+Also had some things wrong on the schematic, including the low voltage cut off.
+
+For the flashing, I thought exposing pins as headers was a simple, good idea at the time, but it made flashing a lot more difficult. Bought a pogo pin connector instead to make it easier.
+
+This was a reminder how much easier software is, because iterations and feedback cycles are so much tighter, and also free.
+
+Also working with mechanical design team remotely was interesting, long feedback cycles due to email chains and timezone difference.
+
+### Assembly
+
+After having confidence that I could successfully bring up a PCB on my own, I was feeling optimistic about the second version. I would need two boards this time.
+
 ![Pogo pin connector was useful](IMG_8468.jpg)
 
-Rev2, trying to figure out why the display wasn’t working on one of the boards.
+Rev2, trying to figure out why the display wasn’t working.
 
 ![Trying to figure out why the display is having issues](IMG_8464.jpg)
 
 ![Double trouble](IMG_8524.jpg)
 
 ![Rev 2](rev2-pcb.jpg)
+### Production
 
-# Software
+Got a bunch ordered from PCBWay. An exercise in guiding my partner to flash the device.
+
+# Firmware
 
 Had to switch to FreeRTOS. TaskScheduler wasn’t cutting it. Display and deep sleep made everything a lot more complicated.
+
+Thought I could reuse most of the code. Add a few sensors, change the display, add deep sleep. I was happy with my previous project’s architecture, so this should be the easy part, right?
+
+Oh, how the naivety runs deep.
+
+The code became a mess because of the coordination required with the new deep sleep task, and with how slow the display refresh was.
 # Closing Thoughts
 
 I didn’t get a commercial product. I didn’t even get better bread. But I got a story, a working PCB (mostly), and a reminder that not every project needs to scale. Sometimes, it’s enough to build something strange, learn a ton, and then let it go.
