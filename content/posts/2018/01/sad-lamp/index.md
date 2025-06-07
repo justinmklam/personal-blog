@@ -1,7 +1,7 @@
 +++
 date = "2018-01-12T09:42:57-08:00"
 draft = false
-image = "verilux-comparison.PNG"
+image = "Verilux-Comparison.png"
 layout = "single"
 tagline = "Shining the light of truth on a $70 bulb."
 tags = ["physics"]
