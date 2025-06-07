@@ -48,7 +48,7 @@ __Partner:__ [Justin Liang](http://justin-liang.com)
 
 ![Annotated diagram of the final device.](IMG_0461_annotated.jpg)
 
-![Example data from five egg-jiggling trials.](Raw signals.png)
+![Example data from five egg-jiggling trials.](Raw-signals.png)
 
 ![The PerfEggct stored in its natural habitat.](storage_1.png)
 
@@ -56,4 +56,4 @@ __Partner:__ [Justin Liang](http://justin-liang.com)
 
 ![Truly perf-egg-ct.](IMG_0424.JPG)
 
-Interested in reading more about this project? Head over to [Instructables](http://www.instructables.com/id/PerfEGGct-Engineering-the-Perfect-Soft-Boiled-Egg/) for more details! And if you're *really* interested, feel free to read our glorious 35-page final report [here](/files/MECH 423 Final Project Report.pdf).
+Interested in reading more about this project? Head over to [Instructables](http://www.instructables.com/id/PerfEGGct-Engineering-the-Perfect-Soft-Boiled-Egg/) for more details! And if you're *really* interested, feel free to read our glorious 35-page final report [here](/files/MECH-423-Final-Project-Report.pdf).

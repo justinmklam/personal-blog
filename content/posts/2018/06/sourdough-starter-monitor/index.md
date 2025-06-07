@@ -233,7 +233,7 @@ plt.show()
 
 Running the above code yields the following image:
 
-![The try_all_threshold() function is fast and convenient to see which will likely be the best for an image.](Threshold Comparison_1.png)
+![The try_all_threshold() function is fast and convenient to see which will likely be the best for an image.](Threshold_Comparison_1.png)
 
 Discussing the different thresholding algorithms is beyond the scope of this post, but what we're looking for is one that is able to separate the boundary between the clear glass jar and the opaque sourdough starter. From the image above, it looks like isodata, otsu, and yen provide the sharpest thresholded boundary.
 

@@ -219,7 +219,7 @@ private async Task PingAndUpdateAsync(System.Net.NetworkInformation.Ping ping, s
 }
 ```
 
-![Asynchronous pings are light years faster! Half a second and we're rocking with all the pings we needed.](ping result - async.png)
+![Asynchronous pings are light years faster! Half a second and we're rocking with all the pings we needed.](result-async.png)
 
 ### Verification with Benchmark
 
@@ -270,7 +270,7 @@ public void RunPingSweep_Sync()
 }
 ```
 
-![Result of 255 pings using a synchronous method. Nobody has 2 minutes to wait for a complete scan.](ping result - sync.png)
+![Result of 255 pings using a synchronous method. Nobody has 2 minutes to wait for a complete scan.](result-sync.png)
 
 Wow. A full two minutes compared to less than one second. Life truly is better when you live asynchronously.
 

@@ -80,7 +80,7 @@ Resulting in our formula for calculating the rise percentage of the starter!
 
 I designed the enclosure in Fusion 360 and printed it on my [Monoprice Mini 3D Printer]({{< ref "/posts/2017/03/mp-select-mini" >}}).
 
-![3D printed enclosure, designed in Fusion 360.](fusion 360.png)
+![3D printed enclosure, designed in Fusion 360.](fusion-360.png)
 
 I wasn't the proudest of this design, since I had to resort to using hot glue to attach the PCB to the enclosure, mainly because I forgot to leave enough hole clearance on the PCB . Ideally, the PCB would drop into the top half and assemble from the back (instead of the bottom half, as designed), but unfortunately I didn't have this forethought. I was designing the PCB to have a minimal footprint to keep costs low, instead of making it easy to integrate with!
 

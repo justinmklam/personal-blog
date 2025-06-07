@@ -82,7 +82,7 @@ M107 ; turn off fan
 
 To connect OctoPrint through Cura, go to "Settings > Printer > Manage Printers", select your printer from the list, then click the "Connect OctoPrint" button on the right side of the menu.
 
-![Setting up OctoPrint through Cura.](octopi settings.png)
+![Setting up OctoPrint through Cura.](octopi-settings.png)
 
 This way, you can send gcode files directly from Cura to Octoprint with a click of a button!
 
