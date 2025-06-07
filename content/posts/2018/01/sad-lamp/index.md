@@ -1,7 +1,7 @@
 +++
 date = "2018-01-12T09:42:57-08:00"
 draft = false
-image = "verilux-comparison.PNG"
+image = "Verilux-Comparison.png"
 layout = "single"
 tagline = "Shining the light of truth on a $70 bulb."
 tags = ["physics"]
@@ -18,7 +18,7 @@ However, coming back to the overcast, bone-chilling, gray, and wet Vancouver win
 
 Thanks to Amazon Prime's same/one day shipping, a solution to this problem was less than 24 hours away. Introducing my new light therapy lamp!
 
-<!-- ![Verilux's compact light therapy lamp and its advertised benefits.](lamp benefits.png) -->
+<!-- ![Verilux's compact light therapy lamp and its advertised benefits.](lamp-benefits.png) -->
 
 ![Verilux HappyLight Compact Light Therapy Lamp with the UV filter/diffuser installed.](IMG_20180104_192702.jpg)
 

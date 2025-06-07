@@ -71,11 +71,11 @@ _*Turns out it's easy to get clipboard data from a locally running script, but n
 
 Checking out my [first working version](https://github.com/justinmklam/recipe-converter/blob/3a4c109a1eb7604cb01cc3f615b37e73e08273ca/.ipynb_checkpoints/Recipe%20Converter-checkpoint.ipynb), you'll see that it's not the most efficient script. However, when proving out a concept, the priority is to get something working (ie. a minimum viable product) and optimize later. Since uncertainty of this working (or being worth it) is quite high, we don't want to spend too much time making it perfect!
 
-![Testing out the prototype in Jupyter.](converter - jupyter demo.gif)
+![Testing out the prototype in Jupyter.](converter-jupyter-demo.gif)
 
 Comparing that with the [current version](https://github.com/justinmklam/recipe-converter/blob/master/Recipe%20Converter%20PoC.ipynb), we can see that the code structure went from messy and repetitive to organized and modular. Cleaning up code is always mildly therapeutic.
 
-![Repetitive version on left, modular version on right.](modularity comparison.png)
+![Repetitive version on left, modular version on right.](modularity-comparison.png)
 
 Now that we've finished testing the prototype and are happy with how it works, we can move on to the next step in turning it into a browser-based application.
 
@@ -83,9 +83,9 @@ Now that we've finished testing the prototype and are happy with how it works, w
 
 Fortunately, this is painless! In Jupyter, navigate to `File > Export Notebook As... > Executable Script`, and that's it. A Python script will download with all the cells in a single executable file.
 
-![Exporting from Jupyter Lab to the next phase of development: the command line.](export from jupyter.png)
+![Exporting from Jupyter Lab to the next phase of development: the command line.](export-from-jupyter.png)
 
-![A bit of clean up later and the python script is ready to be imported as a module.](vs code.png)
+![A bit of clean up later and the python script is ready to be imported as a module.](vs-code.png)
 
 Feel free to check out the cleaned up file on [GitHub](https://github.com/justinmklam/recipe-converter/blob/master/recipeConverter.py). That was easy.
 
@@ -132,7 +132,7 @@ if __name__ == "__main__":
 
 The main difference here is the `route()` decorator. Modern web frameworks use routing techniques to help keep tracak of application URLs. This decorator is used to bind a Python function to a URL. In this case, the URL is `/`, otherwise known as the index / home / default page. If we were to change it to `/hello`, then we'd have to navigate to `localhost:5000/hello` to see "Hello World!".
 
-![Saying hello from localhost:5000.](hello flask.gif)
+![Saying hello from localhost:5000.](hello-flask.gif)
 
 Now moving on to our recipe converter, we need two parts to make this work:
 
@@ -266,7 +266,7 @@ $ flask run
 
 
 
-![Running Flask in Visual Studio Code.](converter - flask demo.gif)
+![Running Flask in Visual Studio Code.](converter-flask-demo.gif)
 
 
 
@@ -383,7 +383,7 @@ Finally, we can push and deploy the files to Heroku:
 > git push heroku master
 ```
 
-![Heroku output on compile.](heroku deploy.gif)
+![Heroku output on compile.](heroku-deploy.gif)
 
 **Troubleshooting**: If it compiles but fails to load at `*.herokuapp.com`, you can check the logs with the following command:
 
@@ -395,11 +395,11 @@ Finally, we can push and deploy the files to Heroku:
 
 After all that's been said and done, the recipe converter app is now published on [herokuapp.com](http://recipe-converter-app.herokuapp.com/)! It's a freemium service, so it's worth checking out for professional development as well.
 
-![The final python app published through Heroku App.](converter - heroku demo.gif)
+![The final python app published through Heroku App.](converter-heroku-demo.gif)
 
 Logging in to [dashboard.heroku.com](https://dashboard.heroku.com/) provides a nice dashboard for managing all your deployments, activity, and more.
 
-![Heroku dashboard to manage your dynos.](heroku dashboard.PNG)
+![Heroku dashboard to manage your dynos.](heroku-dashboard.PNG)
 
 # Closing Thoughts
 

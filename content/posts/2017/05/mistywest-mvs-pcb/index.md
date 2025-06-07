@@ -43,9 +43,9 @@ __Acknowledgements:__
 This project was completed under [MistyWest](https://mistywest.com/) with the guidance of Dave MacLeod, Div Gill, and Ryan Walker.
 
 ![Completed PCB in all its glory, like a newly erected city skyline.](IMG_20170524_162252.jpg)
-![Schematic capture of the designed circuit.](Altium schematic.jpg)
-![PCB layout of top overlay (right) and bottom overlay (left).](Altium front-back.jpg)
-![3D render of PCB in Altium Designer.](Altium capture.png)
+![Schematic capture of the designed circuit.](Altium-schematic.jpg)
+![PCB layout of top overlay (right) and bottom overlay (left).](Altium-front-back.jpg)
+![3D render of PCB in Altium Designer.](Altium-capture.png)
 ![Boards ordered and received from OSH Park.](IMG_20170519_154141-2.jpg)
 ![Stencil cut out and prepped for applying the solder paste.](IMG_20170523_164839.jpg)
 ![Solder paste applied and components placed.](IMG_20170523_165130-2.jpg)

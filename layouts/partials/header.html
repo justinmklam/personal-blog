@@ -12,8 +12,8 @@
 <meta name="author" content="{{ .Site.Params.brand }}">
 
 <!-- Custom stylesheets -->
-{{ $light := resources.Get "css/syntax.css" | resources.Minify }}
-{{ $dark := resources.Get "css/syntax-dark.css" | resources.Minify }}
+{{ $light := resources.Get "css/syntax.css" | resources.Minify | resources.Fingerprint }}
+{{ $dark := resources.Get "css/syntax-dark.css" | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" href={{ $light.Permalink }} media="screen">
 <link rel="stylesheet" href={{ $dark.Permalink }} media="screen and (prefers-color-scheme: dark)">
 {{ $custom := resources.Get "css/custom.scss" | toCSS }}
@@ -24,7 +24,7 @@
 <link rel="stylesheet" href="{{ $custom.Permalink }}">
 <link rel="stylesheet" href="{{ $theme.Permalink }}">
 {{ else }}
-{{ $styles := slice $neat $custom $theme | resources.Concat "/css/styles.css" | resources.Minify }}
+{{ $styles := slice $neat $custom $theme | resources.Concat "/css/styles.css" | resources.Minify | resources.Fingerprint}}
 <link rel="stylesheet" href="{{ $styles.Permalink }}">
 {{ end }}
 

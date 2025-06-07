@@ -114,7 +114,7 @@ Moving forward, I decided to use the large rice cooker with a circulator. Althou
 
 Time to actually cook with this thing! After trying out various foods, the data shows that the temperature stability is surprisingly stable given the simple on-off temperature control.
 
-![Log of cook times.](plot_cook times.png)
+![Log of cook times.](plot_cook_times.png)
 
 Quantifying the ripple with some simple analysis shows that the average standard deviation for these four cooking trials was ±0.4°C, where the steak had the highest deviation of ±0.6°C.
 

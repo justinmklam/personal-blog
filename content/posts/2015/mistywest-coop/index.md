@@ -19,8 +19,8 @@ __Client:__ [TZOA](https://www.tzoa.com/)
 
 __Acknowledgements:__ This project was completed under MistyWest with the guidance of Taylor Cooper.
 
-![The TZOA paired with a smartphone to demonstrate the environment tracking dashboard.](2015_Tzoa_EnviroTracker (5).JPG)
-![Close up of the device in the test environment.](2015_Tzoa_EnviroTracker (3).jpg)
-![Overview of the test equipment inside the test chamber.](2015_Tzoa_EnviroTracker (2).jpg)
+![The TZOA paired with a smartphone to demonstrate the environment tracking dashboard.](2015_Tzoa_EnviroTracker_(5).JPG)
+![Close up of the device in the test environment.](2015_Tzoa_EnviroTracker_(3).jpg)
+![Overview of the test equipment inside the test chamber.](2015_Tzoa_EnviroTracker_(2).jpg)
 ![The Dylos air quality monitor showing zero particulate measurements. A HEPA filter was used to provide the filtration.](IMG_20150501_155402.jpg)
 ![Correlation data between the TZOA vs DustTrak devices.](TZOA_data.jpg)
