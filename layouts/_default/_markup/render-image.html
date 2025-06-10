@@ -17,7 +17,7 @@
             {{ if not $image }}
                 {{ warnf "Image not rendered %s: %s" .PageInner.RelPermalink $dest }}
             {{ end }}
-    <a href={{ $image.RelPermalink }}><img loading="lazy" class="img-responsive img-content" src={{ $image.RelPermalink }}></a>
+    <a href={{ $image.RelPermalink }}><img class="img-responsive img-content" src={{ $image.RelPermalink }}></a>
         {{ else }}
             {{ warnf "Image not found on %s: %s" .PageInner.RelPermalink $dest }}
         {{ end }}
