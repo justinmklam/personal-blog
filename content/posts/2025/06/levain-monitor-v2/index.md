@@ -134,6 +134,8 @@ Rev2, trying to figure out why the display wasn’t working.
 
 ![Double trouble](IMG_8524.jpg)
 
+![Demo video](demo.mp4)
+
 ![Rev 2](rev2-pcb.jpg)
 ### Production
 
