@@ -150,6 +150,14 @@ Thought I could reuse most of the code. Add a few sensors, change the display, a
 Oh, how the naivety runs deep.
 
 The code became a mess because of the coordination required with the new deep sleep task, and with how slow the display refresh was.
+
+The main issue was optimizing for battery life. Because of the long measurement delay between measurements, it made sense to put the device into deep sleep. However, my previous code assumed constant operation, so it took quite a few changes to support turning the device off between cycles, but still displaying the same information as if it were always on. 
+
+The single button was also a challenge to design the UX around. Long press and double press were a bit weird, and long press also had to be the same for whether the device was in a sleep cycle or not. I knew what was going on in the code and the device states, but a regular user wouldn’t by just inferring from the screen.
+
+The device also had to sleep after inactivity, which added complication.
+
+The main reason for switching to freertos was because of there ability to set task priorities. Since the user input was more complicated now, and the epaper display took so long to refresh and seemed to be blocking the main thread, the task scheduler wasn’t cutting it in being responsive enough for the button input. 
 # Closing Thoughts
 
 I didn’t get a commercial product. I didn’t even get better bread. But I got a story, a working PCB (mostly), and a reminder that not every project needs to scale. Sometimes, it’s enough to build something strange, learn a ton, and then let it go.
