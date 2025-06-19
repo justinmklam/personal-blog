@@ -18,6 +18,10 @@ menus:
     <br><br>
 </div>
 
+This page gives some background about me for the curious people who want to know a little more. See [/now](/now) for what I’m currently focusing on and [/uses](/uses) for what tools I use when I work on different projects.
+
+---
+
 I grew up watching Star Wars, and like any other eight-year old boy, I wanted to become a Jedi Knight. Maneuvering starfighters through the Hoth asteroid field whilst in aerial combat, jousting battle droids wielding nothing but a lightsaber, and having my hand sliced off to make space for my own mechno-arm were the epitomes of my childhood fantasy.
 
 Reality came quite bluntly, yet these dreams continued to flourish. These days, they follow more along the lines of maneuvering through complex codebases, attacking architectural design challenges with a pen and paper, and putting my mechatronics background to good use by working on fun side projects.
