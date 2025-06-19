@@ -1,15 +1,15 @@
 ---
-date: "2016-09-24T12:58:43-07:00"
+date: 2016-09-24T12:58:43-07:00
 draft: false
-title: "About"
-layout: "basic"
+title: /about
+layout: basic
 hidedate: true
-aliases: ["/pages/about"]
-
+aliases:
+  - /pages/about
 menus:
   main:
-    name: "/about"
-    identifier: "about"
+    name: /about
+    identifier: about
     weight: 3
 ---
 
