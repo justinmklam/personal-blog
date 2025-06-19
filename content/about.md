@@ -1,16 +1,17 @@
-+++
-date = "2016-09-24T12:58:43-07:00"
-draft = false
-title = "About"
-layout = "basic"
-hidedate = true
-aliases = ["/pages/about"]
+---
+date: "2016-09-24T12:58:43-07:00"
+draft: false
+title: "About"
+layout: "basic"
+hidedate: true
+aliases: ["/pages/about"]
 
-[menu.main]
-    name = "About"
-    identifier = "about"
-	weight = 3
-+++
+menus:
+  main:
+    name: "/about"
+    identifier: "about"
+    weight: 3
+---
 
 <div class="center">
     <img class="img-headshot" src="/imgs/headshot.jpg">

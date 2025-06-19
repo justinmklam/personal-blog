@@ -1,6 +1,6 @@
 baseurl: https://justinmklam.com
 languageCode: en-us
-title: Justin MK Lam | Blog
+title: justinmklam | blog
 
 contentdir: content
 layoutdir: layouts
@@ -16,7 +16,7 @@ FootnoteReturnLinkContents: ↩
 menu:
   main:
     - identifier: Blog
-      name: Blog
+      name: /blog
       url: /
       weight: 1
 
@@ -25,7 +25,8 @@ taxonomies:
   type: types
 
 params:
-  brand: Justin Lam
+  brand: ~/justinmklam
+  author: Justin Lam
   math: false
   icons: false
   pagerSize: 5
