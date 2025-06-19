@@ -14,18 +14,18 @@
 <!-- Custom stylesheets -->
 {{ $light := resources.Get "css/syntax.css" | resources.Minify | resources.Fingerprint }}
 {{ $dark := resources.Get "css/syntax-dark.css" | resources.Minify | resources.Fingerprint }}
-<link rel="stylesheet" href={{ $light.Permalink }} media="screen">
-<link rel="stylesheet" href={{ $dark.Permalink }} media="screen and (prefers-color-scheme: dark)">
+<link rel="stylesheet" href={{ $light.RelPermalink }} media="screen">
+<link rel="stylesheet" href={{ $dark.RelPermalink }} media="screen and (prefers-color-scheme: dark)">
 {{ $custom := resources.Get "css/custom.scss" | toCSS }}
 {{ $neat := resources.Get "css/neat.css" }}
 {{ $theme := resources.Get "css/theme.css" }}
 {{ if hugo.IsDevelopment }}
-<link rel="stylesheet" href="{{ $neat.Permalink }}">
-<link rel="stylesheet" href="{{ $custom.Permalink }}">
-<link rel="stylesheet" href="{{ $theme.Permalink }}">
+<link rel="stylesheet" href="{{ $neat.RelPermalink }}">
+<link rel="stylesheet" href="{{ $custom.RelPermalink }}">
+<link rel="stylesheet" href="{{ $theme.RelPermalink }}">
 {{ else }}
 {{ $styles := slice $neat $custom $theme | resources.Concat "/css/styles.css" | resources.Minify | resources.Fingerprint}}
-<link rel="stylesheet" href="{{ $styles.Permalink }}">
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}">
 {{ end }}
 
 
