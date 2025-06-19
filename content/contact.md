@@ -1,15 +1,15 @@
 ---
-date: "2016-09-24T13:48:02-07:00"
+date: 2016-09-24T13:48:02-07:00
 draft: false
-title: "Contact"
+title: /contact
 hidedate: true
-layout: "basic"
+layout: basic
 icons: true
-aliases: ["/pages/contact"]
-
+aliases:
+  - /pages/contact
 menu:
   main:
-    name: "/contact"
+    name: /contact
     weight: 4
 ---
 

@@ -1,7 +1,7 @@
 ---
 date: 2025-05-18T13:48:02-07:00
 draft: false
-title: Colophon
+title: /colophon
 hidedate: true
 layout: basic
 ---
