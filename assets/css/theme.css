@@ -1,5 +1,5 @@
 :root {
-    --link: #434EDF;
+    --link: #8089ffbd;
     --light: #faf4ff30;
     --dark: #434EDF;
     --lessdark: #626bec;
@@ -8,6 +8,7 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
+        --link: #434EDF;
         --light: #0f1437;
         --lesslight: #333;
         --lessdark: #b4b9ff;
