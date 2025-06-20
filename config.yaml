@@ -32,6 +32,7 @@ params:
   pagerSize: 5
   highlightJs:
     version: 11.11.1
+  umamiId: 6b7445a7-ca25-4dcd-b8b0-453ee282678e
 
 services:
   googleAnalytics:
