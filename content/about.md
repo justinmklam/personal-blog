@@ -26,7 +26,7 @@ Of course, reality had other plans. But in a way, I never really stopped chasing
 
 I'm currently working as a software engineer, leaving my roots in hardware behind, but always being someone who likes to tinker. 
 
-In the past, I filled my evenings and weekends with side projects and hacks that were sometimes noticed: my [bamboo bike](https://www.instructables.com/Building-a-Carbon-Fibre-Bamboo-Bicycle-From-Scratc/), using [sous vide to anneal 3D printed parts](https://hackaday.com/2017/06/17/annealing-plastic-for-stronger-prints/), or [monitoring sourdough fermentation with computer vision](/files/MagPi72.pdf#page=12). Now, I’m trying to live a little slower with a little less hustle and little more balance.
+In the past, I filled my evenings and weekends with side projects and hacks that were sometimes noticed: my [bamboo bike](/posts/2014/08/bamboo-bike), using [sous vide to anneal 3D printed parts](https://hackaday.com/2017/06/17/annealing-plastic-for-stronger-prints/), or [monitoring sourdough fermentation with computer vision](/files/MagPi72.pdf#page=12). Now, I’m trying to live a little slower with a little less hustle and little more balance.
 
 This site is my little corner of the internet, where I can think out loud, share what I’m learning, and make things at my own pace. It’s a creative outlet that ebbs and flows with what’s going on with life. 
 
