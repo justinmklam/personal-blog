@@ -26,4 +26,4 @@ layout: basic
 ### What I’m Letting Go Of
 - Letting work consume too much of my energy.
 
-*Last updated: June 2025*
+*Last updated: {{< current-date "January 2006" >}}.*
