@@ -43,8 +43,6 @@ params:
   umamiId: 6b7445a7-ca25-4dcd-b8b0-453ee282678e
 
 services:
-  googleAnalytics:
-    id: UA-85178257-1
   disqus:
     shortname: justinmklam
 

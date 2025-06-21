@@ -13,6 +13,6 @@ Content is written in [Goldmark-powered Markdown](https://github.com/yuin/goldma
 
 Domain management and DNS are handled through [Namecheap](https://www.namecheap.com/). Hosting is managed by [Github Pages](https://pages.github.com/) and deployed automatically via [Github Actions](https://github.com/features/actions).
 
-This site uses [Google Analytics](https://marketingplatform.google.com/about/analytics/) to help understand visitor traffic and usage patterns. Data collected is anonymous and used solely for improving the website experience.
+This site uses [Umami](https://umami.is/) to help understand visitor traffic and usage patterns. Data collected is anonymous and used solely for improving the website experience.
 
 All associated code can be found in [this repository](https://github.com/justinmklam/personal-blog).
