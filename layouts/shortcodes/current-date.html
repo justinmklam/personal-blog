@@ -1,0 +1,4 @@
+{{/* Usage: {{< current-date "Jan 2, 2006" >}} */}}
+{{- $format := .Get 0 -}}
+{{- now.Format $format -}}
+

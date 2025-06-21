@@ -15,10 +15,18 @@ FootnoteReturnLinkContents: ↩
 
 menu:
   main:
-    - identifier: Blog
-      name: /blog
+    - name: /blog
       url: /
       weight: 1
+    - name: /projects
+      url: /projects
+      weight: 2
+    - name: /about
+      url: /about
+      weight: 3
+    - name: /contact
+      url: /contact
+      weight: 4
 
 taxonomies:
   tag: tags

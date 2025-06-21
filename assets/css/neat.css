@@ -48,6 +48,15 @@ h1, h2, h3, h4, h5, h6 {
     /* font-family: var(--headingfont); */
     font-weight: 700 !important;
     line-height: 1.2em;
+    margin-bottom: 10px;
+}
+
+p, ul {
+  margin-top: 10px;
+}
+
+li {
+  margin-bottom: 5px;
 }
 
 code {
