@@ -6,10 +6,6 @@ layout: basic
 icons: true
 aliases:
   - /pages/contact
-menu:
-  main:
-    name: /contact
-    weight: 4
 ---
 
 Located in Vancouver, British Columbia. Drop me a line and I'll get back to you within the day.

@@ -5,11 +5,6 @@ title: /about
 layout: basic
 aliases:
   - /pages/about
-menus:
-  main:
-    name: /about
-    identifier: about
-    weight: 3
 ---
 
 

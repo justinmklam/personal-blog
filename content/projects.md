@@ -5,10 +5,5 @@ title: "/projects"
 layout: "archives"
 params:
   pageType: "project"
-
-menu:
-  main:
-    name: "/projects"
-    weight: 2
 ---
 
