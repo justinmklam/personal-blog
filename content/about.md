@@ -13,49 +13,17 @@ menus:
     weight: 3
 ---
 
-<div class="center">
-    <img class="img-headshot" src="/imgs/headshot.jpg">
-    <br><br>
-</div>
 
-This page gives some background about me for the curious people who want to know a little more. See [/now](/now) for what I’m currently focusing on and [/uses](/uses) for what tools I use when I work on different projects.
+> See [/now](/now) for what I’m currently focusing on and [/uses](/uses) for my everyday gear.
 
----
+Hi, I'm Justin!
 
-I grew up watching Star Wars, and like any other eight-year old boy, I wanted to become a Jedi Knight. Maneuvering starfighters through the Hoth asteroid field whilst in aerial combat, jousting battle droids wielding nothing but a lightsaber, and having my hand sliced off to make space for my own mechno-arm were the epitomes of my childhood fantasy.
+When I was a kid, I wanted to be a Jedi.
 
-Reality came quite bluntly, yet these dreams continued to flourish. These days, they follow more along the lines of maneuvering through complex codebases, attacking architectural design challenges with a pen and paper, and putting my mechatronics background to good use by working on fun side projects.
+Not metaphorically - I mean piloting starfighters through asteroid fields, travelling through lightspeed to different planets, wielding a lightsaber, being able to say things like "I felt a disturbance in the Force". You know, the usual stuff.
 
-My experience encompasses rapid prototyping, manufacturing, medical devices, automation, robotics, and control systems. As a continuously growing engineer, I am constantly looking for opportunities to expand and develop my skill set.
+Of course, reality had other plans. But in a way, I never really stopped chasing that feeling of focus, curiosity, and discovery. These days, that looks less like intergalactic adventures and more like designing software systems, navigating complex codebases, and occasionally diving too deep into niche topics.
 
-<p style="text-align: right"><i>
-Justin M.K. Lam
-<br>
-Software Engineer
-</i></p>
-<br>
+I'm currently working as a software engineer, leaving my roots in embedded hardware behind, but always being someone who likes to tinker. In the past, I filled my evenings and weekends with side projects and hacks that were sometimes noticed: my [bamboo bike](https://www.instructables.com/Building-a-Carbon-Fibre-Bamboo-Bicycle-From-Scratc/), using [sous vide to anneal 3D printed parts](https://hackaday.com/2017/06/17/annealing-plastic-for-stronger-prints/), or [monitoring sourdough fermentation with computer vision](/files/MagPi72.pdf#page=12). Now, I’m trying to live a little slower and with a bit more balance.
 
-### Personal Achievements
-
-**2021**
-+ First time speaking on a panel. Topic: [The Future of IoT on the Cloud](https://www.crowdcast.io/e/future-of-iot-on-the-cloud/register).
-
-**2019**
-+ Got married, became a puppy parent.
-
-**2018**
-+ Interviewed by the MagPi magazine about my post on monitoring sourdough in [Issue 72](https://magazine.raspberrypi.com/issues/72/pdf/download) (page 12).
-+ Kevin Scott, CTO of Microsoft, shared my sourdough post on his [LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:6417114943220523008).
-+ Prototyping presentation given at Singularity University, alongside Derek Disanjh.
-
-**2017**
-+ First time being featured on a website. Annealing 3D printed plastics blog post shared on [Hackaday](https://hackaday.com/2017/06/17/annealing-plastic-for-stronger-prints/).
-
-**2015**
-+ Abstract for "Surgical Device Innovation for Low Resource Settings" published in the [Canadian Journal of Surgery](http://canjsurg.ca/wp-content/uploads/2015/10/58-4-S157.pdf).
-+ First time public speaking. Presented at the Bethune Round Table annual meeting in Calgary, AB, and at the UBC Orthopaedics Research Day in Vancouver, BC.
-
-**2014**
-+ Bamboo bike won first place in the [Hand Tools Only](https://www.instructables.com/contest/handtoolsonly/) and [Teach It! Sponsored by Dremel](https://www.instructables.com/contest/teachit) contests hosted by Instructables.
-+ Winner of the 1Minute1Slide presentation contest hosted by the Vancouver Coastal Health Research Initiative.
-+ Awarded the Engineers in Scrubs undergraduate research award.
+This site is where I explore, express, and reflect. It’s a creative outlet that comes in waves - sometimes active, sometimes quiet - but always here when I need a space to share.
