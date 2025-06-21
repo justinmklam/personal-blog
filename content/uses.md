@@ -2,7 +2,6 @@
 date: 2025-06-19T13:48:02-07:00
 draft: false
 title: /uses
-hidedate: true
 layout: basic
 ---
 > All the things I use on a daily basis. For more, see [uses.tech](https://uses.tech/).

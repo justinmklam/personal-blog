@@ -3,7 +3,6 @@ date: 2016-09-24T12:58:43-07:00
 draft: false
 title: /about
 layout: basic
-hidedate: true
 aliases:
   - /pages/about
 menus:
