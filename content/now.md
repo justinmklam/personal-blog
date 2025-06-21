@@ -20,7 +20,8 @@ layout: basic
 
 ### What I’m Learning
 - How to stay physically balanced and healthy. Using bouldering as an outlet for that.
-- Not reading that much these days outside of the internet. But I do have an endless list of unread books.
+- How to level up my sourdough. Experimenting with things like [porridge loaves](https://www.theperfectloaf.com/oat-porridge-sourdough/).
+- Haven’t been reading that much these days outside of the internet. But I do have an endless list of unread books.
 
 ### What I’m Letting Go Of
 - Letting work consume too much of my energy.

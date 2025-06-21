@@ -18,12 +18,16 @@ menus:
 
 Hi, I'm Justin!
 
-When I was a kid, I wanted to be a Jedi.
+When I was a kid, I wanted to be a Jedi Knight.
 
-Not metaphorically - I mean piloting starfighters through asteroid fields, travelling through lightspeed to different planets, wielding a lightsaber, being able to say things like "I felt a disturbance in the Force". You know, the usual stuff.
+Piloting starfighters through asteroid fields, travelling through lightspeed to different planets, wielding a lightsaber, being able to say things like "I felt a disturbance in the Force". You know, the usual stuff.
 
 Of course, reality had other plans. But in a way, I never really stopped chasing that feeling of focus, curiosity, and discovery. These days, that looks less like intergalactic adventures and more like designing software systems, navigating complex codebases, and occasionally diving too deep into niche topics.
 
-I'm currently working as a software engineer, leaving my roots in embedded hardware behind, but always being someone who likes to tinker. In the past, I filled my evenings and weekends with side projects and hacks that were sometimes noticed: my [bamboo bike](https://www.instructables.com/Building-a-Carbon-Fibre-Bamboo-Bicycle-From-Scratc/), using [sous vide to anneal 3D printed parts](https://hackaday.com/2017/06/17/annealing-plastic-for-stronger-prints/), or [monitoring sourdough fermentation with computer vision](/files/MagPi72.pdf#page=12). Now, I’m trying to live a little slower and with a bit more balance.
+I'm currently working as a software engineer, leaving my roots in hardware behind, but always being someone who likes to tinker. 
 
-This site is where I explore, express, and reflect. It’s a creative outlet that comes in waves - sometimes active, sometimes quiet - but always here when I need a space to share.
+In the past, I filled my evenings and weekends with side projects and hacks that were sometimes noticed: my [bamboo bike](https://www.instructables.com/Building-a-Carbon-Fibre-Bamboo-Bicycle-From-Scratc/), using [sous vide to anneal 3D printed parts](https://hackaday.com/2017/06/17/annealing-plastic-for-stronger-prints/), or [monitoring sourdough fermentation with computer vision](/files/MagPi72.pdf#page=12). Now, I’m trying to live a little slower with a little less hustle and little more balance.
+
+This site is my little corner of the internet, where I can think out loud, share what I’m learning, and make things at my own pace. It’s a creative outlet that ebbs and flows with what’s going on with life. 
+
+Hope you enjoy your time here!
