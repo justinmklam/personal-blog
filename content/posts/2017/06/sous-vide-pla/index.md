@@ -9,9 +9,11 @@ layout = "single"
 tags = ["3d printing"]
 +++
 
-<p class="text-center" style="font-style:oblique">
-Featured on <a href="http://hackaday.com/2017/06/17/annealing-plastic-for-stronger-prints/" target="_blank">Hackaday</a> and <a href="https://www.fictiv.com/blog/posts/june-hardware-roundup" target="_blank">Fictiv Blog</a>!
-</p>
+> Featured on [Hackaday](http://hackaday.com/2017/06/17/annealing-plastic-for-stronger-prints/), [3D Printing.com](https://3dprinting.com/filament/engineer-reveals-easy-way-strengthen-pla-annealing-heat-bath/), [All3DP](https://all3dp.com/2/annealing-pla-prints-for-strength-easy-ways/), and [Fictiv Blog](https://www.fictiv.com/blog/posts/june-hardware-roundup). Also cited in a few research papers[^10]<sup>, </sup>[^11].
+
+[^10]:  [Identifying a commercially-available 3D printing process that minimizes model distortion after annealing and autoclaving and the effect of steam sterilization on mechanical strength](https://threedmedprint.biomedcentral.com/articles/10.1186/s41205-020-00062-9), April 2020
+
+[^11]: [The effect of annealing on deformation and mechanical strength of tough PLA and its application in 3D printed prosthetic sockets](https://www.emerald.com/insight/content/doi/10.1108/rpj-04-2021-0090/full/html), August 2021
 
 Yep, you heard it right. With all the craze surrounding cooking sous vide these days, it was only a matter of time before someone decided to venture using it outside of the culinary world. Turns out that someone also had a 3D printer, and _you won't believe what happened next!_
 

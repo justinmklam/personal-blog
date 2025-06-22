@@ -10,6 +10,9 @@ type = "project"
 math = true
 
 +++
+
+> Featured on [Hackaday](https://hackaday.com/2021/03/04/smart-lid-spies-on-sourdough-starter-sends-data-wirelessly/)!
+
 A few years ago, I had the idea to [track my sourdough starter using computer vision]({{< ref "/posts/2018/06/sourdough-starter-monitor" >}}). It was neat to monitor it this way, but it was fairly impractical to do for each feeding since it required setting up a camera, downloading the images, and doing some manual image cropping before running it through my analysis script. The analysis was also only done after the fact, and what I really wanted was something that could tell me when the starter was ready to be used (or fed), or, if I missed the window of opportunity, how long ago it peaked.
 
 Last year, I came across [this Reddit thread](https://www.reddit.com/r/Sourdough/comments/duhqmd/i_built_a_device_that_tracks_the_development_of/) and [Christine Sunu's sourd.io project](https://www.twilio.com/blog/sourd-io-is-a-fitness-tracker-for-your-sourdough-starter), where they both had distance sensors inside the lid to measure the height of the starter. I thought it was genius, and had to make one for myself! However, in addition to the live monitoring, I wanted to log the data for further analysis, so I also decided to make it internet-connected as a way to get the data off the device (since saving to an SD card would add hardware costs, as well as being less "sexy" in today's world of everything having wifi connectivity).

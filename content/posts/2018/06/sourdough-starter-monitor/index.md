@@ -9,6 +9,9 @@ title = "Monitoring the Fermentation of Sourdough Starter with Computer Vision"
 type = "project"
 
 +++
+
+> Featured on [MagPi Issue 72](/files/MagPi72.pdf#page=12), [Hackaday](https://hackaday.com/2018/06/27/raspberry-pi-tracks-starter-fermentation-for-optimized-sourdough/), [Hacker News](https://news.ycombinator.com/item?id=17390066), [Adafruit](https://blog.adafruit.com/2018/07/06/using-computer-vision-to-ferment-the-perfect-sourdough-yeast-piday-raspberrypi-raspberry_pi/), [Hackster.io](https://www.hackster.io/news/using-computer-vision-to-ferment-the-perfect-sourdough-yeast-70ac6d226acb) and [The Guardian](https://www.theguardian.com/food/2019/mar/13/sourdough-is-silicon-valleys-latest-craze-could-i-beat-the-coders-and-bake-the-perfect-loaf)!
+
 Bread, the quintessence of life. People have survived for centuries off this staple consisting only of flour, water, salt, and yeast. Try consuming all these ingredients separately, and you'll be in for a digestive surprise. However, mix them together and let time do its thing, and the result is the release of profound flavour, texture, and nutrients that were previously locked away.
 
 Despite it being relatively easy to turn dough into something that looks and feels like bread, the challenge is in squeezing every possible ounce of flavour and texture (using only those four ingredients) to achieve the embodiment of a true loaf of bread. The secret to artisinal bread is **all in the fermentation.** A baker's skill is in their ability to manage and control the fermentation process, which is usually achieved through countless months and/or years of trial and error.
