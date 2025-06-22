@@ -50,6 +50,19 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+    extensions:
+      # Mathjax. See https://gohugo.io/content-management/mathematics/
+      passthrough:
+        delimiters:
+          block:
+          - - \[
+            - \]
+          - - $$
+            - $$
+          inline:
+          - - \(
+            - \)
+        enable: true
   highlight:
     guessSyntax: true
     noClasses: false # Use external stylesheets instead so conditional light/dark highlighting can be used
