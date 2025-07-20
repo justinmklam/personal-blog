@@ -123,7 +123,7 @@ Things that worked well:
 
 Things that didn't:
 - Less frequently used symbols are still hard to remember, e.g. `$%^&`
-![Layer: Symbols](posts/2025/05/corne-keyboard/keymap-symbols.svg)
+![Layer: Symbols](keymap-symbols.svg)
 
 ## Navigation Layer
 For right handed users, probably want to move the browser nav buttons to the left cluster so mouse can still be used.
@@ -137,11 +137,11 @@ Things that didn't:
 - Don't really use the mouse wheel keys on the left cluster, 
 - Sometimes mouse control but it's kind of hard to be precise. Also doesn't work with click/drag so hard for that. But useful for things like refocusing a window/input that the mouse is nearby
 
-![Layer: Navigation](posts/2025/05/corne-keyboard/keymap-nav.svg)
+![Layer: Navigation](keymap-nav.svg)
 ## Miscellaneous Layer
 
 Also barely use function keys outside of F2, so they're just there in case
-![Layer: Misc](posts/2025/05/corne-keyboard/keymap-misc.svg)
+![Layer: Misc](keymap-misc.svg)
 
 
 # Using Laptop Keyboards
