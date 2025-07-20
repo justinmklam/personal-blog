@@ -1,5 +1,5 @@
 ---
-title: 36 Key Layout
+title: Transitioning to a 36-Key Layout
 date: 2025-07-19T09:50:41-07:00
 tagline: 
 image: banner.jpg
@@ -15,10 +15,11 @@ Having used my [Corne keyboard](/posts/2025/05/corne-keyboard) for a while now, 
 <!--more-->
 
 # Why Fewer Keys?
-You might be wondering what the benefit of using fewer keys is. Citing ergonomics would be the knee-jerk reaction, where with this smaller layout, each key is at most 1u key away. But there's debate about whether fewer keys is actually better since you end up trading off more hand movements for more combos (as well as cognitive overload). Honestly, it's fun and it looks clean.
+You might be wondering what the benefit of using fewer keys is. Citing ergonomics would be the knee-jerk reaction, where with this smaller layout, each key is at most 1u key away. But there's debate about whether fewer keys is actually better since you end up trading off more hand movements for more combos (as well as cognitive overload). Honestly, it's fun and it looks clean, and I didn't end up using teh outer columns anyway.
 
 # Keymap
 
+Most of it is similar to my [42-key layout](/posts/2025/05/corne-keyboard/#keymap), the main changes were the symbol layer.
 ## Letters
 
 ![Layer 1: Letters](keymap-letters.svg)
