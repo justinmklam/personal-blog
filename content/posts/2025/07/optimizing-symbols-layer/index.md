@@ -9,12 +9,18 @@ layout: single
 type: blog
 aliases:
 ---
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+When first designing my layout on my Corne keyboard, I was mostly focused on the macro level of what layers keys should go on, as well as the ease of common workflows like selecting text or switching workspaces. I put *some* thought into the placement of each symbol, but now that I’ve grown very comfortable with my keyboard, it’s a good opportunity to revisit the micro details of the symbol placements.
 
 <!--more-->
 
-Script:
+# Prior Art
+
+[Insert links for differences with programming languages.]
+
+# Doing Some Research
+## Gathering the Data
+To start, I created a simple python script to log all my keystrokes. I left it running in the background for a week. It stores only saves to a persistent file when the script is terminated, but this didn’t seem to cause any issues for me.
+
 ```python
 import json
 from pynput import keyboard
@@ -67,7 +73,8 @@ with keyboard.Listener(on_press=on_press) as listener:
 
 ```
 
-Which outputs a file like this:
+The output data file looks something like this, making it easy to plot histograms of.
+
 ```json
 {
     "key.cmd": 1259,
@@ -81,11 +88,32 @@ Which outputs a file like this:
 }
 ```
 
-Key Frequency Distribution
+## Analyzing the Data
+
+### Alphanumeric Keys
+
+J and K are the most used because of vim. Yes, they aren’t the most efficient movement types, but even though I use ctrl+d and ctrl+u (among others), it adds up in usage due to many one off line moves. 
+
+Nothing too surprising here, except maybe how infrequently X, Q, and especially Z are not used.
 
 ![Alphanumeric keys](keystats-alphanumeric.png)
 
+### Symbol Keys
+
+I predominantly use python (and vim) at work, so these symbols will reflect that. I’m actually surprised that square brackets are my least commonly used bracket types.
 
 ![Symbol keys](keystats-symbols.png)
 
+### Miscellaneous Keys
+
+It’s no surprise that space and backspace are the most common by a wide margin. 
+
+Because I use macOS, CMD and ALT are the most used modifiers. CTRL would likely be lower if it weren’t for my vim keybindings. 
+
 ![Misc keys](keystats-misc.png)
+
+# Improving the Placements
+
+Before:
+
+After:
