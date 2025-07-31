@@ -4,7 +4,7 @@ date: 2025-05-27T15:57:51-07:00
 tagline: How it's been going with a funky looking split keyboard.
 image: corne.jpg
 tags:
-  - random
+  - keyboards
 draft: false
 layout: single
 type: blog
