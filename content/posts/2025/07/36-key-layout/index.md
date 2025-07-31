@@ -1,9 +1,10 @@
 ---
 title: Transitioning to a 36-Key Layout
-date: 2025-07-19T09:50:41-07:00
+date: 2025-07-31T09:50:41-07:00
 tagline: 
 image: banner.jpg
-tags: 
+tags:
+  - keyboards
 draft: true
 layout: single
 type: blog
@@ -26,7 +27,7 @@ Most of it is similar to my [42-key layout](/posts/2025/05/corne-keyboard/#keyma
 
 ## Symbols
 
-![Layer 2: Symbols](keymap-symbols.svg)
+![Layer 2: Symbols](content/posts/2025/07/36-key-layout/keymap-symbols.svg)
 
 ## Navigation
 

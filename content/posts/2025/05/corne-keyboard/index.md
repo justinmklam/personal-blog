@@ -4,7 +4,7 @@ date: 2025-05-23T15:57:51-07:00
 tagline: How it's been going with a funky looking split keyboard.
 image: corne.jpg
 tags:
-  - random
+  - keyboards
 draft: true
 layout: single
 type: blog
@@ -107,7 +107,7 @@ Things that didn't:
 - Tried [home row mods](https://precondition.github.io/home-row-mods) for a bit, but didn't like how the timing was quite finicky and it would sometimes cause delays in keypresses, which was quite frustrating. With the presence of modifier keys on thumb clusters, it didn't seem like a necessary feature to implement.
 
 
-![Layer: Letters](posts/2025/05/corne-keyboard/keymap-letters.svg)
+![Layer: Letters](keymap-letters.svg)
 ## Symbols Layer
 
 First set it up with numbers going across the top row, but found it hard to remember where the later numbers were (6-0), so switched to numpad and it's much better. Also it's faster to use with one hand.
