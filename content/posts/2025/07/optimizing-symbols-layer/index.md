@@ -22,6 +22,8 @@ For symbols, I initially just put them in order spanning the rows, but wanted to
 ![Pic](https://www.jonashietala.se/images/t-34/effort.png)
 
 I mainly use Python at work, so these symbol usages will be biased towards that. Every language will have its own set of common symbols, so keep that in mind when designing your own.
+
+[Symbols](https://getreuer.info/posts/keyboards/symbol-layer/index.html)
 # Doing Some Research
 ## Gathering the Data
 To start, I created a simple python script to log all my keystrokes. I left it running in the background for a week. It stores only saves to a persistent file when the script is terminated, but this didn’t seem to cause any issues for me.
