@@ -31,7 +31,7 @@ Total cost for my build was **~$70 CAD**. Aside from the case, all parts were so
 
 If you're looking to build one yourself, based on the parts I found it can range from **$45-100 CAD**. Getting the build to be <$40 would likely be possible if you hunt a bit harder for better deals, especially since switches and keycaps make up for a large portion of the overall cost. Alternatively, 3D printing your own keycaps is an option to further save some money.
 
-For my build, I chose the same TTC Frozen Silent v2 switches that I used on my [Corne keyboard](/posts/2025/05/corne-keyboard).
+For my build, I chose the same TTC Frozen Silent v2 switches that I used on my [Corne keyboard](/posts/2025/05/corne-keyboard), and I bought blank PBT in the XDA profile. I tried Cherry/OEM profile, but I wasn’t a fan of feel or look of the sharp corners.
 
 | Part                           | Quantity | Cost (in CAD) |
 | ------------------------------ | -------- | ------------- |
@@ -49,9 +49,9 @@ For my build, I chose the same TTC Frozen Silent v2 switches that I used on my [
 
 ## Schematic
 
-The wiring follows a basic row/column matrix, where the diodes are connected along the rows, and the remaining switch legs are wired directly together in columns.
+The wiring followed a basic row/column matrix, where the diodes were connected along the rows, and the remaining switch legs were wired directly together in columns.
 
-On the MCU, the pins required are:
+On the MCU, the pins required were:
 - Switch matrix, 4 rows x 5 columns = 9 GPIO pins
 - TRS connector (soft serial) = 1 GPIO pin, VCC, GND
 
@@ -84,7 +84,7 @@ For the TRS connector, I initially bought ones on breakout boards, but it turned
 
 ![RP2040-Zero all wired up.](mcu-wiring.jpg)
 
-Doing everything again for the other half, and it’s done!
+Doing everything again for the other half, and it was complete!
 
 ![Build complete!](IMG_4334.jpg)
 
@@ -133,7 +133,7 @@ Compared to the process with vial:
 
 Way easier and faster right? Especially when fiddling with timing or mouse key configurations, it’s just a much better development cycle since vial enables immediate changes.
 
-### Vial.
+### Yes, Vial
 
 Anyway, setting up vial was relatively straightforward. It involved creating a new config from the QMK one, and adding an extra config file that describes the visual representation of the keyboard. This config maps what you see in the UI to the key in QMK.
 # Layout Tweaks
