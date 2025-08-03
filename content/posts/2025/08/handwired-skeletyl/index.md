@@ -55,7 +55,7 @@ On the MCU, the pins required are:
 - Switch matrix, 4 rows x 5 columns = 9 GPIO pins
 - TRS connector (soft serial) = 1 GPIO pin, VCC, GND
 
-[insert wiring diagram]
+[insert wiring diagram or just qmk config]
 
 ## Assembling the Hardware
 
@@ -96,7 +96,50 @@ Surprisingly, the glue was sturdy enough to hold the components in place even wh
 
 ![Right half shows the bottom plate with rubber feet installed.](IMG_4372.jpg)
 
-## Compiling QMK
+## Compiling the Firmware
+
+### QMK
+
+Forked the QMK repo, ran the new keyboard command, and then updated the config. With the RP2040, the bootloader and processor need to just be RP2040 instead of the dev board, which is one of the default options.
+
+It took a while to figure out what the correct configuration was for the layout, but I eventually got it done with a bit of help from ChatGPT.
+
+### Vial?
+
+My previous keyboard came with vial, and it was immensely helpful to be able to play around with different key layouts and tweaks without having to compile and flash for every small change. Since I had my 36 key layout dialled in (or so I thought, more on that later), I thought that having a relatively stable layout in QMK would be sufficient.
+
+And then I actually went through the process of compiling/flashing firmware, and I immediately wanted vial back!
+
+The main reason was because the process to make changes on a split keyboard are:
+1. Update configuration
+2. Run command to compile firmware
+3. Unplug USB cable from keyboard
+4. Unplug TRS cable from both halves
+5. With one half, turn upside down and press reset on the MCU to enter bootloader mode
+6. Plug USB cable back in
+7. Open file explorer, move firmware file to bootloader
+8. Unplug USB cable to exit bootloader mode
+9. Repeat step 5-8 for other half (may not be necessary depending on type of change)
+10. Plug TRS cable back in to both halves
+11. Plug USB cable back in to keyboard
+12. Test updated configuration
+13. Repeat from step 1 as needed
+
+Compared to the process with vial:
+1. Open vial.rocks in web browser
+2. Update configuration
+3. Test updated configuration
+4. Repeat from step 2 as needed
+
+Way easier and faster right? Especially when fiddling with timing or mouse key configurations, it’s just a much better development cycle since vial enables immediate changes.
+
+### Vial.
+
+Anyway, setting up vial was relatively straightforward. It involved creating a new config from the QMK one, and adding an extra config file that describes the visual representation of the keyboard. This config maps what you see in the UI to the key in QMK.
+# Layout Tweaks
+I thought that my 36 key layout would be fine, but it was not. Since the thumb cluster was wider, the farthest thumb no longer felt as comfortable or easy to hit, especially for combos like CMD+T. Then I went into bottom row mods, which helped.
+
+Another thing I noticed was how my hands wanted to rest in home row, whereas in a flat keyboard, I found it to matter less where the resting position was since it could just move laterally to correct without issue.
 
 # The Finished Keyboard
 
