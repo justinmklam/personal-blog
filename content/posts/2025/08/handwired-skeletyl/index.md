@@ -27,7 +27,7 @@ With the decision made, I began my journey.
 
 My friend from [Ember Prototypes](https://www.emberprototypes.com/) was kind enough to print the case for me, but if you don't have access to a 3D printer yourself or a friend who does, many local libraries have them and are very affordable. Otherwise, places like JLCPCB offer printing for not too much. 
 
-Total cost for my build was **~$70 CAD**. Aside from the case, all parts were sourced from Amazon and Aliexpress.
+Total cost for my build was **~$70 CAD**, where $45 of it was from the keycaps and (relatively expensive) switches. Aside from the case, all parts were sourced from Amazon and Aliexpress.
 
 If you're looking to build one yourself, based on the parts I found it can range from **$45-100 CAD**. Getting the build to be <$40 would likely be possible if you hunt a bit harder for better deals, especially since switches and keycaps make up for a large portion of the overall cost. Alternatively, 3D printing your own keycaps is an option to further save some money.
 
@@ -57,6 +57,7 @@ On the MCU, the pins required were:
 
 [insert wiring diagram or just qmk config]
 
+[insert matrix diagram]
 ## Assembling the Hardware
 
 ![Test fitting the switches and a few keycaps to get a sense of how the sculpted profile feels.](IMG_4286.jpg)
@@ -136,11 +137,23 @@ Way easier and faster right? Especially when fiddling with timing or mouse key c
 ### Yes, Vial
 
 Anyway, setting up vial was relatively straightforward. It involved creating a new config from the QMK one, and adding an extra config file that describes the visual representation of the keyboard. This config maps what you see in the UI to the key in QMK.
+
+It was mildly annoying since I initially forked the QMK repo, and vial requires forking their repo instead, so I just had to copy files into the vial repo to continue from there.
 # Layout Tweaks
 I thought that my 36 key layout would be fine, but it was not. Since the thumb cluster was wider, the farthest thumb no longer felt as comfortable or easy to hit, especially for combos like CMD+T. Then I went into bottom row mods, which helped.
 
 Another thing I noticed was how my hands wanted to rest in home row, whereas in a flat keyboard, I found it to matter less where the resting position was since it could just move laterally to correct without issue.
 
-# The Finished Keyboard
+# Final Thoughts
+
+One interesting thing about sculpted keyboards is that if the rubber feet were a bit dusty, the keyboard would have a tendency to shift while typing. This is not an issue with flat keyboards since the direction of force is vertically down, whereas here, the force vectors are also horizontal. This can be mitigated by making sure the rubber feet are clean and have good grip, or adding weight with motorcycle weights.
+
+Hitting the inner column keys with the forefinger is also a little awkward. But the ring and pinky fingers feel very comfortable. 
+
+Thumb clusters could bed a little lower and close together, since outer key is hard to reach.
+
+Maybe it is time to make my own dactyl?
 
 ![Ready for typing!](IMG_4611.jpg)
+
+A month passed, still looking for my next keyboard to make it even more appealing.
