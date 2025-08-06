@@ -1,6 +1,6 @@
 ---
 title: Handwiring a 36-Key Sculpted Keyboard
-date: 2025-08-02T14:35:20-07:00
+date: 2025-08-05T14:35:20-07:00
 tagline: Diving off the deep end of ergonomic keyboards by building my own.
 image: DSCF1858.jpg
 tags:
