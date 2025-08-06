@@ -41,7 +41,7 @@ The main challenge in reducing a [42-key layout](/posts/2025/05/corne-keyboard/#
 
 I added these keys to the remaining thumb cluster keys that weren't using tap modifiers (e.g. `LGUI` and `RSFT`). No major issues or adjustments here, since it was fairly similar to hitting `SPACE` with a thumb. `ENTER` was placed on the opposite side of `LGUI` so that combo could still be easily used for some desktop and web apps (e.g. to submit a comment in GitHub or Jira).
 
-## Backspac
+## Backspace
 Out of habit, I had this in the top right corner, but I eventually got used to using backspace with my thumb so it became redundant. I thought I would miss the `LALT+BSPC` combo for easily deleting words (on macOS), but I found that hitting `LALT` with my left thumb and `BSPC` with my right thumb was equally as convenient.
 
 ## Escape
