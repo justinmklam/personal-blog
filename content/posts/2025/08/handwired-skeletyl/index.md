@@ -1,7 +1,7 @@
 ---
-title: Handwiring a 36-Key Sculpted Keyboard
+title: Handwiring a 36-Key Split, Sculpted Keyboard
 date: 2025-08-05T14:35:20-07:00
-tagline: Diving off the deep end of ergonomic keyboards by building my own.
+tagline: The rabbit hole goes deep with split ergonomic keyboards.
 image: DSCF1858.jpg
 tags:
   - keyboards
@@ -10,30 +10,30 @@ layout: single
 type: project
 aliases:
 ---
-As I continued the descent into my split ergonomic keyboard addiction, I decided to dive off the deep end and handwire a 36-key split, sculpted keyboard.
+As I continued the descent into my split keyboard addiction, I decided to dive off the deep end and handwire my own ergonomic keyboard.
 
 My [Corne](/posts/2025/05/corne-keyboard) was a good intro keyboard, but I eventually determined it had more keys than [I actually needed](/posts/2025/07/36-key-layout). I also grew intrigued towards keyboards with better ergonomics - more stagger and splay to improve alignment with ring and pinky fingers, as well as keyboards with sculpted, organic surfaces to better follow my hand’s natural shape. 
 
 <!--more-->
 
-Other keyboards like the [Charybdis](https://github.com/Bastardkb/Charybdis) seemed to be quite popular, but I was searching for something smaller and less bulky looking. I also didn’t want to design my own using [Cosmos](https://ryanis.cool/cosmos/) just yet, since I knew it’d take a few iterations to get right and be difficult without my own 3D printer.
+Other keyboards like the [Charybdis](https://github.com/Bastardkb/Charybdis) seemed to be quite popular, but I was searching for something smaller and less bulky looking. I also didn’t want to design my own using [Cosmos](https://ryanis.cool/cosmos/) just yet, since I knew it’d take a few iterations to get right which would be difficult without my own 3D printer.
 
-The [Skeletyl](https://github.com/Bastardkb/Skeletyl) spoke to me on an intimate level, and although it lacked an integrated pointing device like a trackpoint, it checked enough boxes that I became sold on that form factor.
+The [Skeletyl](https://github.com/Bastardkb/Skeletyl) spoke to me on an spiritual level, and although it lacked an integrated pointing device like a trackpoint, it checked enough boxes for me to be sold on that form factor.
 
-Since I had never used a keyboard like this before, I was hesitant to put too much money into it. Prebuilt options and kits were going for >$300 CAD, which was more than I was willing to empty my wallet with for something that may or may not work long term for me. Although I could have sourced the PCBs and parts myself, this was a great opportunity to get my extremities wet with handwiring since it would keep costs low, as well as being suited well for a complex-shaped board like this one. 
+Since I had never used a keyboard like this before, I was hesitant to put too much money into it. Prebuilt options and kits were going for >$300 CAD, which was more than I was willing to empty my wallet for something that might just be a fad for me. Although I could have tried sourcing the PCBs myself, this keyboard was a perfect candidate to try handwiring due to its complex shape as well as keeping costs low since I had most of the equipment already.
 
-With the decision made, I began my journey.
+So with my soldering iron and wires in hand, I began my quest.
 
 ![The completed Skeletyl in its natural habitat.](DSCF1925.jpg)
 
-![Close up of the left half. The sparkle pattern comes through quite well!](DSCF1888.jpg)
+![Close up of the left half. The sparkle pattern came through quite well!](DSCF1888.jpg) 
 
 ![Backside of the keyboard showing the USB-C and TRS ports.](DSCF1900.jpg)
 # The Build
 
 ## Bill of Materials
 
-My friend from [Ember Prototypes](https://www.emberprototypes.com/) was kind enough to print the case for me, but if you don't have access to a 3D printer yourself or a friend who does, many local libraries have them and are very affordable. Otherwise, places like JLCPCB offer printing for not too much. 
+My friend from [Ember Prototypes](https://www.emberprototypes.com/) was kind enough to print the case for me, but if you don't have access to a 3D printer yourself or a friend who does, many local libraries have them and are usually very affordable. Otherwise, places like JLCPCB offer printing for not too much. 
 
 Total cost for my build was **~$70 CAD**, where $45 of it was from the keycaps and (relatively expensive) switches. Aside from the case, all parts were sourced from Amazon and Aliexpress.
 
@@ -58,12 +58,14 @@ For my build, I chose the same TTC Frozen Silent v2 switches that I used on my [
 The wiring followed a basic row/column matrix, where the diodes were connected along the rows, and the remaining switch legs were wired directly together in columns.
 
 On the MCU, the pins required were:
-- Switch matrix, 4 rows x 5 columns = 9 GPIO pins
-- TRS connector (soft serial) = 1 GPIO pin, VCC, GND
+- Switch matrix, 4 rows x 5 columns = **9 GPIO pins**
+- TRS connector (soft serial) = **1 GPIO pin, VCC, GND**
 
 ![RP2040 Pinout.](rp2040.png "Waveshare|https://www.waveshare.com/rp2040-zero.htm")
 
-It didn't really matter which pins I used for the cols/rows, but these are the ones I chose which were then mapped to the QMK like so (full config [below](#qmk)):
+In order for both sides to communicate with each other, there are a few different ways that [QMK supports](https://docs.qmk.fm/features/split_keyboard). I opted for the simplest of using soft serial so only three wires were required. For the [RP2040](https://docs.qmk.fm/platformdev_rp2040), the soft serial pin (using the PIO driver) needed to be `GP1`.
+
+For the matrix columns and rows, I chose the pins on the right side to make it a bit easier to assemble. Any valid pins can be used, as long as they're mapped correctly in the QMK `keyboard.json`, where mine looks something like this (full configuration [below](#qmk)).
 
 ```json
 	...
@@ -84,7 +86,9 @@ It didn't really matter which pins I used for the cols/rows, but these are the o
 	...
 ```
 ## Assembling the Hardware
-Pictures below show the build process. The case was printed on a [Bambu Lab P1S](https://ca.store.bambulab.com/products/p1s) in the [Onyx Black PLA Sparkle](https://ca.store.bambulab.com/products/pla-sparkle?id=43809130152176).
+Despite having quite a bit of soldering experience, handwiring still took longer than expected - the first half took about 3-4h, and the second half took maybe 2-3h once I figured out the best way to do certain things. It seems like such a simple task of *just* connecting wires together, but as with most things, it still takes time and effort. Though it did turn out to be a pleasant change of pace to my typical programming work, since the manual, dexterous, but not cognitively-challenging labour required a different type of patience that ended up being a bit meditative.
+
+The models for the case (without the additional tenting) were downloaded from [Printables](https://www.printables.com/model/744408-skeletyl-ergonomic-keyboard), and was printed on a [Bambu Lab P1S](https://ca.store.bambulab.com/products/p1s) in the [Onyx Black PLA Sparkle](https://ca.store.bambulab.com/products/pla-sparkle?id=43809130152176).
 
 ![Test fitting the switches and a few keycaps to get a sense of how the sculpted profile feels.](IMG_4286.jpg)
 
@@ -95,7 +99,7 @@ Pictures below show the build process. The case was printed on a [Bambu Lab P1S]
 
 ![Diodes placed, marking the wire locations to splice.](IMG_4318.jpg)
 
-For splicing the wire, this turned out to be easier to do than expected. Joe Scotto’s way is to use bare copper wire and heat shrink the intersections, but I don’t think it’s actually that much faster since it still takes time to cut, place, and heat the heat shrink.
+For splicing the wire, this turned out to be easier to do than expected. Joe Scotto’s way is to use bare copper wire and heat shrink the intersections, but I didn’t think it was actually that much faster since it still takes time to cut, place, and heat the heat shrink.
 
 ![Using basic wire cutters and an x-acto knife to expose the wire.](stripping-wires.jpg)
 
@@ -129,6 +133,8 @@ Surprisingly, the glue was sturdy enough to hold the components in place even wh
 I followed the [QMK tutorial](https://docs.qmk.fm/newbs) and forked the repo, ran the new keyboard command, and then updated the config. With the RP2040, the bootloader and processor needed to just be RP2040 instead of the dev board, which was one of the default options.
 
 It took a while to figure out what the correct configuration was for the layout, but I eventually got it done with a bit of help from ChatGPT.
+
+For the firmware flashing, I just set the split enabled flag for each side and commented out the opposite side. Maybe next time I’ll use EEPROM or setting a pin high to avoid needing to build different firmware for each side.
 
 ```c
 #pragma once
@@ -231,7 +237,7 @@ And the `keyboard.json`:
 
 My previous keyboard came with [Vial](https://get.vial.today/), and it was immensely helpful to be able to play around with different key layouts and tweaks without having to compile and flash for every small change. Since I had my 36 key layout dialled in (or so I thought, more on that later), I thought that having a relatively stable layout in QMK would be sufficient.
 
-And then I actually went through the process of compiling/flashing firmware, and I immediately wanted vial back!
+And then I actually went through the process of compiling/flashing firmware, and I immediately wanted Vial back!
 
 The main reason was because the process to make changes on a split keyboard are:
 1. Update configuration
@@ -249,7 +255,7 @@ The main reason was because the process to make changes on a split keyboard are:
 13. Repeat from step 1 as needed
 
 Compared to the process with vial:
-1. Open vial.rocks in web browser
+1. Open [vial.rocks](https://vial.rocks/) in web browser
 2. Update configuration
 3. Test updated configuration
 4. Repeat from step 2 as needed
@@ -260,7 +266,7 @@ Way easier and faster right? Especially when fiddling with timing or mouse key c
 
 Anyway, setting up Vial was relatively straightforward. It involved creating a new config from the QMK one (following the porting guide [here](https://get.vial.today/docs/porting-to-via.html), and adding an extra config file that describes the visual representation of the keyboard. This config maps what you see in the UI to the keys in QMK.
 
-It was mildly annoying since I initially forked the QMK repo, and Vial requires forking their repo instead, so I just had to copy files into the Vial repo to continue from there.
+It was mildly annoying since I initially forked the QMK repo, and Vial requires forking their repo instead, so I just had to copy files into the Vial repo to continue from there. But I guess I should have read all the docs first!
 
 All files listed below are saved under `keymaps/vial`.
 
@@ -304,15 +310,25 @@ And `vial.json`:
 After flashing, my keyboard then showed up under [vial.rocks](https://vial.rocks)!
 
 ![Vial web user interface.](vial.png)
-# Layout Tweaks
-I thought that my 36 key layout would be fine, but it was not. Since the thumb cluster was wider, the farthest thumb no longer felt as comfortable or easy to hit, especially for combos like `CMD+T`. Then I went into bottom row mods, which helped.
+# Required Adjustments
+## Keyboard Layout
+I thought my [36 key layout](/posts/2025/07/36-key-layout/) would be completely fine as is, but it was not. Since the thumb cluster was wider, the farthest thumb no longer felt as comfortable or easy to hit for me since it required my hand to stretch across a large distance, especially for combos like `CMD+T`. For modifiers, I started to use bottom row mods in addition to the thumb clusters, which ended up working quite well.
 
-Another thing I noticed was how my hands wanted to rest in home row, whereas in a flat keyboard, I found it to matter less where the resting position was since it could just move laterally to correct without issue.
+## Desk Ergonomics
+Since the keyboard is taller than normal, I started experiencing wrist and shoulder fatigue after a few hours in the first week of using it. Wrist/palm rests also did not help. After some research, I eventually came across advice that changing the height of your desk and/or chair are needed to accommodate the keyboard’s height. 
+
+Since I use a floor desk, my desk is the only thing that has height adjustability, so I lowered it 1/2” and found it was a big improvement to my posture. Maybe one day I’ll [recess my keyboard into my desk](https://www.reddit.com/r/ErgoMechKeyboards/comments/1micni6/split_keyboard_recessed_into_custom_cnc_desktop/)?
+
+I also found that having the two halves closer and slightly angled inwards to be more comfortable than strictly at shoulder width apart. I wonder if it’s something to do with the height of the keyboard and how my forearms aren’t completely parallel with the ground? Either way, the nice thing about having a split is the ability to easily move them around to find the best position. Or as physiotherapists like to say, “the best position is your next position”!
 
 # Final Thoughts
 
-One interesting thing about sculpted keyboards is that if the rubber feet are a bit dusty, the keyboard would have a tendency to shift while typing. This is not an issue with flat keyboards since the direction of force is vertically down, whereas here, the force vectors are also horizontal. This can be mitigated by making sure the rubber feet are clean and have good grip, or adding small weights to the case (e.g. with motorcycle wheel balancing weights).
+One interesting thing about sculpted keyboards is that if the rubber feet are a bit dusty, the keyboard would have a tendency to shift inwards while typing. This is not an issue with flat keyboards since the direction of force is vertically down, whereas here, the force vectors are also horizontal. This can be mitigated by making sure the rubber feet are clean and have good grip, or adding small weights to the case (e.g. with motorcycle wheel balancing weights).
 
-Hitting the inner column keys with the forefinger is also a little awkward since it feels like there's more distance for the finger to travel while avoiding hitting the tallest thumb cluster key. But the ring and pinky fingers feel very comfortable!
+I also noticed how my hands wanted to rest in home row (e.g. the lowest sloped area of the keyboard). In contrast to a typical flat keyboard, where my right hand would sometimes rest one key over on `HJKL` (because of vim and vim-like keybindings on many apps I use), it didn’t matter as much since my hands could just shift laterally without significantly changing my wrist angle/position. It required some adjustment to train my right hand to really stay on home row and use my forefinger to span the two columns `YHB` and `UJN` instead of just one, which I found particularly difficult since reaching over with my forefinger often led to bumping into the tallest thumb key. 
 
-The thumb clusters could also be a little lower and close together, since the outer key is hard to reach for my (somewhat) smaller hands.
+The curvature for the ring and pinky fingers were quite comfortable for me, and being able to press the top outermost keys with my pinkies was a nice change.
+
+The thumb clusters could also be a little lower and shifted slightly inward, since the outer key is hard to reach for my (somewhat) smaller hands. But this is getting into specific hand morphology, so YMMV.
+
+All in all, I was quite pleased with how it turned out, and I’ve been daily driving this keyboard for a few weeks now. Unfortunately, building my first keyboard from scratch has opened the Pandora’s box of the desire to build even more keyboards, so time will tell if my journey ends here or continues on…
