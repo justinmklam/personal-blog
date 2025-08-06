@@ -1,29 +1,37 @@
 ---
 title: Handwiring a 36-Key Sculpted Keyboard
 date: 2025-08-02T14:35:20-07:00
-tagline: 
+tagline: Diving off the deep end of ergonomic keyboards by building my own.
 image: DSCF1858.jpg
 tags:
   - keyboards
-draft: true
+draft: false
 layout: single
 type: project
 aliases:
 ---
 As I continued the descent into my split ergonomic keyboard addiction, I decided to dive off the deep end and handwire a 36-key split, sculpted keyboard.
 
-My [Corne]() was a good intro keyboard, but I eventually determined it had more keys than [I actually needed](). I also grew intrigued towards keyboards with better ergonomics - more stagger and splay to improve alignment with ring and pinky fingers, as well as keyboards with sculpted, organic surfaces to better follow my hand’s natural shape. 
-
-Other keyboards like the Dactyl and Charybdis seemed to be the most popular, but I was searching for something smaller and less bulky looking. I also didn’t want to design my own using Cosmos just yet, since I knew it’d take a few iterations to get right and be difficult without my own 3D printer. 
-
-The Skeletyl spoke to me on an intimate level, and although it lacked an integrated pointing device like a trackpoint, it checked enough boxes that I became sold on that form factor.
+My [Corne](/posts/2025/05/corne-keyboard) was a good intro keyboard, but I eventually determined it had more keys than [I actually needed](/posts/2025/07/36-key-layout). I also grew intrigued towards keyboards with better ergonomics - more stagger and splay to improve alignment with ring and pinky fingers, as well as keyboards with sculpted, organic surfaces to better follow my hand’s natural shape. 
 
 <!--more-->
+
+Other keyboards like the [Charybdis](https://github.com/Bastardkb/Charybdis) seemed to be quite popular, but I was searching for something smaller and less bulky looking. I also didn’t want to design my own using [Cosmos](https://ryanis.cool/cosmos/) just yet, since I knew it’d take a few iterations to get right and be difficult without my own 3D printer.
+
+The [Skeletyl](https://github.com/Bastardkb/Skeletyl) spoke to me on an intimate level, and although it lacked an integrated pointing device like a trackpoint, it checked enough boxes that I became sold on that form factor.
 
 Since I had never used a keyboard like this before, I was hesitant to put too much money into it. Prebuilt options and kits were going for >$300 CAD, which was more than I was willing to empty my wallet with for something that may or may not work long term for me. Although I could have sourced the PCBs and parts myself, this was a great opportunity to get my extremities wet with handwiring since it would keep costs low, as well as being suited well for a complex-shaped board like this one. 
 
 With the decision made, I began my journey.
-# Bill of Materials
+
+![The completed Skeletyl in its natural habitat.](DSCF1925.jpg)
+
+![Close up of the left half. The sparkle pattern comes through quite well!](DSCF1888.jpg)
+
+![Backside of the keyboard showing the USB-C and TRS ports.](DSCF1900.jpg)
+# The Build
+
+## Bill of Materials
 
 My friend from [Ember Prototypes](https://www.emberprototypes.com/) was kind enough to print the case for me, but if you don't have access to a 3D printer yourself or a friend who does, many local libraries have them and are very affordable. Otherwise, places like JLCPCB offer printing for not too much. 
 
@@ -45,8 +53,6 @@ For my build, I chose the same TTC Frozen Silent v2 switches that I used on my [
 | MX switches                    | 36       | $5-30         |
 | MX-compatible keycaps          | 36       | $15-30        |
 
-# The Build
-
 ## Schematic
 
 The wiring followed a basic row/column matrix, where the diodes were connected along the rows, and the remaining switch legs were wired directly together in columns.
@@ -55,10 +61,30 @@ On the MCU, the pins required were:
 - Switch matrix, 4 rows x 5 columns = 9 GPIO pins
 - TRS connector (soft serial) = 1 GPIO pin, VCC, GND
 
-[insert wiring diagram or just qmk config]
+![RP2040 Pinout.](rp2040.png "Waveshare|https://www.waveshare.com/rp2040-zero.htm")
 
-[insert matrix diagram]
+It didn't really matter which pins I used for the cols/rows, but these are the ones I chose which were then mapped to the QMK like so (full config [below](#qmk)):
+
+```json
+	...
+    "matrix_pins": {
+        "cols": ["GP4", "GP5", "GP6", "GP7", "GP8"],
+        "rows": ["GP9", "GP10", "GP11", "GP12"]
+    },
+    "split": {
+		...
+        "soft_serial_pin": "GP1",
+        "matrix_pins": {
+            "right": {
+                "cols": ["GP8", "GP7", "GP6", "GP5", "GP4"],
+                "rows": ["GP9", "GP10", "GP11", "GP12"]
+            }
+        }
+    },
+	...
+```
 ## Assembling the Hardware
+Pictures below show the build process. The case was printed on a [Bambu Lab P1S](https://ca.store.bambulab.com/products/p1s) in the [Onyx Black PLA Sparkle](https://ca.store.bambulab.com/products/pla-sparkle?id=43809130152176).
 
 ![Test fitting the switches and a few keycaps to get a sense of how the sculpted profile feels.](IMG_4286.jpg)
 
@@ -100,7 +126,7 @@ Surprisingly, the glue was sturdy enough to hold the components in place even wh
 
 ### QMK
 
-Forked the QMK repo, ran the new keyboard command, and then updated the config. With the RP2040, the bootloader and processor need to just be RP2040 instead of the dev board, which is one of the default options.
+I followed the [QMK tutorial](https://docs.qmk.fm/newbs) and forked the repo, ran the new keyboard command, and then updated the config. With the RP2040, the bootloader and processor needed to just be RP2040 instead of the dev board, which was one of the default options.
 
 It took a while to figure out what the correct configuration was for the layout, but I eventually got it done with a bit of help from ChatGPT.
 
@@ -203,7 +229,7 @@ And the `keyboard.json`:
 ```
 ### Vial?
 
-My previous keyboard came with vial, and it was immensely helpful to be able to play around with different key layouts and tweaks without having to compile and flash for every small change. Since I had my 36 key layout dialled in (or so I thought, more on that later), I thought that having a relatively stable layout in QMK would be sufficient.
+My previous keyboard came with [Vial](https://get.vial.today/), and it was immensely helpful to be able to play around with different key layouts and tweaks without having to compile and flash for every small change. Since I had my 36 key layout dialled in (or so I thought, more on that later), I thought that having a relatively stable layout in QMK would be sufficient.
 
 And then I actually went through the process of compiling/flashing firmware, and I immediately wanted vial back!
 
@@ -232,11 +258,11 @@ Way easier and faster right? Especially when fiddling with timing or mouse key c
 
 ### Yes, Vial
 
-Anyway, setting up vial was relatively straightforward. It involved creating a new config from the QMK one, and adding an extra config file that describes the visual representation of the keyboard. This config maps what you see in the UI to the key in QMK.
+Anyway, setting up Vial was relatively straightforward. It involved creating a new config from the QMK one (following the porting guide [here](https://get.vial.today/docs/porting-to-via.html), and adding an extra config file that describes the visual representation of the keyboard. This config maps what you see in the UI to the keys in QMK.
 
-It was mildly annoying since I initially forked the QMK repo, and vial requires forking their repo instead, so I just had to copy files into the vial repo to continue from there.
+It was mildly annoying since I initially forked the QMK repo, and Vial requires forking their repo instead, so I just had to copy files into the Vial repo to continue from there.
 
-All files here are under `keymaps/vial`.
+All files listed below are saved under `keymaps/vial`.
 
 In `config.h`: 
 ```c
@@ -275,25 +301,18 @@ And `vial.json`:
 }
 ```
 
-After flashing, my keyboard then showed up under [vial.rocks](https://vial.rocks)
+After flashing, my keyboard then showed up under [vial.rocks](https://vial.rocks)!
 
 ![Vial web user interface.](vial.png)
 # Layout Tweaks
-I thought that my 36 key layout would be fine, but it was not. Since the thumb cluster was wider, the farthest thumb no longer felt as comfortable or easy to hit, especially for combos like CMD+T. Then I went into bottom row mods, which helped.
+I thought that my 36 key layout would be fine, but it was not. Since the thumb cluster was wider, the farthest thumb no longer felt as comfortable or easy to hit, especially for combos like `CMD+T`. Then I went into bottom row mods, which helped.
 
 Another thing I noticed was how my hands wanted to rest in home row, whereas in a flat keyboard, I found it to matter less where the resting position was since it could just move laterally to correct without issue.
 
 # Final Thoughts
 
-One interesting thing about sculpted keyboards is that if the rubber feet were a bit dusty, the keyboard would have a tendency to shift while typing. This is not an issue with flat keyboards since the direction of force is vertically down, whereas here, the force vectors are also horizontal. This can be mitigated by making sure the rubber feet are clean and have good grip, or adding weight with motorcycle weights.
+One interesting thing about sculpted keyboards is that if the rubber feet are a bit dusty, the keyboard would have a tendency to shift while typing. This is not an issue with flat keyboards since the direction of force is vertically down, whereas here, the force vectors are also horizontal. This can be mitigated by making sure the rubber feet are clean and have good grip, or adding small weights to the case (e.g. with motorcycle wheel balancing weights).
 
-Hitting the inner column keys with the forefinger is also a little awkward. But the ring and pinky fingers feel very comfortable. 
+Hitting the inner column keys with the forefinger is also a little awkward since it feels like there's more distance for the finger to travel while avoiding hitting the tallest thumb cluster key. But the ring and pinky fingers feel very comfortable!
 
-Thumb clusters could bed a little lower and close together, since outer key is hard to reach.
-
-Maybe it is time to make my own dactyl?
-
-![Ready for typing!](DSCF1925.jpg)
-
-![Backside of the keyboard.](DSCF1888.jpg)
-![Backside of the keyboard.](DSCF1900.jpg)
+The thumb clusters could also be a little lower and close together, since the outer key is hard to reach for my (somewhat) smaller hands.
