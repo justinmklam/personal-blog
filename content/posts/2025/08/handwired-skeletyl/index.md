@@ -2,7 +2,7 @@
 title: Handwiring a 36-Key Sculpted Keyboard
 date: 2025-08-02T14:35:20-07:00
 tagline: 
-image: skeletyl.jpg
+image: DSCF1858.jpg
 tags:
   - keyboards
 draft: true
@@ -10,7 +10,7 @@ layout: single
 type: project
 aliases:
 ---
-As I continued the descent into my split ergonomic keyboard addiction, I decided to handwire the Skeletyl keyboard from BastardKB. 
+As I continued the descent into my split ergonomic keyboard addiction, I decided to dive off the deep end and handwire a 36-key split, sculpted keyboard.
 
 My [Corne]() was a good intro keyboard, but I eventually determined it had more keys than [I actually needed](). I also grew intrigued towards keyboards with better ergonomics - more stagger and splay to improve alignment with ring and pinky fingers, as well as keyboards with sculpted, organic surfaces to better follow my hand’s natural shape. 
 
@@ -95,7 +95,6 @@ Surprisingly, the glue was sturdy enough to hold the components in place even wh
 
 ![Securing components with "structural" hot glue.](IMG_4371.jpg)
 
-![Right half shows the bottom plate with rubber feet installed.](IMG_4372.jpg)
 
 ## Compiling the Firmware
 
@@ -105,6 +104,103 @@ Forked the QMK repo, ran the new keyboard command, and then updated the config. 
 
 It took a while to figure out what the correct configuration was for the layout, but I eventually got it done with a bit of help from ChatGPT.
 
+```c
+#pragma once
+
+/* RP2040- and hardware-specific config */
+#define RP2040_BOOTLOADER_DOUBLE_TAP_RESET // Activates the double-tap behavior
+#define RP2040_BOOTLOADER_DOUBLE_TAP_RESET_TIMEOUT 500U
+#define PICO_XOSC_STARTUP_DELAY_MULTIPLIER 64
+
+#define SERIAL_PIO_USE_PIO1
+```
+
+In `rules.mk`:
+```
+SERIAL_DRIVER = vendor
+```
+
+And the `keyboard.json`:
+```json
+{
+    "manufacturer": "Justin Lam",
+    "keyboard_name": "skeletyl",
+    "maintainer": "Justin Lam",
+    "bootloader": "rp2040",
+    "processor": "RP2040",
+    "diode_direction": "COL2ROW",
+    "features": {
+        "bootmagic": false,
+        "extrakey": false,
+        "mousekey": true,
+        "nkro": false
+    },
+    "matrix_pins": {
+        "cols": ["GP4", "GP5", "GP6", "GP7", "GP8"],
+        "rows": ["GP9", "GP10", "GP11", "GP12"]
+    },
+    "split": {
+        "enabled": true,
+        "main": "right",
+        "soft_serial_pin": "GP1",
+        "transport": { "protocol": "serial" },
+        "matrix_pins": {
+            "right": {
+                "cols": ["GP8", "GP7", "GP6", "GP5", "GP4"],
+                "rows": ["GP9", "GP10", "GP11", "GP12"]
+            }
+        }
+    },
+    "url": "...",
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0x0254",
+        "vid": "0xFEED"
+    },
+    "layouts": {
+        "LAYOUT_split_3x5_3": {
+            "layout": [
+                {"matrix": [0, 0], "x": 0, "y": 0.25},
+                {"matrix": [0, 1], "x": 1, "y": 0.125},
+                {"matrix": [0, 2], "x": 2, "y": 0},
+                {"matrix": [0, 3], "x": 3, "y": 0.125},
+                {"matrix": [0, 4], "x": 4, "y": 0.25},
+                {"matrix": [4, 0], "x": 7, "y": 0.25},
+                {"matrix": [4, 1], "x": 8, "y": 0.125},
+                {"matrix": [4, 2], "x": 9, "y": 0},
+                {"matrix": [4, 3], "x": 10, "y": 0.125},
+                {"matrix": [4, 4], "x": 11, "y": 0.25},
+                {"matrix": [1, 0], "x": 0, "y": 1.25},
+                {"matrix": [1, 1], "x": 1, "y": 1.125},
+                {"matrix": [1, 2], "x": 2, "y": 1},
+                {"matrix": [1, 3], "x": 3, "y": 1.125},
+                {"matrix": [1, 4], "x": 4, "y": 1.25},
+                {"matrix": [5, 0], "x": 7, "y": 1.25},
+                {"matrix": [5, 1], "x": 8, "y": 1.125},
+                {"matrix": [5, 2], "x": 9, "y": 1},
+                {"matrix": [5, 3], "x": 10, "y": 1.125},
+                {"matrix": [5, 4], "x": 11, "y": 1.25},
+                {"matrix": [2, 0], "x": 0, "y": 2.25},
+                {"matrix": [2, 1], "x": 1, "y": 2.125},
+                {"matrix": [2, 2], "x": 2, "y": 2},
+                {"matrix": [2, 3], "x": 3, "y": 2.125},
+                {"matrix": [2, 4], "x": 4, "y": 2.25},
+                {"matrix": [6, 0], "x": 7, "y": 2.25},
+                {"matrix": [6, 1], "x": 8, "y": 2.125},
+                {"matrix": [6, 2], "x": 9, "y": 2},
+                {"matrix": [6, 3], "x": 10, "y": 2.125},
+                {"matrix": [6, 4], "x": 11, "y": 2.25},
+                {"matrix": [3, 2], "x": 2.5, "y": 3.25},
+                {"matrix": [3, 3], "x": 3.5, "y": 3.5},
+                {"matrix": [3, 4], "x": 4.5, "y": 3.75},
+                {"matrix": [7, 0], "x": 6.5, "y": 3.75},
+                {"matrix": [7, 1], "x": 7.5, "y": 3.5},
+                {"matrix": [7, 2], "x": 8.5, "y": 3.25}
+            ]
+        }
+    }
+}
+```
 ### Vial?
 
 My previous keyboard came with vial, and it was immensely helpful to be able to play around with different key layouts and tweaks without having to compile and flash for every small change. Since I had my 36 key layout dialled in (or so I thought, more on that later), I thought that having a relatively stable layout in QMK would be sufficient.
@@ -139,6 +235,49 @@ Way easier and faster right? Especially when fiddling with timing or mouse key c
 Anyway, setting up vial was relatively straightforward. It involved creating a new config from the QMK one, and adding an extra config file that describes the visual representation of the keyboard. This config maps what you see in the UI to the key in QMK.
 
 It was mildly annoying since I initially forked the QMK repo, and vial requires forking their repo instead, so I just had to copy files into the vial repo to continue from there.
+
+All files here are under `keymaps/vial`.
+
+In `config.h`: 
+```c
+#pragma once
+
+#define VIAL_KEYBOARD_UID {0x11, 0x6B, 0x9E, 0x21, 0xCB, 0x6C, 0xB7, 0x37}
+
+#define VIAL_UNLOCK_COMBO_ROWS { 0, 2 }
+#define VIAL_UNLOCK_COMBO_COLS { 0, 4 }
+```
+
+In `keymaps/vial/rules.mk`:
+```
+VIA_ENABLE = yes
+VIAL_ENABLE = yes
+```
+
+And `vial.json`:
+```json
+{
+    "name": "skeletyl",
+    "vendorId": "0xFEED",
+    "productId": "0x0254",
+    "matrix": {
+        "rows": 8,
+        "cols": 5
+    },
+    "layouts": {
+        "keymap": [
+            [ "0,0", "0,1", "0,2", "0,3", "0,4", { "x": 2 }, "4,0", "4,1", "4,2", "4,3", "4,4" ],
+            [ "1,0", "1,1", "1,2", "1,3", "1,4", { "x": 2 }, "5,0", "5,1", "5,2", "5,3", "5,4" ],
+            [ "2,0", "2,1", "2,2", "2,3", "2,4", { "x": 2 }, "6,0", "6,1", "6,2", "6,3", "6,4" ],
+            [ { "x": 2.5 }, "3,2", "3,3", "3,4", { "x": 1 }, "7,0", "7,1", "7,2" ]
+        ]
+    }
+}
+```
+
+After flashing, my keyboard then showed up under [vial.rocks](https://vial.rocks)
+
+![Vial web user interface.](vial.png)
 # Layout Tweaks
 I thought that my 36 key layout would be fine, but it was not. Since the thumb cluster was wider, the farthest thumb no longer felt as comfortable or easy to hit, especially for combos like CMD+T. Then I went into bottom row mods, which helped.
 
@@ -154,6 +293,7 @@ Thumb clusters could bed a little lower and close together, since outer key is h
 
 Maybe it is time to make my own dactyl?
 
-![Ready for typing!](IMG_4611.jpg)
+![Ready for typing!](DSCF1925.jpg)
 
-A month passed, still looking for my next keyboard to make it even more appealing.
+![Backside of the keyboard.](DSCF1888.jpg)
+![Backside of the keyboard.](DSCF1900.jpg)
