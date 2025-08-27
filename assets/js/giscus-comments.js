@@ -19,14 +19,19 @@ class GiscusCommentManager {
         const currentPath = window.location.pathname;
 
         if (discussion && typeof discussion.totalCommentCount === "number") {
+          // Calculate total count including both comments and replies
+          const commentCount = discussion.totalCommentCount || 0;
+          const replyCount = discussion.totalReplyCount || 0;
+          const totalCount = commentCount + replyCount;
+
           // Update comment count displays on current page
           this.updateCommentCountDisplays(
             currentPath,
-            discussion.totalCommentCount
+            totalCount
           );
 
           console.log(
-            `Giscus: Page ${currentPath} has ${discussion.totalCommentCount} comments`
+            `Giscus: Page ${currentPath} has ${commentCount} comments and ${replyCount} replies (${totalCount} total)`
           );
         }
       }
