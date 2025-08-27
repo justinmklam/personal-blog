@@ -30,7 +30,7 @@
         <div class="single-content">
             <h2 data-toc-skip class="blog-title">{{ .Title }}</h2>
             <!--Timestamp-->
-            <p class="blog-title-metadata">{{ partial "blog-metadata.html" . }}</p>
+            <p class="blog-title-metadata">{{ partial "blog-metadata.html" (dict "context" . "showComments" true) }}</p>
             <!--Image if available-->
             {{ if $imageUrl }}
             <a href={{ $imageUrl }}>

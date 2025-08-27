@@ -1,8 +1,18 @@
-Posted on {{ .Date.Format "January 2, 2006" }}
-&nbsp;&middot;&nbsp;{{.ReadingTime}} min read
+{{ $context := . }}
+{{ $showComments := false }}
+{{ if reflect.IsMap . }}
+  {{ $context = .context | default . }}
+  {{ $showComments = .showComments | default false }}
+{{ end }}
+Posted on {{ $context.Date.Format "January 2, 2006" }}
+&nbsp;&middot;&nbsp;{{ $context.ReadingTime }} min read
+{{ if $showComments }}
 &nbsp;&middot;&nbsp;
-<span class="disqus-comment-count" data-disqus-url="{{ .Permalink }}#disqus_thread">0 comments</span>
+<span id="giscus-comment-count-{{ $context.File.UniqueID }}" class="giscus-comment-count" data-url="{{ $context.RelPermalink }}">
+    <a href="{{ $context.RelPermalink }}#comments">0 comments</a>
+</span>
+{{ end }}
 &nbsp;&middot;&nbsp;
-{{ range .Params.tags }}
+{{ range $context.Params.tags }}
 <a class="blog-tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}&nbsp;</a>
 {{ end }}

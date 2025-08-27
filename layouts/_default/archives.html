@@ -44,8 +44,6 @@
 
                     <p class="blog-title-metadata">{{.ReadingTime}} min read
                         &middot
-                        <span class="disqus-comment-count" data-disqus-url="{{ .Permalink }}#disqus_thread">0 comments</span>
-                        &middot
                         {{ range .Params.tags }}
                         <a class="blog-tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}&nbsp</a>
                         {{ end }}

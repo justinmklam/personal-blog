@@ -11,5 +11,9 @@
 </script>
 {{ end }}
 
-<!-- Disqus comment counter -->
-<script defer id="dsq-count-scr" src="//justinmklam.disqus.com/count.js" async></script>
+<!-- Giscus comment count manager -->
+{{ $giscusJs := resources.Get "js/giscus-comments.js" }}
+{{ if $giscusJs }}
+    {{ $giscusJs := $giscusJs | resources.Minify }}
+    <script src="{{ $giscusJs.RelPermalink }}" defer></script>
+{{ end }}
