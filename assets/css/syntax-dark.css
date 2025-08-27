@@ -20,7 +20,7 @@
 /* KeywordReserved */ .chroma .kr { color:#ff7b72 }
 /* KeywordType */ .chroma .kt { color:#ff7b72 }
 /* Name */ .chroma .n {  }
-/* NameAttribute */ .chroma .na {  }
+/* NameAttribute */ .chroma .na { color:#5b88ee }
 /* NameClass */ .chroma .nc { color:#f0883e;font-weight:bold }
 /* NameConstant */ .chroma .no { color:#79c0ff;font-weight:bold }
 /* NameDecorator */ .chroma .nd { color:#d2a8ff;font-weight:bold }
@@ -31,7 +31,7 @@
 /* NameOther */ .chroma .nx {  }
 /* NameProperty */ .chroma .py { color:#79c0ff }
 /* NameTag */ .chroma .nt { color:#7ee787 }
-/* NameBuiltin */ .chroma .nb {  }
+/* NameBuiltin */ .chroma .nb { color:#9a57ff }
 /* NameBuiltinPseudo */ .chroma .bp {  }
 /* NameVariable */ .chroma .nv { color:#79c0ff }
 /* NameVariableClass */ .chroma .vc { color:#79c0ff }

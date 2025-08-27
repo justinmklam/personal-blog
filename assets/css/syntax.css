@@ -19,7 +19,7 @@
 /* KeywordPseudo */ .chroma .kp { color:#2c5dcd }
 /* KeywordReserved */ .chroma .kr { color:#2c5dcd;font-weight:bold }
 /* KeywordType */ .chroma .kt { color:#5918bb;font-weight:bold }
-/* Name */ .chroma .n {  }
+/* Name */ .chroma .n { color:#354e86 }
 /* NameAttribute */ .chroma .na { color:#2c5dcd;font-style:italic }
 /* NameClass */ .chroma .nc { text-decoration:underline }
 /* NameConstant */ .chroma .no { color:#318495 }
@@ -27,7 +27,7 @@
 /* NameEntity */ .chroma .ni { color:#5918bb;font-weight:bold }
 /* NameException */ .chroma .ne { color:#5918bb;font-weight:bold }
 /* NameLabel */ .chroma .nl {  }
-/* NameNamespace */ .chroma .nn {  }
+/* NameNamespace */ .chroma .nn { color:#354e86 }
 /* NameOther */ .chroma .nx {  }
 /* NameProperty */ .chroma .py {  }
 /* NameTag */ .chroma .nt { color:#2c5dcd;font-weight:bold }
