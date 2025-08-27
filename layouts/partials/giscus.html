@@ -1,4 +1,10 @@
+{{ $lightTheme := "light" }}
+{{ $darkTheme := "catppuccin_macchiato" }}
+
 <div id="comments">
+<script>
+  const initialTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? '{{ $darkTheme }}' : '{{ $lightTheme }}';
+</script>
 <script src="https://giscus.app/client.js"
     data-repo="justinmklam/personal-blog"
     data-repo-id="MDEwOlJlcG9zaXRvcnkzODQ2MjI4NjE="
@@ -9,9 +15,12 @@
     data-reactions-enabled="1"
     data-emit-metadata="1"
     data-input-position="top"
-    data-theme="preferred_color_scheme"
+    data-theme="{{ $lightTheme }}"
     data-lang="en"
     crossorigin="anonymous"
     async>
+</script>
+<script>
+  document.currentScript.previousElementSibling.setAttribute('data-theme', initialTheme);
 </script>
 </div>
