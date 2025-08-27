@@ -12,11 +12,11 @@ class GiscusCommentManager {
       if (!(typeof event.data === "object" && event.data.giscus)) return;
 
       const giscusData = event.data.giscus;
+      const currentPath = window.location.pathname;
 
       // Check if this contains discussion data with comment count
       if ("discussion" in giscusData) {
         const discussion = giscusData.discussion;
-        const currentPath = window.location.pathname;
 
         if (discussion && typeof discussion.totalCommentCount === "number") {
           // Calculate total count including both comments and replies
@@ -33,7 +33,19 @@ class GiscusCommentManager {
           console.log(
             `Giscus: Page ${currentPath} has ${commentCount} comments and ${replyCount} replies (${totalCount} total)`
           );
+        } else if (discussion === null) {
+          // Discussion doesn't exist (404), default to 0 comments
+          this.updateCommentCountDisplays(currentPath, 0);
+          console.log(`Giscus: Page ${currentPath} has no discussion (defaulting to 0 comments)`);
         }
+      }
+
+      // Handle error messages (e.g., when discussion doesn't exist)
+      if ("error" in giscusData) {
+        const error = giscusData.error;
+        
+        // Default to 0 comments on any error
+        this.updateCommentCountDisplays(currentPath, 0);
       }
     });
   }
