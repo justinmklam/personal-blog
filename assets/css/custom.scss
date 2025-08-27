@@ -282,11 +282,6 @@ hr {
   }
 }
 
-/* Fix disqus iframe not rendering dark mode properly */
-iframe[src*="https://disqus.com"] {
-  color-scheme: light;
-}
-
 .video-container {
   position: relative;
   width: 100%;
