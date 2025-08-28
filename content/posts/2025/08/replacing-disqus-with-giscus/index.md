@@ -184,7 +184,7 @@ There were a few tricky parts with the conversion:
 - Github has a GraphQL rate limit of 5000 requests/hr
 - Unless you create a separate Github account, all imported comments will show up under your Github user
 
-The last point might be a deal breaker for some, but I wanted to keep this migration as simple as possible, so I dealt with it. The imported comments will have a header that shows who and when it would be posted, which is sufficient enough for my needs.
+~The last point might be a deal breaker for some, but I wanted to keep this migration as simple as possible, so I dealt with it. The imported comments will have a header that shows who and when it would be posted, which is sufficient enough for my needs.~ Update: I added support for posting via a Github App, which removes this issue!
 
 The full script is in [this gist](https://gist.github.com/justinmklam/59a6c72d98ffc0a67948e254286114ae), and it was definitely way more lines than I thought it'd be. But it does have some nice features like:
 - Having a `--dry-run` flag to test parsing without hitting the Github API
@@ -192,11 +192,15 @@ The full script is in [this gist](https://gist.github.com/justinmklam/59a6c72d98
 
 The vibe coding did take quite a few back-and-forths to get right, but I'm overall impressed with the output and speed.
 
-Usage:
+<details>
+<summary>Script Usage (click to expand):</summary>
+
 ```sh
 $ uv run disqus_to_giscus.py --help
 
-usage: disqus_to_giscus.py [-h] [--repo-owner REPO_OWNER] [--repo-name REPO_NAME] [--category-name CATEGORY_NAME] [--dry-run] [--output OUTPUT] [--state-file STATE_FILE] xml_file
+usage: disqus_to_giscus.py [-h] [--repo-owner REPO_OWNER] [--repo-name REPO_NAME] [--category-name CATEGORY_NAME] [--dry-run] [--output OUTPUT] [--state-file STATE_FILE]
+                           [--app-id APP_ID] [--private-key-path PRIVATE_KEY_PATH] [--installation-id INSTALLATION_ID]
+                           xml_file
 
 Migrate Disqus comments to GitHub Discussions
 
@@ -216,8 +220,23 @@ options:
   --state-file STATE_FILE
                         State file for tracking migration progress (default: migration_state.json)
 
+GitHub App Authentication:
+  Use GitHub App for authentication instead of personal access token
+
+  --app-id APP_ID       GitHub App ID (can also be set via GITHUB_APP_ID environment variable)
+  --private-key-path PRIVATE_KEY_PATH
+                        Path to GitHub App private key file (can also be set via GITHUB_APP_PRIVATE_KEY_PATH environment variable)
+  --installation-id INSTALLATION_ID
+                        GitHub App installation ID (can also be set via GITHUB_APP_INSTALLATION_ID environment variable)
+
 Environment Variables:
-  GITHUB_TOKEN                    Required: GitHub personal access token
+  Authentication (choose one):
+  GITHUB_TOKEN                    Personal access token for GitHub API
+
+  OR for GitHub App authentication:
+  GITHUB_APP_ID                   GitHub App ID
+  GITHUB_APP_PRIVATE_KEY_PATH     Path to GitHub App private key file
+  GITHUB_APP_INSTALLATION_ID      GitHub App installation ID
 
 State Tracking:
   The script maintains a local state file (migration_state.json by default) to track
@@ -225,12 +244,28 @@ State Tracking:
   idempotent - you can safely re-run it after failures and it will resume where it
   left off without creating duplicates.
 
+Authentication Methods:
+  1. Personal Access Token (original method):
+     - Set GITHUB_TOKEN environment variable
+     - Token needs 'repo' and 'write:discussion' scopes
+
+  2. GitHub App (recommended for organizations):
+     - Create a GitHub App with discussions:write permission
+     - Install the app on your repository/organization
+     - Provide --app-id, --private-key-path, --installation-id
+     - Or set corresponding environment variables
+
 Examples:
   # Dry run (recommended first)
   python disqus_to_giscus.py export.xml --dry-run
 
-  # Real migration with default "Announcements" category
+  # Real migration with personal access token
+  export GITHUB_TOKEN="your_token_here"
   python disqus_to_giscus.py export.xml --repo-owner myusername --repo-name myrepo
+
+  # Real migration with GitHub App
+  python disqus_to_giscus.py export.xml --repo-owner myusername --repo-name myrepo \
+    --app-id 123456 --private-key-path /path/to/private-key.pem --installation-id 789012
 
   # With custom category name
   python disqus_to_giscus.py export.xml --repo-owner myusername --repo-name myrepo --category-name "General"
@@ -240,8 +275,8 @@ Examples:
 
   # Custom state file location
   python disqus_to_giscus.py export.xml --repo-owner myusername --repo-name myrepo --state-file my_migration.json
-        
 ```
+</details>
 
 Using the `--dry-run` mode will export the parsed comments into a `migration_preview.md` file, in case you want to edit any processing/formatting to suit your own needs.
 
@@ -257,6 +292,10 @@ $ uv run disqus_to_giscus.py justinmklam-2025-08-26T15_34_53.793894-all.xml --dr
 📊 Summary: 8 new threads ready for migration, 4 already exist
 🚫 Skipped 265 threads with no comments
 ```
+
+### Option 1: Posting from a Personal Account
+
+If you want to avoid having to go through the extra steps of creating a Github App, and are okay with all the imported comments being under your account, then this method is for you. If not, move on to the next section!
 
 For actually running the migration to Github Discussions, be sure to create a new [personal access token](https://github.com/settings/personal-access-tokens) and set it as `GITHUB_TOKEN` in your environment. 
 
@@ -276,10 +315,44 @@ Now, all my comments are in this website's repo under the Discussions tab [here]
 
 As mentioned before, the comment threads all appear under my Github handle, which is not ideal but it's an acceptable trade-off for a free, no-hassle commenting platform.
 
-![Example of an imported comment thread. Not ideal, but good enough for me.](comment-example.png)
+![Example of an imported comment thread, but all under your own account.](comment-example.png)
+
+### Option 2: Posting from a Github App
+
+After doing the previous option, I did a bit more reading and found out that creating a Github App to do the posting isn't actually that much more work, and the end result is much cleaner since the comments would then be posted under a bot account. This makes it much clearer that the comments are imported from another platform, and that it's not just you having a conversation with yourself.
+
+I should probably have just started with this since I did have to delete all the previously created discussions, but it was pretty quick and the end result is much nicer.
+
+Steps to set up a Github App:
+
+1. Go to your Github [developer settings](https://github.com/settings/apps) and create a new app
+   1. Give it a name
+   2. Set a homepage url (this can be anything)
+   3. Disable webhooks
+   4. Set repository permissions to have read/write access to Discussions
+   5. Upload a custom logo if desired
+   6. Generate a private key and download it (`*.private-key.pem` file)
+2. Install the app to your target repository
+3. Make note of the app's:
+   1. App ID -> from the app's about page
+   2. Installation ID -> go to your [Applications](https://github.com/settings/installations), click "Configure" for your app, then use the numeric id in the URL path
+
+Then run the same script, but with a few different options (and this time, `GITHUB_TOKEN` isn't required):
+
+```sh
+$ uv run disqus_to_giscus.py \
+  justinmklam-2025-08-26T15_34_53.793894-all.xml \
+  --repo-owner justinmklam \
+  --repo-name personal-blog \
+  --category-name "Blog Comments" \
+  --app-id 12345 \
+  --private-key-path giscus-comment-bot.2025-08-27.private-key.pem \
+  --installation-id 67890
+```
+![Example of an imported comment thread using a Github App. Nice!](image.png)
 
 # Closing Thoughts
 
-I was able to get the migration done in an evening, so I'd call that a success! Claude Code definitely did a lot of heavy lifting, but it was a neat experiment in using AI for menial, one-off automations that would normally be more painful and time consuming.
+I was able to get the migration done in an evening, so I'd call that a success! Claude Code definitely did a lot of heavy lifting, but it was a neat experiment in using AI for menial, one-off automations that would normally be more painful and time consuming. And now, all my website code and comments are in [one repository](https://github.com/justinmklam/personal-blog), free of advertisements and selling of user data.
 
 Hope this helps anyone else planning to migrate away from Disqus!
