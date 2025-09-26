@@ -22,8 +22,14 @@
 
             {{ end }}
 
+            <!--Archives button-->
+            <div class="nav-btn">
+                <a href="/archives">< All Posts</a>
+            </div>
+            <br>
+
             <!-- Show all tags and counts -->
-            <p>
+            <p style="font-size:0.9rem; opacity:0.7">
                 Tags:
                 <span class="blog-title-metadata">
                     {{ range .Site.Taxonomies.tags.ByCount }}
@@ -31,11 +37,6 @@
                     {{ end }}
                 </span>
             </p>
-
-            <!--Archives button-->
-            <div class="nav-btn">
-                <a href="/archives">< All Posts</a>
-            </div>
 
         </div>
         <!-- /.blog posts -->
