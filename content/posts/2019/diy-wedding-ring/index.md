@@ -142,8 +142,6 @@ For the proposal, I thought it'd be funny (and sweet) if I proposed on the same 
 
 Our friend was conveniently furnishing her new appartment, so we created a fake ad for a bookshelf. She took my wife to Ikea while I made my way to the proposal spot, and when they eventually arrived, I came out from my hiding spot and started my proposal.
 
-![She said yes!](proposal.jpg)
-
 ## ... The Mistake
 
 *~ November 21, 2018 ~*
@@ -172,10 +170,6 @@ With the engagement completed, we spent the next months planning for our farm-to
 {{<img caption="Ceremony at the UBC Farm." src="J_H-144.jpg" link="http://justine-russo.com/" link-text="Justine Russo Photography">}}
 
 {{<img caption="Cozy reception within the Poplar Grove." src="J&H-1124_websize.jpg" link="http://justine-russo.com/" link-text="Justine Russo Photography">}}
-
-{{<img caption="Trying to cut the cake without toppling it over..." src="J&H-1184_websize.jpg" link="http://justine-russo.com/" link-text="Justine Russo Photography">}}
-
-{{<img caption="Ending the night with the first dance." src="J&H-37_websize.jpg" link="http://justine-russo.com/" link-text="Justine Russo Photography">}}
 
 # Final Thoughts
 

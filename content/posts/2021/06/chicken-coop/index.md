@@ -34,8 +34,6 @@ As such, we built out the frame with the thinnest (and cheapest) construction wo
 
 ![Building out the frame, adding the angled roof and the nesting box.](build2.jpg)
 
-!["And then I said, that's no chicken, that's my wife!"](build6.jpg)
-
 The doors were a bit of a pain, since the opening wasn't perfectly square. But after an adequate amount of measuring and shimming, we had the doors installed, operational, and smooth.
 
 For the paint, we went to the clearance section at Home Depot and found heavily reduced outdoor paint which suited our needs. This strategy isn't always fruitful, but luckily for us, we found a decent colour as well as not actually needing that much paint.
