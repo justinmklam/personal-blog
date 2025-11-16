@@ -1,6 +1,7 @@
 {{ $lightTheme := "light" }}
 {{ $darkTheme := "catppuccin_macchiato" }}
 
+{{ if ne (hugo.Environment) "development" }}
 <div id="comments">
 <script>
   const initialTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? '{{ $darkTheme }}' : '{{ $lightTheme }}';
@@ -24,3 +25,6 @@
   document.currentScript.previousElementSibling.setAttribute('data-theme', initialTheme);
 </script>
 </div>
+{{ else }}
+<pre>Comments disabled in development mode.</pre>
+{{ end }}
