@@ -3,6 +3,8 @@ title: {{ replace .File.ContentBaseName `-` ` ` | title }}
 date: {{ .Date }}
 tagline:
 image: placeholder.jpeg
+image_source:
+image_source_text:
 tags:
 draft: true
 

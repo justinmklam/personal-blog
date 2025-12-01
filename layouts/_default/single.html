@@ -7,6 +7,7 @@
         {{ $imageUrl = $image.RelPermalink }}
     {{ end }}
 {{ end }}
+{{ $imageSourceUrl := .Params.image_source }}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -36,6 +37,11 @@
             <a href={{ $imageUrl }}>
                 <img class="img-content img-content-header" src="{{ $imageUrl }}">
             </a>
+            {{ if $imageSourceUrl }}
+            <p class="blog-banner-source">
+                Image Source: <a href="{{ $imageSourceUrl }}">{{ .Params.image_source_text }}</a>
+                {{ end }}
+            </p>
             {{ end }}
             {{ if in .TableOfContents "li"}}
             <details class="toc">
