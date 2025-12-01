@@ -1,0 +1,209 @@
+[
+  {
+    "backcolor": "#e0e0e0",
+    "radii": "18px",
+    "css": "@import url(http://fonts.googleapis.com/css?family=Varela+Round);\n\n.keylabel {\n    font-family: 'volkswagen_serialregular';\n}\n\n/* Strangely, \"Volkswagen Serial\" doesn't have a tilde character */\n.varela { \n    font-family: 'Varela Round'; \n    display: inline-block; \n    font-size: inherit; \n    text-rendering: auto; \n    -webkit-font-smoothing: antialiased; \n    -moz-osx-font-smoothing: grayscale;\n    transform: translate(0, 0);\n}\n.varela-tilde:after { content: \"\\07e\"; }"
+  },
+  [
+    {
+      "t": "#666666",
+      "p": "CHICKLET",
+      "f": 2,
+      "w": 1.5
+    },
+    "\nesc",
+    {
+      "fa": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "\n\n\nF1",
+    "\n\n\nF2",
+    "\n\n\nF3",
+    "\n\n\nF4",
+    "\n\n\nF5",
+    "\n\n\nF6\n\n\n\n\n~",
+    "\n\n\nF7",
+    "\n\n\nF8",
+    "\n\n\nF9",
+    "\n\n\nF10",
+    "\n\n\nF11",
+    "\n\n\nF12",
+    {
+      "t": "#000000",
+      "a": 7,
+      "f": 3
+    },
+    ""
+  ],
+  [
+    {
+      "t": "#666666",
+      "a": 5,
+      "f": 5
+    },
+    "\n`\n\n\n\n\n~",
+    "!\n1",
+    "@\n2",
+    "#\n3",
+    "$\n4",
+    "%\n5",
+    "^\n6",
+    "&\n7",
+    "*\n8",
+    "(\n9",
+    ")\n0",
+    "_\n-",
+    "+\n=",
+    {
+      "a": 4,
+      "f": 2,
+      "w": 1.5
+    },
+    "\n\n\ndelete"
+  ],
+  [
+    {
+      "c": "#f5d793",
+      "w": 1.5
+    },
+    "\n[control_t]\n\n\n\n\ntab",
+    {
+      "c": "#cccccc",
+      "a": 7,
+      "f": 5
+    },
+    "Q",
+    "W",
+    "E",
+    "R",
+    "T",
+    "Y",
+    "U",
+    "I",
+    "O",
+    "P",
+    {
+      "a": 5
+    },
+    "{\n[",
+    "}\n]",
+    "|\n\\"
+  ],
+  [
+    {
+      "c": "#f5d793",
+      "a": 4,
+      "f": 2,
+      "w": 1.75
+    },
+    "\nextend",
+    {
+      "c": "#cccccc",
+      "a": 7,
+      "f": 5
+    },
+    "A",
+    "S",
+    "D",
+    "F",
+    "G",
+    "H",
+    "J",
+    "K",
+    "L",
+    {
+      "a": 5
+    },
+    ":\n;",
+    "\"\n'",
+    {
+      "a": 4,
+      "f": 2,
+      "w": 1.75
+    },
+    "\n\n\nenter"
+  ],
+  [
+    {
+      "w": 2.25
+    },
+    "\nshift",
+    {
+      "a": 7,
+      "f": 5
+    },
+    "Z",
+    "X",
+    "C",
+    "V",
+    "B",
+    "N",
+    "M",
+    {
+      "a": 5
+    },
+    "<\n,",
+    ">\n.",
+    "?\n/",
+    {
+      "a": 4,
+      "f": 2,
+      "w": 2.25
+    },
+    "\n\n\nshift"
+  ],
+  [
+    "\nfn",
+    "\ncontrol",
+    "alt\noption",
+    {
+      "fa": [
+        3
+      ],
+      "w": 1.25
+    },
+    "⌘\ncommand",
+    {
+      "a": 7,
+      "w": 5
+    },
+    "",
+    {
+      "c": "#f5d793",
+      "a": 4,
+      "w": 1.25
+    },
+    "\n\n\nnav",
+    {
+      "c": "#cccccc",
+      "fa": [
+        3,
+        0,
+        1
+      ]
+    },
+    "\n\nalt\noption",
+    {
+      "a": 7,
+      "f": 5
+    },
+    "←",
+    {
+      "h": 0.55
+    },
+    "↑",
+    "→"
+  ],
+  [
+    {
+      "y": -0.5499999999999998,
+      "x": 12.5,
+      "h": 0.55
+    },
+    "↓"
+  ]
+]
