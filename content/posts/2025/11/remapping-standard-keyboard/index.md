@@ -2,9 +2,7 @@
 title: Remapping a Standard Keyboard
 date: 2025-11-30T22:18:06-08:00
 tagline: Maybe the best keyboard was with me all along?
-image: magic-keyboard.png
-image_source: https://www.macrumors.com/2024/10/21/apple-new-magic-mouse-trackpad-keyboard/
-image_source_text: Mac Rumors
+image: banner-layers.png
 tags:
   - keyboards
 draft: false
@@ -42,7 +40,7 @@ For the main base layer, only three infrequently used keys are changed:
 - `Capslock` -> Hold for `Extend` layer
 - `RightAlt` -> Hold for `Nav` layer
 
-Additionally, I added a combo of `J+K = Escape`, which is especially useful for Vim. 
+Additionally, I added a combo of `J+K = Escape`, which is especially useful for Vim.
 
 `Tab`'s default behaviour doesn't change, but holding it unlocks a new behaviour of acting as `Control`. `Capslock` and `Right Alt` are not used often (at least by me), so I opted to use those as the keys to activate the two new layers, "Extend" and "Nav", which I'll explain more in the following sections.
 
@@ -60,9 +58,9 @@ In this layer, `Spacebar` also becomes `Delete/Backspace`, which avoids having t
 
 I also added a few keys for browser navigation - browser forward/back, and next/previous tab.
 
-If you don't use macOS, you could consider remapping the `Left Alt` key to activate the left thumb layer instead, which would keep things symmetrical where both thumbs are used to activate layers. 
+If you don't use macOS, you could consider remapping the `Left Alt` key to activate the left thumb layer instead, which would keep things symmetrical where both thumbs are used to activate layers.
 
-One caveat is that putting `Control` on the `Tab` key is a little weird for vim motions. It's not the most comfortable and takes a while to get used to, but I'm okay sacrificing a bit here to keep the arrow keys in an easily accessible place. 
+One caveat is that putting `Control` on the `Tab` key is a little weird for vim motions. It's not the most comfortable and takes a while to get used to, but I'm okay sacrificing a bit here to keep the arrow keys in an easily accessible place.
 ## Nav: via Right Alt
 
 ![](layer-nav.png)
@@ -92,7 +90,7 @@ The `karaml_config.yaml` looks like this (non-exhaustive), which then gets trans
 
   space: backspace
   semicolon: enter
-  
+
   ...
 ```
 
