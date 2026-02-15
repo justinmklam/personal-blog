@@ -1,29 +1,27 @@
 ---
 title: A Beginner’s Guide to Split Keyboards
-date: 2026-02-14T10:59:22-08:00
+date: 2026-02-15T10:59:22-08:00
 tagline: Come to the dark side, we have keyboard shaped cookies.
 image: banner.png
 image_source:
 image_source_text:
 tags:
   - keyboards
-draft: true
+draft: false
 layout: single
 type: blog
 aliases:
 ---
-So you’ve heard of split keyboards and want to buy one, but don’t know where to start? You’ve come to the right place! There are many options that can be overwhelming, so this guide aims to provide a high level overview of the landscape so you can figure out which path you want to take.
+So you’ve heard of split keyboards and want to buy one, but don’t know where to start? You’ve come to the right place! There are many offerings these days which can be overwhelming, so this guide aims to provide a high level overview of the landscape so you can figure out which path you want to take.
 
 <!--more-->
-# Disclaimer
+> The intent of this guide is not to tell you which specific keyboard you should buy, but rather to equip you with the knowledge to find one that works for yourself. 
+> 
+> The content in this post is mainly a consolidation of content that exists in [r/ErgoMechKeyboards](https://www.reddit.com/r/ErgoMechKeyboards/), but organized in a way that is hopefully helpful for beginners.
+> 
+> Also, it should be noted that regardless of how ergonomic your setup is, it's important to take frequent breaks from being in front of a computer when possible, and to get up and move around. If you’re suffering from acute muscular pain (e.g. from keyboard use, or other), consider also seeing a physiotherapist or other healthcare practitioner for professional help.
 
-The intent of this guide is not to tell you which specific keyboard you should buy, but rather to provide a high level overview of the current landscape of split ergonomic keyboard, and to equip you with the knowledge to find one that works for yourself. 
-
-The content in this post is mainly a consolidation of content that exists in [r/ErgoMechKeyboards](https://www.reddit.com/r/ErgoMechKeyboards/), but organized in a way that is hopefully helpful for beginners.
-
-Also, it should be noted that regardless of how ergonomic your setup is, it's important to take frequent breaks from being in front of a computer when possible, and to get up and move around. If you’re suffering from acute muscular pain from keyboard use, consider also seeing a physiotherapist or other healthcare practitioner for professional help.
-
-# Intro
+# Introduction
 ## Types of Keyboards
 There are three main categories of keyboards, which define the overall positions of the keys. 
 - **Row-staggered**: Keys are aligned in rows, like a traditional keyboard. This is what you're already used to.
@@ -35,9 +33,9 @@ For people interested in ergonomics, most transition from row staggered to colum
 ## The Big Question: How Much Time Do You Have?
 Despite the promised land of ergonomic benefits being a mere credit card purchase away, it is not without its dark side. There is unfortunately an **inevitable learning curve,** and it can be a steep one. 
 
-Re-training years, if not decades, of muscle memory for typing on a traditional keyboard is tough work, and can have its frustrating moments. It’s common to take at least a week or two of lots of typing practice to get accustomed to the new layout. For me, it took about a month of heavy use to be comfortable typing at a productive level for work, and that’s in a profession that involves a significant amount of typing (I.e. software development).
+Re-training years, if not decades, of muscle memory for typing on a traditional keyboard is tough work, and can have its frustrating moments. It’s common to take at least a week or two of lots of typing practice to get accustomed to the new layout. For me, it took about a month of heavy use to be comfortable typing at a productive level for work, and that’s in a profession that involves a significant amount of daily typing (i.e. software development).
 
-If you’re practicing with something like monkey type, the default mode of typing lowercase words is only half the battle. Getting familiar with a keyboard involves other things, like:
+If you’re practicing with something like [monkeytype](https://monkeytype.com/), the default mode of typing lowercase words is only half the battle. Getting familiar with a keyboard involves other things, like:
 - Using numbers, punctuation, and symbols 
 - Selecting/manipulating text (arrow keys) with shift or by word, home/end
 - Application-specific hot keys (e.g. browser fwd/back, tab cycling, closing tabs/Windows, window management, Excel, etc)
@@ -54,9 +52,9 @@ Some examples of traditional keyboards with a slight split in them:
 
 ![Keychron Q10 in what's called an Alice Layout.](keychron-alice-q10.png "Keychron|https://www.keychron.com/collections/alice-layout-keyboards/products/keychron-q10-alice-layout-qmk-custom-mechanical-keyboard")
 
-Going one step further, getting a keyboard with independent halves will provide the most flexibility, since this allows you to freely position the halves (e.g. should width apart), or even set them up with [tenting](#Tenting).
+Going one step further, getting a keyboard with independent halves will provide the most flexibility, since this allows you to freely position the halves (e.g. should width apart), or even set them up with [tenting](#tenting).
 
-![Kinesis Freestyle 2](kinesis-freestyle.png "Kinesis|https://kinesis-ergo.com/shop/freestyle2-for-pc-us/")
+![Kinesis Freestyle 2, with optional tenting accessories.](kinesis-freestyle.png "Kinesis|https://kinesis-ergo.com/shop/freestyle2-for-pc-us/")
 
 ![UHK 60 and 80 variants.](ultimate-hacking-keyboard.png "Ultimate Hacking Keyboard|https://uhk.io/")
 
@@ -203,12 +201,12 @@ Or you can take it a step further and cut out the template on to cardboard, then
 ### Buy
 Gone are the days of needing to spend >$500 on an ergonomic keyboard, and now you can find a keyboard for every budget. 
 
-In the upper budget range, companies like Kinesis, ZSA, and Dygma make specialized, closed-source keyboards but offer premium devices and support.
-There are also more boutique options like MoErgo and Bastard Keyboards that offer high quality products. These keyboards will usually have their own custom software to program them, which usually easier to use than the open-source software versions.
+In the upper budget range, companies like [Kinesis](https://kinesis-ergo.com/), [ZSA](https://www.zsa.io), and [Dygma](https://dygma.com/) make specialized, closed-source keyboards but offer premium devices and support.
+There are also more boutique options like [MoErgo](https://www.moergo.com/) and [Bastard Keyboards](https://bastardkb.com/) that offer high quality products. These keyboards will usually have their own custom software to program them, which usually easier to use than the open-source software versions.
 
 ![Premium keyboard with a premium website.](zsa-voyager-product.png "ZSA Voyager|https://www.zsa.io/voyager/buy")
 
-In the middle range, you can find many shops like beekeeb or Split KB (or any of the other vendors listed on the [r/ErgoMechKeyboards wiki](https://www.reddit.com/r/ErgoMechKeyboards/wiki/resources)) that sell both pre-assembled boards, or kits that require soldering but at a more affordable price point. These can include closed-source keyboard designs as well as open-sourced ones, which provide open access to all the design files.
+In the middle range, you can find many shops like [beekeeb](https://beekeeb.com/) or [Split KB](https://splitkb.com/) (or any of the other vendors listed on the [r/ErgoMechKeyboards wiki](https://www.reddit.com/r/ErgoMechKeyboards/wiki/resources)) that sell both pre-assembled boards, or kits that require soldering but at a more affordable price point. These can include closed-source keyboard designs as well as open-sourced ones, which provide open access to all the design files.
 
 ![Beekeeb](shop-beekeeb.png "beekeeb|https://shop.beekeeb.com")
 
@@ -218,22 +216,20 @@ Although you do get a *much* nicer keyboard in the above price ranges, cheaper o
 
 ![Aliexpress with many affordable options for split keyboards.](shop-aliexpress.png "Aliexpress|https://www.aliexpress.com")
 ### DIY
-Many keyboard designs are open-sourced, which means you can take the design files (usually hosted on Github, packaged as [gerber files](https://en.wikipedia.org/wiki/Gerber_format)) and get them manufactured somewhere like PCBWay or JLCPCB. 
+Many keyboard designs are open-sourced, which means you can take the design files (usually hosted on Github, packaged as [gerber files](https://en.wikipedia.org/wiki/Gerber_format)) and get them manufactured somewhere like [PCBWay](https://www.pcbway.com/) or [JLCPCB](https://jlcpcb.com/). 
 
 This is a great option if you find a design that isn't available in any of the options above. But in terms of cost, by the time you factor in the PCBs, switches, diodes, microcontrollers, fasteners, etc., not to mention the soldering equipment if you don't already have that, buying something from Amazon or Aliexpress will likely be the cheapest.
 
 However, if you're okay with being even more hands on, and if you already have soldering equipment, [handwiring a keyboard](/posts/2025/08/handwired-skeletyl/) with a 3D printed enclosure will be the cheapest (and most flexible) option. As long as your soldering is solid, there wouldn't be any functional difference between this and a PCB!
-### Design your own
-- Ergogen
-- Cosmo
-- Keyboard layout editor
-- Kicad 
-- Reversible
-	- using solder bridges vs offset mcu
-	- Reversible switch footprints
+### Design Your Own
+If no existing keyboard sparks joy, there are many resources and tools to design your own. Tools like [Ergogen](https://flatfootfox.com/ergogen-introduction/) and [kle-ng](https://github.com/adamws/kle-ng) make it easy to create your own layout, which can be exported to [Kicad](https://www.kicad.org/) to finalize the PCB. Or if you want one fully customized to your hand shape, you can use [Cosmos](https://ryanis.cool/cosmos/) to create a sculpted one to be handwired.
 
-# Resources
-- Subreddit
-- 
-- Discord
-- Kbd news 
+![Ergogen keyboard layout generator.](tool-ergogen.png "Ergogen|https://ergogen.ceoloide.com/")
+
+![Cosmos keyboard configurator.](tool-cosmos.png "Cosmos|https://ryanis.cool/cosmos/")
+This is a topic in itself, but there are many existing tutorials and guides on YouTube and around the internet. For keyboards on Github, you can also poke around the design files and reference or adapt them to your needs, which is the great thing about open source!
+
+# Closing Thoughts
+If you've made it this far, thanks for reading! Hope this was helpful in starting you off in this journey of finding your perfect keyboard. 
+
+Happy typing!
