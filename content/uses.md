@@ -16,7 +16,7 @@ As much as I like using Linux, Macs just have a level of polish in the hardware 
 #### Hardware
 - MacBook Pro 16-inch M3 Pro
 - Razer Viper Ultralight Ambidextrous Mouse (using left hand)
-- [Corne](/posts/2025/05/corne-keyboard) Split Mechanical Keyboard
+- Keyball61
 - Samsung 28" 4K 60Hz Monitor
 - Floor desk
 #### Software
