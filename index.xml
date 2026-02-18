@@ -111,7 +111,7 @@ For people interested in ergonomics, most transition from row staggered to colum
  
  
  
- &lt;p class="caption">Logitech Sculpt, similar to Microsoft&amp;rsquo;s Sculpt which was a popular option but unfortunately discontinued. (Source: &lt;a href=https://www.logitech.com/en-ca/shop/p/k860-split-ergonomic>Logitech&lt;/a>)&lt;/p>
+ &lt;p class="caption">Logitech ERGO K860, which is similar to the previously popular, but now discontinued Microsoft Sculpt. (Source: &lt;a href=https://www.logitech.com/en-ca/shop/p/k860-split-ergonomic>Logitech&lt;/a>)&lt;/p>
 &lt;/div>
 &lt;/p>
 &lt;p>
@@ -396,7 +396,7 @@ For people interested in ergonomics, most transition from row staggered to colum
  &lt;p class="caption">Hillside 52 with splay in the outer 3 columns. (Source: &lt;a href=https://github.com/mmccoyd/hillside>Github&lt;/a>)&lt;/p>
 &lt;/div>
 &lt;/p>
-&lt;p>You can also find keyboards that are sculpted in 3D like the Glove80 or Charybdis, or you can even design your own &lt;a href="https://ryanis.cool/dactyl/#manuform">Dactyl&lt;/a>. Some find great comfort in these, however they come at a higher cost due to manufacturing complexities, unless you &lt;a href="https://justinmklam.com/posts/2025/08/handwired-skeletyl/">handwire your own&lt;/a>.&lt;/p>
+&lt;p>You can also find keyboards that are &lt;strong>sculpted&lt;/strong> in 3D like the Glove80 or Charybdis, or you can even design your own &lt;a href="https://ryanis.cool/dactyl/#manuform">Dactyl&lt;/a>. Some find great comfort in these, however they come at a higher cost due to manufacturing complexities, unless you &lt;a href="https://justinmklam.com/posts/2025/08/handwired-skeletyl/">handwire your own&lt;/a>.&lt;/p>
 &lt;p>
 
 
@@ -422,7 +422,7 @@ For people interested in ergonomics, most transition from row staggered to colum
  &lt;p class="caption">Glove80 sculpted keyboard. (Source: &lt;a href=https://www.moergo.com/collections/glove80-keyboards>Moergo&lt;/a>)&lt;/p>
 &lt;/div>
 &lt;/p>
-&lt;p>Recently, people started designing sculpted keycaps like the &lt;a href="https://github.com/braindefender/KLP-Lame-Keycaps">KLP Lamé&lt;/a> which brings the benefits without needing a special keyboard.&lt;/p>
+&lt;p>Recently, people started designing &lt;strong>sculpted keycaps&lt;/strong> like the &lt;a href="https://github.com/braindefender/KLP-Lame-Keycaps">KLP Lamé&lt;/a> which brings the benefits of sculpted shapes without needing a special keyboard.&lt;/p>
 &lt;p>
 
 
@@ -448,8 +448,34 @@ For people interested in ergonomics, most transition from row staggered to colum
  &lt;p class="caption">KLP Lamé sculpted keycaps on a Ferris Sweep. (Source: &lt;a href=https://github.com/braindefender/KLP-Lame-Keycaps/>Github&lt;/a>)&lt;/p>
 &lt;/div>
 &lt;/p>
+&lt;p>You can also find &lt;strong>unibody/monoblock&lt;/strong> keyboards, which still have a split-like layout but are connected as a single unit. Some prefer the constraints and reproducibility of having the halves always being in the same position, since independent halves can shift around throughout the day. Unibody keyboards are also generally easier to take and move around, like if you’re working on your lap on the couch or on an airplane tray.&lt;/p>
+&lt;p>
+
+
+
+
+&lt;div class="row img-captioned">
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/02/beginners-guide-split-keyboards/reviung.png>&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/02/beginners-guide-split-keyboards/reviung.png>&lt;/a>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption">Reviung41 unibody with low profile switches and a Pimoroni trackball. (Source: &lt;a href=https://holykeebs.com/products/trackball-reviung41-low-profile>Holy Keebs&lt;/a>)&lt;/p>
+&lt;/div>
+&lt;/p>
 &lt;p>The pursuit of ergonomics goes quite deep, where there&amp;rsquo;s also a league of non-keyboard-looking keyboards that use innovative methods for input. The &lt;a href="https://svalboard.com/">Svalboard&lt;/a>, for example, uses multiple feather-light paddles for each finger instead of regular switches. This keyboard was inspired by the &lt;a href="https://en.wikipedia.org/wiki/DataHand">DataHand&lt;/a>, an alternative keyboard designed to be operated without requiring any finger travel. Similarly, the &lt;a href="https://www.charachorder.com/">Charachorder&lt;/a> uses joystick-like switches for each finger and makes heavy use of combos, although this makes it closer to &lt;a href="https://studysteno.com/moo/mod/page/view.php?id=150">stenography&lt;/a> in philosophy.&lt;/p>
-&lt;p>In reality, this is near the bottom of the rabbit hole - most users never go anywhere near this level of ergonomic experimentation, but that’s where the most interesting (and potentially &lt;a href="https://svalboard.com/pages/reviews">game changing&lt;/a>) ideas tend to emerge.&lt;/p>
+&lt;p>In reality, this is near the bottom of the rabbit hole. Most users never go anywhere near this level of ergonomic experimentation, but it’s where the most interesting (and potentially &lt;a href="https://svalboard.com/pages/reviews">game changing&lt;/a>) ideas tend to emerge!&lt;/p>
 &lt;p>
 
 
@@ -533,7 +559,7 @@ For people interested in ergonomics, most transition from row staggered to colum
  &lt;p class="caption">Totem with sculpted keycaps and adjustable laptop stand feet. (Source: &lt;a href=https://github.com/GEIGEIGEIST/TOTEM>Github&lt;/a>)&lt;/p>
 &lt;/div>
 &lt;/p>
-&lt;p>For larger angles, adhesive-backed Magsafe rings and mobile phone stands allow for more adjustability. The stands can be pricey, but there are also &lt;a href="https://kbd.news/Split-keyboard-Magsafe-tenting-stand-2732.html">cheaper options&lt;/a>.&lt;/p>
+&lt;p>For larger angles, adhesive-backed Magsafe rings and mobile phone stands allow for more adjustability. The stands can be pricey, but there are also &lt;a href="https://kbd.news/Split-keyboard-Magsafe-tenting-stand-2732.html">cheaper, 3D printed options&lt;/a>.&lt;/p>
 &lt;p>
 
 
@@ -700,7 +726,7 @@ For people interested in ergonomics, most transition from row staggered to colum
  Wired vs Wireless
  &lt;/a>
 &lt;/h3>
-&lt;p>Historically, split keyboards were only wired due to both &lt;a href="https://www.reddit.com/r/olkb/comments/s95y98/comment/htkwvkp/?utm_source=share&amp;amp;utm_medium=web3x&amp;amp;utm_name=web3xcss&amp;amp;utm_term=1&amp;amp;utm_content=share_button">technical and licensing limitations&lt;/a> with &lt;a href="https://qmk.fm/">QMK&lt;/a>, the custom firmware that powers many keyboards. A permissive, wireless, Bluetooth-first alternative called ZMK began development in &lt;a href="https://kbd.news/ZMK-A-History-2222.html">2020&lt;/a>, and now many keyboards are offered in both wired and wireless variants.&lt;/p>
+&lt;p>Historically, split keyboards were only wired due to both &lt;a href="https://www.reddit.com/r/olkb/comments/s95y98/comment/htkwvkp/?utm_source=share&amp;amp;utm_medium=web3x&amp;amp;utm_name=web3xcss&amp;amp;utm_term=1&amp;amp;utm_content=share_button">technical and licensing limitations&lt;/a> with &lt;a href="https://qmk.fm/">QMK&lt;/a>, the custom firmware that powers many keyboards. A permissive, wireless, Bluetooth-first alternative called &lt;a href="https://zmk.dev/">ZMK&lt;/a> began development in &lt;a href="https://kbd.news/ZMK-A-History-2222.html">2020&lt;/a>, and now many keyboards are offered in both wired and wireless variants.&lt;/p>
 &lt;p>One thing to note - battery management has some quirks for fully wireless split keyboards. The central side needs to do double duty since it needs to communicate with both the host computer and the peripheral side, and as a result its battery discharges significantly faster. Additionally, the more features your keyboard has (display, pointing device, etc.), the shorter the battery life will be.&lt;/p>
 &lt;p>
 
@@ -761,7 +787,7 @@ For people interested in ergonomics, most transition from row staggered to colum
  &lt;/a>
 &lt;/h3>
 &lt;p>There are a ton of online resources that already go into the comparison of these, but the short of it is that low profile mechanical switches are relatively new and are becoming more common in keyboard designs. Lower profile means a shorter keyboard height, alleviating the need to use wrist/palm wrests.&lt;/p>
-&lt;p>At the time of writing (Feb 2026), high profile (MX) switches still have many more options and generally feel and sound better, and finding keycaps for low profile switches (especially Choc v2) can be challenging, but availability is expected to improve over time as they become more widespread.&lt;/p>
+&lt;p>At the time of writing, high profile (MX) switches still have many more options and generally feel and sound better, and finding keycaps for low profile switches (especially Choc v2) can be challenging, but availability is expected to improve over time as they become more widespread.&lt;/p>
 &lt;p>
 
 
@@ -787,8 +813,8 @@ For people interested in ergonomics, most transition from row staggered to colum
  &lt;p class="caption">Comparison of MX (high) and low profile switches. (Source: &lt;a href=https://kineticlabs.com/blog/will-switches-work-on-hotswap>Kinetic Labs&lt;/a>)&lt;/p>
 &lt;/div>
 &lt;/p>
-&lt;p>Keyboards often have hotswap sockets to allow installing different switches without needing to solder. Some boards like the cheapino use direct soldering to keep costs low.&lt;/p>
-&lt;p>You might notice that many keyboards consist of blank keycaps instead of ones with legends. This is common because with the use of layers and keys having multiple functions, legends don&amp;rsquo;t end up being that useful for indicating what a key will actually do.&lt;/p>
+&lt;p>Keyboards often have hotswap sockets to allow installing different switches without needing to solder. Some boards like the &lt;a href="https://github.com/tompi/cheapino">cheapino&lt;/a> have the option to directly solder the switches (instead of using sockets) to keep costs low.&lt;/p>
+&lt;p>You might notice that many keyboards consist of &lt;strong>blank keycaps&lt;/strong> instead of ones with legends. This is common because with the use of layers and keys having multiple functions, legends don&amp;rsquo;t end up being that useful for indicating what a key will actually do.&lt;/p>
 &lt;p>For both switches and keycaps, again it comes down to personal preference.&lt;/p>
 
 &lt;h2 id="keymap-customization" class="anchor">
@@ -834,7 +860,7 @@ For people interested in ergonomics, most transition from row staggered to colum
 &lt;li>&lt;a href="https://precondition.github.io/home-row-mods">&lt;strong>Home row mods:&lt;/strong>&lt;/a> Giving home row keys (&lt;code>ASDF&lt;/code> + &lt;code>JKL;&lt;/code>) double duty to also act as modifier keys (&lt;code>SHIFT&lt;/code>, &lt;code>CTRL&lt;/code>, &lt;code>ALT&lt;/code>, &lt;code>GUI&lt;/code>) when held&lt;/li>
 &lt;li>&lt;a href="https://github.com/callum-oakley/qmk_firmware/tree/master/users/callum">&lt;strong>Callum style mods&lt;/strong>&lt;/a>: Similar to home row mods, but combined with one shot keys to remove the dependency on timing&lt;/li>
 &lt;/ul>
-&lt;p>If you don’t know where to start with creating your own keymap, you can draw inspiration from existing ones on KeymapDB.&lt;/p>
+&lt;p>If you don’t know where to start with creating your own keymap, you can draw inspiration from existing ones on &lt;a href="https://keymapdb.com/">KeymapDB&lt;/a>. For 36 key keyboards, the &lt;a href="https://github.com/manna-harbour/miryoku">Miryoku&lt;/a> keymap is a good place to start.&lt;/p>
 
 &lt;h3 id="what-about-using-a-non-qwerty-layout" class="anchor">
  &lt;a href="#what-about-using-a-non-qwerty-layout">
@@ -1012,8 +1038,8 @@ For people interested in ergonomics, most transition from row staggered to colum
  Buy
  &lt;/a>
 &lt;/h3>
-&lt;p>Gone are the days of needing to spend &amp;gt;$500 on an ergonomic keyboard, and now you can find a keyboard for every budget.&lt;/p>
-&lt;p>In the upper budget range, companies like &lt;a href="https://kinesis-ergo.com/">Kinesis&lt;/a>, &lt;a href="https://www.zsa.io">ZSA&lt;/a>, and &lt;a href="https://dygma.com/">Dygma&lt;/a> make specialized, closed-source keyboards but offer premium devices and support.
+&lt;p>Gone are the days of needing to spend &amp;gt;$500 on an ergonomic keyboard, and now you can find a keyboard for every budget! Generally, the smaller the keyboard, the cheaper it will be since fewer keys = fewer switches/keycaps + smaller PCB.&lt;/p>
+&lt;p>In the &lt;strong>upper budget range&lt;/strong>, companies like &lt;a href="https://kinesis-ergo.com/">Kinesis&lt;/a>, &lt;a href="https://www.zsa.io">ZSA&lt;/a>, and &lt;a href="https://dygma.com/">Dygma&lt;/a> make specialized, closed-source keyboards but offer premium devices and support.
 There are also more boutique options like &lt;a href="https://www.moergo.com/">MoErgo&lt;/a> and &lt;a href="https://bastardkb.com/">Bastard Keyboards&lt;/a> that offer high quality products. These keyboards will usually have their own custom software to program them, which usually easier to use than the open-source software versions.&lt;/p>
 &lt;p>
 
@@ -1040,7 +1066,7 @@ There are also more boutique options like &lt;a href="https://www.moergo.com/">M
  &lt;p class="caption">Premium keyboard with a premium website. (Source: &lt;a href=https://www.zsa.io/voyager/buy>ZSA Voyager&lt;/a>)&lt;/p>
 &lt;/div>
 &lt;/p>
-&lt;p>In the middle range, you can find many shops like &lt;a href="https://beekeeb.com/">beekeeb&lt;/a> or &lt;a href="https://splitkb.com/">Split KB&lt;/a> (or any of the other vendors listed on the &lt;a href="https://www.reddit.com/r/ErgoMechKeyboards/wiki/resources">r/ErgoMechKeyboards wiki&lt;/a>) that sell both pre-assembled boards, or kits that require soldering but are offered at a more affordable price point. These can include closed-source keyboard designs as well as open-sourced ones, which provide free access to all the design files.&lt;/p>
+&lt;p>In the &lt;strong>middle range&lt;/strong>, you can find many shops like &lt;a href="https://beekeeb.com/">beekeeb&lt;/a>, &lt;a href="https://holykeebs.com/">holykeebs&lt;/a>, &lt;a href="https://splitkb.com/">splitkb&lt;/a>, or any of the other vendors listed on the &lt;a href="https://www.reddit.com/r/ErgoMechKeyboards/wiki/resources">r/ErgoMechKeyboards wiki&lt;/a>. They typically sell both pre-assembled boards and kits that require soldering, but are offered at a more affordable price point. Many of the keyboards offered at these vendors are based on or variants of open-sourced designs.&lt;/p>
 &lt;p>
 
 
@@ -1066,7 +1092,7 @@ There are also more boutique options like &lt;a href="https://www.moergo.com/">M
  &lt;p class="caption">Beekeeb (Source: &lt;a href=https://shop.beekeeb.com>beekeeb&lt;/a>)&lt;/p>
 &lt;/div>
 &lt;/p>
-&lt;p>Although you do get a &lt;em>much&lt;/em> nicer keyboard in the above price ranges, cheaper options exist on sites like Amazon and Aliexpress. The experience or physical product may not be as refined (e.g. the use of 3D printed cases), but it&amp;rsquo;ll still be functional and at least let you try it out without breaking the bank. This is how I started &lt;a href="https://justinmklam.com/posts/2025/05/corne-keyboard/">my journey with a Corne keyboard&lt;/a>.&lt;/p>
+&lt;p>Although you do get a &lt;em>much&lt;/em> nicer keyboard in the above price ranges, cheaper options exist on sites like Amazon and Aliexpress for those on &lt;strong>low budgets&lt;/strong>. The experience or physical product may not be as refined (e.g. 3D printed cases are often used), but it&amp;rsquo;ll still be functional and at least let you try it out without breaking the bank. This is where I started on &lt;a href="https://justinmklam.com/posts/2025/05/corne-keyboard/">my journey with using a Corne keyboard&lt;/a>.&lt;/p>
 &lt;blockquote>
 &lt;p>When buying cheap keyboards, there is a &lt;a href="https://www.reddit.com/r/ErgoMechKeyboards/comments/1idz2rn/why_you_should_always_reflash_new_keyboards_my_50/">security risk&lt;/a> to them. If possible, you should reflash the firmware to remove any risk of malicious behaviour.&lt;/p>&lt;/blockquote>
 &lt;p>
