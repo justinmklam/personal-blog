@@ -22,6 +22,11 @@ So you’ve heard of split keyboards and want to buy one, but don’t know where
 > Also, it should be noted that regardless of how ergonomic your setup is, it's important to take frequent breaks from being in front of a computer when possible, and to get up and move around. If you’re suffering from acute muscular pain (e.g. from keyboard use, or other), consider also seeing a physiotherapist or other healthcare practitioner for professional help.
 
 # Introduction
+## Why Use a Split Keyboard?
+There's already many other resources that talk about the benefits of a split keyboard, but the gist is that by separating the left and right halves of the keys, your hands can rest in a more **natural position** instead of being forced together like on a traditional keyboard. This reduces outward wrist bending (aka **ulnar deviation**), shoulder tension, etc. The goal isn’t to magically fix posture overnight, but to remove some of the physical constraints imposed by a standard keyboard so your body can settle into something more relaxed during long sessions at the computer.
+
+![Exaggerated depiction of how a split keyboard can help promote a more neutral, comfortable typing position.](why-split.png "Candid Technology|https://candid.technology/keyboards-and-wrist-rest-a-writers-guide-to-comfortable-typing/")
+
 ## Types of Keyboards
 There are three main categories of keyboards, which define the overall positions of the keys. 
 - **Row-staggered**: Keys are aligned in rows, like a traditional keyboard. This is what you're already used to.
@@ -29,7 +34,9 @@ There are three main categories of keyboards, which define the overall positions
 - **Ortholinear**: Uniform grid, no stagger. Visually pleasing, but less common in ergonomic splits.
 
 ![Comparison of keyboard layouts.](layout-comparison.png)
-For people interested in ergonomics, most transition from row staggered to column staggered. Ortholinear was popular for a time and still has a cult following (e.g. with the Planck), but is not as popular for ergonomic keyboards. Majority of the split keyboards shown in this post will be column staggered.
+For people interested in ergonomics, most transition from row staggered to column staggered. Ortholinear was popular for a time and still has a cult following (e.g. with the Planck), but is not as popular for ergonomic keyboards. Majority of the split keyboards shown in this post will be **column staggered**.
+
+A common question is whether learning to type on a non-row staggered keyboard will impact your ability to type on a traditional keyboard. If you switch between the two somewhat regularly, the answer is no - the brain appears to be great at compartmentalizing muscle memory for different devices! In my first month or so of learning to type on a column stagger keyboard, it took me a few minutes to get used to a regular keyboard again in that session. But now, I can use either a traditional or split without issue or “ramp up” time.
 ## The Big Question: How Much Time Do You Have?
 Despite the promised land of ergonomic benefits being a mere credit card purchase away, it is not without its dark side. There is unfortunately an **inevitable learning curve,** and it can be a steep one. 
 
@@ -192,7 +199,7 @@ If you don’t know where to start with creating your own keymap, you can draw i
 ### What About Using a Non-QWERTY Layout?
 Some choose to also change to an alternative layout like Dvorak, Colemak or other, since QWERTY is not designed with ergonomics in mind. However, learning a new layout requires even more time, and I personally haven’t gone down this route since the benefits of a column stagger and split keyboard are sufficient enough for me (and I reckon most people as well).
 
-However, if you're curious to learn more, there are many other layouts aside from the popular Dvorak layout, which each have their own advantages depending on the metrics important to you (e.g. [same-finger bigrams (SFBs)](https://getreuer.info/posts/keyboards/glossary/index.html#same-finger-bigram-sfb), [lateral stretch bigrams (LSBs)](https://getreuer.info/posts/keyboards/glossary/index.html#lateral-stretch-bigram-lsb), [scissors](https://getreuer.info/posts/keyboards/glossary/index.html#scissor), [redirects](https://getreuer.info/posts/keyboards/glossary/index.html#redirect), [rolls](https://getreuer.info/posts/keyboards/glossary/index.html#roll), etc.).
+However, if you're curious to learn more, there are many other layouts aside from the popular Dvorak layout, which each have their own advantages depending on the metrics important to you (e.g. [same-finger bigrams (SFBs)](https://getreuer.info/posts/keyboards/glossary/index.html#same-finger-bigram-sfb), [lateral stretch bigrams (LSBs)](https://getreuer.info/posts/keyboards/glossary/index.html#lateral-stretch-bigram-lsb), [scissors](https://getreuer.info/posts/keyboards/glossary/index.html#scissor), [redirects](https://getreuer.info/posts/keyboards/glossary/index.html#redirect), [rolls](https://getreuer.info/posts/keyboards/glossary/index.html#roll), etc.). More information can be found in the [https://layouts.wiki](https://layouts.wiki/) or [r/KeyboardLayouts](https://www.reddit.com/r/KeyboardLayouts/?screen_view_count=4).
 
 ![Comparison table of different metrics.](keymap-alt-layout-compraison.png "Pascal Getreuer|https://getreuer.info/posts/keyboards/alt-layouts/index.html")
 ## How Do I Choose?
