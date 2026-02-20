@@ -67,3 +67,30 @@ markup:
     endLevel: 3
     ordered: false
     startLevel: 1
+
+related:
+  includeNewer: true
+  indices:
+  - applyFilter: false
+    cardinalityThreshold: 0
+    name: keywords
+    pattern: ''
+    toLower: false
+    type: basic
+    weight: 80
+  - applyFilter: false
+    cardinalityThreshold: 0
+    name: date
+    pattern: ''
+    toLower: false
+    type: basic
+    weight: 10
+  - applyFilter: false
+    cardinalityThreshold: 0
+    name: tags
+    pattern: ''
+    toLower: false
+    type: basic
+    weight: 100
+  threshold: 80
+  toLower: false

@@ -2,7 +2,7 @@
   <p><strong>Related Posts</strong></p>
   <ul>
     {{ range . }}
-      <li><span class="post-date">{{ .Date.Format "2006-01-01" }}</span> - <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+      <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
     {{ end }}
   </ul>
 {{ end }}
