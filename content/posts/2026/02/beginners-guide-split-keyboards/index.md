@@ -71,7 +71,7 @@ If you're in this group, you can stop reading here! You can also find other simi
 # Path 2: “I’m willing to learn for better ergonomics”
 If you do have the time and motivation, then welcome to the rabbit hole of features, geometries, and customizability!
 
-Most keyboards in this category will have columnar stagger and multiple thumb keys (in place of a single spacebar), which are the main drivers for relearning how to type.
+Most keyboards in this category will have columnar stagger and multiple thumb keys (in place of a single spacebar), which are the main drivers for relearning how to type. The benefit of thumb keys is they let the thumbs handle high-frequency actions so the pinkies aren’t overworked reaching for shift and modifiers. However, keep in mind that it's possible for [thumbs to get overuse injuries](https://getreuer.info/posts/keyboards/thumb-ergo/index.html) as well!
 ## Features
 
 ### Number of Keys
@@ -84,6 +84,8 @@ The rationale for having fewer keys is to keep your fingers as close to home row
 There’s [some discussion](https://getreuer.info/posts/keyboards/40-percent-ergo/index.html) of whether smaller layouts are actually better for ergonomics, but some find enjoyment in seeing how few keys one actually needs. This is ultimately a personal choice, but if you’re just starting out, it’s always better to have more keys and not use them, than to not have them and want them. You can also always try smaller layouts on a larger keyboard, like I did when [experimenting with a 36 key layout](/posts/2025/07/36-key-layout/).
 
 Here’s a few examples of keyboards showing the range of key counts:
+
+![Kinesis Advantage360, a "maximalist" split keyboard with 76 keys. Omits the F-keys at the top, but offers a hefty 6-key thumb cluster on each side.](kinesis-advantage360.png "Kinesis|https://kinesis-ergo.com/shop/adv360pro/")
 
 ![Lily58, "full" keyboard with a number row, outer columns, and 4 thumb keys.](lily58.png "Github|https://github.com/kata0510/Lily58")
 
@@ -258,6 +260,7 @@ Still have trouble finding which keyboard you should get? Here’s a list of pop
 
 | Keyboard                 | Budget | # Keys       | Open Sourced? |
 | ------------------------ | ------ | ------------ | ------------- |
+| Kinesis Advantage2/360   | $$$    | 80 / 76      | no            |
 | ZSA Moonlander / Voyager | $$$    | 76 / 52      | no            |
 | Dygma Defy               | $$$    | 70           | no            |
 | Glove80 / Go60           | $$$    | 80 / 60      | no            |
