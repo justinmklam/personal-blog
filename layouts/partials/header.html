@@ -9,7 +9,19 @@
     "{{ .Title }}"
 {{ end }}
 >
-<meta name="author" content="{{ .Site.Params.brand }}">
+<meta name="author" content="{{ .Site.Params.author }}">
+<link rel="canonical" href="{{ .Permalink }}">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:title" content="{{ .Title }} | {{ .Site.Params.brand }}">
+<meta property="og:description" content="{{ with .Params.tagline }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}">
+<meta property="og:type" content="article">
+<meta property="og:url" content="{{ .Permalink }}">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ .Title }} | {{ .Site.Params.brand }}">
+<meta name="twitter:description" content="{{ with .Params.tagline }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}">
 
 <!-- Custom stylesheets -->
 {{ $light := resources.Get "css/syntax.css" | resources.Minify | resources.Fingerprint }}

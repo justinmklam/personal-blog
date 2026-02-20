@@ -13,13 +13,18 @@
 <html lang="en">
 
 <head>
-    <title>{{ .Title }}</title>
-    {{ if $imageUrl }}
-    <meta property="og:image" content="{{ .Site.BaseURL }}{{ $imageUrl }}"/>
-    {{ end }}
-    <meta property="og:type" content="blog"/>
     {{ partial "header.html" . }}
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
 
+    <!-- Open Graph / Facebook -->
+    {{ if $imageUrl }}
+    <meta property="og:image" content="{{ .Site.BaseURL }}{{ $imageUrl }}">
+    {{ end }}
+
+    <!-- Twitter -->
+    {{ if $imageUrl }}
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ $imageUrl }}">
+    {{ end }}
 </head>
 
 <body>
