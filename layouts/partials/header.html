@@ -40,5 +40,5 @@
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
 {{ end }}
 
-<script defer src="https://cloud.umami.is/script.js" data-website-id="{{ .Site.Params.umamiId }}"></script>
+{{ if not hugo.IsDevelopment }}<script defer src="https://cloud.umami.is/script.js" data-website-id="{{ .Site.Params.umamiId }}"></script>{{ end }}
 
