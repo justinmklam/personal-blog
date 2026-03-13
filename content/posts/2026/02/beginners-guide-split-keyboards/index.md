@@ -2,7 +2,7 @@
 title: A Beginner’s Guide to Split Keyboards
 date: 2026-02-15T10:59:22-08:00
 tagline: Come to the dark side, we have keyboard shaped cookies.
-image: banner.png
+image: banner.jpg
 image_source:
 image_source_text:
 tags:
@@ -25,7 +25,7 @@ So you’ve heard of split keyboards and want to buy one, but don’t know where
 ## Why Use a Split Keyboard?
 There's already many other resources that talk about the benefits of a split keyboard, but the gist is that by separating the left and right halves of the keys, your hands can rest in a more **natural position** instead of being forced together like on a traditional keyboard. This reduces outward wrist bending (aka **ulnar deviation**), shoulder tension, etc. The goal isn’t to magically fix posture overnight, but to remove some of the physical constraints imposed by a standard keyboard so your body can settle into something more relaxed during long sessions at the computer.
 
-![Exaggerated depiction of how a split keyboard can help promote a more neutral, comfortable typing position.](why-split.png "Candid Technology|https://candid.technology/keyboards-and-wrist-rest-a-writers-guide-to-comfortable-typing/")
+![Exaggerated depiction of how a split keyboard can help promote a more neutral, comfortable typing position.](why-split.jpg "Candid Technology|https://candid.technology/keyboards-and-wrist-rest-a-writers-guide-to-comfortable-typing/")
 
 ## Types of Keyboards
 There are three main categories of keyboards, which define the overall positions of the keys. 
@@ -33,7 +33,7 @@ There are three main categories of keyboards, which define the overall positions
 - **Column-staggered**: Keys are aligned in columns. This better matches finger anatomy and is very common in ergonomic splits.
 - **Ortholinear**: Uniform grid, no stagger. Visually pleasing, but less common in ergonomic splits.
 
-![Comparison of keyboard layouts.](layout-comparison.png)
+![Comparison of keyboard layouts.](layout-comparison.jpg)
 For people interested in ergonomics, most transition from row staggered to column staggered. Ortholinear was popular for a time and still has a cult following (e.g. with the Planck), but is not as popular for ergonomic keyboards. Majority of the split keyboards shown in this post will be **column staggered**.
 
 A common question is whether learning to type on a non-row staggered keyboard will impact your ability to type on a traditional keyboard. If you switch between the two somewhat regularly, the answer is no - the brain appears to be great at compartmentalizing muscle memory for different devices! In my first month or so of learning to type on a column stagger keyboard, it took me a few minutes to get used to a regular keyboard again in that session. But now, I can use either a traditional or split without issue or “ramp up” time.
@@ -47,7 +47,7 @@ If you’re practicing with something like [monkeytype](https://monkeytype.com/)
 - Selecting/manipulating text (arrow keys) with shift or by word, home/end
 - Application-specific hot keys (e.g. browser fwd/back, tab cycling, closing tabs/Windows, window management, Excel motions, etc)
 
-![The typing progression with my first split keyboard, over the course of 3 months.](monkeytype.png)
+![The typing progression with my first split keyboard, over the course of 3 months.](monkeytype.jpg)
 
 If at this point you’re questioning the time investment required for this whole endeavour, fear not! **There’s a keyboard for everyone,** and not all require this steep learning curve.
 # Path 1: “I want a split, but don't have time to learn”
@@ -55,15 +55,15 @@ These keyboards keep a row-staggered layout, so you can keep that well-trained m
 
 Some examples of traditional keyboards with a slight split in them:
 
-![Logitech ERGO K860, which is similar to the previously popular, but now discontinued Microsoft Sculpt.](logitech-sculpt.png "Logitech|https://www.logitech.com/en-ca/shop/p/k860-split-ergonomic")
+![Logitech ERGO K860, which is similar to the previously popular, but now discontinued Microsoft Sculpt.](logitech-sculpt.jpg "Logitech|https://www.logitech.com/en-ca/shop/p/k860-split-ergonomic")
 
-![Keychron Q10 in what's called an Alice Layout.](keychron-alice-q10.png "Keychron|https://www.keychron.com/collections/alice-layout-keyboards/products/keychron-q10-alice-layout-qmk-custom-mechanical-keyboard")
+![Keychron Q10 in what's called an Alice Layout.](keychron-alice-q10.jpg "Keychron|https://www.keychron.com/collections/alice-layout-keyboards/products/keychron-q10-alice-layout-qmk-custom-mechanical-keyboard")
 
 Going one step further, getting a keyboard with independent halves will provide the most flexibility, since this allows you to freely position the halves (e.g. shoulder width apart), or even set them up with [tenting](#tenting).
 
-![Kinesis Freestyle 2, with optional tenting accessories.](kinesis-freestyle.png "Kinesis|https://kinesis-ergo.com/shop/freestyle2-for-pc-us/")
+![Kinesis Freestyle 2, with optional tenting accessories.](kinesis-freestyle.jpg "Kinesis|https://kinesis-ergo.com/shop/freestyle2-for-pc-us/")
 
-![UHK 60 and 80 variants, which come with optional thumb modules for mousing.](ultimate-hacking-keyboard.png "Ultimate Hacking Keyboard|https://uhk.io/")
+![UHK 60 and 80 variants, which come with optional thumb modules for mousing.](ultimate-hacking-keyboard.jpg "Ultimate Hacking Keyboard|https://uhk.io/")
 
 These keyboards may not be perfect for "power" users, but they tick enough boxes for the majority of people. If you do want to use more advanced features like layers and combos, you can use software like [Karabiner Elements](https://karabiner-elements.pqrs.org/) (macOS), [keyd](https://github.com/rvaiya/keyd) (Linux), or [Kanata](https://github.com/jtroo/kanata) (cross-platform) to add this functionality, similar to how I modified a regular keyboard's keymap [here](/posts/2025/11/remapping-standard-keyboard/).
 
@@ -79,79 +79,79 @@ When shopping for split keyboards, you’ll notice they can have a wide range of
 
 The rationale for having fewer keys is to keep your fingers as close to home row as possible, minimizing the amount of hand movement while typing. The tradeoff to fewer keys is complexity - instead of just reaching over to press a number, multiple keys will need to be pressed to achieve the same result. 
 
-![Holding the left thumb key activates the second layer, which contains symbols and numbers.](layers-corne.png)
+![Holding the left thumb key activates the second layer, which contains symbols and numbers.](layers-corne.jpg)
 
 There’s [some discussion](https://getreuer.info/posts/keyboards/40-percent-ergo/index.html) of whether smaller layouts are actually better for ergonomics, but some find enjoyment in seeing how few keys one actually needs. This is ultimately a personal choice, but if you’re just starting out, it’s always better to have more keys and not use them, than to not have them and want them. You can also always try smaller layouts on a larger keyboard, like I did when [experimenting with a 36 key layout](/posts/2025/07/36-key-layout/).
 
 Here’s a few examples of keyboards showing the range of key counts:
 
-![Kinesis Advantage360, a "maximalist" split keyboard with 76 keys. Omits the F-keys at the top, but offers a hefty 6-key thumb cluster on each side.](kinesis-advantage360.png "Kinesis|https://kinesis-ergo.com/shop/adv360pro/")
+![Kinesis Advantage360, a "maximalist" split keyboard with 76 keys. Omits the F-keys at the top, but offers a hefty 6-key thumb cluster on each side.](kinesis-advantage360.jpg "Kinesis|https://kinesis-ergo.com/shop/adv360pro/")
 
-![Lily58, "full" keyboard with a number row, outer columns, and 4 thumb keys.](lily58.png "Github|https://github.com/kata0510/Lily58")
+![Lily58, "full" keyboard with a number row, outer columns, and 4 thumb keys.](lily58.jpg "Github|https://github.com/kata0510/Lily58")
 
 
-![The popular Corne, with 42 keys. Commonly denoted as 6x3+3 (6 columns x 3 rows + 3 thumb keys). Drops the number row.](corne.png "Keebd|https://keebd.com/en-ca/products/corne-cherry-v3-rgb-keyboard-kit")
+![The popular Corne, with 42 keys. Commonly denoted as 6x3+3 (6 columns x 3 rows + 3 thumb keys). Drops the number row.](corne.jpg "Keebd|https://keebd.com/en-ca/products/corne-cherry-v3-rgb-keyboard-kit")
 
-![Chocofi, 36 keys (5x3+3). No number row or outer columns, so keys like shift, tab, quotation are no longer accessible on the main layer via a single key press.](chocofi.png "beekeeb|https://shop.beekeeb.com/products/presoldered-chocofi-split-keyboard")
+![Chocofi, 36 keys (5x3+3). No number row or outer columns, so keys like shift, tab, quotation are no longer accessible on the main layer via a single key press.](chocofi.jpg "beekeeb|https://shop.beekeeb.com/products/presoldered-chocofi-split-keyboard")
 
-![Sweep, 34 keys (5x3+2). With only 2 thumb keys, this is about as small as your can go while having all the alpha keys on the main layer.](sweep.png "Github|https://github.com/davidphilipbarr/Sweep")
+![Sweep, 34 keys (5x3+2). With only 2 thumb keys, this is about as small as your can go while having all the alpha keys on the main layer.](sweep.jpg "Github|https://github.com/davidphilipbarr/Sweep")
 
 Smaller keyboards do exist, but these layouts require extensive use of layers and/or combos since the main layer is no longer large enough to contain all alpha keys as well as basic function keys like layer switch, space, backspace, etc. The [Hummingbird](https://github.com/PJE66/hummingbird) is a common keyboard/layout in this form factor, where Z/X/Q/J keys are relegated to combos to make space for other keys.
 
-![A tiny 30 key keyboard. Questionable utility, but undeniable aesthetics!](tern.png "Github|https://github.com/rschenk/tern")
+![A tiny 30 key keyboard. Questionable utility, but undeniable aesthetics!](tern.jpg "Github|https://github.com/rschenk/tern")
 
 ### Geometric Considerations
 Aside from the number of physical keys, there are also many options of how the keys are laid out. Keyboards can have different amounts of column stagger, as well as **splay** - which is when the columns are at an angle instead of parallel with each other.
 
-![Hillside 52 with splay in the outer 3 columns.](hillside52.png "Github|https://github.com/mmccoyd/hillside")
+![Hillside 52 with splay in the outer 3 columns.](hillside52.jpg "Github|https://github.com/mmccoyd/hillside")
 
 You can also find keyboards that are **sculpted** in 3D like the Glove80 or Charybdis, or you can even design your own [Dactyl](https://ryanis.cool/dactyl/#manuform). Some find great comfort in these, however they come at a higher cost due to manufacturing complexities, unless you [handwire your own](/posts/2025/08/handwired-skeletyl/).
 
-![Glove80 sculpted keyboard.](moergo-glove80.png "Moergo|https://www.moergo.com/collections/glove80-keyboards")
+![Glove80 sculpted keyboard.](moergo-glove80.jpg "Moergo|https://www.moergo.com/collections/glove80-keyboards")
 
 Recently, people started designing **sculpted keycaps** like the [KLP Lamé](https://github.com/braindefender/KLP-Lame-Keycaps) which brings the benefits of sculpted shapes without needing a special keyboard.
 
-![KLP Lamé sculpted keycaps on a Ferris Sweep.](keycaps-klp-lame.png "Github|https://github.com/braindefender/KLP-Lame-Keycaps/")
+![KLP Lamé sculpted keycaps on a Ferris Sweep.](keycaps-klp-lame.jpg "Github|https://github.com/braindefender/KLP-Lame-Keycaps/")
 
 You can also find **unibody/monoblock** keyboards, which still have a split-like layout but are connected as a single unit. Some prefer the constraints and reproducibility of having the halves  always being in the same position, since independent halves can shift around throughout the day. Unibody keyboards are also generally easier to take and move around, like if you’re working on your lap on the couch or on an airplane tray.
 
-![Reviung41 unibody with low profile switches and a Pimoroni trackball.](reviung.png "Holy Keebs|https://holykeebs.com/products/trackball-reviung41-low-profile")
+![Reviung41 unibody with low profile switches and a Pimoroni trackball.](reviung.jpg "Holy Keebs|https://holykeebs.com/products/trackball-reviung41-low-profile")
 
 The pursuit of ergonomics goes quite deep, where there's also a league of non-keyboard-looking keyboards that use innovative methods for input. The [Svalboard](https://svalboard.com/), for example, uses multiple feather-light paddles for each finger instead of regular switches. This keyboard was inspired by the [DataHand](https://en.wikipedia.org/wiki/DataHand), an alternative keyboard designed to be operated without requiring any finger travel. Similarly, the [Charachorder](https://www.charachorder.com/) uses joystick-like switches for each finger and makes heavy use of combos, although this makes it closer to [stenography](https://studysteno.com/moo/mod/page/view.php?id=150) in philosophy.
 
 In reality, this is near the bottom of the rabbit hole. Most users never go anywhere near this level of ergonomic experimentation, but it’s where the most interesting (and potentially [game changing](https://svalboard.com/pages/reviews)) ideas tend to emerge!
 
-!["Banish pain with the most adaptable ergonomic keyboard and mousing instrument ever made."](svalboard.png "Svalboard|https://svalboard.com/")
+!["Banish pain with the most adaptable ergonomic keyboard and mousing instrument ever made."](svalboard.jpg "Svalboard|https://svalboard.com/")
 
-!["Less finger travel = quicker reactions, faster typing, & less strain. Leave 1D typewriting in the past and experience a new dimension built for the digital age."](charachorder.png "Charachorder|https://www.charachorder.com")
+!["Less finger travel = quicker reactions, faster typing, & less strain. Leave 1D typewriting in the past and experience a new dimension built for the digital age."](charachorder.jpg "Charachorder|https://www.charachorder.com")
 ### Tenting
 Many people find it more comfortable to have their keyboard slightly raised in the middle, which allows the wrist to maintain a more neutral pronation. The ideal tenting angle is dependent on both the user and the keyboard, where at a given angle, a wider keyboard with more keys will feel different than a smaller keyboard with fewer keys.
 
 Some keyboards come with integrated tenting, but if not, there are many DIY solutions to add it on after. For small angles, foldable laptop stand feet/risers work great.
 
-![Totem with sculpted keycaps and adjustable laptop stand feet.](totem.png "Github|https://github.com/GEIGEIGEIST/TOTEM")
+![Totem with sculpted keycaps and adjustable laptop stand feet.](totem.jpg "Github|https://github.com/GEIGEIGEIST/TOTEM")
 
 For larger angles, adhesive-backed Magsafe rings and mobile phone stands allow for more adjustability. The stands can be pricey, but there are also [cheaper, 3D printed options](https://kbd.news/Split-keyboard-Magsafe-tenting-stand-2732.html).
 
-![Tenting with Magsafe ring and phone stands.](keebio-magsafe-tenting.png "Keebio|https://keeb.io/products/magnetic-magsafe-tenting-stand-kit-for-split-keyboard-r2")
+![Tenting with Magsafe ring and phone stands.](keebio-magsafe-tenting.jpg "Keebio|https://keeb.io/products/magnetic-magsafe-tenting-stand-kit-for-split-keyboard-r2")
 
 For extreme angles, ball mount clamps (like those for cameras) can be mounted to a desk (or even chairs) 
 
-![Tenting solution with ball joint clamps.](ben-vallack-tenting.png "Ben Vallack, YouTube|https://www.youtube.com/watch?v=mT3TToFqqEU")
+![Tenting solution with ball joint clamps.](ben-vallack-tenting.jpg "Ben Vallack, YouTube|https://www.youtube.com/watch?v=mT3TToFqqEU")
 
 ### Pointing Devices and Encoders
 With custom keyboards these days, there are many options that include an integrated touchpad, trackball, or even trackpoint to minimize (or remove) the need to move your hand to use the mouse. 
 
 Some keyboards also have encoders for easy access to things like volume control or scrolling, which can be controlled via firmware.
 
-![Toucan 42 and 36, with an integrated Cirque 40mm Glide touchpad.](toucan.png "beekeeb|https://shop.beekeeb.com/products/toucan-36")
+![Toucan 42 and 36, with an integrated Cirque 40mm Glide touchpad.](toucan.jpg "beekeeb|https://shop.beekeeb.com/products/toucan-36")
 
 
-![Charybdis, with a thumb trackball.](charybdis.png "Bastard Keyboards|https://bastardkb.com/charybdis/")
+![Charybdis, with a thumb trackball.](charybdis.jpg "Bastard Keyboards|https://bastardkb.com/charybdis/")
 
-![cocot46plus with a finger trackball and encoder.](cocot46plus.png "Github|https://github.com/aki27kbd/cocot46plus")
+![cocot46plus with a finger trackball and encoder.](cocot46plus.jpg "Github|https://github.com/aki27kbd/cocot46plus")
 
-![TPS42 with an integrated trackpoint.](tps42.png "Github|https://github.com/crehmann/TPS42/wiki")
+![TPS42 with an integrated trackpoint.](tps42.jpg "Github|https://github.com/crehmann/TPS42/wiki")
 
 Custom keyboards also supports [mouse keys](https://docs.qmk.fm/features/mouse_keys) to emulate mouse movements with your keyboard. It can feel a bit limiting in functionality, but is better than nothing and can be helpful in a pinch.
 
@@ -160,11 +160,11 @@ Historically, split keyboards were only wired due to both [technical and licensi
 
 One thing to note - battery management has some quirks for fully wireless split keyboards. The central side needs to do double duty since it needs to communicate with both the host computer and the peripheral side, and as a result its battery discharges significantly faster. Additionally, the more features your keyboard has (display, pointing device, etc.), the shorter the battery life will be.
 
-![A common setup of a nice!nano and a 110mAh battery yields an estimated ~2 weeks for the central side, and a whopping ~3 months for the peripheral side.](zmk-power-profiler.png "ZMK Power Profiler|https://zmk.dev/power-profiler")
+![A common setup of a nice!nano and a 110mAh battery yields an estimated ~2 weeks for the central side, and a whopping ~3 months for the peripheral side.](zmk-power-profiler.jpg "ZMK Power Profiler|https://zmk.dev/power-profiler")
 
 A popular workaround is to use a ZMK dongle, which makes both sides of a wireless keyboard act as peripherals to maximize battery life, although there are still [some limitations](https://docs.slicemk.com/firmware/zmk/wireless/dongle/) to this approach. 
 
-![One example of the many available ZMK dongle screens.](zmk-dongle.png "ZMK Dongle Screen, Github|https://github.com/janpfischer/zmk-dongle-screen")
+![One example of the many available ZMK dongle screens.](zmk-dongle.jpg "ZMK Dongle Screen, Github|https://github.com/janpfischer/zmk-dongle-screen")
 
 Some companies like ZSA still [prefer wired](https://www.zsa.io/wireless), and if your keyboard is going to stay on your desk, I would tend to agree.
 
@@ -173,7 +173,7 @@ There are a ton of online resources that already go into the comparison of these
 
 At the time of writing, high profile (MX) switches still have many more options and generally feel and sound better, and finding keycaps for low profile switches (especially Choc v2) can be challenging, but availability is expected to improve over time as they become more widespread.
 
-![Comparison of MX (high) and low profile switches.](switch-comparison.png "Kinetic Labs|https://kineticlabs.com/blog/will-switches-work-on-hotswap")
+![Comparison of MX (high) and low profile switches.](switch-comparison.jpg "Kinetic Labs|https://kineticlabs.com/blog/will-switches-work-on-hotswap")
 
 Keyboards often have hotswap sockets to allow installing different switches without needing to solder. Some boards like the [cheapino](https://github.com/tompi/cheapino) have the option to directly solder the switches (instead of using sockets) to keep costs low.
 
@@ -184,7 +184,7 @@ For both switches and keycaps, again it comes down to personal preference.
 
 A core part of split keyboards is customizing the keymap to suit your own needs. Although keymaps are defined in firmware, many popular keyboards will have pre-compiled firmware with VIA/Vial support (for QMK, or ZMK Studio for ZMK) to support editing keymaps through a GUI.
 
-![Using Vial to customize a keyboard layout.](vial.png "Jawick|https://jawick.com/blog/vial-waterfowl-guide/")
+![Using Vial to customize a keyboard layout.](vial.jpg "Jawick|https://jawick.com/blog/vial-waterfowl-guide/")
 
 Basic "programmable" features consist of the following:
 - [**Mod-Tap**](https://docs.qmk.fm/mod_tap): One key when tapped, another key when held. (E.g. on a traditional keyboard, many programmers remap `CAPSLOCK` to `ESC` when tapped, `CTRL` when held).
@@ -203,7 +203,7 @@ Some choose to also change to an alternative layout like Dvorak, Colemak or othe
 
 However, if you're curious to learn more, there are many other layouts aside from the popular Dvorak layout, which each have their own advantages depending on the metrics important to you (e.g. [same-finger bigrams (SFBs)](https://getreuer.info/posts/keyboards/glossary/index.html#same-finger-bigram-sfb), [lateral stretch bigrams (LSBs)](https://getreuer.info/posts/keyboards/glossary/index.html#lateral-stretch-bigram-lsb), [scissors](https://getreuer.info/posts/keyboards/glossary/index.html#scissor), [redirects](https://getreuer.info/posts/keyboards/glossary/index.html#redirect), [rolls](https://getreuer.info/posts/keyboards/glossary/index.html#roll), etc.). More information can be found in the [https://layouts.wiki](https://layouts.wiki/) or [r/KeyboardLayouts](https://www.reddit.com/r/KeyboardLayouts/?screen_view_count=4).
 
-![Comparison table of different metrics.](keymap-alt-layout-compraison.png "Pascal Getreuer|https://getreuer.info/posts/keyboards/alt-layouts/index.html")
+![Comparison table of different metrics.](keymap-alt-layout-compraison.jpg "Pascal Getreuer|https://getreuer.info/posts/keyboards/alt-layouts/index.html")
 ## How Do I Choose?
 With the overwhelming number of keyboards one can acquire, how does one choose one for themselves? 
 
@@ -213,18 +213,18 @@ Once you narrow down to the number of keys, next is the form factor. Aside from 
 
 > Personally, I found the amount of column stagger doesn't make a huge difference (except for maybe the pinky column), whereas the thumb cluster matters a bit more since an overly tucked or stretched thumb is more noticeably uncomfortable.
 
-![Searchable collection of ergonomic keyboards.](yal-tools-ergo-keyboards.png "YAL Tools|https://yal-tools.github.io/ergo-keyboards/")
+![Searchable collection of ergonomic keyboards.](yal-tools-ergo-keyboards.jpg "YAL Tools|https://yal-tools.github.io/ergo-keyboards/")
 
-![Web app to compare the physical sizes of common keyboards.](splitkbcompare.png "SplitKB Compare|https://jhelvy.shinyapps.io/splitkbcompare/")
+![Web app to compare the physical sizes of common keyboards.](splitkbcompare.jpg "SplitKB Compare|https://jhelvy.shinyapps.io/splitkbcompare/")
 
 To get a better feel of your potential keyboard(s), you can use some low-fidelity prototypes to test the form factor. Printing it on paper is the easiest way...
-![Printing a layout on paper to test hand positions.](paper-trial.png "Pascal Getreuer|https://getreuer.info/posts/keyboards/thumb-ergo/index.html")
+![Printing a layout on paper to test hand positions.](paper-trial.jpg "Pascal Getreuer|https://getreuer.info/posts/keyboards/thumb-ergo/index.html")
 
 Or you can take it a step further and cut out the template on to cardboard, then install switches. If you want, you could even handwire it to make it a usable, functional keyboard, which may be worth the effort since actually using a keyboard can identify many more things (e.g. discomforts) than just randomly pressing dummy keys.
 
-![Cutting out the keyboard template on to an old shoe box.](cardboard-proto-1.png)
+![Cutting out the keyboard template on to an old shoe box.](cardboard-proto-1.jpg)
 
-![Switches and keycaps installed on to the cardboard prototype.](cardboard-proto-2.png)
+![Switches and keycaps installed on to the cardboard prototype.](cardboard-proto-2.jpg)
 
 ## To Buy or DIY?
 ### Buy
@@ -233,17 +233,17 @@ Gone are the days of needing to spend >$500 on an ergonomic keyboard, and now yo
 In the **upper budget range**, companies like [Kinesis](https://kinesis-ergo.com/), [ZSA](https://www.zsa.io), and [Dygma](https://dygma.com/) make specialized, closed-source keyboards but offer premium devices and support.
 There are also more boutique options like [MoErgo](https://www.moergo.com/) and [Bastard Keyboards](https://bastardkb.com/) that offer high quality products. These keyboards will usually have their own custom software to program them, which usually easier to use than the open-source software versions.
 
-![Premium keyboard with a premium website.](zsa-voyager-product.png "ZSA Voyager|https://www.zsa.io/voyager/buy")
+![Premium keyboard with a premium website.](zsa-voyager-product.jpg "ZSA Voyager|https://www.zsa.io/voyager/buy")
 
 In the **middle range**, you can find many shops like [beekeeb](https://beekeeb.com/), [holykeebs](https://holykeebs.com/), [splitkb](https://splitkb.com/), or any of the other vendors listed on the [r/ErgoMechKeyboards wiki](https://www.reddit.com/r/ErgoMechKeyboards/wiki/resources). They typically sell both pre-assembled boards and kits that require soldering, but are offered at a more affordable price point. Many of the keyboards offered at these vendors are based on or variants of open-sourced designs.
 
-![Beekeeb](shop-beekeeb.png "beekeeb|https://shop.beekeeb.com")
+![Beekeeb](shop-beekeeb.jpg "beekeeb|https://shop.beekeeb.com")
 
 Although you do get a *much* nicer keyboard in the above price ranges, cheaper options exist on sites like Amazon and Aliexpress for those on **low budgets**. The experience or physical product may not be as refined (e.g. 3D printed cases are often used), but it'll still be functional and at least let you try it out without breaking the bank. This is where I started on [my journey with using a Corne keyboard](/posts/2025/05/corne-keyboard/).
 
 > When buying cheap keyboards, there is a [security risk](https://www.reddit.com/r/ErgoMechKeyboards/comments/1idz2rn/why_you_should_always_reflash_new_keyboards_my_50/) to them. If possible, you should reflash the firmware to remove any risk of malicious behaviour.
 
-![Aliexpress with many affordable options for split keyboards.](shop-aliexpress.png "Aliexpress|https://www.aliexpress.com")
+![Aliexpress with many affordable options for split keyboards.](shop-aliexpress.jpg "Aliexpress|https://www.aliexpress.com")
 
 ### DIY
 Many keyboard designs are open-sourced, which means you can take the design files (usually hosted on Github, packaged as [gerber files](https://en.wikipedia.org/wiki/Gerber_format)) and get them manufactured somewhere like [PCBWay](https://www.pcbway.com/) or [JLCPCB](https://jlcpcb.com/). 
@@ -280,9 +280,9 @@ A common starting keyboard is the 42 key Corne if you’re okay with fewer keys,
 ## Design Your Own
 If no existing keyboard sparks joy, there are many resources and tools to design your own. Tools like [Ergogen](https://flatfootfox.com/ergogen-introduction/) and [kle-ng](https://github.com/adamws/kle-ng) make it easy to create your own layout, which can be exported to [Kicad](https://www.kicad.org/) to finalize the PCB. Or if you want one fully customized to your hand shape, you can use [Cosmos](https://ryanis.cool/cosmos/) to create a sculpted one to be handwired.
 
-![Ergogen keyboard layout generator.](tool-ergogen.png "Ergogen|https://ergogen.ceoloide.com/")
+![Ergogen keyboard layout generator.](tool-ergogen.jpg "Ergogen|https://ergogen.ceoloide.com/")
 
-![Cosmos keyboard configurator.](tool-cosmos.png "Cosmos|https://ryanis.cool/cosmos/")
+![Cosmos keyboard configurator.](tool-cosmos.jpg "Cosmos|https://ryanis.cool/cosmos/")
 This is a topic in itself, but there are many existing tutorials and guides on YouTube and around the internet. For keyboards on Github, you can also poke around the design files and reference or adapt them to your needs, which is the great thing about open source!
 
 # Closing Thoughts
