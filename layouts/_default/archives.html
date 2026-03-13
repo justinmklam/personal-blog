@@ -10,85 +10,32 @@
 
     {{ partial "navbar.html" . }}
 
-    <!-- Page Content -->
     <div>
 
-		<!--Blog post listing-->
-        <!-- <div> -->
-            <!--<div class="row">
-                <h1 class="page-header">All Blog Posts </h1>
-            </div>            -->
-
-            {{ range (where .Site.Pages "Type" (.Param "pageType")).GroupByDate "2006"}}
+        {{ range (where .Site.Pages "Type" (.Param "pageType")).GroupByDate "2006" }}
+        {{ $pages := sort .Pages "Date" "desc" }}
+        {{ $year := .Key }}
+        {{ range $i, $page := $pages }}
+        <div class="archive-row">
+            <span class="archive-year">{{ if eq $i 0 }}{{ $year }}{{ end }}</span>
             <div>
-                <!--Print year-->
-                <h2 class="archive-date-category" id="{{.Key | urlize}}">{{.Key}}</h2>
-                <hr>
+                <a class="archive-title" href="{{ $page.Permalink }}">{{ $page.Title }}</a>
+                {{ if $page.Params.tagline }}<p class="archive-tagline">{{ $page.Params.tagline }}</p>{{ end }}
             </div>
+            <span class="archive-postdate">{{ $page.Date | dateFormat "Jan 2" }}</span>
+        </div>
+        {{ end }}
+        {{ end }}
 
-            <!--Loop through posts per year-->
-            {{ range sort .Pages "Date" "desc" }}
-            <div class="row">
-                <!-- Post publish date -->
-                <div class="archive-date">
-                    <h2>
-                        {{ .Date | dateFormat "Jan 2"}}
-                    </h2>
-                </div>
-
-                <!-- Post title and tagline-->
-                <div class="archive-post">
-                    <h2 class="archive-header">
-                        <a class="h2 archive-header" href="{{ .Permalink }}">{{ .Title }}</a>
-                    </h2>
-
-                    <p class="blog-title-metadata">{{.ReadingTime}} min read
-                        &middot
-                        {{ range .Params.tags }}
-                        <a class="blog-tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}&nbsp</a>
-                        {{ end }}
-                    </p>
-
-                    <p class="archive-blog-tagline">{{ .Params.tagline }}</p>
-
-                    <!--Read more buttn-->
-                    <!--<div class="text-right">
-                        <a href="{{ .Permalink }}">Read More<span style="font-size:0.83em" class="glyphicon glyphicon-menu-right"></span></a>
-                    </div>-->
-                </div>
-
-            </div>
-
-            <br>
-            {{ end }}
-
-            <!--<hr>-->
-
-            {{ end }}
-
-            <!--Show all tag taxonomies, ordered by count-->
-            <!--<ul>
-            {{ range $name, $taxonomy := .Site.Taxonomies.tags.ByCount }}
-                <a href="/tags/{{ $name }}">#{{ $taxonomy.Term }} ({{ $taxonomy.Count }})</a>
-            {{end}}
-            </ul>-->
-
-            <!--Return to recent posts button-->
-            {{ if eq (.Param "pageType") "blog" }}
-            <div class="nav-btn" style="text-align: right;">
-                <a href="/">
-                    Recent Posts >
-                </a>
-            </div>
-            {{ end }}
-
-        <!-- </div> -->
-        <!-- /.blog posts -->
+        {{ if eq (.Param "pageType") "blog" }}
+        <div class="nav-btn" style="text-align: right; margin-top: 1.5em;">
+            <a href="/">Recent Posts ></a>
+        </div>
+        {{ end }}
 
     </div>
-    <!-- /.page container -->
 
-	{{ partial "footer-js.html" . }}
+    {{ partial "footer-js.html" . }}
 
 </body>
 
