@@ -246,9 +246,9 @@ Although you do get a *much* nicer keyboard in the above price ranges, cheaper o
 ![Aliexpress with many affordable options for split keyboards.](shop-aliexpress.jpg "Aliexpress|https://www.aliexpress.com")
 
 ### DIY
-Many keyboard designs are open-sourced, which means you can take the design files (usually hosted on Github, packaged as [gerber files](https://en.wikipedia.org/wiki/Gerber_format)) and get them manufactured somewhere like [PCBWay](https://www.pcbway.com/) or [JLCPCB](https://jlcpcb.com/). 
+Many keyboard designs are open-sourced, which means you can take the design files (usually hosted on Github, packaged as [gerber files](https://en.wikipedia.org/wiki/Gerber_format)) and get them manufactured somewhere like [PCBWay](https://www.pcbway.com/). Getting a PCB made with them is pretty painless: you upload your gerber files, pick your specs (defaults are usually fine), and the board typically arrives within a week or two, even to North America. The quality is solid, and their instant quote tool makes it easy to see costs upfront before committing.
 
-This is a great option if you find a design that isn't available in any of the options above. But in terms of cost, by the time you factor in the PCBs, switches, diodes, microcontrollers, fasteners, etc., not to mention the soldering equipment if you don't already have that, buying something from Amazon or Aliexpress will likely be the cheapest.
+This is a great option if you find a design that isn't available in any of the options above. But in terms of cost, by the time you factor in the PCBs, switches, diodes, microcontrollers, fasteners, etc., not to mention the soldering equipment if you don't already have that, buying something from Amazon or Aliexpress will likely be the cheapest if you're starting from zero.
 
 However, if you're okay with being even more hands on, and if you already have soldering equipment, [handwiring a keyboard](/posts/2025/08/handwired-skeletyl/) with a 3D printed enclosure will be the cheapest (and most flexible) option. As long as your soldering is solid, there wouldn't be any functional difference between this and a PCB!
 
