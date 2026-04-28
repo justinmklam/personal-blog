@@ -13,33 +13,77 @@
     <!-- Page Content -->
     <div>
 
-		<!--Blog post summaries-->
+		<!-- Latest posts -->
         <div>
+            <h3>./latest</h3>
 
-            {{ range first ( .Site.Params.pagerSize ) (where .Site.Pages "Type" "blog") }}
-
-            {{ partial "blog-snippets.html" . }}
-
+            {{ range first 3 (where .Site.RegularPages "Type" "blog") }}
+            <div class="archive-row">
+                <span class="archive-year"></span>
+                <div>
+                    <a class="archive-title" href="{{ .Permalink }}">{{ .Title }}</a>
+                    {{ if .Params.tagline }}<p class="archive-tagline">{{ .Params.tagline }}</p>{{ end }}
+                </div>
+                <span class="archive-postdate">{{ .Date | dateFormat "Jan 2" }}</span>
+            </div>
             {{ end }}
 
             <!--Archives button-->
-            <div class="nav-btn">
-                <a href="/archives">< All Posts</a>
+            <div class="nav-btn" style="text-align: center">
+                <a href="/archives">More ></a>
             </div>
-            <br>
-
-            <!-- Show all tags and counts -->
-            <p style="font-size:0.9rem; opacity:0.7">
-                Tags:
-                <span class="blog-title-metadata">
-                    {{ range .Site.Taxonomies.tags.ByCount }}
-                        <a class="blog-tag" href="{{ "/tags/" | relLangURL }}{{ .Name | urlize }}">#{{ .Name }} <span>({{ .Count }})</span></a>&nbsp;
-                    {{ end }}
-                </span>
-            </p>
-
         </div>
-        <!-- /.blog posts -->
+
+		<!-- Greatest posts -->
+        {{ with .Site.Params.featured }}
+        <div>
+            <h3>./greatest</h3>
+
+            {{ range . }}
+            {{ $page := $.Site.GetPage . }}
+            {{ with $page }}
+            <div class="archive-row">
+                <span class="archive-year"></span>
+                <div>
+                    <a class="archive-title" href="{{ .Permalink }}">{{ .Title }}</a>
+                    {{ if .Params.tagline }}<p class="archive-tagline">{{ .Params.tagline }}</p>{{ end }}
+                </div>
+                <span class="archive-postdate">{{ .Date | dateFormat "Jan 2" }}</span>
+            </div>
+            {{ end }}
+            {{ end }}
+        </div>
+        {{ end }}
+
+		<!-- Projects -->
+        <div>
+            <h3>./projects</h3>
+
+            {{ range first 3 (where .Site.RegularPages "Type" "project") }}
+            <div class="archive-row">
+                <span class="archive-year"></span>
+                <div>
+                    <a class="archive-title" href="{{ .Permalink }}">{{ .Title }}</a>
+                    {{ if .Params.tagline }}<p class="archive-tagline">{{ .Params.tagline }}</p>{{ end }}
+                </div>
+                <span class="archive-postdate">{{ .Date | dateFormat "Jan 2" }}</span>
+            </div>
+            {{ end }}
+
+            <div class="nav-btn" style="text-align: center">
+                <a href="/projects">More ></a>
+            </div>
+        </div>
+
+        <!-- Show all tags and counts -->
+        <p style="font-size:0.9rem; opacity:0.7; margin-top: 25px">
+            Tags:
+            <span class="blog-title-metadata">
+                {{ range .Site.Taxonomies.tags.ByCount }}
+                    <a class="blog-tag" href="{{ "/tags/" | relLangURL }}{{ .Name | urlize }}">#{{ .Name }} <span>({{ .Count }})</span></a>&nbsp;
+                {{ end }}
+            </span>
+        </p>
 
     </div>
     <!-- /.page container -->

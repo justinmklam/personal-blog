@@ -15,18 +15,15 @@ FootnoteReturnLinkContents: ↩
 
 menu:
   main:
-    - name: /blog
+    - name: /home
       url: /
       weight: 1
-    - name: /projects
-      url: /projects
-      weight: 2
     - name: /about
       url: /about
-      weight: 3
+      weight: 2
     - name: /contact
       url: /contact
-      weight: 4
+      weight: 3
 
 taxonomies:
   tag: tags
@@ -38,6 +35,10 @@ params:
   math: false
   icons: false
   pagerSize: 5
+  featured:
+    - /posts/2019/diy-wedding-ring/
+    - /posts/2018/06/sourdough-starter-monitor
+    - /posts/2017/06/sous-vide-pla
   highlightJs:
     version: 11.11.1
   umamiId: 6b7445a7-ca25-4dcd-b8b0-453ee282678e
