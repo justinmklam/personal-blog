@@ -10,33 +10,34 @@
 
     {{ partial "navbar.html" . }}
 
-    <!-- Page Content -->
     <div>
 
-		<!--Blog post summaries-->
-        <div>
-            {{ $count := len .Data.Pages }}
-            <h3>Tag: <code>#{{ lower .Title }}</code> <span style="font-weight: normal; padding-left: 3px; font-size: smaller">({{ $count }} post{{ if gt $count 1 }}s{{ end }}) </span></h3>
-            <hr>
+        {{ $count := len .Data.Pages }}
+        <h3>Tag: <code>#{{ lower .Title }}</code> <span style="font-weight: normal; padding-left: 3px; font-size: smaller">({{ $count }} post{{ if gt $count 1 }}s{{ end }}) </span></h3>
 
-            {{ range .Data.Pages }}
-
-            {{ partial "blog-snippets.html" . }}
-
-            {{ end }}
-
-            <!--Archives button-->
-            <div class="nav-btn">
-                <a href="/">
-                    < Recent Posts
-                </a>
+        {{ range .Data.Pages.GroupByDate "2006" }}
+        {{ $pages := sort .Pages "Date" "desc" }}
+        {{ $year := .Key }}
+        {{ range $i, $page := $pages }}
+        <div class="archive-row">
+            <span class="archive-year">{{ if eq $i 0 }}{{ $year }}{{ end }}</span>
+            <div>
+                <a class="archive-title" href="{{ $page.Permalink }}">{{ $page.Title }}</a>
+                {{ if $page.Params.tagline }}<p class="archive-tagline">{{ $page.Params.tagline }}</p>{{ end }}
             </div>
-
+            <span class="archive-postdate">{{ $page.Date | dateFormat "Jan 2" }}</span>
         </div>
-        <!-- /.blog posts -->
+        {{ end }}
+        {{ end }}
+
+        <!--Archives button-->
+        <div class="nav-btn">
+            <a href="/">
+                < Recent Posts
+            </a>
+        </div>
 
     </div>
-    <!-- /.page container -->
 
 	{{ partial "footer-js.html" . }}
 
