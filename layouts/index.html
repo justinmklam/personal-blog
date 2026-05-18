@@ -11,7 +11,7 @@
     {{ partial "navbar.html" . }}
 
     <!-- Page Content -->
-    <div>
+    <div class="index-archive">
 
 		<!-- Latest posts -->
         <div>
@@ -19,7 +19,6 @@
 
             {{ range first 3 (where .Site.RegularPages "Type" "blog") }}
             <div class="archive-row">
-                <span class="archive-year"></span>
                 <div>
                     <a class="archive-title" href="{{ .Permalink }}">{{ .Title }}</a>
                     {{ if .Params.tagline }}<p class="archive-tagline">{{ .Params.tagline }}</p>{{ end }}
@@ -43,7 +42,6 @@
             {{ $page := $.Site.GetPage . }}
             {{ with $page }}
             <div class="archive-row">
-                <span class="archive-year"></span>
                 <div>
                     <a class="archive-title" href="{{ .Permalink }}">{{ .Title }}</a>
                     {{ if .Params.tagline }}<p class="archive-tagline">{{ .Params.tagline }}</p>{{ end }}
@@ -61,7 +59,6 @@
 
             {{ range first 3 (where .Site.RegularPages "Type" "project") }}
             <div class="archive-row">
-                <span class="archive-year"></span>
                 <div>
                     <a class="archive-title" href="{{ .Permalink }}">{{ .Title }}</a>
                     {{ if .Params.tagline }}<p class="archive-tagline">{{ .Params.tagline }}</p>{{ end }}

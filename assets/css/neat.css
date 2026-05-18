@@ -205,6 +205,11 @@ input.center {
     align-items: baseline;
 }
 
+.index-archive .archive-row {
+    grid-template-columns: 1fr auto;
+    padding-left: 0.6em;
+}
+
 .archive-year {
     font-size: 0.9em;
     color: var(--lessdark);
@@ -246,6 +251,11 @@ input.center {
 @media (min-width: 600px) {
     .archive-row {
         grid-template-columns: 3.5em 1fr auto;
+    }
+
+    .index-archive .archive-row {
+        grid-template-columns: 1fr auto;
+        padding-left: 1.6em;
     }
 
     ol.twocol {
