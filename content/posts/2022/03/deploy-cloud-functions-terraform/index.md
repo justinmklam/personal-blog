@@ -6,7 +6,7 @@ date =      2022-03-08T11:47:29-08:00
 draft =     false
 
 title =     "Deploying Google Cloud Functions with Terraform"
-tagline =   ""
+tagline =   "Going serverless in a repeatable way."
 image =     ""
 tags =      ["today-i-learned", "programming"]
 

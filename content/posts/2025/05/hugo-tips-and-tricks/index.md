@@ -4,7 +4,7 @@ type: blog
 date: 2025-05-23T8:47:00-07:00
 draft: false
 title: "Hugo: Some Random Tips and Tricks"
-tagline:
+tagline: Lessons learned from rebuilding my website, yet again.
 image: cover.png
 tags:
   - programming

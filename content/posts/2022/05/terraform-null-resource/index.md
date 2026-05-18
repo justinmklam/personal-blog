@@ -6,7 +6,7 @@ date =      2022-05-17T20:21:37-08:00
 draft =     false
 
 title =     "Tips and Tricks with Terraform's null_resource"
-tagline =   ""
+tagline =   "When terraform doesn't give you lemonade, you make the lemons yourself."
 image =     ""
 tags =      ["today-i-learned", "programming"]
 
