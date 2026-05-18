@@ -48,9 +48,10 @@ As much as I like using Linux, Macs just have a level of polish in the hardware 
 
 - PopOS 22.04 LTS
 - [LibreWolf](https://librewolf.net/) browser + DuckDuckGo search
-- [Ghostty](https://github.com/ghostty-org/ghostty) terminal
-- Neovim using [LazyVim](https://github.com/LazyVim/LazyVim) via [Neovide](https://github.com/neovide/neovide)
+- [Ghostty](https://github.com/ghostty-org/ghostty) terminal + tmux
+- Neovim using [LazyVim](https://github.com/LazyVim/LazyVim)
 - [keyd](https://github.com/rvaiya/keyd) for key remappings
+- [CopyQ](https://github.com/hluk/CopyQ) clipboard manager
 
 ### Mobile
 

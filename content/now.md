@@ -10,20 +10,18 @@ layout: basic
 ### What I’m Working On
 
 - Experimenting with different workflows of using AI to create software, both for personal projects and at work.
-- Helping a friend build a customizer web app for one of their products.
+- Helping a friend build a customizer web app for one of their 3D printing related products.
 - Using Databricks more and more at work.
-- Knee deep in the split keyboard hobby.
+- Knee deep in the [split keyboard hobby](/tags/keyboards/).
 
 ### What I’m Thinking About
 
 - What the tech industry and job landscape will look like in 3 years.
-- How to be more creative after having been working in engineering for so long. Need to use the other side of my brain. Currently that is writing poetry. Might try drawing next.
 - Trying to be more intentional in the world of digital consumption.
 
 ### What I’m Learning
 
-- Attempting to learn Cantonese. Again.
-- How to enjoy reading again. Just finished reading Black Water Sister, would recommend.
+- Learning Cantonese.
 - How to stay physically balanced and healthy. Using bouldering as an outlet for that.
 
 ### What I’m Letting Go Of
