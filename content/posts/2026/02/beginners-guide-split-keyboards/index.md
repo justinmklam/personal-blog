@@ -11,6 +11,7 @@ draft: false
 layout: single
 type: blog
 aliases:
+updated: 2026-05-18T10:59:22-08:00
 ---
 So you’ve heard of split keyboards and want to buy one, but don’t know where to start? You’ve come to the right place! There are many offerings these days which can be overwhelming, so this guide aims to provide a high level overview of the landscape so you can figure out which path you want to take.
 
@@ -246,12 +247,32 @@ Although you do get a *much* nicer keyboard in the above price ranges, cheaper o
 ![Aliexpress with many affordable options for split keyboards.](shop-aliexpress.jpg "Aliexpress|https://www.aliexpress.com")
 
 ### DIY
+
+#### Hardware
+
 Many keyboard designs are open-sourced, which means you can take the design files (usually hosted on Github, packaged as [gerber files](https://en.wikipedia.org/wiki/Gerber_format)) and get them manufactured somewhere like [PCBWay](https://www.pcbway.com/). Getting a PCB made with them is pretty painless: you upload your gerber files, pick your specs (defaults are usually fine), and the board typically arrives within a week or two, even to North America. The quality is solid, and their instant quote tool makes it easy to see costs upfront before committing.
 
 This is a great option if you find a design that isn't available in any of the options above. But in terms of cost, by the time you factor in the PCBs, switches, diodes, microcontrollers, fasteners, etc., not to mention the soldering equipment if you don't already have that, buying something from Amazon or Aliexpress will likely be the cheapest if you're starting from zero.
 
 However, if you're okay with being even more hands on, and if you already have soldering equipment, [handwiring a keyboard](/posts/2025/08/handwired-skeletyl/) with a 3D printed enclosure will be the cheapest (and most flexible) option. As long as your soldering is solid, there wouldn't be any functional difference between this and a PCB!
 
+#### Firmware
+As mentioned before, QMK and ZMK are the two dominant firmware frameworks right now, and the choice between them largely comes down to one thing: wired or wireless.
+
+- **QMK**: The gold standard for wired boards, with a massive community and extensive documentation. Doesn't support wireless due to licensing constraints, but makes up for it with [VIA](https://www.caniusevia.com/) and [Vial](https://get.vial.today/), which are tools that let you remap keys through a GUI without ever touching a compiler.
+- **ZMK**: Built from the ground up for Bluetooth, so if you want wireless, this is your framework. The tradeoff is that setup is more involved, and while [ZMK Studio](https://zmk.dev/docs/features/studio) brings some real-time keymap editing to the table, it's not quite as mature as VIA/Vial yet.
+
+There are a few others worth knowing about: [KMK](https://github.com/KMKfw/kmk_firmware) (written in CircuitPython, so no compilation needed) and [TMK](https://github.com/tmk/tmk_keyboard) (the C-based predecessor that QMK was forked from), though neither has the same community momentum.
+
+More recently, [RMK](https://github.com/HaoboGu/rmk) has been gaining traction. Written in Rust, it takes a shot at solving a few of QMK and ZMK's pain points:
+
+- Native VIA/Vial support over both wired and wireless
+- Simple configuration via a single `keyboard.toml` file
+- Easier local toolchain setup
+
+It's still early days and under active development, so expect some rough edges (see [roadmap](https://rmk.rs/docs/development/roadmap)). But if you're comfortable being a bit of an early adopter, it's worth keeping an eye on.
+
+For most people starting out, the practical choice is simple: if you're going wired, use QMK with Vial; if you're going wireless, use ZMK.
 ## Popular Keyboards
 
 Still have trouble finding which keyboard you should get? Here’s a list of popular* keyboards for each budget (as of Feb 2026):

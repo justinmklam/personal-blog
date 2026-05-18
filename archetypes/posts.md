@@ -2,11 +2,12 @@
 title: {{ replace .File.ContentBaseName `-` ` ` | title }}
 date: {{ .Date }}
 tagline:
-image: placeholder.jpeg
+image:
 image_source:
 image_source_text:
 tags:
 draft: true
+updated:
 
 layout: single
 type: blog

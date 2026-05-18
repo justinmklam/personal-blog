@@ -5,6 +5,7 @@
   {{ $showComments = .showComments | default false }}
 {{ end }}
 Posted on {{ $context.Date.Format "January 2, 2006" }}
+{{ if $context.Params.updated }}&nbsp;&middot;&nbsp;Updated on {{ dateFormat "January 2, 2006" $context.Params.updated }}{{ end }}
 &nbsp;&middot;&nbsp;{{ $context.ReadingTime }} min read
 {{ if $showComments }}
 &nbsp;&middot;&nbsp;
