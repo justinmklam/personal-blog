@@ -1,4 +1,179 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Physics on justinmklam | blog</title><link>https://justinmklam.com/tags/physics/</link><description>Recent content in Physics on justinmklam | blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 12 Jan 2018 09:42:57 -0800</lastBuildDate><atom:link href="https://justinmklam.com/tags/physics/index.xml" rel="self" type="application/rss+xml"/><item><title>A Beginner’s Guide to Split Keyboards</title><link>https://justinmklam.com/posts/2026/02/beginners-guide-split-keyboards/</link><pubDate>Sun, 15 Feb 2026 10:59:22 -0800</pubDate><guid>https://justinmklam.com/posts/2026/02/beginners-guide-split-keyboards/</guid><description>&lt;p>So you’ve heard of split keyboards and want to buy one, but don’t know where to start? You’ve come to the right place! There are many offerings these days which can be overwhelming, so this guide aims to provide a high level overview of the landscape so you can figure out which path you want to take.&lt;/p></description><content:encoded>&lt;p>So you’ve heard of split keyboards and want to buy one, but don’t know where to start? You’ve come to the right place! There are many offerings these days which can be overwhelming, so this guide aims to provide a high level overview of the landscape so you can figure out which path you want to take.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Physics on justinmklam | blog</title><link>https://justinmklam.com/tags/physics/</link><description>Recent content in Physics on justinmklam | blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 12 Jan 2018 09:42:57 -0800</lastBuildDate><atom:link href="https://justinmklam.com/tags/physics/index.xml" rel="self" type="application/rss+xml"/><item><title>How I Sandbox my AI Agents</title><link>https://justinmklam.com/posts/2026/05/sandboxing-with-nono/</link><pubDate>Sun, 17 May 2026 10:59:22 -0800</pubDate><guid>https://justinmklam.com/posts/2026/05/sandboxing-with-nono/</guid><description>&lt;p>AI is taking over world of software development, but it sure ain&amp;rsquo;t going to take over my computer!&lt;/p>
+&lt;p>I&amp;rsquo;ve been waist deep in coding with AI, testing out different models, agents, and workflows, but the one constant has been the ability to safely isolate these AI agents in a sandbox to prevent them from going rogue and doing things it shouldn&amp;rsquo;t (like leaking my api keys or taking down a &lt;a href="https://www.techradar.com/pro/it-took-9-seconds-tech-founder-outlines-how-rogue-claude-powered-ai-tool-wiped-entire-company-database-and-backups-but-says-theres-no-such-thing-as-bad-publicity">production database&lt;/a>). This is especially important for me since I typically run agents in &lt;code>--dangerously-skip-permissions&lt;/code> (aka &lt;code>--yolo&lt;/code>) mode, as who wants to babysit them and constantly approve commands they want to run?&lt;/p></description><content:encoded>&lt;p>AI is taking over world of software development, but it sure ain&amp;rsquo;t going to take over my computer!&lt;/p>
+&lt;p>I&amp;rsquo;ve been waist deep in coding with AI, testing out different models, agents, and workflows, but the one constant has been the ability to safely isolate these AI agents in a sandbox to prevent them from going rogue and doing things it shouldn&amp;rsquo;t (like leaking my api keys or taking down a &lt;a href="https://www.techradar.com/pro/it-took-9-seconds-tech-founder-outlines-how-rogue-claude-powered-ai-tool-wiped-entire-company-database-and-backups-but-says-theres-no-such-thing-as-bad-publicity">production database&lt;/a>). This is especially important for me since I typically run agents in &lt;code>--dangerously-skip-permissions&lt;/code> (aka &lt;code>--yolo&lt;/code>) mode, as who wants to babysit them and constantly approve commands they want to run?&lt;/p>
+&lt;p>Although docker now has a dedicated &lt;a href="https://www.docker.com/products/docker-sandboxes/">sandbox tool&lt;/a>, I personally find it a bit clunky to use compared to non-containerized tools. I also don’t like how each workspace gets its own image, because it means that the development set up needs to be done repetitively for each project (e.g. even if they&amp;rsquo;re all python-based). In general, I find docker to be great for deployments, but less so for active development where I prefer using more native workflows.&lt;/p>
+&lt;p>Earlier this year, I came across a kernel-level sandboxing tool (written in Rust!) called &lt;a href="https://github.com/always-further/nono">nono&lt;/a>, and have been quite pleased with how it fits into my workflow. It’s lightweight, fast, configurable, and under active development, providing both file level and network level isolation. Under the hood, it uses &lt;a href="https://docs.kernel.org/userspace-api/landlock.html">Landlock&lt;/a> on Linux and &lt;a href="https://nono.sh/docs/cli/internals/seatbelt">Seatbelt&lt;/a> on macOS, both of which are in-process or same-process restriction primitives.&lt;/p>
+&lt;p>Usage is very simple, where any normal command can be sandboxed via nono with &lt;code>nono run -- &amp;lt;command&amp;gt;&lt;/code>.&lt;/p>
+&lt;p>
+
+
+
+
+&lt;div class="row img-captioned">
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/05/sandboxing-with-nono/nono-ls-example.png>&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/05/sandboxing-with-nono/nono-ls-example.png>&lt;/a>
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption">Example of how nono prevents access outside of the current directory.&lt;/p>
+&lt;/div>
+&lt;/p>
+&lt;p>My toolkit involves using and trying out many different agents. At work, I use GitHub Copilot, but for my personal projects, I rotate between whatever gives me the most value for my dollar, especially now that the open weight models have gotten significantly better in recent months. This is especially true since many of these frontier models are operating with significant subsidies, so might as well get better at using the more sustainably-priced models.&lt;/p>
+&lt;p>The agents that I&amp;rsquo;ve rotated through this year:&lt;/p>
+&lt;ul>
+&lt;li>Claude Code&lt;/li>
+&lt;li>Codex&lt;/li>
+&lt;li>Qwen (back when they had a generous free tier)&lt;/li>
+&lt;li>Kilo Code&lt;/li>
+&lt;li>Opencode&lt;/li>
+&lt;li>Crush&lt;/li>
+&lt;li>Pi&lt;/li>
+&lt;/ul>
+&lt;p>Nono makes it easy to manage permissions for all of these with profiles. My base profile (in &lt;code>~/.config/nono/profiles/base.json&lt;/code>), which is where I define all the tool paths needed for development (as well as any permissions for skills or MCP servers):&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;extends&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;default&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;meta&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;name&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;base&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;description&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Shared coding environment: runtime groups and common filesystem access&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;groups&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;include&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;node_runtime&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;python_runtime&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;go_runtime&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;git_config&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;filesystem&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;allow&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;$HOME/.cache&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;$HOME/.agents&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;$HOME/.config/google-chrome/&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;/tmp&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;read&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;/proc&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;$HOME/.config/gh&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;/opt/google/chrome/&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;read_file&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;environment&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;allow_vars&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;PATH&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;HOME&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;TERM&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s2">&amp;#34;LANG&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;workdir&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;access&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;readwrite&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Then each agent has its own profile, e.g. for Claude in &lt;code>~/.config/nono/profiles/claude.json&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;extends&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;base&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;meta&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;name&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;claude&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;version&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;1.0.0&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;description&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Claude Code with additional project access&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;groups&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;include&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;claude_code_linux&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;workdir&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;access&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;readwrite&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;filesystem&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;allow&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;$HOME/.claude&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;read&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[],&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;allow_file&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;$HOME/.claude.json&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;$HOME/.local/bin/claude&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;network&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;allow_domain&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;claude.ai&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;allow_launch_services&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;interactive&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Running it is as easy as:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">nono run --profile claude --allow-cwd -- claude --dangerously-skip-permissions
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
+
+
+
+
+&lt;div class="row img-captioned">
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/05/sandboxing-with-nono/nono-claude.png>&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/05/sandboxing-with-nono/nono-claude.png>&lt;/a>
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption">Running nono with a custom Claude profile.&lt;/p>
+&lt;/div>
+&lt;/p>
+&lt;p>I&amp;rsquo;ve been using &lt;a href="https://github.com/charmbracelet/crush">Crush&lt;/a> with &lt;a href="https://opencode.ai/go">OpenCode Go&lt;/a> recently, so for completeness, here&amp;rsquo;s what the config looks like for that (in &lt;code>~/.config/nono/profiles/crush.json&lt;/code>):&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;extends&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;base&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;meta&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;name&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;crush&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;version&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;1.0.0&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;description&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;Profile for crush&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;workdir&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;access&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="s2">&amp;#34;readwrite&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;filesystem&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;allow&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;~/.local/share/crush&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;~/.config/crush&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s2">&amp;#34;$HOME/.local/state&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;read_file&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;environment&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;allow_vars&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;OPENCODE_API_KEY&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;network&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;allow_domain&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="s2">&amp;#34;opencode.ai&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nt">&amp;#34;allow_gpu&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Which I then run with:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">nono run --profile crush --allow-cwd -- crush --yolo
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Things I like about nono:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Works with any agent out of the box.&lt;/strong> Since it&amp;rsquo;s just a wrapper around whatever command you&amp;rsquo;d normally run, adding a new agent to my rotation only takes a few minutes of config work.&lt;/li>
+&lt;li>&lt;strong>Profile composition keeps things DRY.&lt;/strong> The &lt;code>extends&lt;/code> system lets me define shared runtime paths, environment variables, and filesystem permissions once in a base profile, with each agent profile only adding what&amp;rsquo;s specific to it. Updating a tool path or adding a new MCP server means changing it in one place.&lt;/li>
+&lt;li>&lt;strong>Negligible overhead.&lt;/strong> No daemon, no image, no build times to manage.&lt;/li>
+&lt;li>&lt;strong>Easy to test and validate permissions.&lt;/strong> Since it&amp;rsquo;s a wrapper, I can run any single command under a profile and immediately see what gets blocked. Tweaking a path doesn&amp;rsquo;t require rebuilding anything.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Where Docker containerization is still advantageous:&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Stronger isolation.&lt;/strong> Nono restricts what a process can &lt;em>do&lt;/em>, but the agent still shares your kernel. A kernel exploit escapes Landlock/Seatbelt entirely, which is unlikely for the typical &amp;ldquo;agent accidentally writes somewhere it shouldn&amp;rsquo;t&amp;rdquo; scenario, but worth knowing. Docker with &lt;a href="https://docs.docker.com/engine/security/seccomp/">seccomp profiles&lt;/a> and user namespaces adds more layers here.&lt;/li>
+&lt;li>&lt;strong>Resource limits.&lt;/strong> Docker wraps cgroups cleanly for capping CPU and memory. With nono you&amp;rsquo;d need to layer that on separately.&lt;/li>
+&lt;/ul>
+&lt;p>Running agents in sandboxes can be a bit finicky when integrating with other tools like MCP servers, and it&amp;rsquo;s tempting to just bypass it all to make life easier. But the security it provides, and the long-term productivity gain of letting agents run unsupervised, is worth it, at least in my experience. And nono makes it easy to grant the requisite permissions without too much additional friction.&lt;/p>
+&lt;p>Even though Docker provides better isolation, the realistic threat vector for running agents in YOLO mode during development is accidental misbehaviour, not untrusted or potentially malicious code susceptible to prompt injections. As with all security, it comes down to your risk tolerance, and for me, nono hits the right balance.&lt;/p>
+&lt;p>Happy sandboxing!&lt;/p></content:encoded></item><item><title>A Beginner’s Guide to Split Keyboards</title><link>https://justinmklam.com/posts/2026/02/beginners-guide-split-keyboards/</link><pubDate>Sun, 15 Feb 2026 10:59:22 -0800</pubDate><guid>https://justinmklam.com/posts/2026/02/beginners-guide-split-keyboards/</guid><description>&lt;p>So you’ve heard of split keyboards and want to buy one, but don’t know where to start? You’ve come to the right place! There are many offerings these days which can be overwhelming, so this guide aims to provide a high level overview of the landscape so you can figure out which path you want to take.&lt;/p></description><content:encoded>&lt;p>So you’ve heard of split keyboards and want to buy one, but don’t know where to start? You’ve come to the right place! There are many offerings these days which can be overwhelming, so this guide aims to provide a high level overview of the landscape so you can figure out which path you want to take.&lt;/p>
 &lt;blockquote>
 &lt;p>The intent of this guide is not to tell you which specific keyboard you should buy, but rather to equip you with the knowledge to find one that works for yourself.&lt;/p>
 &lt;p>The content in this post is mainly a consolidation of content that exists in &lt;a href="https://www.reddit.com/r/ErgoMechKeyboards/">r/ErgoMechKeyboards&lt;/a>, but organized in a way that is hopefully helpful for beginners.&lt;/p>
