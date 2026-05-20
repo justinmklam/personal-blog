@@ -1,5 +1,5 @@
 baseurl: https://justinmklam.com
-languageCode: en-us
+locale: en-us
 title: justinmklam | blog
 
 contentdir: content
