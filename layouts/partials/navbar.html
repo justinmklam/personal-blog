@@ -8,5 +8,9 @@
         {{ range .Site.Menus.main }}
             <a href="{{.URL}}">{{ .Name }}</a>
         {{ end }}
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+          <span class="icon-sun">{{ (resources.Get "icons/sun.svg").Content | safeHTML }}</span>
+          <span class="icon-moon">{{ (resources.Get "icons/moon.svg").Content | safeHTML }}</span>
+        </button>
     </div>
 </div>

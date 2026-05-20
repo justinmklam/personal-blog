@@ -8,6 +8,14 @@
     /* Corresponds to atom light dark */
     --codebackground: #282828;
   }
+
+  code, pre code {
+    color: #ff47ae!important;
+  }
+}
+
+.dark code, .dark pre code {
+  color: #ff47ae !important;
 }
 
 @mixin link-redecorate {
@@ -100,6 +108,39 @@ hr {
       text-align: right;
     }
   }
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 0 0 0;
+  line-height: 1;
+  vertical-align: middle;
+  color: var(--dark);
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 3px;
+
+  svg {
+    width: 1em;
+    height: 1em;
+    display: block;
+  }
+
+  .icon-sun { display: none; align-items: center; }
+  .icon-moon { display: inline-flex; align-items: center; }
+
+  &:hover {
+    color: var(--dark);
+    background: none;
+    opacity: 1;
+  }
+}
+
+.dark .theme-toggle {
+  .icon-sun { display: inline-flex; }
+  .icon-moon { display: none; }
 }
 
 .blog-title {

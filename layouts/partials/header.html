@@ -27,7 +27,7 @@
 {{ $light := resources.Get "css/syntax.css" | resources.Minify | resources.Fingerprint }}
 {{ $dark := resources.Get "css/syntax-dark.css" | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" href={{ $light.RelPermalink }} media="screen">
-<link rel="stylesheet" href={{ $dark.RelPermalink }} media="screen and (prefers-color-scheme: dark)">
+<link rel="stylesheet" href={{ $dark.RelPermalink }} media="screen and (prefers-color-scheme: dark)" id="syntax-dark-css">
 {{ $custom := resources.Get "css/custom.scss" | toCSS }}
 {{ $neat := resources.Get "css/neat.css" }}
 {{ $theme := resources.Get "css/theme.css" }}
@@ -42,3 +42,6 @@
 
 {{ if not hugo.IsDevelopment }}<script defer src="https://cloud.umami.is/script.js" data-website-id="{{ .Site.Params.umamiId }}"></script>{{ end }}
 
+<script>
+try{var t=localStorage.getItem('theme'),d;if(t==='dark')d=true;else if(t==='light')d=false;else d=window.matchMedia('(prefers-color-scheme:dark)').matches;if(d)document.documentElement.classList.add('dark');var s=document.getElementById('syntax-dark-css');if(s)s.media=d?'screen':'not screen'}catch(e){}
+</script>

@@ -17,3 +17,13 @@
         --codebackground: #191d56;
     }
 }
+
+:root.dark {
+    --link: #434EDF;
+    --light: #0f1437;
+    --lesslight: #333;
+    --lessdark: #b4b9ff;
+    --dark: #d3d6ff;
+    --moredark: #fefefe;
+    --codebackground: #191d56;
+}

@@ -301,6 +301,14 @@ input.center {
     }
 }
 
+.dark *:focus {
+    outline: var(--light);
+    box-shadow: 0 0 0 .25em var(--link);
+}
+.dark .button a {
+    color: var(--light);
+}
+
 /* Printing */
 @media print {
     .home {
