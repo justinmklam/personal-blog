@@ -78,6 +78,7 @@ hr {
 }
 
 .navbar {
+  position: relative;
   margin-top: 20px;
   margin-bottom: 30px;
 
@@ -103,9 +104,13 @@ hr {
     }
   }
 
-  @media (min-width: 600px) {
-    &-links {
-      text-align: right;
+  &-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @media (min-width: 600px) {
+      justify-content: flex-end;
     }
   }
 }
@@ -120,7 +125,6 @@ hr {
   color: var(--dark);
   display: inline-flex;
   align-items: center;
-  margin-bottom: 3px;
 
   svg {
     width: 1em;
@@ -135,6 +139,12 @@ hr {
     color: var(--dark);
     background: none;
     opacity: 1;
+  }
+
+  @media (max-width: 599px) {
+    position: absolute;
+    top: 5px;
+    right: 0;
   }
 }
 
