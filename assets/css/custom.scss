@@ -9,13 +9,13 @@
     --codebackground: #282828;
   }
 
-  code, pre code {
-    color: #ff47ae!important;
+  code {
+    color: #ff47ae;
   }
 }
 
-.dark code, .dark pre code {
-  color: #ff47ae !important;
+.dark code {
+  color: #ff47ae;
 }
 
 @mixin link-redecorate {
@@ -44,7 +44,7 @@ pre {
   border-radius: 5px;
 
   code {
-    color: var(--dark);
+    color: var(--dark) !important;
 
     /* Fixes iOS font sizing anomaly */
     text-size-adjust: 100%;
