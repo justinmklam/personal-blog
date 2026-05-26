@@ -4,18 +4,26 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    /* Corresponds to atom light dark */
+  :root:not(.light) {
+    /* Corresponds to atom dark theme */
     --codebackground: #282828;
   }
 
-  code {
+  :root:not(.light) code {
     color: #ff47ae;
   }
 }
 
 .dark code {
   color: #ff47ae;
+}
+
+:root.light {
+  --codebackground: #fafafa;
+}
+
+.light code {
+  color: #c7254e;
 }
 
 @mixin link-redecorate {

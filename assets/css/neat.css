@@ -284,7 +284,7 @@ input.center {
 
 /* Dark mode overrides (confusingly inverse) */
 @media (prefers-color-scheme: dark) {
-    :root {
+    :root:not(.light) {
         --light: #222;
         --lesslight: #333;
         --lessdark: #bababa;
@@ -292,13 +292,30 @@ input.center {
         --moredark: #fefefe;
     }
     /* This fixes an odd blue then white shadow on FF in dark mode */
-    *:focus {
+    :root:not(.light) *:focus {
         outline: var(--light);
         box-shadow: 0 0 0 .25em var(--link);
     }
-    .button a {
+    :root:not(.light) .button a {
         color: var(--light);
     }
+}
+
+:root.light {
+    --light: #fff;
+    --lesslight: #efefef;
+    --lessdark: #868686;
+    --dark: #404040;
+    --moredark: #000;
+}
+
+:root.light *:focus {
+    outline: revert;
+    box-shadow: revert;
+}
+
+:root.light .button a {
+    color: revert;
 }
 
 .dark *:focus {

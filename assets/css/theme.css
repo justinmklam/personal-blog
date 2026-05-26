@@ -7,7 +7,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
+    :root:not(.light) {
         --link: #434EDF;
         --light: #0f1437;
         --lesslight: #333;
@@ -26,4 +26,14 @@
     --dark: #d3d6ff;
     --moredark: #fefefe;
     --codebackground: #191d56;
+}
+
+:root.light {
+    --link: #8089ffbd;
+    /* --light: #faf4ff30; */
+    --lesslight: revert;
+    --dark: #434EDF;
+    --lessdark: #626bec;
+    --moredark: revert;
+    --codebackground: #757fff0d;
 }
