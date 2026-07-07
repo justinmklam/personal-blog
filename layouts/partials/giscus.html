@@ -1,10 +1,19 @@
 {{ $lightTheme := "light" }}
 {{ $darkTheme := "catppuccin_macchiato" }}
 
-{{ if ne (hugo.Environment) "development" }}
+{{ $enableGiscus := or (ne (hugo.Environment) "development") (os.Getenv "HUGO_GISCUS") }}
+{{ if $enableGiscus }}
 <div id="comments">
 <script>
-  const initialTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? '{{ $darkTheme }}' : '{{ $lightTheme }}';
+  const initialTheme = document.documentElement.classList.contains('dark') ? '{{ $darkTheme }}' : '{{ $lightTheme }}';
+  window.setGiscusTheme = function(isDark) {
+    var iframe = document.querySelector('iframe.giscus-frame');
+    if (iframe) {
+      iframe.contentWindow.postMessage({
+        giscus: { setConfig: { theme: isDark ? '{{ $darkTheme }}' : '{{ $lightTheme }}' } }
+      }, 'https://giscus.app');
+    }
+  };
 </script>
 <script src="https://giscus.app/client.js"
     data-repo="justinmklam/personal-blog"

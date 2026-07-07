@@ -19,6 +19,12 @@ To start a local server for live website testing (at localhost:1313):
 ```
 make serve
 ```
+
+To enable Giscus comments during local development:
+```
+HUGO_GISCUS=1 make serve
+```
+
 ## Adding Content
 
 To create a new blog post:
