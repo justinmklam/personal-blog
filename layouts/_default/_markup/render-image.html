@@ -4,8 +4,12 @@
 {{ $cleanDest := replace $dest "/static/" "/" }}
 
 <div class="row img-captioned">
-    <!-- Video -->
-    {{ if or (hasSuffix $cleanDest ".mp4") (hasSuffix $cleanDest ".webm") }}
+    <!-- YouTube embed -->
+    {{ if hasPrefix $cleanDest "https://www.youtube.com/embed/" }}
+    <div class="img-content video-container">
+        <iframe src="{{ $cleanDest }}" title="{{ .Text }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    {{ else if or (hasSuffix $cleanDest ".mp4") (hasSuffix $cleanDest ".webm") }}
     <video class="img-responsive img-span-row img-content" autoplay loop muted controls>
         <source src="{{ $cleanDest }}" type="video/mp4" />
     </video>
