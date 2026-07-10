@@ -141,7 +141,8 @@ hr {
   }
 
   .icon-sun { display: none; align-items: center; }
-  .icon-moon { display: inline-flex; align-items: center; }
+  .icon-moon { display: none; align-items: center; }
+  .icon-system { display: inline-flex; align-items: center; }
 
   &:hover {
     color: var(--dark);
@@ -157,8 +158,15 @@ hr {
 }
 
 .dark .theme-toggle {
+  .icon-sun { display: none; }
+  .icon-moon { display: inline-flex; }
+  .icon-system { display: none; }
+}
+
+.light .theme-toggle {
   .icon-sun { display: inline-flex; }
   .icon-moon { display: none; }
+  .icon-system { display: none; }
 }
 
 .blog-title {
