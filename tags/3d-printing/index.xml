@@ -1,4 +1,1123 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>3d Printing on justinmklam | blog</title><link>https://justinmklam.com/tags/3d-printing/</link><description>Recent content in 3d Printing on justinmklam | blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 22 Feb 2021 16:36:18 +0000</lastBuildDate><atom:link href="https://justinmklam.com/tags/3d-printing/index.xml" rel="self" type="application/rss+xml"/><item><title>How I Sandbox my AI Agents</title><link>https://justinmklam.com/posts/2026/05/sandboxing-with-nono/</link><pubDate>Sun, 17 May 2026 10:59:22 -0800</pubDate><guid>https://justinmklam.com/posts/2026/05/sandboxing-with-nono/</guid><description>&lt;p&gt;AI is taking over world of software development, but it sure ain&amp;rsquo;t going to take over my computer!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>3d-Printing on justinmklam | blog</title><link>https://justinmklam.com/tags/3d-printing/</link><description>Recent content in 3d-Printing on justinmklam | blog</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 22 Feb 2021 16:36:18 +0000</lastBuildDate><atom:link href="https://justinmklam.com/tags/3d-printing/index.xml" rel="self" type="application/rss+xml"/><item><title>Epomaker Keyboards Review</title><link>https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/</link><pubDate>Wed, 01 Jul 2026 09:48:16 -0700</pubDate><guid>https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/</guid><description>&lt;p&gt;After spending a few years in the realm of split ergonomic keyboards, I had mostly stopped paying attention to regular mechanical keyboards. Times sure have changed though; what used to require group buys, long waits, and a suspicious amount of disposable income is now showing up as off-the-shelf boards with gasket mounts, wireless modes, easy programmability, and stock switches that don&amp;rsquo;t need to be meticulously disassembled and lubricated for a whole afternoon.&lt;/p&gt;
+&lt;p&gt;My attention for these &amp;ldquo;traditional&amp;rdquo; input devices was piqued again when Epomaker reached out and asked if I wanted to try a few of their boards. Here were the three boards that caught my eye:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://epomaker.com/products/epomaker-luma40"&gt;&lt;strong&gt;Luma40&lt;/strong&gt;&lt;/a&gt;: a small low-profile ortholinear board in an aluminum case&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://epomaker.com/products/epomaker-hack70"&gt;&lt;strong&gt;Hack70&lt;/strong&gt;&lt;/a&gt;: a larger mostly-ortholinear board with QMK/VIA support and split spacebars&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://epomaker.com/products/epomaker-split70"&gt;&lt;strong&gt;Split70&lt;/strong&gt;&lt;/a&gt;: a row-staggered split keyboard for people who want a split without relearning every key position&lt;/li&gt;
+&lt;/ul&gt;</description><content:encoded>&lt;p&gt;After spending a few years in the realm of split ergonomic keyboards, I had mostly stopped paying attention to regular mechanical keyboards. Times sure have changed though; what used to require group buys, long waits, and a suspicious amount of disposable income is now showing up as off-the-shelf boards with gasket mounts, wireless modes, easy programmability, and stock switches that don&amp;rsquo;t need to be meticulously disassembled and lubricated for a whole afternoon.&lt;/p&gt;
+&lt;p&gt;My attention for these &amp;ldquo;traditional&amp;rdquo; input devices was piqued again when Epomaker reached out and asked if I wanted to try a few of their boards. Here were the three boards that caught my eye:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://epomaker.com/products/epomaker-luma40"&gt;&lt;strong&gt;Luma40&lt;/strong&gt;&lt;/a&gt;: a small low-profile ortholinear board in an aluminum case&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://epomaker.com/products/epomaker-hack70"&gt;&lt;strong&gt;Hack70&lt;/strong&gt;&lt;/a&gt;: a larger mostly-ortholinear board with QMK/VIA support and split spacebars&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://epomaker.com/products/epomaker-split70"&gt;&lt;strong&gt;Split70&lt;/strong&gt;&lt;/a&gt;: a row-staggered split keyboard for people who want a split without relearning every key position&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This post covers an in-depth review of these boards, where each keyboard section answers the following questions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What kind of keyboard is it?&lt;/li&gt;
+&lt;li&gt;What&amp;rsquo;s the build quality like?&lt;/li&gt;
+&lt;li&gt;How does it type?&lt;/li&gt;
+&lt;li&gt;What&amp;rsquo;s interesting about it?&lt;/li&gt;
+&lt;li&gt;Who&amp;rsquo;s it for?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now, on to the keebs!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Disclaimer: Epomaker sent me these keyboards for review. They did not tell me what to write, which is good, because it turns out I have some mildly strong opinions about space bars&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id="similarities" class="anchor"&gt;
+ &lt;a href="#similarities"&gt;
+ Similarities
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;All three boards support wired USB-C, Bluetooth, and a 2.4GHz USB-A dongle. All three also have RGB. For wired, the box includes a braided USB-A to USB-C cable.&lt;/p&gt;
+&lt;p&gt;They also all support custom keymaps using &lt;a href="https://www.caniusevia.com/"&gt;VIA&lt;/a&gt;. To use it, you first need to download the keyboard&amp;rsquo;s json file from &lt;a href="https://epomaker.com/blogs/via-json"&gt;their website&lt;/a&gt;, then upload that to the VIA web app so it can recognize the keyboard. More detailed instructions can be found on Epomaker&amp;rsquo;s &lt;a href="https://epomaker.com/blogs/guides/how-to-use-via-for-beginners"&gt;beginner&amp;rsquo;s guide&lt;/a&gt; or &lt;a href="https://epomaker.com/blogs/guides/via-usage-guide"&gt;advanced guide&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h1 id="luma40" class="anchor"&gt;
+ &lt;a href="#luma40"&gt;
+ Luma40
+ &lt;/a&gt;
+&lt;/h1&gt;
+
+&lt;h2 id="what-is-it" class="anchor"&gt;
+ &lt;a href="#what-is-it"&gt;
+ What is it?
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;The Luma40 is a 40% low-profile ortholinear keyboard in a silver aluminum case. It&amp;rsquo;s quite small and compact, having no number or function row, so using layers with a board of this size is a must.&lt;/p&gt;
+&lt;p&gt;I’ve been wanting to try a true ortholinear board for years, something about the uniformity and compactness is quite alluring, even if it&amp;rsquo;s not the most ergonomic. So this was a convenient opportunity to finally try one!&lt;/p&gt;
+&lt;p&gt;For the Luma40, all keys are 1U with the exception of the 2U space bar. There aren&amp;rsquo;t any stabilizers on the space bar, which may bother some people if you tend to hit it near the edge vs the center. I fortunately didn&amp;rsquo;t experience any binding while using it though, but this would be one thing that would&amp;rsquo;ve been nice to include.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3255_hu_5716e843dd4baf2e.jpg&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3255_hu_5716e843dd4baf2e.jpg&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;Luma40, lights off.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3266_hu_11043e1e367583c0.jpg&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3266_hu_11043e1e367583c0.jpg&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;The translucent caps show the RGB clearly, especially in a dim room.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;h2 id="whats-the-build-quality-like" class="anchor"&gt;
+ &lt;a href="#whats-the-build-quality-like"&gt;
+ What&amp;rsquo;s the build quality like?
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;For me, the aluminum case is the main selling point. It gives the Luma40 enough mass that it doesn’t slide around on my desk. The rubber pads on the bottom are thin, but they kept the board planted on my desk.&lt;/p&gt;
+&lt;p&gt;The translucent keycaps leave a bit to be desired, but I&amp;rsquo;ll get into that more in the next section…&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3258_hu_68c08e315440e872.jpg&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3258_hu_68c08e315440e872.jpg&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;View of the back showing the USB-C connector, wireless toggle, and strap mount.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3270_hu_7bc7f8b4b9d9d6dc.jpg&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3270_hu_7bc7f8b4b9d9d6dc.jpg&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;The underside is simple: rubber pads, screws, and no flip-out feet.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3416_hu_c7d0a4ffedecc27a.jpg&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3416_hu_c7d0a4ffedecc27a.jpg&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;Keycaps removed.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;The case comes apart with five small screws. Inside, there is a foam sheet at the bottom of the case, a 1450mAh battery glued to the shell, and a PCB connected with what looks like a standard JST connector.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3424_hu_e95bca8bfa5c4f66.jpg&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3424_hu_e95bca8bfa5c4f66.jpg&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;PCB removed, exposing the foam panel at the bottom of the case.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3433_hu_49bf9143b096b33d.jpg&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3433_hu_49bf9143b096b33d.jpg&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;The 1450mAh battery is thin and glued securely to the case.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;The board runs off a seemingly unknown microcontroller, where the marking on it just says &lt;code&gt;MILLER N25NOV17&lt;/code&gt;. This appears to be a custom, proprietary microcontroller, which manufacturers do because it’s cheaper to produce than using an off-the-shelf development chip like RP2040 or nRF52840, which is commonly used in the custom keyboard community.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3435_hu_62410d41716d1919.jpg&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3435_hu_62410d41716d1919.jpg&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;Close-up of the PCB.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;The switches are advertised as hot-swappable, but the plate tolerances seemed way too tight on my unit that I stopped after removing one corner switch (which was already a struggle). I had to wiggle it out carefully, and the others felt like they were closer to &amp;ldquo;technically removable&amp;rdquo; than &amp;ldquo;casually swappable.&amp;rdquo; Hopefully just a tolerance issue for this board or batch?&lt;/p&gt;
+&lt;p&gt;Under the switch there is a small gasket layer between the plate and PCB that the switch sits on top of, for some additional damping.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3440_hu_c5bc7f27213f2d1f.jpg&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3440_hu_c5bc7f27213f2d1f.jpg&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;Switch removed, exposing a thin gasket between the plate and PCB.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;h2 id="how-does-it-type" class="anchor"&gt;
+ &lt;a href="#how-does-it-type"&gt;
+ How does it type?
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;The keyboard comes with Kailh White Rain switches, which are low-profile linear switches with a POM stem and 50gf actuation force. This paired with the aluminum case and foam inserts makes for a pleasant typing experience, but it&amp;rsquo;s definitely not as thocky as a high-profile keyboard.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/kailh-white-rain.png&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/kailh-white-rain.png&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;Close up of the Kailh White Rain switch. (Source: &lt;a href=https://www.rtings.com/keyboard-switch/reviews/kailh/white-rain&gt;RTings&lt;/a&gt;)&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/kailh-white-rain-actuation.png&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/kailh-white-rain-actuation.png&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;Keystroke actuation, force vs displacement. (Source: &lt;a href=https://www.rtings.com/keyboard-switch/reviews/kailh/white-rain&gt;RTINGS&lt;/a&gt;)&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ &lt;div class="img-content video-container"&gt;
+ &lt;iframe src="https://www.youtube.com/embed/jN3TJzTU7m4" title="In depth review of the Kailh White Rain switch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;In depth review of the Kailh White Rain switch&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;The keycaps are the part I kept noticing, and unfortunately not for good reasons. They are translucent, which works well for RGB, but the top surface is a circular dish instead of the cylindrical or spherical scoop used on many common profiles. This means there&amp;rsquo;s less surface area for each finger pad, and something about the radius of the circular pad makes it less comfortable than a traditional, flatter profile.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3446_hu_4752d944066a2c25.jpg&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3446_hu_4752d944066a2c25.jpg&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;Close-up of the circular dish on the keycap.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;h2 id="whats-interesting" class="anchor"&gt;
+ &lt;a href="#whats-interesting"&gt;
+ What&amp;rsquo;s interesting?
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;40% keyboards makes the user of layers unavoidable, which does have its own learning curve if you&amp;rsquo;re not accustomed to it already. All the alpha keys are on the main layer, but numbers and symbols need to be accessed by holding down &lt;code&gt;MO(2)&lt;/code&gt; (bottom left corner, by default).&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/via-luma40-layer0.png&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/via-luma40-layer0.png&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;Base layer.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m not a huge fan of the default secondary layer, as I prefer to have my numbers arranged in a numpad, and symbols on the other side, as described in my blog post &lt;a href="https://justinmklam.com/posts/2025/07/optimizing-symbols-layer/"&gt;here&lt;/a&gt;. But this is easy to change!&lt;/p&gt;
+&lt;p&gt;Programming and gaming on a keyboard this small requires designing your own keymap to have it suit your own workflow, which is something not everyone is willing to take the time to do (and no shade either, some people just want to type!). But since I&amp;rsquo;ve been down this path already, using this keyboard as a daily driver was no issue for me :)&lt;/p&gt;
+&lt;p&gt;One cool thing about this (and the other keyboards) is that pressing &lt;code&gt;QK_BAT&lt;/code&gt; changes the RGB lighting to show the remaining battery level. Clever use of a status indicator without needing separate LEDs.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/via-luma40-layer2.png&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/via-luma40-layer2.png&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;Secondary layer.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;h2 id="who-is-it-for" class="anchor"&gt;
+ &lt;a href="#who-is-it-for"&gt;
+ Who is it for?
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;The Luma40 makes the most sense as a compact secondary keyboard: couch computer, travel bag, small desk, or a low-commitment way to try ortholinear typing. It&amp;rsquo;s a solid form factor for enthusiasts, but it does require some time commitment to get used to it.&lt;/p&gt;
+&lt;p&gt;Don&amp;rsquo;t get me wrong, it&amp;rsquo;s definitely possible to use this as a daily driver, since many people use &lt;a href="https://justinmklam.com/posts/2025/05/corne-keyboard/"&gt;Corne keyboards&lt;/a&gt; which has 42 keys, or many even going down to &lt;a href="https://justinmklam.com/posts/2025/07/36-key-layout/"&gt;36 keys&lt;/a&gt; or fewer. The main difference with ortholinear layouts is the lack of a true thumb cluster, but there are keys along the bottom row that can be used in place of them.&lt;/p&gt;
+&lt;p&gt;After a week, I found liked it more than I did on day one. The keycaps still would be the first thing I changed, but the size and case made it easy and fun to type on, along with taking up very little space on my desk (or wherever you may be using this).&lt;/p&gt;
+
+&lt;h1 id="hack70" class="anchor"&gt;
+ &lt;a href="#hack70"&gt;
+ Hack70
+ &lt;/a&gt;
+&lt;/h1&gt;
+
+&lt;h2 id="what-is-it-1" class="anchor"&gt;
+ &lt;a href="#what-is-it-1"&gt;
+ What is it?
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;At first glance, the Hack70 was the most intriguing board of the three because there aren&amp;rsquo;t many full-sized ortholinear boards, especially with split space bars. You get more keys than the Luma40, less width than many 65% boards, and a split space bar.&lt;/p&gt;
+&lt;p&gt;The split space bar design is intriguing because it brings the essence of having a thumb cluster to traditional keyboards, where a popular use of it would be turning it into an easy-access layer key. The length of space bars was due to physical and mechanical limitations with typewriters, so it&amp;rsquo;s nice to see a modern take on the design that&amp;rsquo;s a bit more function over form.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3224_hu_d0a2962ee6672686.jpg&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3224_hu_d0a2962ee6672686.jpg&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;Hack70 keyboard.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;h2 id="whats-the-build-quality-like-1" class="anchor"&gt;
+ &lt;a href="#whats-the-build-quality-like-1"&gt;
+ What&amp;rsquo;s the build quality like?
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;The Hack70 is gasket mounted, which results in it sounding the best of these keyboards. The plate sits on soft gasket pieces instead of being screwed directly into the case, and I could feel that comfiness in the bottom-out. Keypresses had a cushioned stop rather than a hard plate impact.&lt;/p&gt;
+&lt;p&gt;The backside has a storage slot for the 2.4GHz dongle, and the case includes two levels of flip-out feet. I usually avoid tall rear feet, but they are there if you prefer a steeper typing angle.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3229_hu_70c69420d07355cb.jpg&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3229_hu_70c69420d07355cb.jpg&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;Back edge with the connection controls.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3230_hu_2dee7db0e0127c80.jpg&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3230_hu_2dee7db0e0127c80.jpg&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;USB dongle removed from the storage slot.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3236_hu_31080fa349b354bf.jpg&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3236_hu_31080fa349b354bf.jpg&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;RGB through the keycaps and side indicator.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3271_hu_8a229e6f4c0617a4.jpg&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3271_hu_8a229e6f4c0617a4.jpg&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;Underside of the keyboard.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3274_hu_4e6d2b5d4fe29867.jpg&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3274_hu_4e6d2b5d4fe29867.jpg&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;Lower feet extended.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3272_hu_cffeaa8124bbb572.jpg&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3272_hu_cffeaa8124bbb572.jpg&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;Higher feet extended.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;The 45gf Creamy Jade linear switches are factory-lubed and consistent across the board. I did not notice scratchiness or spring noise while typing. The sound is lower and rounder than the Luma40, helped by the gasket mount and larger case volume. A very creamy sound, as the YouTubers would say!&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3242_hu_47eb42fbcae47b0.jpg&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3242_hu_47eb42fbcae47b0.jpg&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;Keycaps removed, showing the RGB LEDs and plate.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3397_hu_6ad96f80891e125d.jpg&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3397_hu_6ad96f80891e125d.jpg&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;Close-up of the stabilizers. The orange pieces appear to be part of the gasket mount.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;The XDA PBT keycaps fit the grid layout because every row uses the same height. The legends on my unit were sharper than the Split70&amp;rsquo;s legends, and the texture stayed matte during the time I used it. The font of the legends gives off Google/Android vibes (which may or may not be your thing), but it&amp;rsquo;s clean and modern against the off-white colour palette so I think it goes quite well together.&lt;/p&gt;
+&lt;p&gt;I tried to take the Hack70 apart, but the case has no visible exterior screws and the clips were tighter than I was willing to fight without a thinner pry tool. Switches came out easily. The enclosure did not.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3395_hu_e122f8cbe35a868f.jpg&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3395_hu_e122f8cbe35a868f.jpg&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;Keycaps removed.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3457_hu_3c9e98bc3fc82bbd.jpg&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3457_hu_3c9e98bc3fc82bbd.jpg&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;Switches removed.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3472_hu_3c4f6cecf7f1e9ca.jpg&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3472_hu_3c4f6cecf7f1e9ca.jpg&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;The case seam was too tight for the tools I had on hand.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;h2 id="keycap-inconsistency" class="anchor"&gt;
+ &lt;a href="#keycap-inconsistency"&gt;
+ Keycap inconsistency&amp;hellip;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Sadly, my unit had one visible issue: the left spacebar sat lower than the right and looked slightly warped. It still registered normally and didn&amp;rsquo;t affect typing performance, but it was unfortunate to see this manufacturing defect on this otherwise well-built keyboard.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3250_hu_6799f1b796645e0c.jpg&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3250_hu_6799f1b796645e0c.jpg&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;The left spacebar on my unit sits slightly lower than the right.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;h2 id="how-does-it-type-1" class="anchor"&gt;
+ &lt;a href="#how-does-it-type-1"&gt;
+ How does it type?
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;For normal letter keys, the Hack70 was the easiest board here to type on for long sessions. The switches are quiet, the bottom-out is cushioned, and the layout gives you enough keys that you are not constantly reaching through layers.&lt;/p&gt;
+&lt;p&gt;The default keymap was pretty standard, the second layer isn&amp;rsquo;t necessarily required for everyday typing since most keys are available on the main layer. But having the option to have easy access to macros or other shortcuts is a welcome feature.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/via-hack70-layer0.png&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/via-hack70-layer0.png&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;Main layer.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/via-hack70-layer2.png&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/via-hack70-layer2.png&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;Secondary layer.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;h2 id="whats-interesting-1" class="anchor"&gt;
+ &lt;a href="#whats-interesting-1"&gt;
+ What&amp;rsquo;s interesting?
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;The split spacebar should have been the feature I liked most, since using thumb clusters is one of the main advantages of modern ergonomic keyboards. One thumb key for space and another for a navigation layer sounded perfect on paper&amp;hellip;&lt;/p&gt;
+&lt;p&gt;The problem? The two spacebars don&amp;rsquo;t line up with the rest of the keys!&lt;/p&gt;
+&lt;p&gt;While I was using this keyboard, I kept missing space for the first few days and assumed I was just adjusting to a new board. Then I looked down and realized my thumbs were landing on the column gaps instead of the keys.&lt;/p&gt;
+&lt;p&gt;Instead of having two spacebars that equally span the 5U width like 2U + 3U or even 2U + 2U, they opted to use 2.25U + 2.75U. They likely did this to allow reusing keycaps from other boards, since 3U keycaps aren&amp;rsquo;t that common (if at all).&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3390_hu_53f04decd5342da0.jpg&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3390_hu_53f04decd5342da0.jpg&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;The spacebars are offset inward from the main columns.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/keycap-sizes.png&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/keycap-sizes.png&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;Diagram showing keycap sizes on a standard keyboard. (Source: &lt;a href=https://www.keychron.com/pages/keychron-k8-keyboard-keycaps-layout-and-keycap-size-hd-picture&gt;Keychron&lt;/a&gt;)&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;This made using the Hack70 mildly frustrating&amp;hellip; Typing felt great, sounded great, but the placement of the most commonly used key was a bit of a letdown.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3580_hu_5a3f1f0153e5dcaf.jpg&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3580_hu_5a3f1f0153e5dcaf.jpg&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;The space bar placement requires my thumb to be tucked in more, and it also rests uncomfortably close to the edge.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3576_hu_69c599d49b9fe1e7.jpg&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3576_hu_69c599d49b9fe1e7.jpg&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;In comparison with using space on the Luma40, where my thumb can rest directly (and comfortably) centered underneath the N.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;The Hack70 also keeps 2U Backspace and Enter keys on an otherwise grid-like layout. Visually, I understand the choice, but functionally, it introduces a few awkward positions.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3235_hu_31d1ff74fd8deb11.jpg&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3235_hu_31d1ff74fd8deb11.jpg&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;The 2U Backspace and Enter keys break the otherwise regular grid.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;The backtick/tilde key sits between apostrophe and Enter, so I kept hitting it instead of Enter with my pinky. That may fade with time, but it is a layout tax, and one that is a bit strange for an otherwise &amp;ldquo;normal&amp;rdquo; keyboard layout.&lt;/p&gt;
+&lt;p&gt;Given all this, if I were to redesign this keyboard, I&amp;rsquo;d:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use 2U + 2U keys for the space bar, which would drop the overall space bar width from 5U to 4U&lt;/li&gt;
+&lt;li&gt;Either:
+&lt;ul&gt;
+&lt;li&gt;Option 1:
+&lt;ul&gt;
+&lt;li&gt;Use 1U for both backspace and enter&lt;/li&gt;
+&lt;li&gt;Drop the backtick/tilde key from its current place, and drop (and shift inwards) the entire outer column of the keyboard&lt;/li&gt;
+&lt;li&gt;Caveat is this would also require losing either shift or page up beside the arrow key&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Option 2:
+&lt;ul&gt;
+&lt;li&gt;Use 1U for just the backspace&lt;/li&gt;
+&lt;li&gt;Move the backtick/tilde key to beside backspace&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Relatively small changes, but not needing to relearn the placement of the enter key is a real motivator and make the learning curve easier.&lt;/p&gt;
+
+&lt;h2 id="who-is-it-for-1" class="anchor"&gt;
+ &lt;a href="#who-is-it-for-1"&gt;
+ Who is it for?
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;The Hack70 is the board I wanted to like most. If you&amp;rsquo;re coming from a regular keyboard and want something smaller, programmable, and better-sounding than a typical budget board, it makes a strong case for itself.&lt;/p&gt;
+&lt;p&gt;If you already use ortholinear keyboards, the space bar placement is the thing to check before buying. As I mentioned before, I would have preferred two 2U spacebars under the V/B and N/M columns.&lt;/p&gt;
+&lt;p&gt;For me, the Hack70 has excellent keyboard components, but sadly is attached to a layout that will take a while for me to get used to. I do appreciate the design language of this board though, and am looking forward to seeing more boards like this.&lt;/p&gt;
+
+&lt;h1 id="split70" class="anchor"&gt;
+ &lt;a href="#split70"&gt;
+ Split70
+ &lt;/a&gt;
+&lt;/h1&gt;
+
+&lt;h2 id="what-is-it-2" class="anchor"&gt;
+ &lt;a href="#what-is-it-2"&gt;
+ What is it?
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;The Split70 is a row-staggered split keyboard. Unlike many &lt;a href="posts/2026/02/beginners-guide-split-keyboards/"&gt;ergonomic boards&lt;/a&gt;, it doesn&amp;rsquo;t ask you to relearn column stagger, thumb clusters, or a &lt;a href="https://justinmklam.com/posts/2025/07/36-key-layout/"&gt;36-key layout&lt;/a&gt;. It keeps the familiar row-staggered key positions and lets you separate the halves.&lt;/p&gt;
+&lt;p&gt;My unit is white with blue accents, 46gf Wisteria Linear V2 switches, a knob on the left half, and a column of dedicated macro keys.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3294_hu_e33ba27abe0f3307.jpg&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3294_hu_e33ba27abe0f3307.jpg&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;Split70 with the two halves connected.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;h2 id="whats-the-build-quality-like-2" class="anchor"&gt;
+ &lt;a href="#whats-the-build-quality-like-2"&gt;
+ What&amp;rsquo;s the build quality like?
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;The two halves connect magnetically. The magnets are strong enough to keep the halves aligned when the board is used as one piece, but weak enough that separating them doesn&amp;rsquo;t feel like a wrestling match.&lt;/p&gt;
+&lt;p&gt;The bottom uses rubber pads instead of adjustable feet, which I don&amp;rsquo;t mind since I typically don&amp;rsquo;t tent my splits anyway.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3303_hu_968c57cc0da63a58.jpg&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3303_hu_968c57cc0da63a58.jpg&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;Back edge with the ports and wireless controls. The far-left USB-C port connects the two halves.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3309_hu_f1e21df63e74ce87.jpg&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3309_hu_f1e21df63e74ce87.jpg&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;Underside of the Split70. Rubber pads, no adjustable feet.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;The keycaps are the weakest visible part. The legends are softer than the Hack70&amp;rsquo;s legends, especially on close inspection. They work fine, but this is where the board looks more budget-conscious. However, it also comes in a black colourway and those keycaps look a bit better.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3301_hu_454ec04b8d36c781.jpg&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/DSCF3301_hu_454ec04b8d36c781.jpg&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;Close up of the keycaps.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+&lt;div class="row img-captioned"&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;a href=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/split70-black.png&gt;&lt;img class="img-responsive img-content" src=https://justinmklam.com/posts/2026/07/epomaker-keyboards-review/split70-black.png&gt;&lt;/a&gt;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ &lt;p class="caption"&gt;Split70 in black. (Source: &lt;a href=https://epomaker.com/products/epomaker-split70&gt;Epomaker&lt;/a&gt;)&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;h2 id="how-does-it-type-2" class="anchor"&gt;
+ &lt;a href="#how-does-it-type-2"&gt;
+ How does it type?
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;The Wisteria Linear V2 switches are quiet and lighter than the Hack70&amp;rsquo;s Creamy Jades. Above average, but not as nice feeling or sounding as the Hack70 though.&lt;/p&gt;
+&lt;p&gt;The row-staggered split layout made the transition easy. I could separate the halves, keep my wrists straighter, and still type without thinking about where every letter moved.&lt;/p&gt;
+&lt;p&gt;The tradeoff is desk space. A row-staggered split takes more room than the product photos suggest because you need space between the halves for the ergonomic benefit. The inner boarder is also quite large, adding to the overall footprint required.&lt;/p&gt;
+
+&lt;h2 id="whats-interesting-2" class="anchor"&gt;
+ &lt;a href="#whats-interesting-2"&gt;
+ What&amp;rsquo;s interesting?
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Not much, but that&amp;rsquo;s a good thing for someone looking for a split traditional keyboard?&lt;/p&gt;
+&lt;p&gt;The duplicated B key on both sides is a nice addition since it alleviates the need to retrain the &amp;ldquo;B muscle memory&amp;rdquo;. On a normal keyboard, many people hit B with their right index finger even though it technically lives on the left side, so switching to a split usually requires relearning this behaviour.&lt;/p&gt;
+&lt;p&gt;The right Shift is 1U instead of the usual long key. I use left shift most of the time, so it didn&amp;rsquo;t bother me much.&lt;/p&gt;
+&lt;p&gt;The knob and macro keys are practical if you have specific uses for them. I used the knob for volume. I would probably map the macro column to workspace switching, media controls, or window management.&lt;/p&gt;
+
+&lt;h2 id="who-is-it-for-2" class="anchor"&gt;
+ &lt;a href="#who-is-it-for-2"&gt;
+ Who is it for?
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;The Split70 is for someone who wants the main ergonomic benefit of a split keyboard without going deep into custom ergo layouts. It is the least disruptive board here if you are coming from a normal keyboard.&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s quite a few options in this space of split, row-staggered keyboards, so I&amp;rsquo;d only recommend this one if you like the aesthetics as well as the volume knob and mini macro pad. For me, it takes up too much space on my desk, but this may not be a problem for you.&lt;/p&gt;
+
+&lt;h1 id="so-which-one-would-i-keep-using" class="anchor"&gt;
+ &lt;a href="#so-which-one-would-i-keep-using"&gt;
+ So, which one would I keep using?
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;The Hack70 has the most cushioned switch and case feel of the three. It also has the layout decision that bothered me most, but I think most people can overlook this. It checks the most boxes and is also the cheapest of the these, so it&amp;rsquo;d be the one I would go for if I had to choose.&lt;/p&gt;
+&lt;p&gt;The Luma40 is the most limited, but was still enjoyable to use. It is a tiny ortholinear board with a rigid case, odd keycaps, and enough charm that I kept reaching for it even when it made me work harder.&lt;/p&gt;
+&lt;p&gt;The Split70 is the practical one. It gives you a split layout while preserving most normal keyboard habits. The keycaps look less refined than the Hack70&amp;rsquo;s (but they do have a dark colourway available), and it takes up more desk space once separated, but this is an easy keyboard to transition to for most people.&lt;/p&gt;
+&lt;p&gt;I came into this expecting the Hack70 to be the easy favourite. After using all three, I still think it is the most technically interesting board, but the Luma40 is the one I kept thinking about. I still prefer columnar stagger keyboards over any of these, but it&amp;rsquo;s nice to see more options available for those who don&amp;rsquo;t want to &lt;a href="https://justinmklam.com/posts/2025/08/handwired-skeletyl/"&gt;handwire their own custom keyboards&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Happy typing!&lt;/p&gt;</content:encoded></item><item><title>How I Sandbox my AI Agents</title><link>https://justinmklam.com/posts/2026/05/sandboxing-with-nono/</link><pubDate>Sun, 17 May 2026 10:59:22 -0800</pubDate><guid>https://justinmklam.com/posts/2026/05/sandboxing-with-nono/</guid><description>&lt;p&gt;AI is taking over world of software development, but it sure ain&amp;rsquo;t going to take over my computer!&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ve been waist deep in coding with AI, testing out different models, agents, and workflows, but the one constant has been the ability to safely isolate these AI agents in a sandbox to prevent them from going rogue and doing things it shouldn&amp;rsquo;t (like leaking my api keys or taking down a &lt;a href="https://www.techradar.com/pro/it-took-9-seconds-tech-founder-outlines-how-rogue-claude-powered-ai-tool-wiped-entire-company-database-and-backups-but-says-theres-no-such-thing-as-bad-publicity"&gt;production database&lt;/a&gt;). This is especially important for me since I typically run agents in &lt;code&gt;--dangerously-skip-permissions&lt;/code&gt; (aka &lt;code&gt;--yolo&lt;/code&gt;) mode, as who wants to babysit them and constantly approve commands they want to run?&lt;/p&gt;</description><content:encoded>&lt;p&gt;AI is taking over world of software development, but it sure ain&amp;rsquo;t going to take over my computer!&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ve been waist deep in coding with AI, testing out different models, agents, and workflows, but the one constant has been the ability to safely isolate these AI agents in a sandbox to prevent them from going rogue and doing things it shouldn&amp;rsquo;t (like leaking my api keys or taking down a &lt;a href="https://www.techradar.com/pro/it-took-9-seconds-tech-founder-outlines-how-rogue-claude-powered-ai-tool-wiped-entire-company-database-and-backups-but-says-theres-no-such-thing-as-bad-publicity"&gt;production database&lt;/a&gt;). This is especially important for me since I typically run agents in &lt;code&gt;--dangerously-skip-permissions&lt;/code&gt; (aka &lt;code&gt;--yolo&lt;/code&gt;) mode, as who wants to babysit them and constantly approve commands they want to run?&lt;/p&gt;
 &lt;p&gt;Although docker now has a dedicated &lt;a href="https://www.docker.com/products/docker-sandboxes/"&gt;sandbox tool&lt;/a&gt;, I personally find it a bit clunky to use compared to non-containerized tools. I also don’t like how each workspace gets its own image, because it means that the development set up needs to be done repetitively for each project (e.g. even if they&amp;rsquo;re all python-based). In general, I find docker to be great for deployments, but less so for active development where I prefer using more native workflows.&lt;/p&gt;
