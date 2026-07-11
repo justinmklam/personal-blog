@@ -8771,7 +8771,7 @@ The solution:&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;div class="img-content video-container"&gt;
- &lt;iframe src=https://www.youtube.com/embed/zULBxDJVaHs&gt;&lt;/iframe&gt;
+ &lt;iframe src=https://www.youtube.com/embed/zULBxDJVaHs title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;p class="caption"&gt;Demo video of the gantry in action.&lt;/p&gt;
 
@@ -8813,21 +8813,21 @@ The solution:&lt;/p&gt;
 &lt;p&gt;We wanted to make this as quickly as possible, so I designed the rig using off-the-shelf parts and laser cut acrylic parts.&lt;/p&gt;
 
 &lt;div class="img-content video-container"&gt;
- &lt;iframe src=https://sketchfab.com/models/3be6275ae3c048098c2c777d7817ff26/embed?autostart&amp;#61;0&amp;amp;amp;preload&amp;#61;1&gt;&lt;/iframe&gt;
+ &lt;iframe src=https://sketchfab.com/models/3be6275ae3c048098c2c777d7817ff26/embed?autostart&amp;#61;0&amp;amp;amp;preload&amp;#61;1 title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;p class="caption"&gt;The gantry frame designed in SolidWorks 2017.&lt;/p&gt;
 
 &lt;p&gt;Preliminary tests were less than stellar. I initially used relative position commands, but as the clip below shows, but it wasn&amp;rsquo;t responsive enough for practical use.&lt;/p&gt;
 
 &lt;div class="img-content video-container"&gt;
- &lt;iframe src=https://gfycat.com/ifr/AcademicDizzyJay&gt;&lt;/iframe&gt;
+ &lt;iframe src=https://gfycat.com/ifr/AcademicDizzyJay title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;p class="caption"&gt;Initial testing of the tracking using relative position commands, almost as if it has a mind of its own.&lt;/p&gt;
 
 &lt;p&gt;Changing the motor control to use absolute coordinates instead of relative showed promising results.&lt;/p&gt;
 
 &lt;div class="img-content video-container"&gt;
- &lt;iframe src=https://gfycat.com/ifr/SparsePassionateLaughingthrush&gt;&lt;/iframe&gt;
+ &lt;iframe src=https://gfycat.com/ifr/SparsePassionateLaughingthrush title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;p class="caption"&gt;Revised tracking using absolute position commands for significantly improved precision.&lt;/p&gt;
 
@@ -8863,14 +8863,14 @@ The solution:&lt;/p&gt;
 &lt;p&gt;The results were so promising, in fact, that we decided to strap it to the ceiling and do some user testing. The results were&amp;hellip; Loud due to the rattling and vibrations from the stepper motors. System responsiveness was slow, so more work needed to be done.&lt;/p&gt;
 
 &lt;div class="img-content video-container"&gt;
- &lt;iframe src=https://gfycat.com/ifr/FairPoisedArizonaalligatorlizard&gt;&lt;/iframe&gt;
+ &lt;iframe src=https://gfycat.com/ifr/FairPoisedArizonaalligatorlizard title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;p class="caption"&gt;First user test with the gantry attached to the lab ceiling (rotation tracking not yet implemented).&lt;/p&gt;
 
 &lt;p&gt;Many revisions later, and the rig was finally working as expected!&lt;/p&gt;
 
 &lt;div class="img-content video-container"&gt;
- &lt;iframe src=https://gfycat.com/ifr/DesertedHospitableEwe&gt;&lt;/iframe&gt;
+ &lt;iframe src=https://gfycat.com/ifr/DesertedHospitableEwe title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;p class="caption"&gt;After many hardware, software, and firmware tweaks, the gantry finally became usable.&lt;/p&gt;
 
@@ -10362,7 +10362,7 @@ The solution:&lt;/p&gt;
 &lt;p&gt;Over-engineered? Maybe. Overkill? We think not. This was an exercise not in cost-effectiveness for the average user, but to explore how we can integrate existing technology with bleeding edge products in order to improve its efficacy and functionality. As the world has become a community of hackers, we don’t have to rest on our laurels and wait for companies to come up with solutions to our problems. The resources are available to us to come up with these solutions ourselves.&lt;/p&gt;
 
 &lt;div class="img-content video-container"&gt;
- &lt;iframe src=https://www.youtube.com/embed/zULBxDJVaHs&gt;&lt;/iframe&gt;
+ &lt;iframe src=https://www.youtube.com/embed/zULBxDJVaHs title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;p class="caption"&gt;Full demo video of the robotic gantry.&lt;/p&gt;
 
@@ -11340,7 +11340,7 @@ The solution:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Partner:&lt;/strong&gt; &lt;a href="http://justin-liang.com"&gt;Justin Liang&lt;/a&gt;&lt;/p&gt;
 
 &lt;div class="img-content video-container"&gt;
- &lt;iframe src=https://www.youtube.com/embed/54d9iQcqX7Q&gt;&lt;/iframe&gt;
+ &lt;iframe src=https://www.youtube.com/embed/54d9iQcqX7Q title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 &lt;p class="caption"&gt;Sixty second demo video of the device in action.&lt;/p&gt;
 
