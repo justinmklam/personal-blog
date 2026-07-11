@@ -1,7 +1,7 @@
 ---
 title: Epomaker Keyboards Review
 date: 2026-07-01T09:48:16-07:00
-tagline: New keyboards, who dis?
+tagline: New keyboards galore, it's Christmas in July!
 image: DSCF3290.jpg
 image_source:
 image_source_text:
@@ -14,188 +14,263 @@ layout: single
 type: blog
 aliases:
 ---
-After spending quite a bit of time in the land of ergonomic keyboards, I kind of turned my back to regular mechanical keyboards. But the landscape of mechanical keyboards has changed quite a bit in the recent years, where they're becoming more of an affordable commodity rather than needing to spend hundreds of dollars and waiting months for group buys to ship.
+After spending a few years in the land of split ergonomic keyboards, I had mostly stopped paying attention to regular mechanical keyboards. Times sure have changed though; what used to require group buys, long waits, and a suspicious amount of disposable income is now showing up as off-the-shelf boards with gasket mounts, wireless modes, easy programmability, and stock switches that don't need to be meticulously disassembled and lubricated for a whole afternoon.
 
-Epomaker reached out to me and asked if I'd like to try a few of their boards, and as a sucker for testing out new keyboards, I gladly obliged. Out of their roster, the keyboards that caught my eye and which I ended up requesting were:
-- [Luma40](https://epomaker.com/products/epomaker-luma40) - a tiny ortholinear keyboard with an aluminum case
-- [Hack70](https://epomaker.com/products/epomaker-hack70) - a mostly-ortholinear keyboard with a split spacebar
-- [Split70](https://epomaker.com/products/epomaker-split70) - a traditional row-staggered split
+My attention for these "traditional" input devices was piqued again when Epomaker reached out and asked if I wanted to try a few of their boards. I picked three that were close enough to my keyboard interests to be useful, but different enough to keep things interesting:
 
-Read on to find out what I thought about them!
+- [Luma40](https://epomaker.com/products/epomaker-luma40): a small low-profile ortholinear board in an aluminum case
+- [Hack70](https://epomaker.com/products/epomaker-hack70): a larger mostly-ortholinear board with QMK/VIA support and split spacebars
+- [Split70](https://epomaker.com/products/epomaker-split70): a row-staggered split keyboard for people who want a split without relearning every key position
 
 <!--more-->
 
-> Disclaimer: Epomaker sent me these keyboards for review, though all opinions are my own.
+This post covers these three keyboards, where each keyboard section answers the following questions:
+- What kind of keyboard is it?
+- What's the build quality like?
+- How does it type?
+- What's unusual (or quirky, in a good way) about it?
+- Who's it for?
+
+Now, on to the keyboards!
+
+> Disclaimer: Epomaker sent me these keyboards for review. They did not tell me what to write, which is good, because it turns out I have some mildly strong opinions about space bars...
+
+# Similarities
+
+All three boards support wired USB-C, Bluetooth, and a 2.4GHz USB-A dongle. All three also have RGB. For wired, the box includes a braided USB-A to USB-C cable.
+
+They also all support custom keymaps using VIA. To use it, you first need to download the keyboard's json file from [their website](https://epomaker.com/blogs/via-json), then upload that to the VIA web app so it can recognize the keyboard. More detailed instructions can be found on Epomaker's [beginner's guide](https://epomaker.com/blogs/guides/how-to-use-via-for-beginners) or [advanced guide](https://epomaker.com/blogs/guides/via-usage-guide).
+
 # Luma40
 
-## Overview
+## What is it?
 
-The Luma40 is a 40% ortholinear board in a silver aluminum case. I've wanted to try a true ortholinear layout for years, and the Luma40 finally gave me an excuse. The aluminum case is enticing: hefty, solid, and feels more premium than the price suggests. It might not be the most ergonomic board, but it sure looks sleek.
+The Luma40 is a 40% low-profile ortholinear keyboard in a silver aluminum case. It's quite small and compact, having no number or function row, so using layers with a board of this size is a must.
 
-The translucent keycaps let RGB shine through nicely. While the switches feel premium, the keycaps make the whole thing feel slightly cheaper than the rest of the board deserves. 
+I’ve been wanting to try a true ortholinear board for years, something about the uniformity and compactness is quite alluring. It might not be the most ergonomic, but the clean lines and premium feel of the case sure gives it bonus points for aesthetics!
 
-The bottom has thin rubber pads that keep it surprisingly sturdy despite how small it is. One quirk: the spacebar has no stabilizers, so it can feel a bit "bindy" depending on where you hit it. If you tend to press spacebar off-center, you'll notice it catching slightly.
+All keys are 1U with the exception of the 2U space bar. There aren't any stabilizers on the space bar, which may bother some people if you tend to hit it near the edge vs the center. I fortunately didn't experience any binding while using it though, but this would be one thing that would've been nice to include.
 
 ![Luma40, lights off.](DSCF3255.jpg)
 
-![RGB lights on!](DSCF3266.jpg)
+![The translucent caps show the RGB clearly, especially in a dim room.](DSCF3266.jpg)
 
-As with all of Epomaker's boards, this one has three modes of connectivity: USB-C cable, USB-A dongle via 2.4GHz, or Bluetooth. VIA is used to remap the keyboard, which is a bit quirky because you need to manually upload the `.json` config to get the app to recognize the keyboard.
+## What's the build quality like?
 
-![View of the back showing the USB-C connector and wire/bluetooth toggle, as well as the mount point for the optional strap.](DSCF3258.jpg)
+For me, the aluminum case is the main selling point. It gives the Luma40 enough mass that it does not slide around despite the small footprint. The rubber pads on the bottom are thin, but they kept the board planted on my desk.
 
-![Underside of the keyboard.](DSCF3270.jpg)
+The translucent keycaps leave a bit to be desired, but I'll get into that more in the next section.
 
-## Switches
+![View of the back showing the USB-C connector, wireless toggle, and strap mount.](DSCF3258.jpg)
 
-These are low-profile linears — smooth travel, no tactile bump. Quiet and consistent, though if you're coming from a clicky or tactile switch the lack of feedback might feel weird. They're also not the thockiest, a shame with an aluminum case this nice. More of a muted clack than a deep thock. 
-
-## Keycaps
-
-The translucent material lets the underglow shine through nicely, but the profile itself is a mixed bag. The top surface of each keycap is a circular dish rather than the typical cylindrical or spherical scoop, which looks distinctive but isn't comfortable for extended typing. I kept slipping off the edges until I got used to it. If I were keeping this board, keycaps would be the first thing I'd swap.
-
-![Close up of the keycap.](DSCF3446.jpg)
-
-## Teardown
-
-With a 40% board, layers are everything. You don't have enough keys for every function, so modifiers give you secondary layers. Five small screws and the PCB lifts free, revealing foam at the bottom for sound dampening.
+![The underside is simple: rubber pads, screws, and no flip-out feet.](DSCF3270.jpg)
 
 ![Keycaps removed.](DSCF3416.jpg)
 
-![PCB removed, exposing a foam panel at the bottom of the case.](DSCF3424.jpg)
+The case comes apart with five small screws. Inside, there is a foam sheet at the bottom of the case, a 1450mAh battery glued to the shell, and a PCB connected with what looks like a standard JST connector. 
 
-The 1450mAh battery is thin and glued to the case, and connected to the PCB with what looks like a standard JST connector. Good for modularity, but replacement down the road might be troublesome. The microcontroller is some unknown MILLER chip that didn't yield any search results.
+![PCB removed, exposing the foam panel at the bottom of the case.](DSCF3424.jpg)
 
-![1450mAh battery is nice and thin, glued securely to the case.](DSCF3433.jpg)
+![The 1450mAh battery is thin and glued securely to the case.](DSCF3433.jpg)
 
-![Close up of the PCB.](DSCF3435.jpg)
+The board runs off a seemingly unknown microcontroller, where the marking on it just says `MILLER N25NOV17`. This is likely a custom, proprietary microcontroller that's cheaper to manufacture than using an off-the-shelf development chip like RP2040 or nRF52840 which is commonly used in custom keyboards.
 
-Even though the switches are supposed to be hot-swappable, the plate tolerances seemed way too tight and made it almost impossible to remove the switch. I was able to remove the one in the corner after wiggling it out (since I wanted to see what was underneath the plate, which turned out to be a nice little gasket for additional damping), but I didn't have any luck removing any others without risk of damaging the switch.
+![Close-up of the PCB.](DSCF3435.jpg)
 
-![Switch removed, exposing thin gasket between the plate and PCB.](DSCF3440.jpg)
+The switches are advertised as hot-swappable, but the plate tolerances on my unit were tight enough that I stopped after removing one corner switch. I had to wiggle it out carefully, and the others felt like they were closer to "technically removable" than "casually swappable." Under the switch there is a small gasket layer between the plate and PCB.
 
-## Using It
+![Switch removed, exposing a thin gasket between the plate and PCB.](DSCF3440.jpg)
 
-So who is this for? The Luma40 would make a nice TV or couch keyboard if you have a computer connected to your television — the compact size and optional carrying strap practically beg for it. The single spacebar sits between the B and N keys, the standard ortholinear position. Feels natural once you adjust. Honestly, this board grew on me the more I used it. First impressions weren't the best — the keycaps, mainly — but the solid aluminum case and the fun of typing on such a tiny, dense board won me over. It's not a daily driver for me, but it's charming in a way that bigger boards aren't.
+## How does it type?
+
+The keyboard comes with Kailh White Rain switches, which are low-profile linear switches with a POM stem and 50gf actuation force. This paired with the aluminum case and foam inserts makes for a pleasant typing experience, but it's definitely not as thocky as a high-profile keyboard.
+
+![Close up of the Kailh White Rain switch.](kailh-white-rain.png "RTings|https://www.rtings.com/keyboard-switch/reviews/kailh/white-rain")
+
+![Keystroke actuation, force vs displacement.](kailh-white-rain-actuation.png "RTINGS|https://www.rtings.com/keyboard-switch/reviews/kailh/white-rain")
+
+![In depth review of the Kailh White Rain switch](https://www.youtube.com/embed/jN3TJzTU7m4)
+
+The keycaps are the part I kept noticing, and unfortunately not for good reasons. They are translucent, which works well for RGB, but the top surface is a circular dish instead of the cylindrical or spherical scoop used on many common profiles. This means there's less surface area for each finger pad, and something about the radius of the circular pad makes it less comfortable than a traditional, flatter profile. 
+
+![Close-up of the circular dish on the keycap.](DSCF3446.jpg)
+
+## What's unusual?
+
+40% keyboards makes the user of layers unavoidable, which does have its own learning curve if you're not accustomed to it already. All the alpha keys are on the main layer, but numbers and symbols need to be accessed by holding down `MO(2)` (bottom left corner, by default).  
+
+![Base layer.](via-luma40-layer0.png)
+
+I'm not a huge fan of the default secondary layer, as I prefer to have my numbers arranged in a numpad, and symbols on the other side, as described in my blog post [here](/posts/2025/07/optimizing-symbols-layer/). Programming and gaming on a keyboard this small requires designing your own keymap to have it suit your own workflow, which is something not everyone is willing to take the time to do (and no shade either, some people just want to type!). But since I've been down this path already, using this keyboard as a daily driver was no issue for me :)
+
+One cool thing about this (and the other keyboards) is that pressing `QK_BAT` changes the RGB lighting to show the remaining battery level. Clever use of a status indicator without needing separate LEDs.
+
+![Secondary layer.](via-luma40-layer2.png)
+
+## Who is it for?
+
+The Luma40 makes the most sense as a compact secondary keyboard: couch computer, travel bag, small desk, or a low-commitment way to try ortholinear typing. It's a solid form factor for enthusiasts, but it does require some time commitment to get used to it. 
+
+After a week, I liked it more than I did on day one. The keycaps still would be the first thing I changed, but the size and case made it easy and fun to type on!
 
 # Hack70
 
-## Overview
+## What is it?
 
-The Hack70 is the most interesting of the three on paper. Ortholinear, but larger than the Luma40, fitting quite a few keys into a compact package. The layout is smart: less desk space than a standard 65% board, so less distance to reach for your mouse. It uses **QMK firmware**, which means it's fully programmable. You can remap any key, set up layers, customize to your heart's content. The catch is it's only programmable via **VIA**, a web-based tool. Fine for basic remapping, but no support for QMK's advanced features like combos or tap-dance.
+The Hack70 is the most interesting board of the three because it tries to solve a real problem: give you an ortholinear-ish layout without forcing you into a 40% board. You get more keys than the Luma40, less width than many 65% boards, and a split space bar.
 
-The keycap legends are crisp and modern. Print quality is good. The plate sits on soft gaskets rather than screwing directly into the case. Softer, cushioned feel. Better sound. I like the split spacebar — two separate space keys instead of one long one. You can use one as a dedicated layer key, so SpaceFN (holding space as a modifier) works without the input lag you'd get from a software solution. I use a layer for arrow keys on HJKL and hotkeys like browser forward/back, tab switching, and workspace changes.
+The split space bar design is intriguing because it brings the essence of having a thumb cluster to traditional keyboards, where a popular use of it would be turning it into an easy-access layer key. Space bars don't actually need to be as long as they are anymore, so it's nice to see a modern take on the design that's a bit more function over form.
 
-Connectivity: wired USB-C, Bluetooth, or a USB-A dongle. The backside has a toggle for switching between them, and the dongle lives in a small compartment on the underside. RGB is there if that's your thing. There's a separate LED indicator on the left side, handy for telling which layer or connection mode was active. Adjustable feet with two different height options.
+![Hack70 keyboard.](DSCF3224.jpg)
 
-![Hack70 Keyboard.](DSCF3224.jpg)
+## What's the build quality like?
 
-Interesting choice. Backspace and enter keys are 2U on a mostly-ortholinear board. Looks nice, but adds layout quirks I'll get to later.
+The Hack70 is gasket mounted, which results in it sounding the best of these keyboards. The plate sits on soft gasket pieces instead of being screwed directly into the case, and I could feel that comfiness in the bottom-out. Keypresses had a cushioned stop rather than a hard plate impact.
 
-![Close up of the backspace and enter keys.](DSCF3235.jpg)
+The underside has a storage slot for the 2.4GHz dongle, and the case includes two levels of flip-out feet. I usually avoid tall rear feet, but they are there if you prefer a steeper typing angle.
 
-Connectivity can be wired via USB-C, bluetooth, or USB-A receiver/dongle.
+![Back edge with the connection controls.](DSCF3229.jpg)
 
-![Backside showing three options of connectivity.](DSCF3229.jpg)
+![USB dongle removed from the storage slot.](DSCF3230.jpg)
 
-![USB dongle removed from the insert.](DSCF3230.jpg)
-
-RGB lights if that's your thing. Separate LED shine-through on the left is a nice touch.
-
-![](DSCF3236.jpg)
-
-![Keycaps removed showing the underglow of the RGB LEDs.](DSCF3242.jpg)
-
-Includes adjustable feet, two different height options.
+![RGB through the keycaps and side indicator.](DSCF3236.jpg)
 
 ![Underside of the keyboard.](DSCF3271.jpg)
 
-![With the low keyboard feet.](DSCF3274.jpg)
+![Lower feet extended.](DSCF3274.jpg)
 
-![With the higher keyboard feet.](DSCF3272.jpg)
+![Higher feet extended.](DSCF3272.jpg)
 
-## Switches
+The 45gf Creamy Jade linear switches are factory-lubed and consistent across the board. I did not notice scratchiness or spring noise while typing. The sound is lower and rounder than the Luma40, helped by the gasket mount and larger case volume. A very creamy sound, as the YouTubers would say!
 
-The Hack70 comes with Epomaker's Creamy Jade switches. Linear, factory-lubed, smooth and quiet. Typing is pleasant — soft, cushioned bottom-out that makes long sessions comfortable. The sound is a deep, rounded thock, not a sharp clack. Not the most exciting switches, but consistent and pleasant. Better than many stock switches at this price.
+![Keycaps removed, showing the RGB LEDs and plate.](DSCF3242.jpg)
 
-## Keycaps
+![Close-up of the stabilizers. The orange pieces appear to be part of the gasket mount.](DSCF3397.jpg)
 
-The keycaps are **XDA profile** PBT — durable plastic that doesn't shine over time, uniform height. For an ortholinear board, the uniform height matches the grid layout. The legends are crisp and the font is modern and clean. XDA's flat, wide surface can feel a bit alien if you're coming from a sculpted profile like Cherry or OEM, but you adapt quickly.
-
-## Build Quality
-
-Overall the build quality is excellent, but the left spacebar is slightly lower and warped compared to the right. Doesn't affect functionality — both keys register — but it's visually noticeable. Stabilizers are otherwise fine, and the orange gasket pieces give a nice bit of color when you peek under the keycaps.
-
-![Left spacebar is slightly deformed and lower than the right.](DSCF3250.jpg)
-
-## Layout
-
-Here's where the Hack70 falls apart. The backspace and enter keys are 2U wide — the space of two standard keys — on a board that's otherwise a strict grid. Looks nice, but adds layout quirks. The backtick key sits between the apostrophe and enter, so it's easy to accidentally hit tilde when you meant to press enter.
-
-Spacebar. The real problem. Instead of sitting directly below the N key (standard ortholinear), the dual spacebars are slightly offset. You have to tuck your thumb inward to hit them, which threw off my typing for days. I kept making mistakes and couldn't figure out why until I looked down and realized my thumbs were landing in the wrong spots. It's not a purist complaint — it's a practical issue because the spacebar isn't where your thumb expects. It uses what looks like a regular shift key (1.25U) and a split spacebar (1.75U). For comparison, the Luma40's single spacebar sits right between the B and N, which feels natural. I'd have preferred two 2U spacebars under the V/B and N/M columns, which would also free up an extra key below the comma. Or just make the backspace and enter standard 1U keys and shrink the board by one column.
-
-Everything else about the keyboard is great, but the layout is frustrating for anyone already used to ortholinear. You have to unlearn muscle memory, not just adjust. If you've never used ortholinear before, you might not notice, but if you're coming from another ortho board, prepare for an adjustment period.
-
-![Sadly the spacebars are not aligned to the columns...](DSCF3390.jpg)
-
-![](DSCF3580.jpg)
-
-![](DSCF3576.jpg)
-
-## Teardown (Attempt)
-
-I wanted to take the Hack70 apart to see the gasket mount, but ran into a wall — literally. No visible screws on the exterior, and the enclosure is held together with plastic clips that are incredibly tight. I didn't have a prying tool thin enough to get in the seam without risking damage, so I had to stop at removing the keycaps and switches. Stabilizers are visible with the keycaps off, and the orange pieces appear to be part of the gasket mount. Switches come out easily, which is good if you want to try different ones. But getting in without specialized tools is going to be tough if something breaks.
+The XDA PBT keycaps fit the grid layout because every row uses the same height. The legends on my unit were sharper than the Split70's legends, and the texture stayed matte during the time I used it. The font of the legends gives off Google/Android vibes, but it's clean and modern against the off-white colour palette so I think it goes quite well together.
+I tried to take the Hack70 apart, but the case has no visible exterior screws and the clips were tighter than I was willing to fight without a thinner pry tool. Switches came out easily. The enclosure did not.
 
 ![Keycaps removed.](DSCF3395.jpg)
 
-![Close up of the stabilizers. Orange piece appears to be part of the gasket mount.](DSCF3397.jpg)
-
 ![Switches removed.](DSCF3457.jpg)
 
-No screws, didn't have a tool thin enough to pry apart the enclosure, so unfortunately couldn't tear it down further.
+![The case seam was too tight for the tools I had on hand.](DSCF3472.jpg)
 
-![Close up of the keyboard enclosure.](DSCF3472.jpg)
+## Keycap inconsistency...
+
+Sadly, my unit had one visible issue: the left spacebar sat lower than the right and looked slightly warped. It still registered normally and didn't affect typing performance, but it was unfortunate to see this manufacturing defect on this otherwise well-built keyboard.
+
+![The left spacebar on my unit sits slightly lower than the right.](DSCF3250.jpg)
+
+## How does it type?
+
+For normal letter keys, the Hack70 was the easiest board here to type on for long sessions. The switches are quiet, the bottom-out is cushioned, and the layout gives you enough keys that you are not constantly reaching through layers.
+
+The default keymap was pretty standard, the second layer isn't necessarily required for everyday typing since most keys are available on the main layer. But having the option to have easy access to macros or other shortcuts is a welcome feature.
+
+![Main layer.](via-hack70-layer0.png)
+
+![Secondary layer.](via-hack70-layer2.png)
+## What's unusual?
+
+The split spacebar should have been the feature I liked most, since using thumb clusters is one of the main advantages of modern ergonomic keyboards. One thumb key for space and another for a navigation layer is exactly the kind of thing I want.
+
+The problem? The two spacebars don't line up with the rest of the keys!
+
+I was using this keyboard, I kept missing space for the first few days and assumed I was just adjusting to a new board. Then I looked down and realized my thumbs were landing on the column gaps instead of the keys.
+
+Instead of having two spacebars that equally span the 5U width like 2U + 3U or even 2U + 2U, they opted to use 2.25U + 2.75U. They likely did this to allow reusing keycaps from other boards, since 3U keycaps aren't that common (if at all).
+
+![The spacebars are offset inward from the main columns.](DSCF3390.jpg)
+
+![Diagram showing keycap sizes on a standard keyboard.](keycap-sizes.png "Keychron|https://www.keychron.com/pages/keychron-k8-keyboard-keycaps-layout-and-keycap-size-hd-picture")
+
+![The space bar placement requires my thumb to be tucked in more, and it also rests uncomfortably close to the edge.](DSCF3580.jpg)
+
+![In comparison with using space on the Luma40, where my thumb can rest directly (and comfortably) centered underneath the N.](DSCF3576.jpg)
+
+This made using the Hack70 mildly frustrating... Typing felt great, sounded great, but the most commonly used key was a real thorny experience.
+
+The Hack70 also keeps 2U Backspace and Enter keys on an otherwise grid-like layout. Visually, I understand the choice, but functionally, it introduces a few awkward positions.
+
+![The 2U Backspace and Enter keys break the otherwise regular grid.](DSCF3235.jpg)
+
+The backtick/tilde key sits between apostrophe and Enter, so I kept hitting it instead of Enter with my pinky. That may fade with time, but it is a layout tax, and one that is a bit strange for an otherwise "normal" keyboard layout.
+
+Given all this, if I were to redesign this keyboard, I'd:
+- Use 2U + 2U keys for the space bar, which would drop the overall space bar width from 5U to 4U
+- Use 1U for backspace and enter
+- Drop the backtick/tilde key from its current place, and drop the outer column of the keyboard
+This would make it a more standard ortholinear keyboard, which would make it easier to use and adapt since it's 95% of the way there anyway! 
+
+## Who is it for?
+
+The Hack70 is the board I wanted to like most. If you're coming from a regular keyboard and want something smaller, programmable, and better-sounding than a typical budget board, it makes a strong case for itself.
+
+If you already use ortholinear keyboards, the spacebar placement is the thing to check before buying. It may fit your hands. It did not fit mine. I would have preferred two 2U spacebars under the V/B and N/M columns, or a stricter grid with 1U Backspace and Enter.
+
+For me, the Hack70 has excellent keyboard components, but sadly is attached to a layout that will take a while for me to get used to.
 
 # Split70
 
-## Overview
+## What is it?
 
-The Split70 is a split row-staggered keyboard — two halves that separate, with keys in traditional staggered rows. My unit is white with blue accents, Wisteria Linear V2 switches. The left half has a volume knob and dedicated macro keys, both feel premium and are actually useful. The interface between halves is magnetic, which keeps them aligned when together but lets you separate them easily for ergonomic positioning. Row-staggered splits take up more desk space than you'd think though, especially with the inner gap between halves.
+The Split70 is a row-staggered split keyboard. Unlike many ergonomic boards, it does not ask you to relearn column stagger, thumb clusters, or a [36-key layout](/posts/2025/07/36-key-layout/). It keeps the familiar row-staggered key positions and lets you separate the halves.
 
-![](DSCF3294.jpg)
+My unit is white with blue accents, Wisteria Linear V2 switches, a knob on the left half, and a column of dedicated macro keys.
 
-![](DSCF3301.jpg)
+![Split70 with the two halves connected.](DSCF3294.jpg)
 
-Again, backside shows all the connections (wired, Bluetooth, or dongle). The far left usb port is to connect the two halves.
 
-![](DSCF3303.jpg)
+## What's the build quality like?
 
-Backside. No adjustable feet if that's your thing, but nice sturdy rubber pads to keep it still.
+The two halves connect magnetically. The magnets are strong enough to keep the halves aligned when the board is used as one piece, but weak enough that separating them doesn't feel like a wrestling match.
 
-![Backside. No adjustable feet if that's your thing, but nice sturdy rubber pads to keep it still.](DSCF3309.jpg)
+The bottom uses rubber pads instead of adjustable feet, which I don't mind since I typically don't tent my splits anyway.
 
-## Switches
+![Back edge with the ports and wireless controls. The far-left USB-C port connects the two halves.](DSCF3303.jpg)
 
-The Wisteria Linear V2 switches are smooth and quiet — a bit lighter than the Creamy Jades, more neutral in sound. No noticeable scratchiness or inconsistency. If you're coming from a membrane or cheap mech board, these will feel like a big upgrade. Enthusiasts can happily use them without swapping.
+![Underside of the Split70. Rubber pads, no adjustable feet.](DSCF3309.jpg)
 
-## Keycaps
+The keycaps are the weakest visible part. The legends are softer than the Hack70's legends, especially on close inspection. They work fine, but this is where the board looks more budget-conscious.
 
-The keycaps are functional but not remarkable. The legends aren't crisp — there's a slight softness to the printing that makes them look less premium than the Hack70's. They get the job done. At this price point, it's not a dealbreaker, but it's where the cost cutting shows.
+![Close up of the keycaps.](DSCF3301.jpg)
+## How does it type?
 
-## Layout
+The Wisteria Linear V2 switches are quiet and lighter than the Hack70's Creamy Jades. I did not notice scratchiness or inconsistent weighting. Definitely not as nice feeling as sounding as the Hack70 though, but it's not bad.
 
-The B key problem on row-staggered splits: many people hit B with their right index finger on a standard keyboard, but on most splits it ends up on the left half. The Split70 solves this by putting B on both sides. Saves a lot of frustration.
+The row-staggered split layout made the transition easy. I could separate the halves, keep my wrists straighter, and still type without thinking about where every letter moved.
 
-The right shift is a single 1U key instead of the more common 2.75U, annoying if you use right shift often. Otherwise the layout is fairly standard for a split 65%. The inner gap between halves is larger than I'd like, but that's row-staggered splits for you.
+The tradeoff is desk space. A row-staggered split takes more room than the product photos suggest because you need space between the halves for the ergonomic benefit. Once separated, the Split70 occupies more horizontal space than a compact one-piece board.
 
-# Final Thoughts
+## What's unusual?
 
-I'm impressed with what Epomaker is delivering at these prices. The Hack70 at $89.99 USD is the best value — sounds great, feels great, fully programmable. The Luma40 and Split70 at $115.99 USD are solid too, but each has its quirks. The Luma40's keycaps are its biggest weakness, and the Split70's legends and lack of adjustable feet are minor disappointments.
+The duplicated B key is the small detail I appreciated most. On a normal keyboard, many people hit B with their right index finger even though it technically lives on the left side. On many split keyboards, that habit breaks immediately. The Split70 puts B on both halves, which saves a surprising amount of annoyance.
 
-Having been in the ergo mech scene for so long, I'd forgotten how nice regular mechanical keyboards can sound. The Hack70's gasket mount and sound quality would have cost you twice as much not long ago.
+The right Shift is 1U instead of the usual long key. I use left shift most of the time, so it didn't bother me much.
 
-The spacebar design on the Hack70 leaves a stain on what would otherwise be a near-perfect board, and the enter and backspace keys on an otherwise clean ortholinear layout feel like missed opportunities. The Hack70 and Split70 have no exposed screws, which makes them much harder to repair or mod. Manufacturers do this because it looks cleaner. I like to tinker, so it's frustrating. The Luma40, at least, is straightforward to open.
+The knob and macro keys are practical if you have specific uses for them. I used the knob for volume. I would probably map the macro column to workspace switching, media controls, or window management.
 
-New to mechanical keyboards? The Hack70 is the easy recommendation. The Luma40 is a fun niche board for the ortholinear-curious, and the Split70 is a decent entry point into split keyboards if you're not ready to commit to the deep end of custom ergo boards. None of them are perfect, but at these prices, they don't need to be.
+## Who is it for?
+
+The Split70 is for someone who wants the main ergonomic benefit of a split keyboard without going deep into custom ergo layouts. It is the least disruptive board here if you are coming from a normal keyboard.
+
+It is also the least interesting if you already use column-staggered splits with thumb clusters. The Split70 gives you separation, not a full ergonomic redesign. That may be exactly the right amount of change.
+
+# So, which one would I keep using?
+
+The Hack70 has the most cushioned switch and case feel of the three. It also has the layout decision that bothered me most. If only the space bars lined up with the rest of the grid...
+
+The Luma40 is the most limited, but not the least fun to use. It is a tiny ortholinear board with a rigid case, odd keycaps, and enough charm that I kept reaching for it even when it made me work harder.
+
+The Split70 is the practical one. It gives you a split layout while preserving most normal keyboard habits. The keycaps look less refined than the Hack70's (but they do have a dark colourway available), and it takes up more desk space once separated, but this is an easy keyboard to transition to for most people.
+
+My rough decision tree:
+
+- Pick the **Hack70** if you want the most cushioned typing feel of the three, and the split spacebar placement doesn't bother you.
+- Pick the **Luma40** if you want a compact ortholinear board for travel, couch use, or experimentation.
+- Pick the **Split70** if you want a split keyboard without relearning the entire layout.
+
+I came into this expecting the Hack70 to be the easy favourite. After using all three, I still think it is the most technically interesting board, but the Luma40 is the one I kept leaving within arm's reach. Apparently tiny keyboards remain a problem for me.
 
 Happy typing!
