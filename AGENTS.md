@@ -4,7 +4,7 @@
 
 - **Static site generator**: [Hugo](https://gohugo.io/) (extended, v0.161.1 via CI)
 - **Theme**: Custom-built with [Neat CSS](https://github.com/codazoda/neatcss)
-- **Output to `docs/`** (not `public/` — this is configured for GitHub Pages)
+- **Output to `_docs/`** (not `public/` — this is configured for GitHub Pages)
 - **Hosting**: GitHub Pages, deployed via GitHub Actions from the `gh-pages` branch
 - **Domain**: justinmklam.com (managed at Namecheap)
 - **Analytics**: Umami (production only)
@@ -15,10 +15,10 @@
 
 | Command | Action |
 |---|---|
-| `make build` | `hugo` — build site to `docs/` |
+| `make build` | `hugo` — build site to `_docs/` |
 | `make serve` | `hugo -D serve` — dev server (includes drafts) at localhost:1313 |
 | `make serve-local` | Binds to all interfaces using host IP — for testing on other devices |
-| `make clean` | Removes `docs/` and `resources/_gen/` |
+| `make clean` | Removes `_docs/` and `resources/_gen/` |
 | `make new title="post-name"` | Creates `content/posts/YYYY/MM/post-name/index.md` (page bundle) |
 | `make new-single title="post-name"` | Creates `content/posts/YYYY/MM/post-name.md` (flat file) |
 | `hugo --minify` | Production build used in CI |
@@ -183,11 +183,11 @@ GitHub Actions workflow (`.github/workflows/main.yml`):
 - Checks out with submodules and full history
 - Uses `peaceiris/actions-hugo@v3` with Hugo v0.161.1 (extended)
 - Runs `hugo --minify`
-- Deploys `docs/` to `gh-pages` branch via `peaceiris/actions-gh-pages@v3`
+- Deploys `_docs/` to `gh-pages` branch via `peaceiris/actions-gh-pages@v3`
 
 ## Notable Gotchas
 
-1. **`publishdir: docs`** in `config.yaml` — NOT `public/`. The `docs/` folder is the publish output and is git-ignored but used by GitHub Actions deployment.
+1. **`publishdir: _docs`** in `config.yaml` — NOT `public/`. The `_docs/` folder is the publish output and is git-ignored but used by GitHub Actions deployment.
 2. **`disableKinds: [section, taxonomy]`** — Section and taxonomy list pages are disabled. Only the custom `tag.html` layout renders tag pages. Individual taxonomy pages still work (e.g., `/tags/keyboards/`).
 3. **Front matter uses `type: blog` / `type: project`** and `layout: single` — these are separate concepts. `type` controls content classification; `layout` selects the template.
 4. **`canonifyurls: false`** — URLs are NOT canonicalized. Be careful when constructing absolute URLs (the RSS feed and OG tags use `.Site.BaseURL` explicitly).

@@ -3,7 +3,7 @@
 server/
 .vscode/
 .DS_Store
-docs/
+_docs/
 *.lock
 .obsidian
 

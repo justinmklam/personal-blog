@@ -8,7 +8,7 @@ serve-local:
 	hugo -D serve --bind 0.0.0.0 --baseURL http://$$(ip -o route get to 8.8.8.8 | sed -n 's/.*src \([0-9.]\+\).*/\1/p'):1313
 
 clean:
-	rm -rf docs resources/_gen
+	rm -rf _docs resources/_gen
 
 # Page bundle format, allows images in the same directory
 new:

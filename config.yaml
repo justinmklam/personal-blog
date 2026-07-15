@@ -4,7 +4,7 @@ title: justinmklam | blog
 
 contentdir: content
 layoutdir: layouts
-publishdir: docs
+publishdir: _docs
 canonifyurls: false
 disableKinds:
   - section

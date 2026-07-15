@@ -9,7 +9,7 @@ Increasing my online presence by showcasing projects and posts that I've worked 
 
 # How To Use
 ## Basic Hugo commands
-To compile the website (where output is in `docs/` folder):
+To compile the website (where output is in `_docs/` folder):
 
 ```
 make build
