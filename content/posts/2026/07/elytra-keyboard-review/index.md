@@ -19,15 +19,14 @@ aliases:
 > 
 > If you decide to purchase one, you can use my [referral link](https://elimkeys.com/?ref=ngemobbm) and coupon code `GLEEFULMOLE` for 3% off.
 
-I've spent the while gradually falling down the ergonomic keyboard rabbit hole. It started with a [Corne](/posts/2025/05/corne-keyboard/), then a [Skeletyl](/posts/2025/08/handwired-skeletyl/), then a Keyball, and somewhere along the way I convinced myself that [36 keys was a perfectly reasonable](/posts/2025/07/36-key-layout/) number of keys for a keyboard.
 
-The funny thing is that none of those keyboards are particularly easy to recommend to someone who's never used an ergonomic keyboard before.
+Being in the ergonomic keyboard rabbit hole means that I spend a lot of time thinking about and trying different keyboards. Sadly, I realized that none of them are particularly easy to recommend to someone who's never used an ergonomic keyboard before, or to someone who doesn’t want it to become a hobby.
 
-The [Elytra](https://elimkeys.com/products/elytra) is a keyboard for people who want the main ergonomic benefit of a split keyboard without diving into the mental gymnastics of column stagger, layers, and getting strange looks by every person who walks by your desk.
+A new keyboard company called ElimKeys recently reached out and asked if I wanted to try their newly released keyboard, the [Elytra](https://elimkeys.com/products/elytra). It appears to be a keyboard catered for people who want the main ergonomic benefit of a split keyboard without diving into the mental gymnastics of column stagger, layers, and getting strange looks by every person who walks by your desk.
 
 Turns out the majority of people fall into this category!
 
-After using split ergonomic keyboards for a while, it's easy to forget how much weirdness one quietly accepts. The [first time I used a Corne](/posts/2025/05/corne-keyboard/), I faced a steep learning curve: I had to relearn where letters lived, then I had to learn layers, then combos, then I started thinking about whether I really needed a quotation mark on the main layer... which was probably a reasonable moment for self-reflection of how I was spending my limited brainpower.
+After using split ergonomic keyboards for a while, it's easy to forget how much weirdness one quietly accepts. The [first time I used a Corne](/posts/2025/05/corne-keyboard/), I faced a steep learning curve: I had to relearn where letters lived, then I had to learn layers, then combos, then somewhere along the way I convinced myself that [36 keys was a perfectly reasonable](/posts/2025/07/36-key-layout/) number of keys for a keyboard... which was probably a reasonable moment for self-reflection of how I was spending my limited brainpower.
 
 The Elytra goes in the opposite direction. It keeps the familiar row-staggered layout, splits the keyboard into two halves, adds wireless, uses low-profile switches, and wraps the whole thing in a very nicely machined aluminum case.
 
@@ -36,31 +35,31 @@ Is it the most ergonomic keyboard? No, but it is pretty good at trying to remove
 <!--more-->
 # What Is It?
 
-The Elytra is a low-profile, row-staggered split keyboard with two independent halves that can either sit apart on your desk or snap together from the internal magnets.
+The Elytra is a 60% low-profile, row-staggered split keyboard with two independent halves that can either sit apart on your desk or snap together from the internal magnets.
 
 ![The Elytra with both halves connected.](DSCF3310.jpg)
 
-One thing about having a split keyboard is that each half can shift around on your desk over time, which means that each hand needs to reorient itself relative to each other whenever the halves move. Having the option to mate them together is a welcome feature.
+One subtle annoyance with split keyboards is that the two halves rarely stay where you left them. A slight bump while moving your mouse or cleaning your desk is enough to change the spacing between them.
 
-The Elytra's magnetic bridge gives the keyboard a default home position. Three hidden magnets pull the halves together with enough force that the whole board feels like one piece when you move it around, while still letting you separate the halves when you want a wider shoulder position.
+The Elytra's magnetic bridge gives the keyboard a repeatable home position. Three hidden magnets snap the halves together with surprising force, making it easy to return to a known position while still allowing them to separate for a wider typing stance.
 
 ![Two halves held together by the hidden magnets. ](DSCF3343.jpg)
 
-I initially thought the bridge looked larger than it needed to be, and wondered why the spacing was relatively large when everything else was very minimal. Tearing it down revealed this reason, which I'll get into later. 
+I initially thought the bridge looked larger than it needed to be, and wondered why the spacing was relatively large when everything else was very minimal. Tearing it down revealed this reason, which I'll get into later (spoiler: it's to make space for the status LEDs). 
 
 The spacing is ergonomically useful though. A keyboard that's technically split but keeps your wrists squeezed together is somewhat missing the point, so the design decision/feature works out here.
-
-![Top side of the keyboard.](DSCF3339.jpg)
 
 The status LEDs are also tucked into the bridge area, and I appreciate how restrained they are. Many keyboards have blindingly bright RGB lights that can illuminate an entire room, but these are nice and minimal to tell you what you need to know and otherwise stay out of the way.
 
 ![Discrete status LEDs at the bottom.](DSCF3334.jpg)
 
+![Top side of the keyboard.](DSCF3339.jpg)
+
 ![Included accessories.](DSCF3375.jpg)
 
 # Build Quality
 
-The biggest surprise was how refined the keyboard felt. Maybe it's because most of the ergonomic keyboards I've used recently have been 3D printed or bare/barely protected PCBs, but regardless it's a nice change to experience what a finished keyboard product feels like!
+The biggest surprise was how refined the keyboard felt. Maybe it's because most of the ergonomic keyboards I've used recently have been 3D printed or bare/barely protected PCBs, but regardless it's a nice reminder to experience what a finished keyboard product feels like!
 
 I expected it to be nice from the product pictures online, but seeing and feeling it in real life was even better. The aluminum case has no meaningful flex, the edges are clean, and even the underside looks like someone cared about the part of the product most people will only see when looking for a reset button.
 
@@ -76,43 +75,47 @@ There's also an optional tenting kit. I generally prefer my keyboards flat, so I
 
 # Typing Feel
 
-My review unit came with 40 gf CloudShell White linear switches, and these changed my opinion of silent low-profile switches.
+My review unit came with 37 gf JZF Mist silent linear switches, and these changed my opinion of silent low-profile switches. 
 
-Most silent low-profile switches I've tried make some kind of tradeoff that I notice immediately, where usually they feel mushy and uninspiring. Or they feel crisp, but the sound reduction isn't actually that good. The CloudShell Whites are almost silent while still feeling clean and crisp, so much so that I don't feel the need to hold out for the long-awaited [Ambients Silent Tactile Sunrise switches](https://lowprokb.ca/products/ambients-silent-choc-switches) anymore...
+Most silent low-profile switches I've tried make some kind of tradeoff that I notice immediately, where usually they feel mushy and uninspiring. Or they feel crisp, but the sound reduction isn't actually that good. In comparison with the [35gf Ambients Silent Twilight switches](https://lowprokb.ca/products/ambients-silent-choc-switches?variant=44873426436260), the JZF Mist are virtually silent while still feeling clean and crisp. Unfortunately it doesn't seem like these switches are widely available to purchase separately though...
 
-The keycaps have a very pleasing profile to them, no sharp edges that result in discomfort. Legends are crisp, and the font + colour palette are a nice combo for a retro-but-modern look. If these keycaps were available separately, I'd want to buy another set for my custom keyboards!
+The keycaps have a very pleasing profile to them, no sharp edges that result in discomfort. Legends are crisp, and the font + colour palette are a nice combo for a retro-but-modern look. 
+
+After a bit of digging, I managed to find more about these keycaps, as they appear to be  [LAK keycaps](https://jezailfunder.com/collections/collections-low-profile-keycaps) by Jezail Funder (JZF). For those with 3D printers, you can try the profile out yourself with [this LAK-inspired model from MakerWorld](https://makerworld.com/en/models/2022457-choc-v2-1u-blank-keycap-for17mm-pitch-lak-inspired).
 
 ![Close up of the keycap profiles.](DSCF3550.jpg)
 
-The Elytra will be more than quiet enough for an office, at least with these switches. Rather than being a keyboard designed for the best sound, this feels like it was designed for a solid typing experience.
+The Elytra will be more than quiet enough for an office, at least with these switches. Rather than being a keyboard designed for the best sound, this feels like it was designed for the optimal typing experience.
 
 # Living With The Layout
 
 Most ergonomic split keyboards ask for a lot from the user. A column-staggered board moves the keys into positions that better match finger anatomy, which is great, but it also means years of row-staggered muscle memory become temporarily useless. Then many of those keyboards remove the number row, move common punctuation, and expect you to become comfortable with layers.
 
-I enjoy that stuff, because apparently that's who I am now, but it's not for the faint of heart.
+I enjoy that stuff, because apparently that's who I am now, but definitely wouldn’t recommend everyone to go down this same path!
 
 The Elytra keeps the row-staggered layout, so the transition is much gentler. I could separate my hands, keep my wrists straighter, and still type normally within minutes, which is an experience that many people are probably seeking.
 
+One nice addition is the fact that there's  `B` key on each side. This is a common key that trips people up when switching to a split keyboard, as the B is actually closer to the right hand, but is often delegated to the left side on a split due to physical symmetry. This results in many initial missed keystrokes (since the key isn't where it's expected), so having a B on both sides alleviates that.
+
 ![Main layer.](vial0.png)
 
-There are still some compromises. The right side is condensed, with no dedicated right shift, control, meta, or alt keys. I think most people will be fine with this, but if you use those keys heavily, you'll need to adapt to it.
+There are still some minor compromises though. The right side is condensed, with no dedicated right shift, control, meta, or alt keys. I think most people will be fine with this, unless you use those keys heavily.
 
-There's also no dedicated Page Up or Page Down. I rarely use those directly, but some people do, and this is the kind of omission that can be either irrelevant or constantly annoying depending on your workflow.
+There's also no dedicated Page Up or Page Down. I rarely use those directly, but for those that do, it could take some time to adjust to not having them anymore.
 
-The default Fn key sits on the far right above the right arrow. On a regular keyboard, I usually remap Caps Lock as my layer key, but on the Elytra I would use the left spacebar instead (since I use my right thumb for spacing). That's one of the nicest parts of having dual spacebars: one can remain space, and the other can become a layer key without making your pinky do more work.
+The default Fn key sits on the far right above the right arrow. On a regular keyboard, I usually [remap Caps Lock as my layer key](/posts/2025/11/remapping-standard-keyboard/), but on the Elytra I would use the left spacebar instead (since I use my right thumb for spacing). That's one of the nicest parts of having dual spacebars: one can remain space, and the other can become a layer key without making your pinky do more work.
 
 ![Secondary layer.](vial1.png)
 
-Wireless latency was a complete non-issue in normal use. I even played a few rounds of Clone Hero on it without noticing problems, which is not exactly a scientific benchmark, but is a decent way to find out whether a keyboard's latency makes you angry!
+Wireless latency was a complete non-issue in normal use, with the docs stating 10ms wireless latency (and 2ms for wired). I even played a few rounds of Clone Hero on it without noticing problems, which is not exactly a scientific benchmark, but is a decent way to find out whether a keyboard's latency makes you angry!
 
 # The Wireless Tradeoff
 
-The right half is always wireless, which for many people, this is probably fine. ElimKeys says battery life is measured in weeks, and since the right half is only the peripheral side, it should use less power than the main half that also communicates with the host computer.
+The right half is always wireless, which for many people, this is probably fine. ElimKeys says battery life is measured in weeks (or at least a month), and since the right half is only the peripheral side, it should use less power than the main half that also communicates with the host computer.
 
-For me, I'd still prefer a fully wired option.
+For me personally, I'd still prefer a fully wired option.
 
-This is partly because my keyboards usually live on a desk. If a keyboard isn't moving around, wireless freedom matters less than never needing to think about battery state. This is also why my daily keyboard is currently a Keyball: I rely heavily on the integrated thumb trackball, and I want that whole setup to behave like a boring wired appliance.
+This is partly because my keyboards usually live on a desk. If a keyboard isn't moving around, wireless freedom matters less than never needing to think about battery state, especially since each half discharges at a different rate. This is also why my daily keyboard is currently a Keyball: I rely heavily on the integrated thumb trackball, and I want that whole setup to behave like a boring wired appliance.
 
 That isn't a criticism of the Elytra as much as it's a mismatch with my personal setup. The Elytra is solving a different problem, and some people prioritize portability and/or a clean desk with no cables over charging logistics, which is totally fine! Different strokes for different folks.
 
@@ -142,7 +145,7 @@ That's my most concrete assembly criticism. A slightly longer cable would make s
 
 ![Left half fully disassembled.](DSCF3509.jpg)
 
-The magnets for the bridge sit inside the case and are neatly integrated into the case
+The magnets for the bridge sit inside the case and are neatly integrated into the case. The status LEDs are also shown along the bottom edge, which explains where the “wide” bridge is coming from. There aren’t many other easy places to put the LEDs on this tight of a layout, so I think it was a good design decision to place them where they currently are, even if it means the middle bridge is a bit wider than the rest of the edges.
 
 ![Close up of the magnets.](DSCF3491.jpg)
 
