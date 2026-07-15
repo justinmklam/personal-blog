@@ -15,6 +15,9 @@ new:
 	@if [ -z "$(title)" ]; then echo "Please provide 'title'"; exit 1; fi
 	hugo new posts/$$(date +%Y/%m)/$(title)/index.md
 
+show-drafts:
+	@scripts/show-drafts.sh
+
 new-single:
 	@if [ -z "$(title)" ]; then echo "Please provide 'title'"; exit 1; fi
 	hugo new posts/$$(date +%Y/%m)/$(title).md

@@ -25,7 +25,17 @@ To enable Giscus comments during local development:
 HUGO_GISCUS=1 make serve
 ```
 
+To list all posts still marked as draft (with path and title):
+```
+make show-drafts
+```
+
 ## Adding Content
+
+To see which posts are still in draft (not yet published):
+```
+make show-drafts
+```
 
 To create a new blog post:
 ```
