@@ -15,11 +15,6 @@ type: blog
 aliases:
 ---
 
-> Disclaimer: ElimKeys sent this keyboard to me for review. As always, all opinions are my own.
-> 
-> If you decide to purchase one, you can use my [referral link](https://elimkeys.com/?ref=ngemobbm) and coupon code `GLEEFULMOLE` for 3% off.
-
-
 Being in the ergonomic keyboard rabbit hole means that I spend a lot of time thinking about and trying different keyboards. Sadly, I realized that none of them are particularly easy to recommend to someone who's never used an ergonomic keyboard before, or to someone who doesn’t want it to become a hobby.
 
 A new keyboard company called ElimKeys recently reached out and asked if I wanted to try their newly released keyboard, the [Elytra](https://elimkeys.com/products/elytra). It appears to be a keyboard catered for people who want the main ergonomic benefit of a split keyboard without diving into the mental gymnastics of column stagger, layers, and getting strange looks by every person who walks by your desk.
@@ -31,6 +26,10 @@ After using split ergonomic keyboards for a while, it's easy to forget how much 
 The Elytra goes in the opposite direction. It keeps the familiar row-staggered layout, splits the keyboard into two halves, adds wireless, uses low-profile switches, and wraps the whole thing in a very nicely machined aluminum case.
 
 Is it the most ergonomic keyboard? No, but it is pretty good at trying to remove as many reasons as possible for not switching to a split keyboard. 
+
+> Disclaimer: ElimKeys sent this keyboard to me for review. As always, all opinions are my own.
+> 
+> If you decide to purchase one, you can use my [referral link](https://elimkeys.com/?ref=ngemobbm) and coupon code `GLEEFULMOLE` for 3% off.
 
 <!--more-->
 # What Is It?
