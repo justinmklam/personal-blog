@@ -12,7 +12,7 @@ layout: single
 type: blog
 aliases:
 ---
-AI is taking over world of software development, but it sure ain't going to take over my computer! 
+AI is taking over the world of software development, but it sure ain't going to take over my computer!
 
 I've been waist deep in coding with AI, testing out different models, agents, and workflows, but the one constant has been the ability to safely isolate these AI agents in a sandbox to prevent them from going rogue and doing things it shouldn't (like leaking my api keys or taking down a [production database](https://www.techradar.com/pro/it-took-9-seconds-tech-founder-outlines-how-rogue-claude-powered-ai-tool-wiped-entire-company-database-and-backups-but-says-theres-no-such-thing-as-bad-publicity)). This is especially important for me since I typically run agents in `--dangerously-skip-permissions` (aka `--yolo`) mode, as who wants to babysit them and constantly approve commands they want to run?
 
@@ -24,7 +24,7 @@ Usage is very simple, where any normal command can be sandboxed via nono with `n
 
 ![Example of how nono prevents access outside of the current directory.](nono-ls-example.png)
 
-My toolkit involves using and trying out many different agents. At work, I use GitHub Copilot, but for my personal projects, I rotate between whatever gives me the most value for my dollar, especially now that the open weight models have gotten significantly better in recent months. This is especially true since many of these frontier models are operating with significant subsidies, so might as well get better at using the more sustainably-priced models. 
+My toolkit involves using and trying out many different agents. At work, I use GitHub Copilot, but for my personal projects, I rotate between whatever gives me the most value for my dollar, especially now that the open weight models have gotten significantly better in recent months. This is especially true since many of these frontier models are operating with significant subsidies, so might as well get better at using the more sustainably-priced models.
 
 The agents that I've rotated through this year:
 
@@ -115,12 +115,12 @@ Then each agent has its own profile, e.g. for Claude in `~/.config/nono/profiles
 
 ```
 
-
 Running it is as easy as:
 
 ```sh
 nono run --profile claude --allow-cwd -- claude --dangerously-skip-permissions
 ```
+
 ![Running nono with a custom Claude profile.](nono-claude.png)
 
 I've been using [Crush](https://github.com/charmbracelet/crush) with [OpenCode Go](https://opencode.ai/go) recently, so for completeness, here's what the config looks like for that (in `~/.config/nono/profiles/crush.json`):
