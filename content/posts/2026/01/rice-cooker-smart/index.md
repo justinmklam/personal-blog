@@ -17,4 +17,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 <!--more-->
 
-![](posts/2026/01/rice-cooker-smart/home-assistant-dashboard.png)
+![](home-assistant-dashboard.png)
