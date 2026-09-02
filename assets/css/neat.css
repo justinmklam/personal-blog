@@ -37,15 +37,17 @@
     --moredark: #000;
     --link: rgba(101, 125, 225, .8) ;
     --onhover: linear-gradient(180deg, transparent 86%, var(--link) 0);
-    /* --headingfont: "Lilita One", system-ui, sans-serif; */
+    --headingfont: "Ahkio-Light", system-ui, sans-serif;
+    --mainfont: "Atkinson Hyperlegible", system-ui, sans-serif;
+    --monospacefont: "Jetbrains Mono", "Fira Code", monospace;
     line-height: 1.5em;
-    font-family: "Atkinson Hyperlegible", system-ui, sans-serif;
+    font-family: var(--mainfont);
     font-size: 1.1em;
     color: var(--dark);
 }
 
 h1, h2, h3, h4, h5, h6 {
-    /* font-family: var(--headingfont); */
+    font-family: var(--headingfont);
     font-weight: 700 !important;
     line-height: 1.2em;
     margin-bottom: 10px;
@@ -60,7 +62,7 @@ li {
 }
 
 code {
-    font-family: "Jetbrains Mono", "Fira Code", monospace;
+    font-family: var(--monospacefont);
     font-size: 0.9rem;
     line-height: 1.4em;
 }
@@ -195,7 +197,6 @@ input.center {
     font-weight: bold;
 }
 
-
 /* Archive list layout */
 .archive-row {
     display: grid;
@@ -210,6 +211,10 @@ input.center {
     padding-left: 0.6em;
 }
 
+.index-archive h3 {
+  font-family: var(--mainfont);
+}
+
 .archive-year {
     font-size: 0.9em;
     color: var(--lessdark);
@@ -218,12 +223,15 @@ input.center {
 
 .archive-title {
     font-weight: bold;
+    font-family: var(--headingfont);
+    font-weight: 500;
+    font-size: 1.2em;
     text-decoration: none;
     min-width: 0;
 }
 
 .archive-tagline {
-    font-style: italic;
+    /* font-style: italic; */
     font-weight: normal;
     font-size: 0.85em;
     color: var(--lessdark);

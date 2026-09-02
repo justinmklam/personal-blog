@@ -24,6 +24,8 @@
 <meta name="twitter:description" content="{{ with .Params.tagline }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}">
 
 <!-- Custom stylesheets -->
+ <link href="https://db.onlinewebfonts.com/c/2142f71bb5ffd8eb68d2eab598767ec9?family=Ahkio-Thin" rel="stylesheet"> 
+ <link href="https://db.onlinewebfonts.com/c/233b98f71081613b526cbac8bf934915?family=Ahkio-Light" rel="stylesheet"> 
 {{ $light := resources.Get "css/syntax.css" | resources.Minify | resources.Fingerprint }}
 {{ $dark := resources.Get "css/syntax-dark.css" | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" href={{ $light.RelPermalink }} media="screen">
