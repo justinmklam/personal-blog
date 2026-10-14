@@ -11,7 +11,7 @@ draft: false
 layout: single
 type: blog
 aliases:
-updated: 2026-05-18T10:59:22-08:00
+updated: 2026-10-13T10:59:22-08:00
 ---
 So you’ve heard of split keyboards and want to buy one, but don’t know where to start? You’ve come to the right place! There are many offerings these days which can be overwhelming, so this guide aims to provide a high level overview of the landscape so you can figure out which path you want to take.
 
@@ -66,7 +66,9 @@ Going one step further, getting a keyboard with independent halves will provide 
 
 ![UHK 60 and 80 variants, which come with optional thumb modules for mousing.](ultimate-hacking-keyboard.jpg "Ultimate Hacking Keyboard|https://uhk.io/")
 
-These keyboards may not be perfect for "power" users, but they tick enough boxes for the majority of people. If you do want to use more advanced features like layers and combos, you can use software like [Karabiner Elements](https://karabiner-elements.pqrs.org/) (macOS), [keyd](https://github.com/rvaiya/keyd) (Linux), or [Kanata](https://github.com/jtroo/kanata) (cross-platform) to add this functionality, similar to how I modified a regular keyboard's keymap [here](/posts/2025/11/remapping-standard-keyboard/).
+![The Elytra, a more premium offering in the line of compact split keyboards.](elimkeys-elytra.png "ElimKeys Eltra|https://elimkeys.com/products/elytra?ref=ngemobbm")
+
+These keyboards may not be perfect for "power" users, but they tick enough boxes for the majority of people. If you do want to use more advanced features like layers and combos, you can use software like [Karabiner Elements](https://karabiner-elements.pqrs.org/) (macOS), [keyd](https://github.com/rvaiya/keyd) (Linux), or [Kanata](https://github.com/jtroo/kanata) (cross-platform) to add this functionality, similar to how I modified a regular keyboard's keymap [here](/posts/2025/11/remapping-standard-keyboard/). Alternatively, some keyboards like the ElimKeys Elytra (which I [reviewed here](/posts/2026/07/elytra-keyboard-review/)) come with built-in firmware support for these advanced features.
 
 If you're in this group, you can stop reading here! You can also find other similar keyboards using the (basic) search term "ergonomic keyboard" to see what's currently available on the market.
 # Path 2: “I’m willing to learn for better ergonomics”
