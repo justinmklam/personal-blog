@@ -18,6 +18,9 @@ new:
 show-drafts:
 	@scripts/show-drafts.sh
 
+giscus-map:
+	@scripts/giscus-map.py
+
 new-single:
 	@if [ -z "$(title)" ]; then echo "Please provide 'title'"; exit 1; fi
 	hugo new posts/$$(date +%Y/%m)/$(title).md

@@ -21,6 +21,7 @@
 | `make clean` | Removes `_docs/` and `resources/_gen/` |
 | `make new title="post-name"` | Creates `content/posts/YYYY/MM/post-name/index.md` (page bundle) |
 | `make new-single title="post-name"` | Creates `content/posts/YYYY/MM/post-name.md` (flat file) |
+| `make giscus-map` | Regenerates `data/giscus.yaml` (post path → discussion number) via the `gh` CLI |
 | `hugo --minify` | Production build used in CI |
 
 ## Code Organization
@@ -166,6 +167,10 @@ Custom RSS template in `_default/rss.xml`. Filters to only include pages where `
 
 Giscus is loaded in `giscus.html` using the `justinmklam/personal-blog` repo's GitHub Discussions. Disabled in development mode (`hugo.Environment == "development"`). The theme syncs with the site's dark/light toggle via `window.setGiscusTheme()`.
 
+Giscus normally finds a post's discussion through GitHub's discussion search API (`repo:… in:title "<path>"`). That search index currently returns **zero results for this repository**, so search-based resolution (and the GitHub discussions listing) fails even though the threads exist. Posts listed in `data/giscus.yaml` are therefore pinned by discussion number — the template emits `data-mapping="number" data-term="<n>"`, which makes giscus fetch `discussion(number:)` directly and skip search entirely. Posts without an entry fall back to `data-mapping="pathname"`, so a reader's first comment can still create the thread.
+
+To map a new post's thread: let a discussion appear (comment through the site once, or create it on GitHub), then run `make giscus-map` and commit `data/giscus.yaml`. The generator requires the `gh` CLI, prints `WARN duplicate` for threads sharing a path (highest comments+reactions wins, newest breaks ties), and `WARN unmatched` for titles that match no post file.
+
 Comment counts on listing/blog-metadata use a separate JS bundle (`giscus-comments.js`).
 
 ## MathJax
@@ -197,3 +202,4 @@ GitHub Actions workflow (`.github/workflows/main.yml`):
 8. **Page bundles only**: `Resources.Get` in `resize-image.html` will return nil if the image isn't in the page bundle. A `warnf` is logged if the image can't be found.
 9. **`support.html`** partial is included on every blog post — it's the "Buy me a coffee / GitHub Sponsor / RSS" callout.
 10. **`.trash/` folder** in content/posts — contains deleted drafts, not published content.
+11. **`data/giscus.yaml`** is generated — never hand-edit it. Re-run `make giscus-map` instead, and read its `WARN duplicate` output rather than assuming the highest discussion number is canonical.

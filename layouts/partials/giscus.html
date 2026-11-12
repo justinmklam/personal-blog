@@ -1,6 +1,18 @@
 {{ $lightTheme := "light" }}
 {{ $darkTheme := "catppuccin_macchiato" }}
 
+{{/* giscus normally resolves a post's discussion through GitHub's discussion
+     search index, which returns no results for this repository. Posts listed in
+     data/giscus.yaml are therefore pinned to their discussion number; unmapped
+     posts keep pathname mapping. Regenerate with `make giscus-map`. */}}
+{{ $pageKey := .RelPermalink | strings.TrimPrefix "/" | strings.TrimSuffix "/" }}
+{{ $discussionNumber := 0 }}
+{{ with hugo.Data.giscus }}
+  {{ with index . $pageKey }}{{ $discussionNumber = . }}{{ end }}
+{{ end }}
+{{ $mapping := "pathname" }}
+{{ if $discussionNumber }}{{ $mapping = "number" }}{{ end }}
+
 {{ $enableGiscus := or (ne (hugo.Environment) "development") (os.Getenv "HUGO_GISCUS") }}
 {{ if $enableGiscus }}
 <div id="comments">
@@ -20,7 +32,8 @@
     data-repo-id="MDEwOlJlcG9zaXRvcnkzODQ2MjI4NjE="
     data-category="Blog Comments"
     data-category-id="DIC_kwDOFuzhDc4Cuowr"
-    data-mapping="pathname"
+    data-mapping="{{ $mapping }}"{{ if $discussionNumber }}
+    data-term="{{ $discussionNumber }}"{{ end }}
     data-strict="0"
     data-reactions-enabled="1"
     data-emit-metadata="1"

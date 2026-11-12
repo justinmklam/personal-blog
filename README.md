@@ -52,11 +52,14 @@ Publishing is done via Github Actions on commits on main, and deployed via the `
 ## Namecheap Setup for Custom Domain
 These settings are managed under the `Advanced DNS` tab. See [GitHub Help](https://help.github.com/en/articles/setting-up-an-apex-domain#configuring-a-records-with-your-dns-provider) for details.
 
-| Type | Host | Value | TTL |
-|---|---|---|---|
-| A Record | @ | 185.199.108.153 | Automatic |
-| A Record | @ | 185.199.109.153 | Automatic |
-| A Record | @ | 185.199.110.153 | Automatic |
-| A Record | @ | 185.199.111.153 | Automatic |
-| CNAME Record | www | justinmklam.github.io. | Automatic |
-| TXT Record | @ | google-site-verification=[KEY] | Automatic |
+| Type         | Host | Value                          | TTL       |
+| ------------ | ---- | ------------------------------ | --------- |
+| A Record     | @    | 185.199.108.153                | Automatic |
+| A Record     | @    | 185.199.109.153                | Automatic |
+| A Record     | @    | 185.199.110.153                | Automatic |
+| A Record     | @    | 185.199.111.153                | Automatic |
+| CNAME Record | www  | justinmklam.github.io.         | Automatic |
+| TXT Record   | @    | google-site-verification=[KEY] | Automatic |
+|              |      |                                |           |
+
+test
